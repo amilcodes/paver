@@ -1,0 +1,64 @@
+{
+  "created": "2026-10-31T11:20:09.470592+00:00",
+  "experiment": "dataset_admission_001",
+  "status": "completed_dataset_milestone_model_run_still_storage_blocked",
+  "hypothesis": "Whole capture routes and transitive sampled neighborhoods avoid leakage that independent assignment of new sequences would introduce.",
+  "control": "Deterministic independent split hashing for new collection IDs; old frozen assignments retained. This is a constructed unsafe control, not evidence of leakage in the old dataset.",
+  "result": {
+    "admitted_new_collections": 33,
+    "original_assignments_preserved": 269,
+    "eligible_collections_total": 302,
+    "active_groups": 118,
+    "metadata_points": 11664,
+    "independent_grid_verified_neighbor_pairs": 212742,
+    "collection_neighbor_edges": 629,
+    "unsafe_control_cross_split_edges": 55,
+    "actual_active_cross_split_edges": 0,
+    "frozen_initial_cohort": 100,
+    "cohort_train_validation_test": [
+      60,
+      20,
+      20
+    ],
+    "complete_selected_windows": 15,
+    "incomplete_selected_windows": 1,
+    "pending_selected_windows": 84,
+    "new_images_downloaded": 0,
+    "new_recovery_runs": 0,
+    "new_recovery_coverage": null,
+    "new_recovery_error": null,
+    "tests_passed": 13
+  },
+  "validation": "dataset_v1/admission_audits/001/validation_final.json",
+  "blocker": {
+    "kind": "insufficient_free_disk",
+    "observed_free_gib": 8.01870346069336,
+    "minimum_free_gib": 8,
+    "planned_job_reservation_gib": 0.5,
+    "admission_requires_free_gib": 8.5,
+    "shortfall_for_planned_job_gib": 0.4812965393066406,
+    "first_observed_utc": "2026-10-31T10:08:10+00:00",
+    "last_checked_utc": "2026-10-31T11:20:09.470592+00:00",
+    "observed_range_this_run_gib": [
+      3.2,
+      8.05
+    ],
+    "operations_held": [
+      "model checkpoint download",
+      "MPS inference",
+      "image acquisition",
+      "catalog expansion"
+    ],
+    "new_recovery_runs": 0,
+    "external_files_deleted": false,
+    "note": "Available space fluctuated materially; did not weaken the reservation or delete prior artifacts."
+  },
+  "promotion": false,
+  "limitations": [
+    "Spatial check uses sampled coordinates; complete routes could reveal further overlap. Fresh audit runs before and after each new acquisition window.",
+    "The selected cohort is not 100 completed benchmarks. Only one training scene has frozen masks and evaluation.",
+    "No hidden or test-group image pixels were viewed or used for selection.",
+    "No new matching or reconstruction result; v5 remains the latest recovery experiment."
+  ],
+  "next": "Prioritize LoFTR MPS validation and fixed-road comparison once >=8.5 GiB free. Until then, annotate the second cached train scene or finish the bounded dense runner; do not repeat completed split or input preflights."
+}

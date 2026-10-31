@@ -1,0 +1,97 @@
+{
+  "spatial_audit": "independent ECEF spatial-grid enumeration agrees with cKDTree planner",
+  "eligible_pictures": 11664,
+  "collection_neighbor_edges": 629,
+  "picture_neighbor_pairs": 212742,
+  "baseline_split_sha256_unchanged": true,
+  "original_assignments_preserved": 269,
+  "admitted_collections": 33,
+  "effective_split_counts": {
+    "train": 153,
+    "validation": 60,
+    "test": 26,
+    "development": 63
+  },
+  "unsafe_independent_assignment_cross_split_edges": 55,
+  "unsafe_control_examples": [
+    [
+      "160c3dbb-f455-434f-bb8f-841edef862fa",
+      "758863cb-6faf-469f-8dd0-0b8a270e0c1b"
+    ],
+    [
+      "160c3dbb-f455-434f-bb8f-841edef862fa",
+      "e2be3482-f743-401a-8cf7-f602c8df3ce8"
+    ],
+    [
+      "2151834a-f09b-428a-89d2-67cbe48fd03e",
+      "33599735-d8d3-4ed8-a96c-b2031a83c591"
+    ],
+    [
+      "2151834a-f09b-428a-89d2-67cbe48fd03e",
+      "3a7645c9-0093-4102-a585-126de81e7e62"
+    ],
+    [
+      "2151834a-f09b-428a-89d2-67cbe48fd03e",
+      "5079bbba-5adf-4baf-9bef-9ac68f98d5df"
+    ],
+    [
+      "2151834a-f09b-428a-89d2-67cbe48fd03e",
+      "ad0450e6-bfba-4d07-ba1d-de1a974740ef"
+    ],
+    [
+      "2151834a-f09b-428a-89d2-67cbe48fd03e",
+      "c68b4465-79a2-4ebc-aff2-4eba7148ada9"
+    ],
+    [
+      "33599735-d8d3-4ed8-a96c-b2031a83c591",
+      "3a7645c9-0093-4102-a585-126de81e7e62"
+    ],
+    [
+      "33599735-d8d3-4ed8-a96c-b2031a83c591",
+      "5079bbba-5adf-4baf-9bef-9ac68f98d5df"
+    ],
+    [
+      "33599735-d8d3-4ed8-a96c-b2031a83c591",
+      "693aeb69-9eb5-4abf-9e71-43c559fd8e8d"
+    ]
+  ],
+  "actual_active_cross_split_edges": 0,
+  "quarantined_collections": [],
+  "selected_cohort": 100,
+  "selected_per_split": {
+    "train": 60,
+    "validation": 20,
+    "test": 20
+  },
+  "complete_selected_windows": 15,
+  "incomplete_selected_windows": 1,
+  "pending_selected_windows": 84,
+  "heldout_images_cached_in_cohort": false,
+  "new_images_downloaded": 0,
+  "new_recovery_measurements": null,
+  "provenance": {
+    "admission_sha256": "3e3c43fc06f8409f69058b3741925233f14611d768d8f69098f0d968ac013a7b",
+    "cohort_sha256": "b0804d3e6e14fcdac301be4ba702d8aa58da702041b2af238c71671e5b72eea7",
+    "source_sha256": {
+      "dataset_admission.py": "29a54cb053fca937e308ff8e97b6a6df8870cafa4b607e46df528c80a2696af6",
+      "cohort.py": "880d457d0bdbf7ad530c8ade63b83eb2b8a9db2033bbba9f2d88d52da5ddc1b8",
+      "acquire_admitted.py": "1d034bcd8203611f111d24342cd27e8f012dfe54840c4c9ac135da03aa1544f8",
+      "audit_admission.py": "97a366f7b74b6479bcfe001a7a214daa140916a8fb3963c4b7479f39777ad846",
+      "tests/test_dataset_admission.py": "6d1a8d411a530a72df3531b204d754ab25becd01d3f4a83f08bb9acb2351574b",
+      "tests/test_cohort.py": "c95c02e2a7c8cd1b452e20336fc357b6358fdf5524556bfd9e8eb947e051b8da",
+      "research_status.py": "ab907fc5e411f100046ac354c7dc06480f8aa5e6f1716f219d050f70cd919d8c",
+      "audit_effective_dataset.py": "09272ff1eb23bb17c0d8a8b21a4952808401e98dbd968e972810f669a9a8bed1",
+      "tests/test_effective_audit.py": "69c5c4084302eabab2c39ffe4a61be6748a29a4817d02a53b3d6ca70cea75c32"
+    }
+  },
+  "tests_passed": 13,
+  "limitations": [
+    "Sampled road locations only; full route geometry may reveal additional conflicts",
+    "100 selected does not mean 100 acquired, annotated or evaluated",
+    "Unsafe assignment is a deliberately constructed control, not a defect found in the old frozen split"
+  ],
+  "current_metadata_audit": "dataset_v1/effective_audit.json",
+  "current_metadata_audit_sha256": "759a3c0cf6c85a3bc25c0b45794d5bcd7b67351302f1c7c32050c6018f1a74a5",
+  "runtime_acquisition_guard_verified": true,
+  "runtime_acquisition_guard_result": "Research storage guard: {'free_disk_gib': 8.018707275390625, 'image_cache_gib': 0.31741894222795963, 'reserved_gib': 0.5, 'minimum_free_gib': 8, 'safe_to_start_heavy_job': False, 'safe_to_start_acquisition': False, 'blockers': ['free disk after reservation is below the configured minimum']}"
+}
