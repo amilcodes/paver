@@ -1,0 +1,869 @@
+{
+  "dataset": "One Panoramax sequence, three real panoramas",
+  "status": "Development checks; neither independent test set nor Google Street View evaluation",
+  "configuration": {
+    "size": 1024,
+    "fov": 145,
+    "annotation_note": "Manual ground and vehicle polygons in normalized downward-view coordinates. Designed by inspecting images before computing scores. Not automatic segmentation. Conservative exclusions also remove some valid road.",
+    "vehicle": [
+      [
+        [
+          0.33,
+          0.17
+        ],
+        [
+          0.67,
+          0.17
+        ],
+        [
+          0.68,
+          0.81
+        ],
+        [
+          0.33,
+          0.81
+        ]
+      ]
+    ],
+    "ground": {
+      "target": [
+        [
+          [
+            0.34,
+            0.0
+          ],
+          [
+            0.6,
+            0.0
+          ],
+          [
+            0.61,
+            0.3
+          ],
+          [
+            0.86,
+            0.37
+          ],
+          [
+            0.86,
+            0.48
+          ],
+          [
+            0.66,
+            0.55
+          ],
+          [
+            0.65,
+            0.79
+          ],
+          [
+            0.73,
+            1.0
+          ],
+          [
+            0.18,
+            1.0
+          ],
+          [
+            0.23,
+            0.68
+          ],
+          [
+            0.34,
+            0.6
+          ],
+          [
+            0.36,
+            0.22
+          ]
+        ]
+      ],
+      "prev": [
+        [
+          [
+            0.38,
+            0.0
+          ],
+          [
+            0.96,
+            0.0
+          ],
+          [
+            0.72,
+            0.17
+          ],
+          [
+            0.64,
+            0.32
+          ],
+          [
+            0.65,
+            0.75
+          ],
+          [
+            0.74,
+            1.0
+          ],
+          [
+            0.2,
+            1.0
+          ],
+          [
+            0.14,
+            0.81
+          ],
+          [
+            0.05,
+            0.48
+          ],
+          [
+            0.06,
+            0.29
+          ],
+          [
+            0.4,
+            0.2
+          ]
+        ]
+      ],
+      "next": [
+        [
+          [
+            0.34,
+            0.0
+          ],
+          [
+            0.6,
+            0.0
+          ],
+          [
+            0.61,
+            0.27
+          ],
+          [
+            0.65,
+            0.56
+          ],
+          [
+            0.85,
+            0.69
+          ],
+          [
+            0.7,
+            0.78
+          ],
+          [
+            0.59,
+            0.82
+          ],
+          [
+            0.56,
+            0.9
+          ],
+          [
+            0.57,
+            1.0
+          ],
+          [
+            0.22,
+            1.0
+          ],
+          [
+            0.35,
+            0.75
+          ],
+          [
+            0.37,
+            0.28
+          ]
+        ]
+      ]
+    },
+    "holdouts": {
+      "front_paving": [
+        [
+          [
+            0.4,
+            0.03
+          ],
+          [
+            0.55,
+            0.03
+          ],
+          [
+            0.55,
+            0.14
+          ],
+          [
+            0.4,
+            0.14
+          ]
+        ]
+      ],
+      "rear_paving": [
+        [
+          [
+            0.4,
+            0.85
+          ],
+          [
+            0.55,
+            0.85
+          ],
+          [
+            0.55,
+            0.96
+          ],
+          [
+            0.4,
+            0.96
+          ]
+        ]
+      ],
+      "left_paving": [
+        [
+          [
+            0.25,
+            0.73
+          ],
+          [
+            0.31,
+            0.73
+          ],
+          [
+            0.31,
+            0.88
+          ],
+          [
+            0.25,
+            0.88
+          ]
+        ]
+      ],
+      "right_paving": [
+        [
+          [
+            0.71,
+            0.39
+          ],
+          [
+            0.8,
+            0.39
+          ],
+          [
+            0.8,
+            0.46
+          ],
+          [
+            0.71,
+            0.46
+          ]
+        ]
+      ]
+    },
+    "fusion": {
+      "agreement_threshold": 18.0,
+      "min_views": 1
+    }
+  },
+  "source_manifest": {
+    "accessed_on": "2026-10-31",
+    "description": "Three consecutive observations from one drive; not a representative benchmark.",
+    "modifications": "Resized from 12288x6144 to 6144x3072; JPEG quality 95. Public blurred assets only.",
+    "license_url": "https://ia.numerique.gouv.fr/licence-ouverte-open-licence/",
+    "images": [
+      {
+        "name": "target",
+        "id": "0e5d4027-bf24-48fa-8c5e-8ab13731e095",
+        "metadata_url": "https://panoramax.ign.fr/api/pictures/0e5d4027-bf24-48fa-8c5e-8ab13731e095",
+        "asset_url": "https://panoramax.ign.fr/api/pictures/0e5d4027-bf24-48fa-8c5e-8ab13731e095/hd.jpg",
+        "source_sha256": "ef2ff9ccc0eee57de31bbb8a696723cc697295a6408ce1b9723ec942198314e7",
+        "sample_sha256": "6bde2c70d8281ec788d38380fe359d30df2f55f5c72694c73e289b96562940e3",
+        "original_size": [
+          12288,
+          6144
+        ],
+        "sample_size": [
+          6144,
+          3072
+        ],
+        "capture_time": "2024-11-01T08:33:48.285000+00:00",
+        "producer": "eurom\u00e9tropole de strasbourg",
+        "license": "etalab-2.0"
+      },
+      {
+        "name": "prev",
+        "id": "9e1423a6-96f2-4a57-9baf-3f0ef11d6949",
+        "metadata_url": "https://panoramax.ign.fr/api/pictures/9e1423a6-96f2-4a57-9baf-3f0ef11d6949",
+        "asset_url": "https://panoramax-storage-public-fast.s3.gra.perf.cloud.ovh.net/main-pictures/9e/14/23/a6/96f2-4a57-9baf-3f0ef11d6949.jpg",
+        "source_sha256": "9c1c8783269fa97d6eecf8d36ce812ae6830d7e1fb940f3f33e1e7611d3a5fc7",
+        "sample_sha256": "da403b2d3a87b4ec24f7472190a16d14ba3ada3fe89608fd2b3b410460016b92",
+        "original_size": [
+          12288,
+          6144
+        ],
+        "sample_size": [
+          6144,
+          3072
+        ],
+        "capture_time": "2024-11-01T08:33:46.475000+00:00",
+        "producer": "eurom\u00e9tropole de strasbourg",
+        "license": "etalab-2.0"
+      },
+      {
+        "name": "next",
+        "id": "9c0a39ad-2836-4166-b716-0a87469d361a",
+        "metadata_url": "https://panoramax.ign.fr/api/pictures/9c0a39ad-2836-4166-b716-0a87469d361a",
+        "asset_url": "https://panoramax-storage-public-fast.s3.gra.perf.cloud.ovh.net/main-pictures/9c/0a/39/ad/2836-4166-b716-0a87469d361a.jpg",
+        "source_sha256": "e41e8210e1ffdd7cf62bdd6a82b33ad9fc98f5dc7963eb1febca0aa9622d6622",
+        "sample_sha256": "8fda73771d6d4ed5da03ddbd4717214d5edfacb25d267a61419686b095c8b315",
+        "original_size": [
+          12288,
+          6144
+        ],
+        "sample_size": [
+          6144,
+          3072
+        ],
+        "capture_time": "2024-11-01T08:33:50.075000+00:00",
+        "producer": "eurom\u00e9tropole de strasbourg",
+        "license": "etalab-2.0"
+      }
+    ]
+  },
+  "versions": {
+    "python": "3.14.7",
+    "numpy": "2.5.4",
+    "opencv": "5.0.0"
+  },
+  "cases": [
+    {
+      "name": "front_paving",
+      "ground_truth_available": true,
+      "mask_pixels": 17515,
+      "repaired_pixels": 0,
+      "coverage": 0.0,
+      "single_view_pixels": 0,
+      "agreeing_multi_view_pixels": 0,
+      "unresolved_pixels": 17515,
+      "registrations": {
+        "prev": {
+          "source_features": 537,
+          "target_features": 230,
+          "matches": 1,
+          "inliers": 0,
+          "accepted": false,
+          "reason": "fewer than 12 mutual matches"
+        },
+        "next": {
+          "source_features": 154,
+          "target_features": 230,
+          "matches": 1,
+          "inliers": 0,
+          "accepted": false,
+          "reason": "fewer than 12 mutual matches"
+        }
+      },
+      "metrics": {
+        "multiview_on_accepted": {
+          "pixels": 0,
+          "mae_255": null,
+          "psnr_db": null
+        },
+        "telea_on_same_accepted": {
+          "pixels": 0,
+          "mae_255": null,
+          "psnr_db": null
+        },
+        "multiview_full_mask_including_abstentions": {
+          "pixels": 17515,
+          "mae_255": 33.53390427252831,
+          "psnr_db": 17.237750376195578
+        },
+        "telea_full_mask": {
+          "pixels": 17515,
+          "mae_255": 4.66046246074793,
+          "psnr_db": 32.19078848016247
+        },
+        "no_repair_full_mask": {
+          "pixels": 17515,
+          "mae_255": 33.53390427252831,
+          "psnr_db": 17.237750376195578
+        }
+      },
+      "threshold_sweep": [
+        {
+          "min_views": 1,
+          "threshold": 8.0,
+          "coverage": 0.0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null
+          }
+        },
+        {
+          "min_views": 1,
+          "threshold": 18.0,
+          "coverage": 0.0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null
+          }
+        },
+        {
+          "min_views": 1,
+          "threshold": 32.0,
+          "coverage": 0.0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null
+          }
+        },
+        {
+          "min_views": 2,
+          "threshold": 8.0,
+          "coverage": 0.0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null
+          }
+        },
+        {
+          "min_views": 2,
+          "threshold": 18.0,
+          "coverage": 0.0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null
+          }
+        },
+        {
+          "min_views": 2,
+          "threshold": 32.0,
+          "coverage": 0.0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "rear_paving",
+      "ground_truth_available": true,
+      "mask_pixels": 17515,
+      "repaired_pixels": 0,
+      "coverage": 0.0,
+      "single_view_pixels": 0,
+      "agreeing_multi_view_pixels": 0,
+      "unresolved_pixels": 17515,
+      "registrations": {
+        "prev": {
+          "source_features": 537,
+          "target_features": 205,
+          "matches": 2,
+          "inliers": 0,
+          "accepted": false,
+          "reason": "fewer than 12 mutual matches"
+        },
+        "next": {
+          "source_features": 154,
+          "target_features": 205,
+          "matches": 2,
+          "inliers": 0,
+          "accepted": false,
+          "reason": "fewer than 12 mutual matches"
+        }
+      },
+      "metrics": {
+        "multiview_on_accepted": {
+          "pixels": 0,
+          "mae_255": null,
+          "psnr_db": null
+        },
+        "telea_on_same_accepted": {
+          "pixels": 0,
+          "mae_255": null,
+          "psnr_db": null
+        },
+        "multiview_full_mask_including_abstentions": {
+          "pixels": 17515,
+          "mae_255": 48.5693976591493,
+          "psnr_db": 14.21032013212064
+        },
+        "telea_full_mask": {
+          "pixels": 17515,
+          "mae_255": 5.139746883623561,
+          "psnr_db": 31.002711511211196
+        },
+        "no_repair_full_mask": {
+          "pixels": 17515,
+          "mae_255": 48.5693976591493,
+          "psnr_db": 14.21032013212064
+        }
+      },
+      "threshold_sweep": [
+        {
+          "min_views": 1,
+          "threshold": 8.0,
+          "coverage": 0.0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null
+          }
+        },
+        {
+          "min_views": 1,
+          "threshold": 18.0,
+          "coverage": 0.0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null
+          }
+        },
+        {
+          "min_views": 1,
+          "threshold": 32.0,
+          "coverage": 0.0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null
+          }
+        },
+        {
+          "min_views": 2,
+          "threshold": 8.0,
+          "coverage": 0.0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null
+          }
+        },
+        {
+          "min_views": 2,
+          "threshold": 18.0,
+          "coverage": 0.0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null
+          }
+        },
+        {
+          "min_views": 2,
+          "threshold": 32.0,
+          "coverage": 0.0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "left_paving",
+      "ground_truth_available": true,
+      "mask_pixels": 9548,
+      "repaired_pixels": 0,
+      "coverage": 0.0,
+      "single_view_pixels": 0,
+      "agreeing_multi_view_pixels": 0,
+      "unresolved_pixels": 9548,
+      "registrations": {
+        "prev": {
+          "source_features": 537,
+          "target_features": 223,
+          "matches": 2,
+          "inliers": 0,
+          "accepted": false,
+          "reason": "fewer than 12 mutual matches"
+        },
+        "next": {
+          "source_features": 154,
+          "target_features": 223,
+          "matches": 1,
+          "inliers": 0,
+          "accepted": false,
+          "reason": "fewer than 12 mutual matches"
+        }
+      },
+      "metrics": {
+        "multiview_on_accepted": {
+          "pixels": 0,
+          "mae_255": null,
+          "psnr_db": null
+        },
+        "telea_on_same_accepted": {
+          "pixels": 0,
+          "mae_255": null,
+          "psnr_db": null
+        },
+        "multiview_full_mask_including_abstentions": {
+          "pixels": 9548,
+          "mae_255": 44.18426197458456,
+          "psnr_db": 14.912241623911878
+        },
+        "telea_full_mask": {
+          "pixels": 9548,
+          "mae_255": 5.939149560117302,
+          "psnr_db": 29.269806709691643
+        },
+        "no_repair_full_mask": {
+          "pixels": 9548,
+          "mae_255": 44.18426197458456,
+          "psnr_db": 14.912241623911878
+        }
+      },
+      "threshold_sweep": [
+        {
+          "min_views": 1,
+          "threshold": 8.0,
+          "coverage": 0.0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null
+          }
+        },
+        {
+          "min_views": 1,
+          "threshold": 18.0,
+          "coverage": 0.0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null
+          }
+        },
+        {
+          "min_views": 1,
+          "threshold": 32.0,
+          "coverage": 0.0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null
+          }
+        },
+        {
+          "min_views": 2,
+          "threshold": 8.0,
+          "coverage": 0.0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null
+          }
+        },
+        {
+          "min_views": 2,
+          "threshold": 18.0,
+          "coverage": 0.0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null
+          }
+        },
+        {
+          "min_views": 2,
+          "threshold": 32.0,
+          "coverage": 0.0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "right_paving",
+      "ground_truth_available": true,
+      "mask_pixels": 6789,
+      "repaired_pixels": 0,
+      "coverage": 0.0,
+      "single_view_pixels": 0,
+      "agreeing_multi_view_pixels": 0,
+      "unresolved_pixels": 6789,
+      "registrations": {
+        "prev": {
+          "source_features": 537,
+          "target_features": 234,
+          "matches": 2,
+          "inliers": 0,
+          "accepted": false,
+          "reason": "fewer than 12 mutual matches"
+        },
+        "next": {
+          "source_features": 154,
+          "target_features": 234,
+          "matches": 0,
+          "inliers": 0,
+          "accepted": false,
+          "reason": "fewer than 12 mutual matches"
+        }
+      },
+      "metrics": {
+        "multiview_on_accepted": {
+          "pixels": 0,
+          "mae_255": null,
+          "psnr_db": null
+        },
+        "telea_on_same_accepted": {
+          "pixels": 0,
+          "mae_255": null,
+          "psnr_db": null
+        },
+        "multiview_full_mask_including_abstentions": {
+          "pixels": 6789,
+          "mae_255": 37.04855894338881,
+          "psnr_db": 16.402148638906194
+        },
+        "telea_full_mask": {
+          "pixels": 6789,
+          "mae_255": 4.929051897677616,
+          "psnr_db": 31.3085580543428
+        },
+        "no_repair_full_mask": {
+          "pixels": 6789,
+          "mae_255": 37.04855894338881,
+          "psnr_db": 16.402148638906194
+        }
+      },
+      "threshold_sweep": [
+        {
+          "min_views": 1,
+          "threshold": 8.0,
+          "coverage": 0.0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null
+          }
+        },
+        {
+          "min_views": 1,
+          "threshold": 18.0,
+          "coverage": 0.0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null
+          }
+        },
+        {
+          "min_views": 1,
+          "threshold": 32.0,
+          "coverage": 0.0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null
+          }
+        },
+        {
+          "min_views": 2,
+          "threshold": 8.0,
+          "coverage": 0.0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null
+          }
+        },
+        {
+          "min_views": 2,
+          "threshold": 18.0,
+          "coverage": 0.0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null
+          }
+        },
+        {
+          "min_views": 2,
+          "threshold": 32.0,
+          "coverage": 0.0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "vehicle_footprint",
+      "ground_truth_available": false,
+      "mask_pixels": 231896,
+      "repaired_pixels": 0,
+      "coverage": 0.0,
+      "single_view_pixels": 0,
+      "agreeing_multi_view_pixels": 0,
+      "unresolved_pixels": 231896,
+      "registrations": {
+        "prev": {
+          "source_features": 537,
+          "target_features": 252,
+          "matches": 2,
+          "inliers": 0,
+          "accepted": false,
+          "reason": "fewer than 12 mutual matches"
+        },
+        "next": {
+          "source_features": 154,
+          "target_features": 252,
+          "matches": 1,
+          "inliers": 0,
+          "accepted": false,
+          "reason": "fewer than 12 mutual matches"
+        }
+      },
+      "threshold_sweep": [
+        {
+          "min_views": 1,
+          "threshold": 8.0,
+          "coverage": 0.0
+        },
+        {
+          "min_views": 1,
+          "threshold": 18.0,
+          "coverage": 0.0
+        },
+        {
+          "min_views": 1,
+          "threshold": 32.0,
+          "coverage": 0.0
+        },
+        {
+          "min_views": 2,
+          "threshold": 8.0,
+          "coverage": 0.0
+        },
+        {
+          "min_views": 2,
+          "threshold": 18.0,
+          "coverage": 0.0
+        },
+        {
+          "min_views": 2,
+          "threshold": 32.0,
+          "coverage": 0.0
+        }
+      ]
+    }
+  ]
+}

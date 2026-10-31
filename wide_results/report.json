@@ -1,0 +1,977 @@
+{
+  "dataset": "One Panoramax sequence, three real panoramas",
+  "status": "Development checks; neither independent test set nor Google Street View evaluation",
+  "configuration": {
+    "size": 1600,
+    "fov": 157.18283854373573,
+    "annotation_note": "Manual ground and vehicle polygons in normalized downward-view coordinates. Designed by inspecting images before computing scores. Not automatic segmentation. Conservative exclusions also remove some valid road. Wider view retains the original focal length in pixels; ground strip extended to image edges after inspection. Exploratory development variant.",
+    "vehicle": [
+      [
+        [
+          0.3912,
+          0.28880000000000006
+        ],
+        [
+          0.6088,
+          0.28880000000000006
+        ],
+        [
+          0.6152000000000001,
+          0.6984
+        ],
+        [
+          0.3912,
+          0.6984
+        ]
+      ]
+    ],
+    "ground": {
+      "target": [
+        [
+          [
+            0.308,
+            0
+          ],
+          [
+            0.6664,
+            0
+          ],
+          [
+            0.6664,
+            1
+          ],
+          [
+            0.308,
+            1
+          ]
+        ]
+      ],
+      "prev": [
+        [
+          [
+            0.308,
+            0
+          ],
+          [
+            0.6664,
+            0
+          ],
+          [
+            0.6664,
+            1
+          ],
+          [
+            0.308,
+            1
+          ]
+        ]
+      ],
+      "next": [
+        [
+          [
+            0.308,
+            0
+          ],
+          [
+            0.6664,
+            0
+          ],
+          [
+            0.6664,
+            1
+          ],
+          [
+            0.308,
+            1
+          ]
+        ]
+      ]
+    },
+    "holdouts": {
+      "front_asphalt": [
+        [
+          [
+            0.4552,
+            0.19280000000000003
+          ],
+          [
+            0.5448,
+            0.19280000000000003
+          ],
+          [
+            0.5448,
+            0.2696
+          ],
+          [
+            0.4552,
+            0.2696
+          ]
+        ]
+      ],
+      "rear_asphalt": [
+        [
+          [
+            0.4616,
+            0.724
+          ],
+          [
+            0.5576,
+            0.724
+          ],
+          [
+            0.5576,
+            0.8008
+          ],
+          [
+            0.4616,
+            0.8008
+          ]
+        ]
+      ],
+      "left_arrow": [
+        [
+          [
+            0.3304,
+            0.724
+          ],
+          [
+            0.3656,
+            0.724
+          ],
+          [
+            0.3656,
+            0.8071999999999999
+          ],
+          [
+            0.3304,
+            0.8071999999999999
+          ]
+        ]
+      ],
+      "right_marking": [
+        [
+          [
+            0.6152000000000001,
+            0.3208
+          ],
+          [
+            0.6664,
+            0.3208
+          ],
+          [
+            0.6664,
+            0.4488
+          ],
+          [
+            0.6152000000000001,
+            0.4488
+          ]
+        ]
+      ]
+    },
+    "fusion": {
+      "agreement_threshold": 18.0,
+      "min_views": 1
+    }
+  },
+  "source_manifest": {
+    "accessed_on": "2026-10-31",
+    "description": "Three consecutive observations from one drive; not a representative benchmark.",
+    "modifications": "Resized from 12288x6144 to 6144x3072; JPEG quality 95. Public blurred assets only.",
+    "license_url": "https://ia.numerique.gouv.fr/licence-ouverte-open-licence/",
+    "images": [
+      {
+        "name": "target",
+        "id": "dd9bf0e4-d9ce-423b-b81b-5f9ca71ed929",
+        "metadata_url": "https://panoramax.ign.fr/api/pictures/dd9bf0e4-d9ce-423b-b81b-5f9ca71ed929",
+        "asset_url": "https://panoramax-storage-public-fast.s3.gra.perf.cloud.ovh.net/main-pictures/dd/9b/f0/e4/d9ce-423b-b81b-5f9ca71ed929.jpg",
+        "source_sha256": "bb095f4cf5177ff0ae5e2e79e6e2452f3f28da96e6b9fe06bb847ba1822daee9",
+        "sample_sha256": "5bbfedf6898f45d2d3ebbec409a74d89fd69cd626f25e221ed609866a5f098e2",
+        "original_size": [
+          12288,
+          6144
+        ],
+        "sample_size": [
+          6144,
+          3072
+        ],
+        "capture_time": "2024-11-01T08:31:48.964000+00:00",
+        "producer": "eurom\u00e9tropole de strasbourg",
+        "license": "etalab-2.0"
+      },
+      {
+        "name": "prev",
+        "id": "01d6cda6-5abd-4788-b75f-0afc8b990428",
+        "metadata_url": "https://panoramax.ign.fr/api/pictures/01d6cda6-5abd-4788-b75f-0afc8b990428",
+        "asset_url": "https://panoramax-storage-public-fast.s3.gra.perf.cloud.ovh.net/main-pictures/01/d6/cd/a6/5abd-4788-b75f-0afc8b990428.jpg",
+        "source_sha256": "df61ecc5f8e61106ba72147d454eb59027d3ba6636b67a89f4e1c20ec6ec09d9",
+        "sample_sha256": "447c9e1a84b3f4f4260693ec63b5bc1e13d306fbc695c271fccc7b16aa81cf8a",
+        "original_size": [
+          12288,
+          6144
+        ],
+        "sample_size": [
+          6144,
+          3072
+        ],
+        "capture_time": "2024-11-01T08:31:48.264000+00:00",
+        "producer": "eurom\u00e9tropole de strasbourg",
+        "license": "etalab-2.0"
+      },
+      {
+        "name": "next",
+        "id": "2f0067dd-b0ba-4e7b-83b9-bfc8edf34a42",
+        "metadata_url": "https://panoramax.ign.fr/api/pictures/2f0067dd-b0ba-4e7b-83b9-bfc8edf34a42",
+        "asset_url": "https://panoramax-storage-public-fast.s3.gra.perf.cloud.ovh.net/main-pictures/2f/00/67/dd/b0ba-4e7b-83b9-bfc8edf34a42.jpg",
+        "source_sha256": "65988b5e6b547e982970e7d523371d486cee74a7b3e2cd7e9b428173dc4de734",
+        "sample_sha256": "55f1b166616794a18950fd7f340e68185e211f598372b55b036bfc6c670c45fc",
+        "original_size": [
+          12288,
+          6144
+        ],
+        "sample_size": [
+          6144,
+          3072
+        ],
+        "capture_time": "2024-11-01T08:31:49.674000+00:00",
+        "producer": "eurom\u00e9tropole de strasbourg",
+        "license": "etalab-2.0"
+      }
+    ]
+  },
+  "versions": {
+    "python": "3.14.7",
+    "numpy": "2.5.4",
+    "opencv": "5.0.0"
+  },
+  "cases": [
+    {
+      "name": "front_asphalt",
+      "ground_truth_available": true,
+      "mask_pixels": 17856,
+      "repaired_pixels": 0,
+      "coverage": 0.0,
+      "single_view_pixels": 0,
+      "agreeing_multi_view_pixels": 0,
+      "unresolved_pixels": 17856,
+      "registrations": {
+        "prev": {
+          "source_features": 1587,
+          "target_features": 1469,
+          "matches": 72,
+          "inliers": 41,
+          "accepted": true,
+          "inlier_ratio": 0.5694444444444444,
+          "median_reprojection_px": 0.7195186018943787,
+          "inlier_hull_fraction": 0.0689456822563734,
+          "homography": [
+            [
+              0.9855897753318723,
+              -0.030617628802985887,
+              -12.272330300620048
+            ],
+            [
+              -0.02645706804594485,
+              0.9793414634524115,
+              392.619906273431
+            ],
+            [
+              -1.6672077336559678e-05,
+              -5.74100522436715e-05,
+              1.0
+            ]
+          ],
+          "reason": "accepted planar registration"
+        },
+        "next": {
+          "source_features": 1322,
+          "target_features": 1469,
+          "matches": 36,
+          "inliers": 19,
+          "accepted": true,
+          "inlier_ratio": 0.5277777777777778,
+          "median_reprojection_px": 1.2959665060043335,
+          "inlier_hull_fraction": 0.1014595499330906,
+          "homography": [
+            [
+              1.196642029389692,
+              0.008996870417199298,
+              -63.93253039212735
+            ],
+            [
+              0.10664610407914817,
+              1.0399512223017466,
+              -457.76966913774964
+            ],
+            [
+              0.0001382567964184884,
+              1.3384008708421861e-05,
+              1.0
+            ]
+          ],
+          "reason": "accepted planar registration"
+        }
+      },
+      "metrics": {
+        "multiview_on_accepted": {
+          "pixels": 0,
+          "mae_255": null,
+          "psnr_db": null
+        },
+        "telea_on_same_accepted": {
+          "pixels": 0,
+          "mae_255": null,
+          "psnr_db": null
+        },
+        "multiview_full_mask_including_abstentions": {
+          "pixels": 17856,
+          "mae_255": 32.1149006869773,
+          "psnr_db": 17.371713563010417
+        },
+        "telea_full_mask": {
+          "pixels": 17856,
+          "mae_255": 6.55971848864994,
+          "psnr_db": 29.562552077920184
+        },
+        "no_repair_full_mask": {
+          "pixels": 17856,
+          "mae_255": 32.1149006869773,
+          "psnr_db": 17.371713563010417
+        }
+      },
+      "threshold_sweep": [
+        {
+          "min_views": 1,
+          "threshold": 8.0,
+          "coverage": 0.0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null
+          }
+        },
+        {
+          "min_views": 1,
+          "threshold": 18.0,
+          "coverage": 0.0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null
+          }
+        },
+        {
+          "min_views": 1,
+          "threshold": 32.0,
+          "coverage": 0.0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null
+          }
+        },
+        {
+          "min_views": 2,
+          "threshold": 8.0,
+          "coverage": 0.0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null
+          }
+        },
+        {
+          "min_views": 2,
+          "threshold": 18.0,
+          "coverage": 0.0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null
+          }
+        },
+        {
+          "min_views": 2,
+          "threshold": 32.0,
+          "coverage": 0.0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "rear_asphalt",
+      "ground_truth_available": true,
+      "mask_pixels": 19065,
+      "repaired_pixels": 0,
+      "coverage": 0.0,
+      "single_view_pixels": 0,
+      "agreeing_multi_view_pixels": 0,
+      "unresolved_pixels": 19065,
+      "registrations": {
+        "prev": {
+          "source_features": 1587,
+          "target_features": 1394,
+          "matches": 77,
+          "inliers": 44,
+          "accepted": true,
+          "inlier_ratio": 0.5714285714285714,
+          "median_reprojection_px": 0.9463089108467102,
+          "inlier_hull_fraction": 0.08375789634429458,
+          "homography": [
+            [
+              1.0509988178863465,
+              -0.0013199657889500904,
+              -43.95351330985101
+            ],
+            [
+              -0.012796019175830214,
+              1.0954771393353149,
+              356.6034468149812
+            ],
+            [
+              1.2894052436017542e-06,
+              -4.771522654199428e-06,
+              1.0
+            ]
+          ],
+          "reason": "accepted planar registration"
+        },
+        "next": {
+          "source_features": 1322,
+          "target_features": 1394,
+          "matches": 38,
+          "inliers": 19,
+          "accepted": true,
+          "inlier_ratio": 0.5,
+          "median_reprojection_px": 1.3551650047302246,
+          "inlier_hull_fraction": 0.1014595499330906,
+          "homography": [
+            [
+              1.1993890835037644,
+              0.011348501373218852,
+              -66.70749090366623
+            ],
+            [
+              0.10506758864553442,
+              1.045012254758751,
+              -459.9073937915717
+            ],
+            [
+              0.00013747141944891786,
+              1.6431950663928186e-05,
+              1.0
+            ]
+          ],
+          "reason": "accepted planar registration"
+        }
+      },
+      "metrics": {
+        "multiview_on_accepted": {
+          "pixels": 0,
+          "mae_255": null,
+          "psnr_db": null
+        },
+        "telea_on_same_accepted": {
+          "pixels": 0,
+          "mae_255": null,
+          "psnr_db": null
+        },
+        "multiview_full_mask_including_abstentions": {
+          "pixels": 19065,
+          "mae_255": 31.01505376344086,
+          "psnr_db": 17.719280885080618
+        },
+        "telea_full_mask": {
+          "pixels": 19065,
+          "mae_255": 7.022974036191975,
+          "psnr_db": 29.142134047046916
+        },
+        "no_repair_full_mask": {
+          "pixels": 19065,
+          "mae_255": 31.01505376344086,
+          "psnr_db": 17.719280885080618
+        }
+      },
+      "threshold_sweep": [
+        {
+          "min_views": 1,
+          "threshold": 8.0,
+          "coverage": 0.0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null
+          }
+        },
+        {
+          "min_views": 1,
+          "threshold": 18.0,
+          "coverage": 0.0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null
+          }
+        },
+        {
+          "min_views": 1,
+          "threshold": 32.0,
+          "coverage": 0.0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null
+          }
+        },
+        {
+          "min_views": 2,
+          "threshold": 8.0,
+          "coverage": 0.0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null
+          }
+        },
+        {
+          "min_views": 2,
+          "threshold": 18.0,
+          "coverage": 0.0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null
+          }
+        },
+        {
+          "min_views": 2,
+          "threshold": 32.0,
+          "coverage": 0.0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "left_arrow",
+      "ground_truth_available": true,
+      "mask_pixels": 7772,
+      "repaired_pixels": 5458,
+      "coverage": 0.702264539372105,
+      "single_view_pixels": 5458,
+      "agreeing_multi_view_pixels": 0,
+      "unresolved_pixels": 2314,
+      "registrations": {
+        "prev": {
+          "source_features": 1587,
+          "target_features": 1459,
+          "matches": 58,
+          "inliers": 29,
+          "accepted": true,
+          "inlier_ratio": 0.5,
+          "median_reprojection_px": 1.070879340171814,
+          "inlier_hull_fraction": 0.09512400717797863,
+          "homography": [
+            [
+              1.0511881747472485,
+              -0.010852300157492948,
+              -45.1276820576624
+            ],
+            [
+              0.006315197538951571,
+              1.0531209096983438,
+              359.3144586308219
+            ],
+            [
+              1.5374908791201464e-05,
+              -3.728988281368991e-05,
+              1.0
+            ]
+          ],
+          "reason": "accepted planar registration"
+        },
+        "next": {
+          "source_features": 1322,
+          "target_features": 1459,
+          "matches": 36,
+          "inliers": 16,
+          "accepted": true,
+          "inlier_ratio": 0.4444444444444444,
+          "median_reprojection_px": 0.9073758125305176,
+          "inlier_hull_fraction": 0.082023491751228,
+          "homography": [
+            [
+              1.1510716441673605,
+              -0.01181672650994174,
+              -27.593672310140608
+            ],
+            [
+              0.09695125448645579,
+              0.9934530973387599,
+              -420.6217469270456
+            ],
+            [
+              0.00012746158355775213,
+              -6.6081950314321045e-06,
+              1.0
+            ]
+          ],
+          "reason": "accepted planar registration"
+        }
+      },
+      "metrics": {
+        "multiview_on_accepted": {
+          "pixels": 5458,
+          "mae_255": 7.396848662513741,
+          "psnr_db": 26.354213946385126
+        },
+        "telea_on_same_accepted": {
+          "pixels": 5458,
+          "mae_255": 24.66831562232808,
+          "psnr_db": 17.839100872163694
+        },
+        "multiview_full_mask_including_abstentions": {
+          "pixels": 7772,
+          "mae_255": 26.428932921598904,
+          "psnr_db": 15.428557383691967
+        },
+        "telea_full_mask": {
+          "pixels": 7772,
+          "mae_255": 24.632655687081833,
+          "psnr_db": 17.80573770656999
+        },
+        "no_repair_full_mask": {
+          "pixels": 7772,
+          "mae_255": 70.84701492537313,
+          "psnr_db": 10.381185884126756
+        }
+      },
+      "threshold_sweep": [
+        {
+          "min_views": 1,
+          "threshold": 8.0,
+          "coverage": 0.702264539372105,
+          "error": {
+            "pixels": 5458,
+            "mae_255": 7.396848662513741,
+            "psnr_db": 26.354213946385126
+          }
+        },
+        {
+          "min_views": 1,
+          "threshold": 18.0,
+          "coverage": 0.702264539372105,
+          "error": {
+            "pixels": 5458,
+            "mae_255": 7.396848662513741,
+            "psnr_db": 26.354213946385126
+          }
+        },
+        {
+          "min_views": 1,
+          "threshold": 32.0,
+          "coverage": 0.702264539372105,
+          "error": {
+            "pixels": 5458,
+            "mae_255": 7.396848662513741,
+            "psnr_db": 26.354213946385126
+          }
+        },
+        {
+          "min_views": 2,
+          "threshold": 8.0,
+          "coverage": 0.0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null
+          }
+        },
+        {
+          "min_views": 2,
+          "threshold": 18.0,
+          "coverage": 0.0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null
+          }
+        },
+        {
+          "min_views": 2,
+          "threshold": 32.0,
+          "coverage": 0.0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "right_marking",
+      "ground_truth_available": true,
+      "mask_pixels": 17098,
+      "repaired_pixels": 11610,
+      "coverage": 0.6790267867586852,
+      "single_view_pixels": 11610,
+      "agreeing_multi_view_pixels": 0,
+      "unresolved_pixels": 5488,
+      "registrations": {
+        "prev": {
+          "source_features": 1587,
+          "target_features": 1538,
+          "matches": 71,
+          "inliers": 47,
+          "accepted": true,
+          "inlier_ratio": 0.6619718309859155,
+          "median_reprojection_px": 1.0643266439437866,
+          "inlier_hull_fraction": 0.08697661326817979,
+          "homography": [
+            [
+              1.0456112152812185,
+              0.0010263635619854085,
+              -42.91576900404413
+            ],
+            [
+              -0.012656789415848569,
+              1.090629701656375,
+              358.6034785436035
+            ],
+            [
+              -3.069664397060092e-06,
+              -2.284539993752759e-06,
+              1.0
+            ]
+          ],
+          "reason": "accepted planar registration"
+        },
+        "next": {
+          "source_features": 1322,
+          "target_features": 1538,
+          "matches": 31,
+          "inliers": 17,
+          "accepted": true,
+          "inlier_ratio": 0.5483870967741935,
+          "median_reprojection_px": 0.9469330906867981,
+          "inlier_hull_fraction": 0.1569697601618527,
+          "homography": [
+            [
+              1.1906210183474468,
+              0.021069801473619126,
+              -68.31639168846515
+            ],
+            [
+              0.08030652664912219,
+              1.0660031840937383,
+              -462.72669420354185
+            ],
+            [
+              0.00011387573554303099,
+              3.473729873032642e-05,
+              1.0
+            ]
+          ],
+          "reason": "accepted planar registration"
+        }
+      },
+      "metrics": {
+        "multiview_on_accepted": {
+          "pixels": 11610,
+          "mae_255": 5.454837783519954,
+          "psnr_db": 29.789988070140893
+        },
+        "telea_on_same_accepted": {
+          "pixels": 11610,
+          "mae_255": 8.480017226528854,
+          "psnr_db": 26.543426627248245
+        },
+        "multiview_full_mask_including_abstentions": {
+          "pixels": 17098,
+          "mae_255": 12.640425780793075,
+          "psnr_db": 22.366379601820277
+        },
+        "telea_full_mask": {
+          "pixels": 17098,
+          "mae_255": 8.084883222209225,
+          "psnr_db": 26.914643439687296
+        },
+        "no_repair_full_mask": {
+          "pixels": 17098,
+          "mae_255": 31.98886809373416,
+          "psnr_db": 16.801548983419735
+        }
+      },
+      "threshold_sweep": [
+        {
+          "min_views": 1,
+          "threshold": 8.0,
+          "coverage": 0.6790267867586852,
+          "error": {
+            "pixels": 11610,
+            "mae_255": 5.454837783519954,
+            "psnr_db": 29.789988070140893
+          }
+        },
+        {
+          "min_views": 1,
+          "threshold": 18.0,
+          "coverage": 0.6790267867586852,
+          "error": {
+            "pixels": 11610,
+            "mae_255": 5.454837783519954,
+            "psnr_db": 29.789988070140893
+          }
+        },
+        {
+          "min_views": 1,
+          "threshold": 32.0,
+          "coverage": 0.6790267867586852,
+          "error": {
+            "pixels": 11610,
+            "mae_255": 5.454837783519954,
+            "psnr_db": 29.789988070140893
+          }
+        },
+        {
+          "min_views": 2,
+          "threshold": 8.0,
+          "coverage": 0.0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null
+          }
+        },
+        {
+          "min_views": 2,
+          "threshold": 18.0,
+          "coverage": 0.0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null
+          }
+        },
+        {
+          "min_views": 2,
+          "threshold": 32.0,
+          "coverage": 0.0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "vehicle_footprint",
+      "ground_truth_available": false,
+      "mask_pixels": 231896,
+      "repaired_pixels": 128879,
+      "coverage": 0.5557620657536136,
+      "single_view_pixels": 128879,
+      "agreeing_multi_view_pixels": 0,
+      "unresolved_pixels": 103017,
+      "registrations": {
+        "prev": {
+          "source_features": 1587,
+          "target_features": 1564,
+          "matches": 76,
+          "inliers": 43,
+          "accepted": true,
+          "inlier_ratio": 0.5657894736842105,
+          "median_reprojection_px": 1.2029964923858643,
+          "inlier_hull_fraction": 0.09113151663192767,
+          "homography": [
+            [
+              1.111595158624189,
+              0.003622334712350758,
+              -69.38560646426171
+            ],
+            [
+              0.030990596041212418,
+              1.1351476777898848,
+              329.55185055665606
+            ],
+            [
+              3.821769970735316e-05,
+              -2.8577634433562367e-06,
+              1.0
+            ]
+          ],
+          "reason": "accepted planar registration"
+        },
+        "next": {
+          "source_features": 1322,
+          "target_features": 1564,
+          "matches": 37,
+          "inliers": 19,
+          "accepted": true,
+          "inlier_ratio": 0.5135135135135135,
+          "median_reprojection_px": 1.2959665060043335,
+          "inlier_hull_fraction": 0.1014595499330906,
+          "homography": [
+            [
+              1.196642029389692,
+              0.008996870417199298,
+              -63.93253039212735
+            ],
+            [
+              0.10664610407914817,
+              1.0399512223017466,
+              -457.76966913774964
+            ],
+            [
+              0.0001382567964184884,
+              1.3384008708421861e-05,
+              1.0
+            ]
+          ],
+          "reason": "accepted planar registration"
+        }
+      },
+      "threshold_sweep": [
+        {
+          "min_views": 1,
+          "threshold": 8.0,
+          "coverage": 0.5557620657536136
+        },
+        {
+          "min_views": 1,
+          "threshold": 18.0,
+          "coverage": 0.5557620657536136
+        },
+        {
+          "min_views": 1,
+          "threshold": 32.0,
+          "coverage": 0.5557620657536136
+        },
+        {
+          "min_views": 2,
+          "threshold": 8.0,
+          "coverage": 0.0
+        },
+        {
+          "min_views": 2,
+          "threshold": 18.0,
+          "coverage": 0.0
+        },
+        {
+          "min_views": 2,
+          "threshold": 32.0,
+          "coverage": 0.0
+        }
+      ]
+    }
+  ]
+}
