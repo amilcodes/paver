@@ -22,6 +22,16 @@ Panoramax photographs or independently verified scene truth.
 
 The LightGlue license is preserved in `third_party/LightGlue-LICENSE`.
 LoFTR/Kornia, PyTorch and other dependencies retain their respective licenses.
-No pretrained model weights are included. External datasets discussed in the
-research notes are references, not a claim that their files are bundled or
+No pretrained model weights are included.
+
+The README's Beijing figures and `docs/figures/beijing/source` crops derive from
+[PanoCity](https://huggingface.co/datasets/YijingGuo/PanoCity), Yijing Guo et al.
+(2026), under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+Source revision, image URLs, hashes and modifications are retained in
+`docs/figures/beijing/evidence.json`. These are projected, resized, synthetically
+masked and reconstructed derivatives; they are not unmodified source captures.
+The figures and animation are also distributed under CC BY 4.0. Preserve the
+source attribution and identify modifications. No author endorsement is implied.
+The full PanoCity dataset is not bundled. Other external datasets discussed in
+the research notes are references, not a claim that their files are bundled or
 cleared for redistribution.
