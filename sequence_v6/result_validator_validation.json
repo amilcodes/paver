@@ -1,0 +1,92 @@
+{
+  "created_at_utc": "2026-10-31T14:19:15.698782+00:00",
+  "kind": "saved_result_validator_synthetic_controls",
+  "passed": true,
+  "source_sha256": {
+    "validate_dense_run.py": "1b41e3fe56596afa594a2640133befa69a62cf25f100a6dd841bc6487c0e50ce",
+    "tests/test_dense_result_validation.py": "915727eb2a4451eb108cf6a9ce88b276054f2bac35138823c13247b0d6c07153"
+  },
+  "execution_plan_sha256": "6fa863fd4b9013e493b9f7de1e705410d1a12c90e327ce309227275be0c66dd2",
+  "model_sha256": "21f5bec5968178e8bc8b7633441836fe5de4f47d861dd2cd7dc38e271b0479ec",
+  "actual_model_executed": false,
+  "weights_downloaded": false,
+  "real_road_recovery_runs": 0,
+  "tests": {
+    "passed": 20,
+    "failed": 0,
+    "names": [
+      "test_independent_metrics_and_selected_source_pixels_agree_with_production",
+      "test_corruption_and_inflated_claims_fail_closed[mask]",
+      "test_corruption_and_inflated_claims_fail_closed[outside_count]",
+      "test_corruption_and_inflated_claims_fail_closed[donor_count]",
+      "test_corruption_and_inflated_claims_fail_closed[invalid_provenance]",
+      "test_corruption_and_inflated_claims_fail_closed[nan_disagreement]",
+      "test_corruption_and_inflated_claims_fail_closed[error_vector]",
+      "test_corruption_and_inflated_claims_fail_closed[coverage]",
+      "test_corruption_and_inflated_claims_fail_closed[rgb]",
+      "test_corruption_and_inflated_claims_fail_closed[p90]",
+      "test_corruption_and_inflated_claims_fail_closed[gradient]",
+      "test_corruption_and_inflated_claims_fail_closed[nonconvergence]",
+      "test_corruption_and_inflated_claims_fail_closed[rejected_donor]",
+      "test_all_abstentions_have_null_error_not_zero_accuracy",
+      "test_footprint_rejects_accuracy_and_error_vector_even_when_transfers_exist",
+      "test_stored_prediction_must_come_from_selected_source_and_allowed_ground",
+      "test_error_is_measured_even_if_donors_agree_perfectly",
+      "test_same_pixel_comparison_rejects_falsified_score",
+      "test_hash_and_root_boundary_are_enforced",
+      "test_certificate_nan_cannot_pass_by_comparison_bypass"
+    ],
+    "junit_sha256": "dcd7868ddf7bb18914c3485cc30803af3c8bba0fc3984c400fdff193e238bd3b",
+    "command": "work/venv/bin/python -m pytest outputs/panorama-repair/tests/test_dense_result_validation.py -q --junitxml=outputs/panorama-repair/sequence_v6/result_validator_tests.xml"
+  },
+  "fixed_roads": {
+    "selected_cases": [
+      "gironde_0",
+      "alsace_fields_0",
+      "bourges_turn_001"
+    ],
+    "planned_regions": 15,
+    "available_results": 0,
+    "checked_regions": 0,
+    "status": "pending_not_passed",
+    "audit": "sequence_v6/result_audit_pending_001.json"
+  },
+  "asserted_fixture_measurements": {
+    "kind": "32x32 synthetic arrays; fixed identity donor poses; no matcher",
+    "masked_pixels": 576,
+    "correct_saved_record": {
+      "accepted_pixels": 480,
+      "coverage": 0.8333333333333334,
+      "abstention": 0.16666666666666666,
+      "mae_255": 9,
+      "accepted_rgb_mae_le_20_pixels": 480
+    },
+    "perfectly_agreeing_wrong_donors": {
+      "accepted_pixels": 480,
+      "coverage": 0.8333333333333334,
+      "abstention": 0.16666666666666666,
+      "accepted_rgb_mae_gt_20_pixels": 480,
+      "accepted_rgb_mae_le_20_fraction_of_mask": 0
+    },
+    "no_transfer": {
+      "coverage": 0,
+      "abstention": 1,
+      "rgb_error": null,
+      "gradient_error": null
+    },
+    "footprint_accuracy": "forbidden"
+  },
+  "observations": [
+    "Independent RGB and explicit derivative-stencil calculations agree with the existing scorer on the controlled fixture.",
+    "Twelve corruption/nonconvergence/rejected-donor variants are rejected.",
+    "Saved source RGB, source visibility, common-pixel comparison and file/root identity checks reject manipulated evidence.",
+    "NaN certificate error is rejected; absent real outputs exit2 and retain passed=null.",
+    "All prior runner sources and frozen execution plan hashes are unchanged."
+  ],
+  "limitations": [
+    "Saved artifact consistency does not prove unrecorded model behavior or training independence.",
+    "Checks selected donor bytes and allowed visibility, but does not replay convex support hulls or fit geometry.",
+    "RGB error <=20 is a measured proxy criterion, not a calibrated geometric correctness probability.",
+    "Real car footprint has no ground truth; no accuracy is assigned to it."
+  ]
+}

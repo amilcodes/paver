@@ -1,0 +1,29 @@
+{
+  "created_at_utc": "2026-10-31T14:46:31.706069+00:00",
+  "kind": "numeric_audit_correction_not_reconstruction_change",
+  "prior_validator": "validate_dense_run.py",
+  "replacement": "validate_dense_run_v2.py",
+  "failure": "v1 explicit float32 derivative expansion changes near-zero predicted gradient directions; scalar orientation mismatch despite matching RGB errors, coverage and derivative MAE.",
+  "example": {
+    "case": "gironde_0",
+    "region": "hidden_front",
+    "method": "loftr_metric_free",
+    "stored_orientation_error": 1.153979778289795,
+    "v1_orientation_error": 1.1540546417236328,
+    "absolute_difference": 7.486343383789062e-05
+  },
+  "fix": "v2 checks the OpenCV derivative primitive against the independent explicit stencil within four grayscale float32 ULPs, then reproduces the frozen scorer operator for orientation accounting. No metric acceptance tolerance or registration/fusion threshold changed.",
+  "tests_passed": 7,
+  "validated_region_method_runs": 10,
+  "source_hashes": {
+    "validate_dense_run.py": "1b41e3fe56596afa594a2640133befa69a62cf25f100a6dd841bc6487c0e50ce",
+    "validate_dense_run_v2.py": "66abd28e0075b55735d5bd44441f1528de18b367d558386c862309bd536a7bfc",
+    "tests/test_dense_result_validation_v2.py": "3e8c9b09c77fdb5e72416687e54d41ae336fb05b45aac28773b408e431e3ae0c",
+    "metric_plane.py": "73f0320c82821b6b2ff93309ae6b58ea980195bb582ed7d466d8ad5238cccb75",
+    "run_dense.py": "bc3096d5977a5b2fd2ecd6444e7d394e3ebe40a401e73f37029ed6fc30face04"
+  },
+  "original_validator_and_failed_log_preserved": true,
+  "failed_log": "sequence_v6/gironde_audit_001.log",
+  "passed_audit": "sequence_v6/gironde_audit_002.json",
+  "limitation": "Near-zero gradient direction is ill-conditioned; this fixes reproducible bookkeeping, not geometric certainty."
+}

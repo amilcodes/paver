@@ -1,0 +1,45 @@
+{
+  "created_at_utc": "2026-10-31T14:19:15.698782+00:00",
+  "status": "saved_result_validator_complete_actual_inference_storage_blocked",
+  "promotion": false,
+  "failure_identified": "Saved dense outputs had no independent scorer/provenance check; trusting stored error vectors could hide corruption, inflated coverage, or unsupported footprint accuracy.",
+  "change": "Added validate_dense_run.py: independently recomputes RGB/PSNR/gradient metrics and coverage-abstention, compares selected source bytes and visibility, verifies sanitized correspondence-cache hashes, immutable inputs and same-pixel controls. No matching or fitting.",
+  "results": {
+    "tests_passed": 20,
+    "new_recovery_runs": 0,
+    "actual_model_executed": false,
+    "fixed_road_results_available": 0,
+    "new_coverage": null,
+    "new_error": null
+  },
+  "validation": {
+    "path": "sequence_v6/result_validator_validation.json",
+    "sha256": "acab7ec38a7edcdedcb7f979071faf82c8e74b8b68e0b3bb63af6846771fcb5f"
+  },
+  "blocker": {
+    "kind": "insufficient_free_disk",
+    "observed_free_gib": 5.1375579833984375,
+    "minimum_free_gib": 8,
+    "planned_job_reservation_gib": 0.5,
+    "admission_requires_free_gib": 8.5,
+    "shortfall_for_planned_job_gib": 3.3624420166015625,
+    "first_observed_utc": "2026-10-31T10:08:10+00:00",
+    "last_checked_utc": "2026-10-31T14:19:15.698782+00:00",
+    "consecutive_blocked_heartbeats": 5,
+    "operations_held": [
+      "model checkpoint download",
+      "MPS inference",
+      "image acquisition",
+      "catalog expansion"
+    ],
+    "external_files_deleted": false,
+    "new_recovery_runs": 0,
+    "local_work_completed": "Independent saved-result validator with20 synthetic corruption/accuracy/provenance tests. No model or image acquisition.",
+    "cleanup_status": "User requested a read-only disk audit; identified about22.8GiB of crash reports/installers. Asked for permanent-deletion approval; no affirmative response received. Heartbeat is not authorization to delete."
+  },
+  "baseline_changed": false,
+  "dataset_expanded": false,
+  "interpretation": "The evidence validator passes controlled fixtures. Zero real dense runs exist, so no new footprint or hidden-road recovery claim is supported.",
+  "notification_decision": "DONT_NOTIFY",
+  "next": "Once >=8.5GiB free, execute pinned model check and bounded failed-road experiment, then this independent validator. Keep user cleanup approval pending; do not delete files on a heartbeat."
+}

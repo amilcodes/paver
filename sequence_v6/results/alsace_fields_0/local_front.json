@@ -1,0 +1,1081 @@
+{
+  "case": "alsace_fields_0",
+  "split": "development",
+  "region": "local_front",
+  "signature": {
+    "plan_sha256": "6fa863fd4b9013e493b9f7de1e705410d1a12c90e327ce309227275be0c66dd2",
+    "certificate": {
+      "path": "sequence_v6/model_validation_001.json",
+      "sha256": "04325bf0a79009ebeae8fb1c8ec4258e42a9a0e76eb05afb6a868a0635419e4a"
+    }
+  },
+  "created_at_utc": "2026-10-31T14:46:49.152972+00:00",
+  "mask_pixels": 23408,
+  "source_order": [
+    "prev2",
+    "prev1",
+    "next1",
+    "next2"
+  ],
+  "graphs": {
+    "loftr_homography": {
+      "connected_frames": 1,
+      "reason": "target disconnected",
+      "poses": {
+        "2": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      }
+    },
+    "loftr_metric_free": {
+      "model": "metric_free",
+      "connected_frames": 1,
+      "edges": 0,
+      "optimizer_success": false,
+      "reason": "target disconnected",
+      "poses": {
+        "2": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      }
+    }
+  },
+  "correspondences": [
+    {
+      "i": 0,
+      "j": 1,
+      "path": "sequence_v6/results/alsace_fields_0/pairs/donor_only_0_1.npz",
+      "sha256": "0628e9551bba67fadf9a2ca10ccdaca24e3137304428a05b3ae34a64ca43f173",
+      "matches": 290,
+      "proposal": {
+        "i": 0,
+        "j": 1,
+        "matches": 290,
+        "accepted": false,
+        "train_inliers": 15,
+        "inlier_ratio": 0.06912442396313365,
+        "validation_matches": 73,
+        "validation_inliers": 5,
+        "validation_fraction": 0.0684931506849315,
+        "validation_median_px": 50.16451486253096,
+        "reason": "edge train/held-out support failed"
+      },
+      "spatial_holdout": {
+        "folds": [
+          {
+            "block": 0,
+            "train": 141,
+            "heldout": 149,
+            "status": "measured",
+            "median_px": 275.8569650266582,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 14
+          },
+          {
+            "block": 1,
+            "train": 275,
+            "heldout": 15,
+            "status": "measured",
+            "median_px": 876.3968106840235,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 25
+          },
+          {
+            "block": 2,
+            "train": 185,
+            "heldout": 105,
+            "status": "measured",
+            "median_px": 1347.810648447821,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 34
+          },
+          {
+            "block": 3,
+            "train": 269,
+            "heldout": 21,
+            "status": "measured",
+            "median_px": 1142.2533402568306,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 36
+          }
+        ],
+        "interpretation": "Spatial extrapolation diagnostic, not a calibrated probability or an acceptance gate"
+      },
+      "matcher": {
+        "matches": 290,
+        "max_side": 640,
+        "method": "masked_loftr_outdoor_640",
+        "minimum_confidence": 0.2046753168106079,
+        "weights": "explicit local checkpoint; caller must retain SHA-256"
+      }
+    },
+    {
+      "i": 0,
+      "j": 2,
+      "path": "sequence_v6/results/alsace_fields_0/pairs/local_front_0_2.npz",
+      "sha256": "a10fe99ca7a57d363f86625c164472876201427502aced4b708d5aae7ff2821e",
+      "matches": 204,
+      "proposal": {
+        "i": 0,
+        "j": 2,
+        "matches": 204,
+        "accepted": false,
+        "train_inliers": 11,
+        "inlier_ratio": 0.0718954248366013,
+        "validation_matches": 51,
+        "validation_inliers": 1,
+        "validation_fraction": 0.0196078431372549,
+        "validation_median_px": 51.95326382753901,
+        "reason": "edge train/held-out support failed"
+      },
+      "spatial_holdout": {
+        "folds": [
+          {
+            "block": 0,
+            "train": 73,
+            "heldout": 131,
+            "status": "measured",
+            "median_px": 536.9294561035156,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 13
+          },
+          {
+            "block": 1,
+            "train": 192,
+            "heldout": 12,
+            "status": "measured",
+            "median_px": 283.7853282824543,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 17
+          },
+          {
+            "block": 2,
+            "train": 156,
+            "heldout": 48,
+            "status": "measured",
+            "median_px": 50.37278856287146,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 16
+          },
+          {
+            "block": 3,
+            "train": 191,
+            "heldout": 13,
+            "status": "measured",
+            "median_px": 50.097232521355096,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 15
+          }
+        ],
+        "interpretation": "Spatial extrapolation diagnostic, not a calibrated probability or an acceptance gate"
+      },
+      "matcher": {
+        "method": "masked_loftr_outdoor_640",
+        "matches": 204,
+        "max_side": 640,
+        "minimum_confidence": 0.20034007728099823,
+        "weights": "explicit local checkpoint; caller must retain SHA-256"
+      }
+    },
+    {
+      "i": 1,
+      "j": 2,
+      "path": "sequence_v6/results/alsace_fields_0/pairs/local_front_1_2.npz",
+      "sha256": "1d0d6ac7827f57ae7a92c79b857398f638b0c9de4cae9b13d6ccd9ba2038f2ab",
+      "matches": 280,
+      "proposal": {
+        "i": 1,
+        "j": 2,
+        "matches": 280,
+        "accepted": false,
+        "train_inliers": 29,
+        "inlier_ratio": 0.1380952380952381,
+        "validation_matches": 70,
+        "validation_inliers": 17,
+        "validation_fraction": 0.24285714285714285,
+        "validation_median_px": 30.973885658106248,
+        "reason": "edge train/held-out support failed"
+      },
+      "spatial_holdout": {
+        "folds": [
+          {
+            "block": 0,
+            "train": 89,
+            "heldout": 191,
+            "status": "measured",
+            "median_px": 75.40103676913948,
+            "fraction_below_5px": 0.015706806282722512,
+            "train_inliers": 14
+          },
+          {
+            "block": 1,
+            "train": 249,
+            "heldout": 31,
+            "status": "measured",
+            "median_px": 11.642588172129017,
+            "fraction_below_5px": 0.03225806451612903,
+            "train_inliers": 28
+          },
+          {
+            "block": 2,
+            "train": 236,
+            "heldout": 44,
+            "status": "measured",
+            "median_px": 905.6544591076138,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 37
+          },
+          {
+            "block": 3,
+            "train": 266,
+            "heldout": 14,
+            "status": "measured",
+            "median_px": 922.2173082300401,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 33
+          }
+        ],
+        "interpretation": "Spatial extrapolation diagnostic, not a calibrated probability or an acceptance gate"
+      },
+      "matcher": {
+        "method": "masked_loftr_outdoor_640",
+        "matches": 280,
+        "max_side": 640,
+        "minimum_confidence": 0.2022617757320404,
+        "weights": "explicit local checkpoint; caller must retain SHA-256"
+      }
+    },
+    {
+      "i": 1,
+      "j": 3,
+      "path": "sequence_v6/results/alsace_fields_0/pairs/donor_only_1_3.npz",
+      "sha256": "ee8b700df68ea4748ae61caf0a09733cea371cb5fd116ef277dc3629ddac4d58",
+      "matches": 180,
+      "proposal": {
+        "i": 1,
+        "j": 3,
+        "matches": 180,
+        "accepted": false,
+        "train_inliers": 15,
+        "inlier_ratio": 0.1111111111111111,
+        "validation_matches": 45,
+        "validation_inliers": 2,
+        "validation_fraction": 0.044444444444444446,
+        "validation_median_px": 129.62361207096703,
+        "reason": "edge train/held-out support failed"
+      },
+      "spatial_holdout": {
+        "folds": [
+          {
+            "block": 0,
+            "train": 81,
+            "heldout": 99,
+            "status": "measured",
+            "median_px": 293.23494115957953,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 10
+          },
+          {
+            "block": 1,
+            "train": 174,
+            "heldout": 6,
+            "status": "insufficient spatial support"
+          },
+          {
+            "block": 2,
+            "train": 122,
+            "heldout": 58,
+            "status": "measured",
+            "median_px": 45.109362082851526,
+            "fraction_below_5px": 0.034482758620689655,
+            "train_inliers": 17
+          },
+          {
+            "block": 3,
+            "train": 163,
+            "heldout": 17,
+            "status": "measured",
+            "median_px": 57.67786338206105,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 17
+          }
+        ],
+        "interpretation": "Spatial extrapolation diagnostic, not a calibrated probability or an acceptance gate"
+      },
+      "matcher": {
+        "matches": 180,
+        "max_side": 640,
+        "method": "masked_loftr_outdoor_640",
+        "minimum_confidence": 0.20091822743415833,
+        "weights": "explicit local checkpoint; caller must retain SHA-256"
+      }
+    },
+    {
+      "i": 2,
+      "j": 3,
+      "path": "sequence_v6/results/alsace_fields_0/pairs/local_front_2_3.npz",
+      "sha256": "973ba53ad724f057a08501e3d5f2153204fa289685364656a407e27120dc1594",
+      "matches": 217,
+      "proposal": {
+        "i": 2,
+        "j": 3,
+        "matches": 217,
+        "accepted": false,
+        "train_inliers": 17,
+        "inlier_ratio": 0.10493827160493827,
+        "validation_matches": 55,
+        "validation_inliers": 10,
+        "validation_fraction": 0.18181818181818182,
+        "validation_median_px": 51.149235355363864,
+        "reason": "edge train/held-out support failed"
+      },
+      "spatial_holdout": {
+        "folds": [
+          {
+            "block": 0,
+            "train": 87,
+            "heldout": 130,
+            "status": "measured",
+            "median_px": 65.22201579524032,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 9
+          },
+          {
+            "block": 1,
+            "train": 204,
+            "heldout": 13,
+            "status": "measured",
+            "median_px": 84.49401401686576,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 21
+          },
+          {
+            "block": 2,
+            "train": 150,
+            "heldout": 67,
+            "status": "measured",
+            "median_px": 108.56315381148958,
+            "fraction_below_5px": 0.014925373134328358,
+            "train_inliers": 18
+          },
+          {
+            "block": 3,
+            "train": 210,
+            "heldout": 7,
+            "status": "insufficient spatial support"
+          }
+        ],
+        "interpretation": "Spatial extrapolation diagnostic, not a calibrated probability or an acceptance gate"
+      },
+      "matcher": {
+        "method": "masked_loftr_outdoor_640",
+        "matches": 217,
+        "max_side": 640,
+        "minimum_confidence": 0.2019079476594925,
+        "weights": "explicit local checkpoint; caller must retain SHA-256"
+      }
+    },
+    {
+      "i": 2,
+      "j": 4,
+      "path": "sequence_v6/results/alsace_fields_0/pairs/local_front_2_4.npz",
+      "sha256": "15644130287185724d667b9338e1ded43b7b83e986022f8bfb88211ab9a47ac2",
+      "matches": 176,
+      "proposal": {
+        "i": 2,
+        "j": 4,
+        "matches": 176,
+        "accepted": false,
+        "train_inliers": 9,
+        "inlier_ratio": 0.06818181818181818,
+        "validation_matches": 44,
+        "validation_inliers": 0,
+        "validation_fraction": 0.0,
+        "validation_median_px": 57.81236226843174,
+        "reason": "edge train/held-out support failed"
+      },
+      "spatial_holdout": {
+        "folds": [
+          {
+            "block": 0,
+            "train": 98,
+            "heldout": 78,
+            "status": "measured",
+            "median_px": 102.6842841020169,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 11
+          },
+          {
+            "block": 1,
+            "train": 164,
+            "heldout": 12,
+            "status": "measured",
+            "median_px": 72.62283576870583,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 11
+          },
+          {
+            "block": 2,
+            "train": 108,
+            "heldout": 68,
+            "status": "measured",
+            "median_px": 439.7560356480029,
+            "fraction_below_5px": 0.029411764705882353,
+            "train_inliers": 9
+          },
+          {
+            "block": 3,
+            "train": 158,
+            "heldout": 18,
+            "status": "measured",
+            "median_px": 16.92936621324982,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 11
+          }
+        ],
+        "interpretation": "Spatial extrapolation diagnostic, not a calibrated probability or an acceptance gate"
+      },
+      "matcher": {
+        "method": "masked_loftr_outdoor_640",
+        "matches": 176,
+        "max_side": 640,
+        "minimum_confidence": 0.2003767192363739,
+        "weights": "explicit local checkpoint; caller must retain SHA-256"
+      }
+    },
+    {
+      "i": 3,
+      "j": 4,
+      "path": "sequence_v6/results/alsace_fields_0/pairs/donor_only_3_4.npz",
+      "sha256": "4d734617799c5de48ea2970d92dae3f05e3b8051d0b0076413549019c5ae399b",
+      "matches": 237,
+      "proposal": {
+        "i": 3,
+        "j": 4,
+        "matches": 237,
+        "accepted": false,
+        "train_inliers": 24,
+        "inlier_ratio": 0.13559322033898305,
+        "validation_matches": 60,
+        "validation_inliers": 3,
+        "validation_fraction": 0.05,
+        "validation_median_px": 198.57027733195156,
+        "reason": "edge train/held-out support failed"
+      },
+      "spatial_holdout": {
+        "folds": [
+          {
+            "block": 0,
+            "train": 86,
+            "heldout": 151,
+            "status": "measured",
+            "median_px": 105.2389028113122,
+            "fraction_below_5px": 0.006622516556291391,
+            "train_inliers": 11
+          },
+          {
+            "block": 1,
+            "train": 202,
+            "heldout": 35,
+            "status": "measured",
+            "median_px": 468.583255661883,
+            "fraction_below_5px": 0.02857142857142857,
+            "train_inliers": 25
+          },
+          {
+            "block": 2,
+            "train": 194,
+            "heldout": 43,
+            "status": "measured",
+            "median_px": 1204.6725599733554,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 26
+          },
+          {
+            "block": 3,
+            "train": 229,
+            "heldout": 8,
+            "status": "measured",
+            "median_px": 1852.3373716844853,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 22
+          }
+        ],
+        "interpretation": "Spatial extrapolation diagnostic, not a calibrated probability or an acceptance gate"
+      },
+      "matcher": {
+        "matches": 237,
+        "max_side": 640,
+        "method": "masked_loftr_outdoor_640",
+        "minimum_confidence": 0.2049279361963272,
+        "weights": "explicit local checkpoint; caller must retain SHA-256"
+      }
+    }
+  ],
+  "methods": {
+    "loftr_homography": {
+      "policies": {
+        "candidate": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "abstention": 1.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          }
+        },
+        "corroborated": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "abstention": 1.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          }
+        },
+        "strict": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "abstention": 1.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          }
+        }
+      },
+      "registrations": [
+        {
+          "method": "homography",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "optimizer did not converge or target disconnected"
+        },
+        {
+          "method": "homography",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "optimizer did not converge or target disconnected"
+        },
+        {
+          "method": "homography",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "optimizer did not converge or target disconnected"
+        },
+        {
+          "method": "homography",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "optimizer did not converge or target disconnected"
+        }
+      ],
+      "evidence": {
+        "path": "sequence_v6/results/alsace_fields_0/local_front_loftr_homography_evidence.npz",
+        "sha256": "f2b064197a4703733ee7c6a6174c24e8e825ba6841d9426aace4b10f88b80bcd"
+      }
+    },
+    "loftr_metric_free": {
+      "policies": {
+        "candidate": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "abstention": 1.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          }
+        },
+        "corroborated": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "abstention": 1.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          }
+        },
+        "strict": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "abstention": 1.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          }
+        }
+      },
+      "registrations": [
+        {
+          "method": "metric_free",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "optimizer did not converge or target disconnected"
+        },
+        {
+          "method": "metric_free",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "optimizer did not converge or target disconnected"
+        },
+        {
+          "method": "metric_free",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "optimizer did not converge or target disconnected"
+        },
+        {
+          "method": "metric_free",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "optimizer did not converge or target disconnected"
+        }
+      ],
+      "evidence": {
+        "path": "sequence_v6/results/alsace_fields_0/local_front_loftr_metric_free_evidence.npz",
+        "sha256": "f2b064197a4703733ee7c6a6174c24e8e825ba6841d9426aace4b10f88b80bcd"
+      }
+    }
+  },
+  "controls": {
+    "homography_converged": {
+      "references": {
+        "record": {
+          "path": "sequence_v5/results/sequence_v1/alsace_fields_0/local_front.json",
+          "sha256": "69a52d46ca54ce35597db9c5f293b60788958748483fcfc1acf003c72165416c"
+        },
+        "evidence": {
+          "path": "sequence_v5/results/sequence_v1/alsace_fields_0/local_front_homography_converged_evidence.npz",
+          "sha256": "d910152ab5f32fd4d2f1d74af64cd7462c3282a1a897f7f19a98efb20a103760"
+        }
+      },
+      "policies": {
+        "candidate": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          },
+          "abstention": 1.0
+        },
+        "corroborated": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          },
+          "abstention": 1.0
+        },
+        "strict": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          },
+          "abstention": 1.0
+        }
+      }
+    },
+    "metric_free": {
+      "references": {
+        "record": {
+          "path": "sequence_v5/results/sequence_v1/alsace_fields_0/local_front.json",
+          "sha256": "69a52d46ca54ce35597db9c5f293b60788958748483fcfc1acf003c72165416c"
+        },
+        "evidence": {
+          "path": "sequence_v5/results/sequence_v1/alsace_fields_0/local_front_metric_free_evidence.npz",
+          "sha256": "d910152ab5f32fd4d2f1d74af64cd7462c3282a1a897f7f19a98efb20a103760"
+        }
+      },
+      "policies": {
+        "candidate": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          },
+          "abstention": 1.0
+        },
+        "corroborated": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          },
+          "abstention": 1.0
+        },
+        "strict": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          },
+          "abstention": 1.0
+        }
+      }
+    }
+  },
+  "same_pixel_control": {
+    "loftr_homography": {
+      "homography_converged": {
+        "candidate": {
+          "pixels": 0,
+          "new": {
+            "mae_255": null,
+            "over_20_fraction": null
+          },
+          "control": {
+            "mae_255": null,
+            "over_20_fraction": null
+          }
+        },
+        "corroborated": {
+          "pixels": 0,
+          "new": {
+            "mae_255": null,
+            "over_20_fraction": null
+          },
+          "control": {
+            "mae_255": null,
+            "over_20_fraction": null
+          }
+        },
+        "strict": {
+          "pixels": 0,
+          "new": {
+            "mae_255": null,
+            "over_20_fraction": null
+          },
+          "control": {
+            "mae_255": null,
+            "over_20_fraction": null
+          }
+        }
+      },
+      "metric_free": {
+        "candidate": {
+          "pixels": 0,
+          "new": {
+            "mae_255": null,
+            "over_20_fraction": null
+          },
+          "control": {
+            "mae_255": null,
+            "over_20_fraction": null
+          }
+        },
+        "corroborated": {
+          "pixels": 0,
+          "new": {
+            "mae_255": null,
+            "over_20_fraction": null
+          },
+          "control": {
+            "mae_255": null,
+            "over_20_fraction": null
+          }
+        },
+        "strict": {
+          "pixels": 0,
+          "new": {
+            "mae_255": null,
+            "over_20_fraction": null
+          },
+          "control": {
+            "mae_255": null,
+            "over_20_fraction": null
+          }
+        }
+      }
+    },
+    "loftr_metric_free": {
+      "homography_converged": {
+        "candidate": {
+          "pixels": 0,
+          "new": {
+            "mae_255": null,
+            "over_20_fraction": null
+          },
+          "control": {
+            "mae_255": null,
+            "over_20_fraction": null
+          }
+        },
+        "corroborated": {
+          "pixels": 0,
+          "new": {
+            "mae_255": null,
+            "over_20_fraction": null
+          },
+          "control": {
+            "mae_255": null,
+            "over_20_fraction": null
+          }
+        },
+        "strict": {
+          "pixels": 0,
+          "new": {
+            "mae_255": null,
+            "over_20_fraction": null
+          },
+          "control": {
+            "mae_255": null,
+            "over_20_fraction": null
+          }
+        }
+      },
+      "metric_free": {
+        "candidate": {
+          "pixels": 0,
+          "new": {
+            "mae_255": null,
+            "over_20_fraction": null
+          },
+          "control": {
+            "mae_255": null,
+            "over_20_fraction": null
+          }
+        },
+        "corroborated": {
+          "pixels": 0,
+          "new": {
+            "mae_255": null,
+            "over_20_fraction": null
+          },
+          "control": {
+            "mae_255": null,
+            "over_20_fraction": null
+          }
+        },
+        "strict": {
+          "pixels": 0,
+          "new": {
+            "mae_255": null,
+            "over_20_fraction": null
+          },
+          "control": {
+            "mae_255": null,
+            "over_20_fraction": null
+          }
+        }
+      }
+    }
+  },
+  "promotion": "none",
+  "runtime_seconds": 3.4977299160018447
+}

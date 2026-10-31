@@ -1,0 +1,30 @@
+Traceback (most recent call last):
+  File "validate_dense_run.py", line 286, in <module>
+    result=audit(limit=args.limit,case_names=args.case,regions=args.region)
+  File "validate_dense_run.py", line 271, in audit
+    checked.append(validate_record(root,plan,plan_path,case,job,path,scene))
+                   ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "validate_dense_run.py", line 242, in validate_record
+    methods[method]=verify_evidence(evidence,data['policies'],mask,plan['policies'],len(donors),footprint=footprint,
+                    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                    truth=None if footprint else images[target],graph=graph,registrations=regs)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "validate_dense_run.py", line 123, in verify_evidence
+    compare(reported,recalculated)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "validate_dense_run.py", line 43, in compare
+    for key,value in expected.items():compare(actual[key],value,label+'.'+key)
+                                      ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "validate_dense_run.py", line 43, in compare
+    for key,value in expected.items():compare(actual[key],value,label+'.'+key)
+                                      ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "validate_dense_run.py", line 43, in compare
+    for key,value in expected.items():compare(actual[key],value,label+'.'+key)
+                                      ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "validate_dense_run.py", line 47, in compare
+    require(type(actual) in (int,float) and math.isfinite(actual) and math.isclose(actual,expected,rel_tol=1e-6,abs_tol=2e-5),label+' numeric value differs')
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "validate_dense_run.py", line 19, in require
+    if not condition:raise ValueError(message)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: metrics.candidate.gradient.orientation_error numeric value differs
