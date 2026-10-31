@@ -1,0 +1,274 @@
+{
+  "scene": "nantes_005",
+  "area": "nantes",
+  "condition": {
+    "key": "far_rear_clipping_mild",
+    "location": "far_rear",
+    "family": "clipping",
+    "severity": "mild",
+    "mask_key": "hidden_far_rear_disc_mild"
+  },
+  "signature": {
+    "plan_sha256": "91d6659ca13f0774e78fa3c01648a8a970520421a812dcb3e7bd26878e6f07da",
+    "certificate": {
+      "path": "sequence_v6/model_validation_001.json",
+      "sha256": "04325bf0a79009ebeae8fb1c8ec4258e42a9a0e76eb05afb6a868a0635419e4a"
+    }
+  },
+  "geometry": {
+    "path": "controlled_v2/baseline_v1/nantes_005/groups/far_rear_disc_mild.json",
+    "sha256": "fbb2f83a6c447ee40e3736b65e9e2228565657540037a4d49de2634df1a5be96"
+  },
+  "baselines": {
+    "as_damaged": {
+      "metrics": {
+        "coverage": 1.0,
+        "abstention": 0.0,
+        "accepted_pixels": 74622,
+        "error": {
+          "pixels": 74622,
+          "mae_255": 58.93382201852894,
+          "psnr_db": 12.325546633242697,
+          "p90_rgb": 74.33333587646484,
+          "over_20_fraction": 0.9065289056846506
+        },
+        "gradient": {
+          "pixels": 70782,
+          "gradient_mae": 0.5359272360801697,
+          "edge_pixels": 2933,
+          "orientation_error": 1.0
+        },
+        "appearance": {
+          "mask_pixels": 74622,
+          "accepted_pixels": 74622,
+          "accepted_rgb_mae_le_threshold_pixels": {
+            "10": 3547,
+            "20": 6975
+          },
+          "fraction_of_mask_with_rgb_mae_le_threshold": {
+            "10": 0.04753289914502425,
+            "20": 0.09347109431534936
+          },
+          "accepted_textured_pixels": 3095,
+          "accepted_low_texture_pixels": 71527
+        }
+      },
+      "extended": {
+        "mask_pixels": 74622,
+        "accepted_pixels": 74622,
+        "mask_solid_angle_sr": 0.016359075376485344,
+        "accepted_solid_angle_sr": 0.016359075376485344,
+        "angular_coverage": 1.0,
+        "angular_abstention": 0.0,
+        "angular_rgb_mae_255": 58.26832926230397,
+        "angular_rgb_mae_le_20_fraction_of_mask": 0.09897248366830441,
+        "accepted_rgb_mae_le_threshold_pixels": {
+          "10": 3547,
+          "20": 6975
+        },
+        "strata": {
+          "textured": {
+            "mask_pixels": 3095,
+            "accepted_pixels": 3095,
+            "coverage": 1.0,
+            "rgb_mae_255": 36.4992999461497,
+            "over_20_fraction": 0.6423263327948304
+          },
+          "low_texture": {
+            "mask_pixels": 71527,
+            "accepted_pixels": 71527,
+            "coverage": 1.0,
+            "rgb_mae_255": 59.90457216622161,
+            "over_20_fraction": 0.9179610496735499
+          }
+        }
+      },
+      "evidence": {
+        "path": "controlled_v2/baseline_v1/nantes_005/conditions/far_rear_clipping_mild_as_damaged.npz",
+        "sha256": "0c33395acb25cb8845dbd0cfbb1e54d0af0c681430dcdbb8d23f6d8988c7b12a"
+      }
+    },
+    "telea_r3": {
+      "metrics": {
+        "coverage": 1.0,
+        "abstention": 0.0,
+        "accepted_pixels": 74622,
+        "error": {
+          "pixels": 74622,
+          "mae_255": 7.840493866866787,
+          "psnr_db": 26.831523372522245,
+          "p90_rgb": 16.66666603088379,
+          "over_20_fraction": 0.07781887379057115
+        },
+        "gradient": {
+          "pixels": 70782,
+          "gradient_mae": 0.6607077717781067,
+          "edge_pixels": 2933,
+          "orientation_error": 0.6412306427955627
+        },
+        "appearance": {
+          "mask_pixels": 74622,
+          "accepted_pixels": 74622,
+          "accepted_rgb_mae_le_threshold_pixels": {
+            "10": 57601,
+            "20": 68815
+          },
+          "fraction_of_mask_with_rgb_mae_le_threshold": {
+            "10": 0.7719037281230736,
+            "20": 0.9221811262094288
+          },
+          "accepted_textured_pixels": 3095,
+          "accepted_low_texture_pixels": 71527
+        }
+      },
+      "extended": {
+        "mask_pixels": 74622,
+        "accepted_pixels": 74622,
+        "mask_solid_angle_sr": 0.016359075376485344,
+        "accepted_solid_angle_sr": 0.016359075376485344,
+        "angular_coverage": 1.0,
+        "angular_abstention": 0.0,
+        "angular_rgb_mae_255": 7.6424743362307215,
+        "angular_rgb_mae_le_20_fraction_of_mask": 0.9249815928531604,
+        "accepted_rgb_mae_le_threshold_pixels": {
+          "10": 57601,
+          "20": 68815
+        },
+        "strata": {
+          "textured": {
+            "mask_pixels": 3095,
+            "accepted_pixels": 3095,
+            "coverage": 1.0,
+            "rgb_mae_255": 16.409800753904143,
+            "over_20_fraction": 0.32859450726979
+          },
+          "low_texture": {
+            "mask_pixels": 71527,
+            "accepted_pixels": 71527,
+            "coverage": 1.0,
+            "rgb_mae_255": 7.469696757867658,
+            "over_20_fraction": 0.06696771848392914
+          }
+        }
+      },
+      "evidence": {
+        "path": "controlled_v2/baseline_v1/nantes_005/conditions/far_rear_clipping_mild_telea_r3.npz",
+        "sha256": "28909e2e4a749cce9ad148118c230da3a5097830fc1e0dba3b40024334b33f77"
+      }
+    }
+  },
+  "same_pixel_controls": {
+    "loftr_homography": {
+      "candidate": {
+        "as_damaged": {
+          "pixels": 0,
+          "source_mae_255": null,
+          "control_mae_255": null,
+          "source_better_pixels": 0,
+          "source_worse_pixels": 0,
+          "equal_pixels": 0
+        },
+        "telea_r3": {
+          "pixels": 0,
+          "source_mae_255": null,
+          "control_mae_255": null,
+          "source_better_pixels": 0,
+          "source_worse_pixels": 0,
+          "equal_pixels": 0
+        }
+      },
+      "corroborated": {
+        "as_damaged": {
+          "pixels": 0,
+          "source_mae_255": null,
+          "control_mae_255": null,
+          "source_better_pixels": 0,
+          "source_worse_pixels": 0,
+          "equal_pixels": 0
+        },
+        "telea_r3": {
+          "pixels": 0,
+          "source_mae_255": null,
+          "control_mae_255": null,
+          "source_better_pixels": 0,
+          "source_worse_pixels": 0,
+          "equal_pixels": 0
+        }
+      },
+      "strict": {
+        "as_damaged": {
+          "pixels": 0,
+          "source_mae_255": null,
+          "control_mae_255": null,
+          "source_better_pixels": 0,
+          "source_worse_pixels": 0,
+          "equal_pixels": 0
+        },
+        "telea_r3": {
+          "pixels": 0,
+          "source_mae_255": null,
+          "control_mae_255": null,
+          "source_better_pixels": 0,
+          "source_worse_pixels": 0,
+          "equal_pixels": 0
+        }
+      }
+    },
+    "loftr_metric_free": {
+      "candidate": {
+        "as_damaged": {
+          "pixels": 0,
+          "source_mae_255": null,
+          "control_mae_255": null,
+          "source_better_pixels": 0,
+          "source_worse_pixels": 0,
+          "equal_pixels": 0
+        },
+        "telea_r3": {
+          "pixels": 0,
+          "source_mae_255": null,
+          "control_mae_255": null,
+          "source_better_pixels": 0,
+          "source_worse_pixels": 0,
+          "equal_pixels": 0
+        }
+      },
+      "corroborated": {
+        "as_damaged": {
+          "pixels": 0,
+          "source_mae_255": null,
+          "control_mae_255": null,
+          "source_better_pixels": 0,
+          "source_worse_pixels": 0,
+          "equal_pixels": 0
+        },
+        "telea_r3": {
+          "pixels": 0,
+          "source_mae_255": null,
+          "control_mae_255": null,
+          "source_better_pixels": 0,
+          "source_worse_pixels": 0,
+          "equal_pixels": 0
+        }
+      },
+      "strict": {
+        "as_damaged": {
+          "pixels": 0,
+          "source_mae_255": null,
+          "control_mae_255": null,
+          "source_better_pixels": 0,
+          "source_worse_pixels": 0,
+          "equal_pixels": 0
+        },
+        "telea_r3": {
+          "pixels": 0,
+          "source_mae_255": null,
+          "control_mae_255": null,
+          "source_better_pixels": 0,
+          "source_worse_pixels": 0,
+          "equal_pixels": 0
+        }
+      }
+    }
+  }
+}

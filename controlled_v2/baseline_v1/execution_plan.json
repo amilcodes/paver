@@ -1,0 +1,1954 @@
+{
+  "version": 1,
+  "status": "frozen_before_scoring",
+  "signature": {
+    "run_dense.py": "bc3096d5977a5b2fd2ecd6444e7d394e3ebe40a401e73f37029ed6fc30face04",
+    "dense_experiment.py": "59d18a71738d818f349def1b65e1d3ea69d0631e93ff1317d77ddcd2c60eb080",
+    "dense_matching.py": "b7d3ce798db5c76ba989ac71ccc0fc5e6d0814da08b02006c892aed9babf287e",
+    "validate_dense_model.py": "c985a0088c8b62db5529ee8360b158eb1cd86e36502ee92c4da76bd840030b54",
+    "sequence_geometry.py": "e7ecd253de1ca48076ea56c277533fbdf4438e889625cfb7a279266a87edb31c",
+    "constrained_sequence.py": "a3ba9e2460c00de146f9e1d077ad2c08c6783a7c87320b97bea83a8cab93e24d",
+    "metric_plane.py": "73f0320c82821b6b2ff93309ae6b58ea980195bb582ed7d466d8ad5238cccb75",
+    "trajectory_matching.py": "ba7def19017d7d9750cb4dab41946ae72d1f987da35da183b22ca02d040d26c3",
+    "matching_v2.py": "31c21cde51d791a78936145579a49998a1506698a2f78cad3f98574f0e08cf77",
+    "repair.py": "779e3679ae205637fe66cd25f5f7214bc9c6c153d4acfd6b8c9fa8915b8f4c88",
+    "benchmark.py": "18901c663f774dca04b40b9857718a30e3c73b87de888b47ca15d3870f20dd1e",
+    "resource_guard.py": "4d192fe4fbba2ffc068a9fe5e3de5e29b43b434b35b79f438d848f2445d09814",
+    "controlled_occlusions.py": "b8935e24359bf53bb59e117c229479a157b3d55f420b2f26111dc271406e27b3",
+    "prepare_area_benchmark.py": "68c04e8731719611f9be77cf94460a4244883cd402d33f2e285d8c5472caa4a5",
+    "prepare_annotated_case_v2.py": "0f0aa743386c2040199fb05abb313498b30fec4480d704e6db3e2014039aed4b",
+    "area_recovery_metrics.py": "c604e4f5b235ea51e489d8e0e4bbba4feeeeeb697048a696d978be17db2edfca",
+    "run_expanded_baseline.py": "7fd41f076eabfebb946d7f842c4ed04c05ce1eb1fcaaa00efcfd2b135175e3dc",
+    "audit_expanded_baseline.py": "275541bddfaa7c0220999050e0870ad09f96355ba1e3a04f29ffc8859cc4b23c",
+    "summarize_expanded_baseline.py": "fa529545df5d63269923c359737cf7cd1559add963048f8a21eedbe1e014921c",
+    "test_expanded_baseline.py": "1b2a793903392a414846313661a17e5e431856d0ca8bcf946e81f2fb8375276f",
+    "validate_dense_run_v2.py": "66abd28e0075b55735d5bd44441f1528de18b367d558386c862309bd536a7bfc",
+    "audit_area_annotations.py": "4c9a0af803c5bafbb2d13b439092a998402d59a4106d6bc09ef1bdfde6f126dc",
+    "audit_controlled_benchmark.py": "ad2d46363ed4c20af9035bd044ebfcbf182188c6fea9eb716008d16a585f57ab"
+  },
+  "protocol": {
+    "path": "controlled_v2/benchmark_protocol.json",
+    "sha256": "6c82ef1373991ef3ec0a3b1554616863990cb5a837a3b73f6535ecc5188ec5f6"
+  },
+  "annotation_audit": {
+    "path": "controlled_v2/annotation_audit_001.json",
+    "sha256": "2a8a4706f2bbdbac5bdc50c797e25dfadf5b6841afe85947dd1460f2ab6a84fe"
+  },
+  "candidate_graph": {
+    "path": "network_v1/candidate_graph.json",
+    "sha256": "98bc787697d71979ed4e818a797c789685a7c5f0b05ca5d3025e4d8979615eb2"
+  },
+  "model": {
+    "checkpoint_sha256": "21f5bec5968178e8bc8b7633441836fe5de4f47d861dd2cd7dc38e271b0479ec",
+    "adapter_sha256": "b7d3ce798db5c76ba989ac71ccc0fc5e6d0814da08b02006c892aed9babf287e",
+    "packages": {
+      "kornia": "0.9.0",
+      "torch": "2.15.0",
+      "numpy": "2.5.4",
+      "opencv-python-headless": "5.0.0.93"
+    },
+    "installed_sources": {
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/loftr.py": "771263d3c8005d893ec9a2f71a12e1f0c188034a20623b0c759b63f9baf1f626",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/__init__.py": "8e60213949b09309fdec44d45e14d9181858bbd66de3cbe1c8173b64e4b3eaec",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/utils/position_encoding.py": "32e16a9e297ba115f9d20b6a7fba8cbeb7b2008a2891df170b441db919a9afcf",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/utils/__init__.py": "417973f07a3e714f493f6a97f0b157acb0ae8dcf0a3549b5079324cbbf3ab45d",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/utils/coarse_matching.py": "9269b2380bf984604ff5316e156ebded38b6b25eea7b237b6fd573db40b03e12",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/utils/supervision.py": "48adbb3a3ef3418cc35ffa58c0d77571cc913a66dc0e47041a252a2dca4074ea",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/utils/fine_matching.py": "354d3ac5485774e250f1590f27fd2216b5adb671cc237cdbae0950e53cf2d39e",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/utils/geometry.py": "d40b83ef0708bef7fd0c4ee6e425b20b78a73297052c6d7089f4c027bd1cb14a",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/loftr_module/fine_preprocess.py": "ff5c9e50a6ddb2ff44259250563695528bd08bf58c160b821b038629cb0abefd",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/loftr_module/__init__.py": "f282770d670f07e81151aeb2e5e6aa9a782dff74e741e3d609a07d7b411d2781",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/loftr_module/transformer.py": "79fcf1028cf23939f23b82ee6a22ee7a82154967cecc496cd3a23239c797ac20",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/loftr_module/linear_attention.py": "e39a8a5c1ef15f26601a29bf4ab5ea3025b000d2b024e23a226de09d6dec2789",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/backbone/__init__.py": "13f27ca439ff868fa3486db27b05b7dff8bde76ed98ee320ee72cb16a7832e39",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/backbone/resnet_fpn.py": "c67986c9d10fa8a8d412cf37926e7d2b24f848586906d585d8b06b13d1c61577"
+    }
+  },
+  "policies": {
+    "candidate": {
+      "min_views": 1,
+      "max_disagreement": 18
+    },
+    "corroborated": {
+      "min_views": 2,
+      "max_disagreement": 12
+    },
+    "strict": {
+      "min_views": 2,
+      "max_disagreement": 8
+    }
+  },
+  "scenes": [
+    {
+      "scene": "gironde_013",
+      "area": "gironde",
+      "split": "development",
+      "frames": [
+        {
+          "name": "prev2",
+          "id": "51152813-3665-4184-9a1e-2ca1cae0da64",
+          "path": "dataset_v1/images/51152813-3665-4184-9a1e-2ca1cae0da64.jpg",
+          "sha256": "5bf28c5303cf753d9a97f9132ccf9793c08c6f48f3da98420afd26fc5d8b1d23"
+        },
+        {
+          "name": "prev1",
+          "id": "183c6a61-5346-4c4d-8dd8-aa5f5bbc7e3e",
+          "path": "dataset_v1/images/183c6a61-5346-4c4d-8dd8-aa5f5bbc7e3e.jpg",
+          "sha256": "ade84568c9724364593cb32d6aa42607db0cc5950f487a5acf80247767d53f6f"
+        },
+        {
+          "name": "target",
+          "id": "c20fb4db-fb3c-4226-bede-e7b5e95f1d26",
+          "path": "dataset_v1/images/c20fb4db-fb3c-4226-bede-e7b5e95f1d26.jpg",
+          "sha256": "1ac1b76fa8e95db201a08171115bebf598113dc60a57841ea560a72a02215c51"
+        },
+        {
+          "name": "next1",
+          "id": "74a8d0b2-ccaf-4db5-a761-f4831798566e",
+          "path": "dataset_v1/images/74a8d0b2-ccaf-4db5-a761-f4831798566e.jpg",
+          "sha256": "f4de9188a874d4fd66bedf2a3d66c260575d12f63d44f9cbc3a6ed4903b2051b"
+        },
+        {
+          "name": "next2",
+          "id": "0b9f56d6-4943-4729-980f-f94d86f333ab",
+          "path": "dataset_v1/images/0b9f56d6-4943-4729-980f-f94d86f333ab.jpg",
+          "sha256": "aaf8d594f06d9c0c6622f4c59bd304b725560db2d8d0bafe668431f063bf8983"
+        }
+      ],
+      "target": 2,
+      "projection": {
+        "size": 2200,
+        "fov": 163.302054963582
+      },
+      "manifest": {
+        "path": "controlled_v2/prepared/gironde_013/manifest.json",
+        "sha256": "4b64fe2aec1c90a747ffc5a3fc2a5d86ed01904a00979bce870feeae78ed9104"
+      },
+      "annotation": {
+        "path": "controlled_v2/annotations/gironde_013.json",
+        "sha256": "bdecc55fa012102f194b5cf75130339b45f94d6f55de44ca2345095afd8f07dc"
+      },
+      "masks": {
+        "path": "controlled_v2/prepared/gironde_013/masks.npz",
+        "sha256": "aef93fc3b7c21d8e42b9610517c38ec22dbdc1f81dd436b844ba00bd06de6e59"
+      },
+      "scoring_only_strata": {
+        "path": "controlled_v2/prepared/gironde_013/scoring_only_strata.npz",
+        "sha256": "d8e8f8a63e2293ae424355763064cd814ed1992059d6e52739fbbd4fe6475a6d"
+      },
+      "jobs": [
+        {
+          "key": "cross_junction_disc_mild",
+          "mask_key": "hidden_cross_junction_disc_mild",
+          "kind": "controlled",
+          "mask_sha256": "211cd72c95a4e54a7101ad081a7f7e21beb043427e554dde9143e01af029f5f7"
+        },
+        {
+          "key": "cross_junction_disc_severe",
+          "mask_key": "hidden_cross_junction_disc_severe",
+          "kind": "controlled",
+          "mask_sha256": "09709d4bc84ad6c25b95f8dcb2bd7bf99890c69de0dd26f6b71cd1f80cd777f6"
+        },
+        {
+          "key": "cross_junction_vehicle_mild",
+          "mask_key": "hidden_cross_junction_vehicle_mild",
+          "kind": "controlled",
+          "mask_sha256": "57156116198ec4619b9aee12d11512085254c98c400590c5b282cb87dec4e877"
+        },
+        {
+          "key": "cross_junction_vehicle_severe",
+          "mask_key": "hidden_cross_junction_vehicle_severe",
+          "kind": "controlled",
+          "mask_sha256": "864b33c5a8d1892a05e09362b893aaaf2c1c21e1fb17bb82fa681328e879cc04"
+        },
+        {
+          "key": "cross_junction_strip_mild",
+          "mask_key": "hidden_cross_junction_strip_mild",
+          "kind": "controlled",
+          "mask_sha256": "efadd2734ed6c9561bc8032de91100c8ee294010e54e87fefba2adad70df8444"
+        },
+        {
+          "key": "cross_junction_strip_severe",
+          "mask_key": "hidden_cross_junction_strip_severe",
+          "kind": "controlled",
+          "mask_sha256": "49b7e3cdcd60803cbc3597e2f3345c372dbef2c1e9f7ac5798512c0271ec68bf"
+        },
+        {
+          "key": "rear_lane_disc_mild",
+          "mask_key": "hidden_rear_lane_disc_mild",
+          "kind": "controlled",
+          "mask_sha256": "47efd46cbd72d50f132cad42c573e5c2bfdb7025144f8cb98e8edc57ad1443cc"
+        },
+        {
+          "key": "rear_lane_disc_severe",
+          "mask_key": "hidden_rear_lane_disc_severe",
+          "kind": "controlled",
+          "mask_sha256": "ca9fca5c9797f0218d15f4ee64176df3cee40d6ac5e37cff1b467fcd68ada115"
+        },
+        {
+          "key": "rear_lane_vehicle_mild",
+          "mask_key": "hidden_rear_lane_vehicle_mild",
+          "kind": "controlled",
+          "mask_sha256": "67c09e76fea294a179a61cfa4076d6401acc191e68d615538fb24f9bf2c90a08"
+        },
+        {
+          "key": "rear_lane_vehicle_severe",
+          "mask_key": "hidden_rear_lane_vehicle_severe",
+          "kind": "controlled",
+          "mask_sha256": "84bfc610ecf8a93aba6dff0ae6a3b321637fa00148dee14847216c70fb9ca7d6"
+        },
+        {
+          "key": "rear_lane_strip_mild",
+          "mask_key": "hidden_rear_lane_strip_mild",
+          "kind": "controlled",
+          "mask_sha256": "8b106d1416af4a74c6cfaf9e8f2c203945611349398352143ae3fdb733bab927"
+        },
+        {
+          "key": "rear_lane_strip_severe",
+          "mask_key": "hidden_rear_lane_strip_severe",
+          "kind": "controlled",
+          "mask_sha256": "fed1460edefcd33dfc0a7e550d900c5f2945248c72cc93bc5930cf68d3282b12"
+        },
+        {
+          "key": "footprint",
+          "mask_key": "region_footprint",
+          "kind": "natural"
+        }
+      ],
+      "conditions": [
+        {
+          "key": "cross_junction_opaque_disc_mild",
+          "location": "cross_junction",
+          "family": "opaque_disc",
+          "severity": "mild",
+          "mask_key": "hidden_cross_junction_disc_mild"
+        },
+        {
+          "key": "cross_junction_opaque_disc_severe",
+          "location": "cross_junction",
+          "family": "opaque_disc",
+          "severity": "severe",
+          "mask_key": "hidden_cross_junction_disc_severe"
+        },
+        {
+          "key": "cross_junction_opaque_vehicle_mild",
+          "location": "cross_junction",
+          "family": "opaque_vehicle",
+          "severity": "mild",
+          "mask_key": "hidden_cross_junction_vehicle_mild"
+        },
+        {
+          "key": "cross_junction_opaque_vehicle_severe",
+          "location": "cross_junction",
+          "family": "opaque_vehicle",
+          "severity": "severe",
+          "mask_key": "hidden_cross_junction_vehicle_severe"
+        },
+        {
+          "key": "cross_junction_missing_strip_mild",
+          "location": "cross_junction",
+          "family": "missing_strip",
+          "severity": "mild",
+          "mask_key": "hidden_cross_junction_strip_mild"
+        },
+        {
+          "key": "cross_junction_missing_strip_severe",
+          "location": "cross_junction",
+          "family": "missing_strip",
+          "severity": "severe",
+          "mask_key": "hidden_cross_junction_strip_severe"
+        },
+        {
+          "key": "cross_junction_blur_mild",
+          "location": "cross_junction",
+          "family": "blur",
+          "severity": "mild",
+          "mask_key": "hidden_cross_junction_disc_mild"
+        },
+        {
+          "key": "cross_junction_blur_severe",
+          "location": "cross_junction",
+          "family": "blur",
+          "severity": "severe",
+          "mask_key": "hidden_cross_junction_disc_severe"
+        },
+        {
+          "key": "cross_junction_clipping_mild",
+          "location": "cross_junction",
+          "family": "clipping",
+          "severity": "mild",
+          "mask_key": "hidden_cross_junction_disc_mild"
+        },
+        {
+          "key": "cross_junction_clipping_severe",
+          "location": "cross_junction",
+          "family": "clipping",
+          "severity": "severe",
+          "mask_key": "hidden_cross_junction_disc_severe"
+        },
+        {
+          "key": "cross_junction_jpeg_mild",
+          "location": "cross_junction",
+          "family": "jpeg",
+          "severity": "mild",
+          "mask_key": "hidden_cross_junction_disc_mild"
+        },
+        {
+          "key": "cross_junction_jpeg_severe",
+          "location": "cross_junction",
+          "family": "jpeg",
+          "severity": "severe",
+          "mask_key": "hidden_cross_junction_disc_severe"
+        },
+        {
+          "key": "rear_lane_opaque_disc_mild",
+          "location": "rear_lane",
+          "family": "opaque_disc",
+          "severity": "mild",
+          "mask_key": "hidden_rear_lane_disc_mild"
+        },
+        {
+          "key": "rear_lane_opaque_disc_severe",
+          "location": "rear_lane",
+          "family": "opaque_disc",
+          "severity": "severe",
+          "mask_key": "hidden_rear_lane_disc_severe"
+        },
+        {
+          "key": "rear_lane_opaque_vehicle_mild",
+          "location": "rear_lane",
+          "family": "opaque_vehicle",
+          "severity": "mild",
+          "mask_key": "hidden_rear_lane_vehicle_mild"
+        },
+        {
+          "key": "rear_lane_opaque_vehicle_severe",
+          "location": "rear_lane",
+          "family": "opaque_vehicle",
+          "severity": "severe",
+          "mask_key": "hidden_rear_lane_vehicle_severe"
+        },
+        {
+          "key": "rear_lane_missing_strip_mild",
+          "location": "rear_lane",
+          "family": "missing_strip",
+          "severity": "mild",
+          "mask_key": "hidden_rear_lane_strip_mild"
+        },
+        {
+          "key": "rear_lane_missing_strip_severe",
+          "location": "rear_lane",
+          "family": "missing_strip",
+          "severity": "severe",
+          "mask_key": "hidden_rear_lane_strip_severe"
+        },
+        {
+          "key": "rear_lane_blur_mild",
+          "location": "rear_lane",
+          "family": "blur",
+          "severity": "mild",
+          "mask_key": "hidden_rear_lane_disc_mild"
+        },
+        {
+          "key": "rear_lane_blur_severe",
+          "location": "rear_lane",
+          "family": "blur",
+          "severity": "severe",
+          "mask_key": "hidden_rear_lane_disc_severe"
+        },
+        {
+          "key": "rear_lane_clipping_mild",
+          "location": "rear_lane",
+          "family": "clipping",
+          "severity": "mild",
+          "mask_key": "hidden_rear_lane_disc_mild"
+        },
+        {
+          "key": "rear_lane_clipping_severe",
+          "location": "rear_lane",
+          "family": "clipping",
+          "severity": "severe",
+          "mask_key": "hidden_rear_lane_disc_severe"
+        },
+        {
+          "key": "rear_lane_jpeg_mild",
+          "location": "rear_lane",
+          "family": "jpeg",
+          "severity": "mild",
+          "mask_key": "hidden_rear_lane_disc_mild"
+        },
+        {
+          "key": "rear_lane_jpeg_severe",
+          "location": "rear_lane",
+          "family": "jpeg",
+          "severity": "severe",
+          "mask_key": "hidden_rear_lane_disc_severe"
+        }
+      ]
+    },
+    {
+      "scene": "gironde_129",
+      "area": "gironde",
+      "split": "development",
+      "frames": [
+        {
+          "name": "prev2",
+          "id": "b3997c0c-84e4-48f0-9990-35106a946ae4",
+          "path": "dataset_v1/images/b3997c0c-84e4-48f0-9990-35106a946ae4.jpg",
+          "sha256": "b4652a1285d01809549d1f78c8aa174430ab7830f095fbbd8aaf755439271a3c"
+        },
+        {
+          "name": "prev1",
+          "id": "2f6772fd-96d4-47a8-8857-3387581600f4",
+          "path": "dataset_v1/images/2f6772fd-96d4-47a8-8857-3387581600f4.jpg",
+          "sha256": "3e007342fc70277ab1796bf9b2995c960069713ef46e9a584ff7d21a70e8d00d"
+        },
+        {
+          "name": "target",
+          "id": "53dadb5d-20d6-4c95-9881-3d2b05bf6d88",
+          "path": "dataset_v1/images/53dadb5d-20d6-4c95-9881-3d2b05bf6d88.jpg",
+          "sha256": "eda2ecf24b2c3148504009229c8f993606904f32e1f622ac9214c3c64d1e4a18"
+        },
+        {
+          "name": "next1",
+          "id": "55020a32-0737-4ed6-8be1-9653f718190b",
+          "path": "dataset_v1/images/55020a32-0737-4ed6-8be1-9653f718190b.jpg",
+          "sha256": "6c379cbc734e92adf8fd99472fab363ebbd6131535e6c2886fd0aa399eea1db7"
+        },
+        {
+          "name": "next2",
+          "id": "d68bea2b-3a78-43c5-b502-a7d302702b31",
+          "path": "dataset_v1/images/d68bea2b-3a78-43c5-b502-a7d302702b31.jpg",
+          "sha256": "659cdfbf3dc2b6dc82759d4ff6b35cc19be315dca61ae19a8bd1538478aade30"
+        }
+      ],
+      "target": 2,
+      "projection": {
+        "size": 2200,
+        "fov": 163.302054963582
+      },
+      "manifest": {
+        "path": "controlled_v2/prepared/gironde_129/manifest.json",
+        "sha256": "28d22f5ca448c0a19497c2e6eb81b34717c38410e3e55f272b316622d5fc1ee3"
+      },
+      "annotation": {
+        "path": "controlled_v2/annotations/gironde_129.json",
+        "sha256": "537e202aac9359bb3eea3c60bd13af49b8c82fc614b04b7e125bb20e653e7f1b"
+      },
+      "masks": {
+        "path": "controlled_v2/prepared/gironde_129/masks.npz",
+        "sha256": "df24ff70fc70d4d9458d4af0ad714babf63461d8e4876944ec9aac180fd50057"
+      },
+      "scoring_only_strata": {
+        "path": "controlled_v2/prepared/gironde_129/scoring_only_strata.npz",
+        "sha256": "69fb08c0ce577cd2724d43c289e28080d5249cbf9fa4dcc428cbac9dfef38dbf"
+      },
+      "jobs": [
+        {
+          "key": "forward_disc_mild",
+          "mask_key": "hidden_forward_disc_mild",
+          "kind": "controlled",
+          "mask_sha256": "6c5417d1c5ba8911d8a76244ce157fd7622400e5af912c0a0bb1f405b3b8da30"
+        },
+        {
+          "key": "forward_disc_severe",
+          "mask_key": "hidden_forward_disc_severe",
+          "kind": "controlled",
+          "mask_sha256": "6047a31c0e5e7488e02e323d45a6cf9ef5e728bea5102c2125aba5d765d9185b"
+        },
+        {
+          "key": "forward_vehicle_mild",
+          "mask_key": "hidden_forward_vehicle_mild",
+          "kind": "controlled",
+          "mask_sha256": "06ad3eff65a414d66ad743b137e0e2dbd838c43c3a152e54bb12f6f4d5270cbf"
+        },
+        {
+          "key": "forward_vehicle_severe",
+          "mask_key": "hidden_forward_vehicle_severe",
+          "kind": "controlled",
+          "mask_sha256": "a5c128328f7999ea5b6bdf06b8130c1df2e4e6bc56939cba2aa2ad5e654dd98a"
+        },
+        {
+          "key": "forward_strip_mild",
+          "mask_key": "hidden_forward_strip_mild",
+          "kind": "controlled",
+          "mask_sha256": "6e551d1b57dfd11e8e0d4f4a56923cae92ca6503702ec68649dea0d0f4dc507a"
+        },
+        {
+          "key": "forward_strip_severe",
+          "mask_key": "hidden_forward_strip_severe",
+          "kind": "controlled",
+          "mask_sha256": "dad29a32f2099daecc2cbda57863a7978309292b2dad3f76997b828087fd5fb8"
+        },
+        {
+          "key": "rear_disc_mild",
+          "mask_key": "hidden_rear_disc_mild",
+          "kind": "controlled",
+          "mask_sha256": "fbfa0b4ecbe204beca35e2bf9d01b1cf3299df4401e98c4764afee1ca1959403"
+        },
+        {
+          "key": "rear_disc_severe",
+          "mask_key": "hidden_rear_disc_severe",
+          "kind": "controlled",
+          "mask_sha256": "d88bad9de95166c76f8bb1a852b92abc30ec728ad6ad0bb974f41ce83f71cf00"
+        },
+        {
+          "key": "rear_vehicle_mild",
+          "mask_key": "hidden_rear_vehicle_mild",
+          "kind": "controlled",
+          "mask_sha256": "89f73e648d885f548b9ea3e2158e580511ab5fe1cb15ef3acdee69285aa5866c"
+        },
+        {
+          "key": "rear_vehicle_severe",
+          "mask_key": "hidden_rear_vehicle_severe",
+          "kind": "controlled",
+          "mask_sha256": "346cd6963be4ac05f6ff7a5914b748284927d66a4bc1038b7a306649cf798e36"
+        },
+        {
+          "key": "rear_strip_mild",
+          "mask_key": "hidden_rear_strip_mild",
+          "kind": "controlled",
+          "mask_sha256": "aab8573d665ac016a18b09af81fe064054893849a40f6cf5093d66892c31958e"
+        },
+        {
+          "key": "rear_strip_severe",
+          "mask_key": "hidden_rear_strip_severe",
+          "kind": "controlled",
+          "mask_sha256": "c030cf27c05fea517e607f20008ca7121e91a1657d48c2a74d9c8f1146abd6e1"
+        },
+        {
+          "key": "footprint",
+          "mask_key": "region_footprint",
+          "kind": "natural"
+        }
+      ],
+      "conditions": [
+        {
+          "key": "forward_opaque_disc_mild",
+          "location": "forward",
+          "family": "opaque_disc",
+          "severity": "mild",
+          "mask_key": "hidden_forward_disc_mild"
+        },
+        {
+          "key": "forward_opaque_disc_severe",
+          "location": "forward",
+          "family": "opaque_disc",
+          "severity": "severe",
+          "mask_key": "hidden_forward_disc_severe"
+        },
+        {
+          "key": "forward_opaque_vehicle_mild",
+          "location": "forward",
+          "family": "opaque_vehicle",
+          "severity": "mild",
+          "mask_key": "hidden_forward_vehicle_mild"
+        },
+        {
+          "key": "forward_opaque_vehicle_severe",
+          "location": "forward",
+          "family": "opaque_vehicle",
+          "severity": "severe",
+          "mask_key": "hidden_forward_vehicle_severe"
+        },
+        {
+          "key": "forward_missing_strip_mild",
+          "location": "forward",
+          "family": "missing_strip",
+          "severity": "mild",
+          "mask_key": "hidden_forward_strip_mild"
+        },
+        {
+          "key": "forward_missing_strip_severe",
+          "location": "forward",
+          "family": "missing_strip",
+          "severity": "severe",
+          "mask_key": "hidden_forward_strip_severe"
+        },
+        {
+          "key": "forward_blur_mild",
+          "location": "forward",
+          "family": "blur",
+          "severity": "mild",
+          "mask_key": "hidden_forward_disc_mild"
+        },
+        {
+          "key": "forward_blur_severe",
+          "location": "forward",
+          "family": "blur",
+          "severity": "severe",
+          "mask_key": "hidden_forward_disc_severe"
+        },
+        {
+          "key": "forward_clipping_mild",
+          "location": "forward",
+          "family": "clipping",
+          "severity": "mild",
+          "mask_key": "hidden_forward_disc_mild"
+        },
+        {
+          "key": "forward_clipping_severe",
+          "location": "forward",
+          "family": "clipping",
+          "severity": "severe",
+          "mask_key": "hidden_forward_disc_severe"
+        },
+        {
+          "key": "forward_jpeg_mild",
+          "location": "forward",
+          "family": "jpeg",
+          "severity": "mild",
+          "mask_key": "hidden_forward_disc_mild"
+        },
+        {
+          "key": "forward_jpeg_severe",
+          "location": "forward",
+          "family": "jpeg",
+          "severity": "severe",
+          "mask_key": "hidden_forward_disc_severe"
+        },
+        {
+          "key": "rear_opaque_disc_mild",
+          "location": "rear",
+          "family": "opaque_disc",
+          "severity": "mild",
+          "mask_key": "hidden_rear_disc_mild"
+        },
+        {
+          "key": "rear_opaque_disc_severe",
+          "location": "rear",
+          "family": "opaque_disc",
+          "severity": "severe",
+          "mask_key": "hidden_rear_disc_severe"
+        },
+        {
+          "key": "rear_opaque_vehicle_mild",
+          "location": "rear",
+          "family": "opaque_vehicle",
+          "severity": "mild",
+          "mask_key": "hidden_rear_vehicle_mild"
+        },
+        {
+          "key": "rear_opaque_vehicle_severe",
+          "location": "rear",
+          "family": "opaque_vehicle",
+          "severity": "severe",
+          "mask_key": "hidden_rear_vehicle_severe"
+        },
+        {
+          "key": "rear_missing_strip_mild",
+          "location": "rear",
+          "family": "missing_strip",
+          "severity": "mild",
+          "mask_key": "hidden_rear_strip_mild"
+        },
+        {
+          "key": "rear_missing_strip_severe",
+          "location": "rear",
+          "family": "missing_strip",
+          "severity": "severe",
+          "mask_key": "hidden_rear_strip_severe"
+        },
+        {
+          "key": "rear_blur_mild",
+          "location": "rear",
+          "family": "blur",
+          "severity": "mild",
+          "mask_key": "hidden_rear_disc_mild"
+        },
+        {
+          "key": "rear_blur_severe",
+          "location": "rear",
+          "family": "blur",
+          "severity": "severe",
+          "mask_key": "hidden_rear_disc_severe"
+        },
+        {
+          "key": "rear_clipping_mild",
+          "location": "rear",
+          "family": "clipping",
+          "severity": "mild",
+          "mask_key": "hidden_rear_disc_mild"
+        },
+        {
+          "key": "rear_clipping_severe",
+          "location": "rear",
+          "family": "clipping",
+          "severity": "severe",
+          "mask_key": "hidden_rear_disc_severe"
+        },
+        {
+          "key": "rear_jpeg_mild",
+          "location": "rear",
+          "family": "jpeg",
+          "severity": "mild",
+          "mask_key": "hidden_rear_disc_mild"
+        },
+        {
+          "key": "rear_jpeg_severe",
+          "location": "rear",
+          "family": "jpeg",
+          "severity": "severe",
+          "mask_key": "hidden_rear_disc_severe"
+        }
+      ]
+    },
+    {
+      "scene": "nantes_005",
+      "area": "nantes",
+      "split": "train",
+      "frames": [
+        {
+          "name": "prev2",
+          "id": "8dcbbf39-7525-4499-a3e0-21b6128570a4",
+          "path": "dataset_v1/images/8dcbbf39-7525-4499-a3e0-21b6128570a4.jpg",
+          "sha256": "6d3bad396db52289b92fd10a30090ddc3eb44a551be6a8e31cfb67ff79479964"
+        },
+        {
+          "name": "prev1",
+          "id": "955ac522-8ef9-44c1-b6c4-5f9a25dcc7aa",
+          "path": "dataset_v1/images/955ac522-8ef9-44c1-b6c4-5f9a25dcc7aa.jpg",
+          "sha256": "4bc483b75a6beb74df8c1af48e4ba89363423b6669fefccfb5f91bfa9951d8ba"
+        },
+        {
+          "name": "target",
+          "id": "6be53d49-c6a5-44a0-903d-69e479ef4ff5",
+          "path": "dataset_v1/images/6be53d49-c6a5-44a0-903d-69e479ef4ff5.jpg",
+          "sha256": "e420440144edc2af9813d2645c7f443aa619adc71cb71e00f176e51d1b8d21b2"
+        },
+        {
+          "name": "next1",
+          "id": "52c19e77-197b-4343-9035-3d1aa68639f2",
+          "path": "dataset_v1/images/52c19e77-197b-4343-9035-3d1aa68639f2.jpg",
+          "sha256": "a5c4b48c4d143c5a2d9c7baf7629b2338ac799bee587b6fdc1c14a7e8a3c5a14"
+        },
+        {
+          "name": "next2",
+          "id": "865c5158-5a1a-4d6b-af22-cc82872f0da4",
+          "path": "dataset_v1/images/865c5158-5a1a-4d6b-af22-cc82872f0da4.jpg",
+          "sha256": "ac6db1c6963807028202243d703db9b9e894daee1d967a3d81003cdd80998783"
+        }
+      ],
+      "target": 2,
+      "projection": {
+        "size": 2200,
+        "fov": 163.302054963582
+      },
+      "manifest": {
+        "path": "controlled_v2/prepared/nantes_005/manifest.json",
+        "sha256": "90396624788feaba64880fe06fb8b4a84ae87c9b2875c222a1b90ac886fd39d4"
+      },
+      "annotation": {
+        "path": "controlled_v2/annotations/nantes_005.json",
+        "sha256": "454b921f90616f8eebb0fe4759cabf3afbaa0c0cd9d73deadbc5c9413e4aa7a9"
+      },
+      "masks": {
+        "path": "controlled_v2/prepared/nantes_005/masks.npz",
+        "sha256": "0c3792660ea257370b2beeb9644e74db7524e7a9933ca59a4a9d623360295c4f"
+      },
+      "scoring_only_strata": {
+        "path": "controlled_v2/prepared/nantes_005/scoring_only_strata.npz",
+        "sha256": "84caeef3b74be04b71acd42929f9a57539749980f82ffc5522cba60f76244bdd"
+      },
+      "jobs": [
+        {
+          "key": "near_rear_disc_mild",
+          "mask_key": "hidden_near_rear_disc_mild",
+          "kind": "controlled",
+          "mask_sha256": "edf0b4a3f35a18ba05c25a61ec351b1d094fc32eae7acf8c128fb2535dc743f7"
+        },
+        {
+          "key": "near_rear_disc_severe",
+          "mask_key": "hidden_near_rear_disc_severe",
+          "kind": "controlled",
+          "mask_sha256": "d381e70cc822ff492ad8129c934ed710124d2f8c116df6547fb24a2b4fd04edb"
+        },
+        {
+          "key": "near_rear_vehicle_mild",
+          "mask_key": "hidden_near_rear_vehicle_mild",
+          "kind": "controlled",
+          "mask_sha256": "65feb9511b5887ba397d466c16f419ac8318a435abcb6541a5e6c6acb47377b7"
+        },
+        {
+          "key": "near_rear_vehicle_severe",
+          "mask_key": "hidden_near_rear_vehicle_severe",
+          "kind": "controlled",
+          "mask_sha256": "4ce83980c1a48cdef61bbae8e22a3e030c92dddc8215282caaef6d9245f77487"
+        },
+        {
+          "key": "near_rear_strip_mild",
+          "mask_key": "hidden_near_rear_strip_mild",
+          "kind": "controlled",
+          "mask_sha256": "b5b2d3eb633e215e8141295b5231d42b18ae633c358d499a9aa078722cb88561"
+        },
+        {
+          "key": "near_rear_strip_severe",
+          "mask_key": "hidden_near_rear_strip_severe",
+          "kind": "controlled",
+          "mask_sha256": "8dcb466acc7d758abf68feda82f62d5bd283c787f37f061a6d79ac14282bb9b8"
+        },
+        {
+          "key": "far_rear_disc_mild",
+          "mask_key": "hidden_far_rear_disc_mild",
+          "kind": "controlled",
+          "mask_sha256": "6df9fc0990751fc0ce4a6c0a1f8dc3f8ce5710ea270c8edf48797973d8ab395b"
+        },
+        {
+          "key": "far_rear_disc_severe",
+          "mask_key": "hidden_far_rear_disc_severe",
+          "kind": "controlled",
+          "mask_sha256": "cbe82fe72fb994add89b227d0f03726253a37ef575696c3ed694a55b7e52b8ff"
+        },
+        {
+          "key": "far_rear_vehicle_mild",
+          "mask_key": "hidden_far_rear_vehicle_mild",
+          "kind": "controlled",
+          "mask_sha256": "c6b977189cb7544b076608ddb252254d6d8f7cb42ba9ea62774158f041daf256"
+        },
+        {
+          "key": "far_rear_vehicle_severe",
+          "mask_key": "hidden_far_rear_vehicle_severe",
+          "kind": "controlled",
+          "mask_sha256": "fcd7b175dab0077e20129db83db13c69ceb3953a0e5922b14c2ec299c6979990"
+        },
+        {
+          "key": "far_rear_strip_mild",
+          "mask_key": "hidden_far_rear_strip_mild",
+          "kind": "controlled",
+          "mask_sha256": "226f3934a190db3d35c0e393054df771faf9b651f58755f311a18056a85f4bb9"
+        },
+        {
+          "key": "far_rear_strip_severe",
+          "mask_key": "hidden_far_rear_strip_severe",
+          "kind": "controlled",
+          "mask_sha256": "cbdbd9fed1e0c65254fa0371d3670517aa20f0f833e337a5982755b0f92fe568"
+        },
+        {
+          "key": "footprint",
+          "mask_key": "region_footprint",
+          "kind": "natural"
+        }
+      ],
+      "conditions": [
+        {
+          "key": "near_rear_opaque_disc_mild",
+          "location": "near_rear",
+          "family": "opaque_disc",
+          "severity": "mild",
+          "mask_key": "hidden_near_rear_disc_mild"
+        },
+        {
+          "key": "near_rear_opaque_disc_severe",
+          "location": "near_rear",
+          "family": "opaque_disc",
+          "severity": "severe",
+          "mask_key": "hidden_near_rear_disc_severe"
+        },
+        {
+          "key": "near_rear_opaque_vehicle_mild",
+          "location": "near_rear",
+          "family": "opaque_vehicle",
+          "severity": "mild",
+          "mask_key": "hidden_near_rear_vehicle_mild"
+        },
+        {
+          "key": "near_rear_opaque_vehicle_severe",
+          "location": "near_rear",
+          "family": "opaque_vehicle",
+          "severity": "severe",
+          "mask_key": "hidden_near_rear_vehicle_severe"
+        },
+        {
+          "key": "near_rear_missing_strip_mild",
+          "location": "near_rear",
+          "family": "missing_strip",
+          "severity": "mild",
+          "mask_key": "hidden_near_rear_strip_mild"
+        },
+        {
+          "key": "near_rear_missing_strip_severe",
+          "location": "near_rear",
+          "family": "missing_strip",
+          "severity": "severe",
+          "mask_key": "hidden_near_rear_strip_severe"
+        },
+        {
+          "key": "near_rear_blur_mild",
+          "location": "near_rear",
+          "family": "blur",
+          "severity": "mild",
+          "mask_key": "hidden_near_rear_disc_mild"
+        },
+        {
+          "key": "near_rear_blur_severe",
+          "location": "near_rear",
+          "family": "blur",
+          "severity": "severe",
+          "mask_key": "hidden_near_rear_disc_severe"
+        },
+        {
+          "key": "near_rear_clipping_mild",
+          "location": "near_rear",
+          "family": "clipping",
+          "severity": "mild",
+          "mask_key": "hidden_near_rear_disc_mild"
+        },
+        {
+          "key": "near_rear_clipping_severe",
+          "location": "near_rear",
+          "family": "clipping",
+          "severity": "severe",
+          "mask_key": "hidden_near_rear_disc_severe"
+        },
+        {
+          "key": "near_rear_jpeg_mild",
+          "location": "near_rear",
+          "family": "jpeg",
+          "severity": "mild",
+          "mask_key": "hidden_near_rear_disc_mild"
+        },
+        {
+          "key": "near_rear_jpeg_severe",
+          "location": "near_rear",
+          "family": "jpeg",
+          "severity": "severe",
+          "mask_key": "hidden_near_rear_disc_severe"
+        },
+        {
+          "key": "far_rear_opaque_disc_mild",
+          "location": "far_rear",
+          "family": "opaque_disc",
+          "severity": "mild",
+          "mask_key": "hidden_far_rear_disc_mild"
+        },
+        {
+          "key": "far_rear_opaque_disc_severe",
+          "location": "far_rear",
+          "family": "opaque_disc",
+          "severity": "severe",
+          "mask_key": "hidden_far_rear_disc_severe"
+        },
+        {
+          "key": "far_rear_opaque_vehicle_mild",
+          "location": "far_rear",
+          "family": "opaque_vehicle",
+          "severity": "mild",
+          "mask_key": "hidden_far_rear_vehicle_mild"
+        },
+        {
+          "key": "far_rear_opaque_vehicle_severe",
+          "location": "far_rear",
+          "family": "opaque_vehicle",
+          "severity": "severe",
+          "mask_key": "hidden_far_rear_vehicle_severe"
+        },
+        {
+          "key": "far_rear_missing_strip_mild",
+          "location": "far_rear",
+          "family": "missing_strip",
+          "severity": "mild",
+          "mask_key": "hidden_far_rear_strip_mild"
+        },
+        {
+          "key": "far_rear_missing_strip_severe",
+          "location": "far_rear",
+          "family": "missing_strip",
+          "severity": "severe",
+          "mask_key": "hidden_far_rear_strip_severe"
+        },
+        {
+          "key": "far_rear_blur_mild",
+          "location": "far_rear",
+          "family": "blur",
+          "severity": "mild",
+          "mask_key": "hidden_far_rear_disc_mild"
+        },
+        {
+          "key": "far_rear_blur_severe",
+          "location": "far_rear",
+          "family": "blur",
+          "severity": "severe",
+          "mask_key": "hidden_far_rear_disc_severe"
+        },
+        {
+          "key": "far_rear_clipping_mild",
+          "location": "far_rear",
+          "family": "clipping",
+          "severity": "mild",
+          "mask_key": "hidden_far_rear_disc_mild"
+        },
+        {
+          "key": "far_rear_clipping_severe",
+          "location": "far_rear",
+          "family": "clipping",
+          "severity": "severe",
+          "mask_key": "hidden_far_rear_disc_severe"
+        },
+        {
+          "key": "far_rear_jpeg_mild",
+          "location": "far_rear",
+          "family": "jpeg",
+          "severity": "mild",
+          "mask_key": "hidden_far_rear_disc_mild"
+        },
+        {
+          "key": "far_rear_jpeg_severe",
+          "location": "far_rear",
+          "family": "jpeg",
+          "severity": "severe",
+          "mask_key": "hidden_far_rear_disc_severe"
+        }
+      ]
+    },
+    {
+      "scene": "nantes_045",
+      "area": "nantes",
+      "split": "train",
+      "frames": [
+        {
+          "name": "prev2",
+          "id": "2c8b18bf-1520-473b-9b05-16774ada6464",
+          "path": "dataset_v1/images/2c8b18bf-1520-473b-9b05-16774ada6464.jpg",
+          "sha256": "c8c946e9b2addae4e7ac1bf1e7fbefc89193556df130cefdbdbfcb36b9c2f95f"
+        },
+        {
+          "name": "prev1",
+          "id": "98791ee0-6d60-4f79-b4ed-d9d5955b97ca",
+          "path": "dataset_v1/images/98791ee0-6d60-4f79-b4ed-d9d5955b97ca.jpg",
+          "sha256": "51b460051c024d85cb284f997f174d6a21bbea6da83c2f7f6eada53b5d62fb72"
+        },
+        {
+          "name": "target",
+          "id": "1ab04838-e8e5-48c9-aba1-e2cf240760a6",
+          "path": "dataset_v1/images/1ab04838-e8e5-48c9-aba1-e2cf240760a6.jpg",
+          "sha256": "7e4cc0a36045d4dae14e69f6a13c23c4fe7e814a93e9c32111f144ef85dec87f"
+        },
+        {
+          "name": "next1",
+          "id": "4e729489-13a2-485f-8bd8-ca52af60997b",
+          "path": "dataset_v1/images/4e729489-13a2-485f-8bd8-ca52af60997b.jpg",
+          "sha256": "efeb0552392505038f007bf4ab1fd26ed50759847ff4a90cfed51c831cca3abc"
+        },
+        {
+          "name": "next2",
+          "id": "f211df34-d4f2-4c2e-8ddb-d5b900b8321a",
+          "path": "dataset_v1/images/f211df34-d4f2-4c2e-8ddb-d5b900b8321a.jpg",
+          "sha256": "4a6fe475ee19b35b0b380f4d5aff1a148401bc13dfb7e2dbd230ed445fa39a6d"
+        }
+      ],
+      "target": 2,
+      "projection": {
+        "size": 2200,
+        "fov": 163.302054963582
+      },
+      "manifest": {
+        "path": "controlled_v2/prepared/nantes_045/manifest.json",
+        "sha256": "a2067f74e3ce0127469f7db13587c31b7243f3e583e5fa35abdad8ad298c122e"
+      },
+      "annotation": {
+        "path": "controlled_v2/annotations/nantes_045.json",
+        "sha256": "04cc8b09b06c2c5073c05199c73da6716a48169d89757d6f67436e9aa0a11e10"
+      },
+      "masks": {
+        "path": "controlled_v2/prepared/nantes_045/masks.npz",
+        "sha256": "d310297d15170913c17ed8d0acef64137da8bfc25147abb6173b2c9cbc705a39"
+      },
+      "scoring_only_strata": {
+        "path": "controlled_v2/prepared/nantes_045/scoring_only_strata.npz",
+        "sha256": "bea39036f68994c9e19c78481b34f2dce2d4ec477963102e056105f1c0943dd6"
+      },
+      "jobs": [
+        {
+          "key": "near_rear_disc_mild",
+          "mask_key": "hidden_near_rear_disc_mild",
+          "kind": "controlled",
+          "mask_sha256": "0a5fcd7043d054d56c712219b0867081fdbc6fb108561f4bea768b1f87b90031"
+        },
+        {
+          "key": "near_rear_disc_severe",
+          "mask_key": "hidden_near_rear_disc_severe",
+          "kind": "controlled",
+          "mask_sha256": "f0790d2fa4c41934fa0968c551cd94e6bf430fabe4eab41135a70cbc6dbde201"
+        },
+        {
+          "key": "near_rear_vehicle_mild",
+          "mask_key": "hidden_near_rear_vehicle_mild",
+          "kind": "controlled",
+          "mask_sha256": "f7877dce5b90424f5d88375776d093b9722139237e3f29729d3251ba8ed70043"
+        },
+        {
+          "key": "near_rear_vehicle_severe",
+          "mask_key": "hidden_near_rear_vehicle_severe",
+          "kind": "controlled",
+          "mask_sha256": "7be8563b9d93110e25f5a5e1a6ceae9a723b095efaa94397c8b2bcd820c12421"
+        },
+        {
+          "key": "near_rear_strip_mild",
+          "mask_key": "hidden_near_rear_strip_mild",
+          "kind": "controlled",
+          "mask_sha256": "a098073c6ec820d6a5af2d6b24fe8477a6b5267b5633c5ae51058484fa0365dc"
+        },
+        {
+          "key": "near_rear_strip_severe",
+          "mask_key": "hidden_near_rear_strip_severe",
+          "kind": "controlled",
+          "mask_sha256": "3432af744aa834a2d25ce102ec2fa0f125a2cc5ba662474b3bbd7c3e33878d8a"
+        },
+        {
+          "key": "far_left_rear_disc_mild",
+          "mask_key": "hidden_far_left_rear_disc_mild",
+          "kind": "controlled",
+          "mask_sha256": "ad80c12712f91b1d78eba15a3b3575130f6f5fb1c7f18774fbe7555f2e752457"
+        },
+        {
+          "key": "far_left_rear_disc_severe",
+          "mask_key": "hidden_far_left_rear_disc_severe",
+          "kind": "controlled",
+          "mask_sha256": "36e461af5f38b3e320abcbe509c0eacef3c37ddae9bd46d6b2cbec268991395c"
+        },
+        {
+          "key": "far_left_rear_vehicle_mild",
+          "mask_key": "hidden_far_left_rear_vehicle_mild",
+          "kind": "controlled",
+          "mask_sha256": "eb129b4693c8ca8d9bfc32d5c2653fc9f1d96f4bdf44b7e2f2d6e57e3e8ac420"
+        },
+        {
+          "key": "far_left_rear_vehicle_severe",
+          "mask_key": "hidden_far_left_rear_vehicle_severe",
+          "kind": "controlled",
+          "mask_sha256": "2ceeee6fc08c74d1eda5d88c84d5afa186cbfbecc9bfaf959a092cf2b92ccb9d"
+        },
+        {
+          "key": "far_left_rear_strip_mild",
+          "mask_key": "hidden_far_left_rear_strip_mild",
+          "kind": "controlled",
+          "mask_sha256": "99dc1f1c2034804af80ced7aaed92a495d91da23c71d6fda0844bb57ef061824"
+        },
+        {
+          "key": "far_left_rear_strip_severe",
+          "mask_key": "hidden_far_left_rear_strip_severe",
+          "kind": "controlled",
+          "mask_sha256": "88ae0b2efcfa02dc6be248cfb845a29e161814fbaa7729ecea6864e17b49bfed"
+        },
+        {
+          "key": "footprint",
+          "mask_key": "region_footprint",
+          "kind": "natural"
+        }
+      ],
+      "conditions": [
+        {
+          "key": "near_rear_opaque_disc_mild",
+          "location": "near_rear",
+          "family": "opaque_disc",
+          "severity": "mild",
+          "mask_key": "hidden_near_rear_disc_mild"
+        },
+        {
+          "key": "near_rear_opaque_disc_severe",
+          "location": "near_rear",
+          "family": "opaque_disc",
+          "severity": "severe",
+          "mask_key": "hidden_near_rear_disc_severe"
+        },
+        {
+          "key": "near_rear_opaque_vehicle_mild",
+          "location": "near_rear",
+          "family": "opaque_vehicle",
+          "severity": "mild",
+          "mask_key": "hidden_near_rear_vehicle_mild"
+        },
+        {
+          "key": "near_rear_opaque_vehicle_severe",
+          "location": "near_rear",
+          "family": "opaque_vehicle",
+          "severity": "severe",
+          "mask_key": "hidden_near_rear_vehicle_severe"
+        },
+        {
+          "key": "near_rear_missing_strip_mild",
+          "location": "near_rear",
+          "family": "missing_strip",
+          "severity": "mild",
+          "mask_key": "hidden_near_rear_strip_mild"
+        },
+        {
+          "key": "near_rear_missing_strip_severe",
+          "location": "near_rear",
+          "family": "missing_strip",
+          "severity": "severe",
+          "mask_key": "hidden_near_rear_strip_severe"
+        },
+        {
+          "key": "near_rear_blur_mild",
+          "location": "near_rear",
+          "family": "blur",
+          "severity": "mild",
+          "mask_key": "hidden_near_rear_disc_mild"
+        },
+        {
+          "key": "near_rear_blur_severe",
+          "location": "near_rear",
+          "family": "blur",
+          "severity": "severe",
+          "mask_key": "hidden_near_rear_disc_severe"
+        },
+        {
+          "key": "near_rear_clipping_mild",
+          "location": "near_rear",
+          "family": "clipping",
+          "severity": "mild",
+          "mask_key": "hidden_near_rear_disc_mild"
+        },
+        {
+          "key": "near_rear_clipping_severe",
+          "location": "near_rear",
+          "family": "clipping",
+          "severity": "severe",
+          "mask_key": "hidden_near_rear_disc_severe"
+        },
+        {
+          "key": "near_rear_jpeg_mild",
+          "location": "near_rear",
+          "family": "jpeg",
+          "severity": "mild",
+          "mask_key": "hidden_near_rear_disc_mild"
+        },
+        {
+          "key": "near_rear_jpeg_severe",
+          "location": "near_rear",
+          "family": "jpeg",
+          "severity": "severe",
+          "mask_key": "hidden_near_rear_disc_severe"
+        },
+        {
+          "key": "far_left_rear_opaque_disc_mild",
+          "location": "far_left_rear",
+          "family": "opaque_disc",
+          "severity": "mild",
+          "mask_key": "hidden_far_left_rear_disc_mild"
+        },
+        {
+          "key": "far_left_rear_opaque_disc_severe",
+          "location": "far_left_rear",
+          "family": "opaque_disc",
+          "severity": "severe",
+          "mask_key": "hidden_far_left_rear_disc_severe"
+        },
+        {
+          "key": "far_left_rear_opaque_vehicle_mild",
+          "location": "far_left_rear",
+          "family": "opaque_vehicle",
+          "severity": "mild",
+          "mask_key": "hidden_far_left_rear_vehicle_mild"
+        },
+        {
+          "key": "far_left_rear_opaque_vehicle_severe",
+          "location": "far_left_rear",
+          "family": "opaque_vehicle",
+          "severity": "severe",
+          "mask_key": "hidden_far_left_rear_vehicle_severe"
+        },
+        {
+          "key": "far_left_rear_missing_strip_mild",
+          "location": "far_left_rear",
+          "family": "missing_strip",
+          "severity": "mild",
+          "mask_key": "hidden_far_left_rear_strip_mild"
+        },
+        {
+          "key": "far_left_rear_missing_strip_severe",
+          "location": "far_left_rear",
+          "family": "missing_strip",
+          "severity": "severe",
+          "mask_key": "hidden_far_left_rear_strip_severe"
+        },
+        {
+          "key": "far_left_rear_blur_mild",
+          "location": "far_left_rear",
+          "family": "blur",
+          "severity": "mild",
+          "mask_key": "hidden_far_left_rear_disc_mild"
+        },
+        {
+          "key": "far_left_rear_blur_severe",
+          "location": "far_left_rear",
+          "family": "blur",
+          "severity": "severe",
+          "mask_key": "hidden_far_left_rear_disc_severe"
+        },
+        {
+          "key": "far_left_rear_clipping_mild",
+          "location": "far_left_rear",
+          "family": "clipping",
+          "severity": "mild",
+          "mask_key": "hidden_far_left_rear_disc_mild"
+        },
+        {
+          "key": "far_left_rear_clipping_severe",
+          "location": "far_left_rear",
+          "family": "clipping",
+          "severity": "severe",
+          "mask_key": "hidden_far_left_rear_disc_severe"
+        },
+        {
+          "key": "far_left_rear_jpeg_mild",
+          "location": "far_left_rear",
+          "family": "jpeg",
+          "severity": "mild",
+          "mask_key": "hidden_far_left_rear_disc_mild"
+        },
+        {
+          "key": "far_left_rear_jpeg_severe",
+          "location": "far_left_rear",
+          "family": "jpeg",
+          "severity": "severe",
+          "mask_key": "hidden_far_left_rear_disc_severe"
+        }
+      ]
+    },
+    {
+      "scene": "bourges_003",
+      "area": "bourges",
+      "split": "train",
+      "frames": [
+        {
+          "name": "prev2",
+          "id": "b2d6c9b1-d9e5-4027-ae52-d15a2051043a",
+          "path": "dataset_v1/images/b2d6c9b1-d9e5-4027-ae52-d15a2051043a.jpg",
+          "sha256": "eee6d45d799122b6c1189370beee9ea600a4ea2521d4f9c7a62cca67a7d9ac84"
+        },
+        {
+          "name": "prev1",
+          "id": "ef6625f1-8581-42bf-8f2a-3950a0ccac68",
+          "path": "dataset_v1/images/ef6625f1-8581-42bf-8f2a-3950a0ccac68.jpg",
+          "sha256": "32e0f4a2e417d7dbe8b39e9e17af20fd770edd3be11816b9ba8bf63f145613c7"
+        },
+        {
+          "name": "target",
+          "id": "34ce294d-3fc4-40bd-b0fd-60ade4f8d141",
+          "path": "dataset_v1/images/34ce294d-3fc4-40bd-b0fd-60ade4f8d141.jpg",
+          "sha256": "d7b8a4392423da6221a64c2646ebeaacea1dcc1abd0d8d0c0e78b826da7179b6"
+        },
+        {
+          "name": "next1",
+          "id": "5f4ddf17-58cc-4a46-85ee-5f81ed63e778",
+          "path": "dataset_v1/images/5f4ddf17-58cc-4a46-85ee-5f81ed63e778.jpg",
+          "sha256": "fdc5a04f8f8d74f45b0ebf1625b0aa03c9d7c8b5d5f2dff6fa2684c691e68373"
+        },
+        {
+          "name": "next2",
+          "id": "18563bb6-a3c2-4dff-9ef3-a32d7020b10e",
+          "path": "dataset_v1/images/18563bb6-a3c2-4dff-9ef3-a32d7020b10e.jpg",
+          "sha256": "9567d4e9dbb20b1f944592143212134240acbcb7e9f33777c82ede3f807f6305"
+        }
+      ],
+      "target": 2,
+      "projection": {
+        "size": 2200,
+        "fov": 163.302054963582
+      },
+      "manifest": {
+        "path": "controlled_v2/prepared/bourges_003/manifest.json",
+        "sha256": "8026c11e9f52eb5c75fbc3dc7aae66c9e013a55ae4ce7578913e335e2a0ab3ac"
+      },
+      "annotation": {
+        "path": "controlled_v2/annotations/bourges_003.json",
+        "sha256": "f5cfd697ee526b1d75b9a08436eefe6a679276c15d8f5a2bfdcc46da9ebc31e9"
+      },
+      "masks": {
+        "path": "controlled_v2/prepared/bourges_003/masks.npz",
+        "sha256": "12641ccaf06720422d85366bd1d58c9e12d0717fd7137531a9a56cb559f197c1"
+      },
+      "scoring_only_strata": {
+        "path": "controlled_v2/prepared/bourges_003/scoring_only_strata.npz",
+        "sha256": "e6b300e057666959d1f64c49288b408b37c1f479f641ee82d60bae049c52c340"
+      },
+      "jobs": [
+        {
+          "key": "forward_disc_mild",
+          "mask_key": "hidden_forward_disc_mild",
+          "kind": "controlled",
+          "mask_sha256": "a3984523d22f478c4f237930f763a3b16267b02dcc7b3eda2ddb8e3160ff2e85"
+        },
+        {
+          "key": "forward_disc_severe",
+          "mask_key": "hidden_forward_disc_severe",
+          "kind": "controlled",
+          "mask_sha256": "c6b668402e50e748a7e340afc6247576fa201d8b9e245070a1cd805afc75a23e"
+        },
+        {
+          "key": "forward_vehicle_mild",
+          "mask_key": "hidden_forward_vehicle_mild",
+          "kind": "controlled",
+          "mask_sha256": "660255848885c20179772b7868d30f59726dd8e58acb437d3b7413c4436d0484"
+        },
+        {
+          "key": "forward_vehicle_severe",
+          "mask_key": "hidden_forward_vehicle_severe",
+          "kind": "controlled",
+          "mask_sha256": "0455050c800f7500d2fd25574f51f02ef92c448d428918deb268ad981a43245b"
+        },
+        {
+          "key": "forward_strip_mild",
+          "mask_key": "hidden_forward_strip_mild",
+          "kind": "controlled",
+          "mask_sha256": "eb349f6d05e6b94a605a418920b9400e83f0cbeb6f9d01d7c798cab139ed5353"
+        },
+        {
+          "key": "forward_strip_severe",
+          "mask_key": "hidden_forward_strip_severe",
+          "kind": "controlled",
+          "mask_sha256": "81411c2cd758b7d4801b6e31d92721544b82feadde489f2570e0e7be3b7b2dc0"
+        },
+        {
+          "key": "rear_disc_mild",
+          "mask_key": "hidden_rear_disc_mild",
+          "kind": "controlled",
+          "mask_sha256": "759258732cac38938e9041ef6c7454bcc29476f6d28e0f22855af9357f634e6a"
+        },
+        {
+          "key": "rear_disc_severe",
+          "mask_key": "hidden_rear_disc_severe",
+          "kind": "controlled",
+          "mask_sha256": "61b2609ac378899c0caccbe9b171fd8d64111ac1acb81b6a96c9b7effc3aeaea"
+        },
+        {
+          "key": "rear_vehicle_mild",
+          "mask_key": "hidden_rear_vehicle_mild",
+          "kind": "controlled",
+          "mask_sha256": "5ca6ca159b78a977aa444d4cb5f3ef0d7febb38627fc76b79ad7bc67a6b5337e"
+        },
+        {
+          "key": "rear_vehicle_severe",
+          "mask_key": "hidden_rear_vehicle_severe",
+          "kind": "controlled",
+          "mask_sha256": "f915b51f280a44acde022f99bc7f8b6b89b213458801b2276a58a62d1d1df5d0"
+        },
+        {
+          "key": "rear_strip_mild",
+          "mask_key": "hidden_rear_strip_mild",
+          "kind": "controlled",
+          "mask_sha256": "278754ebe5cb041f94cdde87a10f8b1f250f675af47579741358eedc695a33fb"
+        },
+        {
+          "key": "rear_strip_severe",
+          "mask_key": "hidden_rear_strip_severe",
+          "kind": "controlled",
+          "mask_sha256": "14c72965c97fe504956b1c8028b9a884d3bbe57ea7931f2a1a547735b534f1b1"
+        },
+        {
+          "key": "footprint",
+          "mask_key": "region_footprint",
+          "kind": "natural"
+        }
+      ],
+      "conditions": [
+        {
+          "key": "forward_opaque_disc_mild",
+          "location": "forward",
+          "family": "opaque_disc",
+          "severity": "mild",
+          "mask_key": "hidden_forward_disc_mild"
+        },
+        {
+          "key": "forward_opaque_disc_severe",
+          "location": "forward",
+          "family": "opaque_disc",
+          "severity": "severe",
+          "mask_key": "hidden_forward_disc_severe"
+        },
+        {
+          "key": "forward_opaque_vehicle_mild",
+          "location": "forward",
+          "family": "opaque_vehicle",
+          "severity": "mild",
+          "mask_key": "hidden_forward_vehicle_mild"
+        },
+        {
+          "key": "forward_opaque_vehicle_severe",
+          "location": "forward",
+          "family": "opaque_vehicle",
+          "severity": "severe",
+          "mask_key": "hidden_forward_vehicle_severe"
+        },
+        {
+          "key": "forward_missing_strip_mild",
+          "location": "forward",
+          "family": "missing_strip",
+          "severity": "mild",
+          "mask_key": "hidden_forward_strip_mild"
+        },
+        {
+          "key": "forward_missing_strip_severe",
+          "location": "forward",
+          "family": "missing_strip",
+          "severity": "severe",
+          "mask_key": "hidden_forward_strip_severe"
+        },
+        {
+          "key": "forward_blur_mild",
+          "location": "forward",
+          "family": "blur",
+          "severity": "mild",
+          "mask_key": "hidden_forward_disc_mild"
+        },
+        {
+          "key": "forward_blur_severe",
+          "location": "forward",
+          "family": "blur",
+          "severity": "severe",
+          "mask_key": "hidden_forward_disc_severe"
+        },
+        {
+          "key": "forward_clipping_mild",
+          "location": "forward",
+          "family": "clipping",
+          "severity": "mild",
+          "mask_key": "hidden_forward_disc_mild"
+        },
+        {
+          "key": "forward_clipping_severe",
+          "location": "forward",
+          "family": "clipping",
+          "severity": "severe",
+          "mask_key": "hidden_forward_disc_severe"
+        },
+        {
+          "key": "forward_jpeg_mild",
+          "location": "forward",
+          "family": "jpeg",
+          "severity": "mild",
+          "mask_key": "hidden_forward_disc_mild"
+        },
+        {
+          "key": "forward_jpeg_severe",
+          "location": "forward",
+          "family": "jpeg",
+          "severity": "severe",
+          "mask_key": "hidden_forward_disc_severe"
+        },
+        {
+          "key": "rear_opaque_disc_mild",
+          "location": "rear",
+          "family": "opaque_disc",
+          "severity": "mild",
+          "mask_key": "hidden_rear_disc_mild"
+        },
+        {
+          "key": "rear_opaque_disc_severe",
+          "location": "rear",
+          "family": "opaque_disc",
+          "severity": "severe",
+          "mask_key": "hidden_rear_disc_severe"
+        },
+        {
+          "key": "rear_opaque_vehicle_mild",
+          "location": "rear",
+          "family": "opaque_vehicle",
+          "severity": "mild",
+          "mask_key": "hidden_rear_vehicle_mild"
+        },
+        {
+          "key": "rear_opaque_vehicle_severe",
+          "location": "rear",
+          "family": "opaque_vehicle",
+          "severity": "severe",
+          "mask_key": "hidden_rear_vehicle_severe"
+        },
+        {
+          "key": "rear_missing_strip_mild",
+          "location": "rear",
+          "family": "missing_strip",
+          "severity": "mild",
+          "mask_key": "hidden_rear_strip_mild"
+        },
+        {
+          "key": "rear_missing_strip_severe",
+          "location": "rear",
+          "family": "missing_strip",
+          "severity": "severe",
+          "mask_key": "hidden_rear_strip_severe"
+        },
+        {
+          "key": "rear_blur_mild",
+          "location": "rear",
+          "family": "blur",
+          "severity": "mild",
+          "mask_key": "hidden_rear_disc_mild"
+        },
+        {
+          "key": "rear_blur_severe",
+          "location": "rear",
+          "family": "blur",
+          "severity": "severe",
+          "mask_key": "hidden_rear_disc_severe"
+        },
+        {
+          "key": "rear_clipping_mild",
+          "location": "rear",
+          "family": "clipping",
+          "severity": "mild",
+          "mask_key": "hidden_rear_disc_mild"
+        },
+        {
+          "key": "rear_clipping_severe",
+          "location": "rear",
+          "family": "clipping",
+          "severity": "severe",
+          "mask_key": "hidden_rear_disc_severe"
+        },
+        {
+          "key": "rear_jpeg_mild",
+          "location": "rear",
+          "family": "jpeg",
+          "severity": "mild",
+          "mask_key": "hidden_rear_disc_mild"
+        },
+        {
+          "key": "rear_jpeg_severe",
+          "location": "rear",
+          "family": "jpeg",
+          "severity": "severe",
+          "mask_key": "hidden_rear_disc_severe"
+        }
+      ]
+    },
+    {
+      "scene": "bourges_045",
+      "area": "bourges",
+      "split": "train",
+      "frames": [
+        {
+          "name": "prev2",
+          "id": "9667a90b-f0b0-456b-b4b2-df080b4972f9",
+          "path": "dataset_v1/images/9667a90b-f0b0-456b-b4b2-df080b4972f9.jpg",
+          "sha256": "ca2665d4c0d20d578ad77358dd4e9e622f0d29cbd9a2c15beb77ffeb491d7a6b"
+        },
+        {
+          "name": "prev1",
+          "id": "2e83638f-ece1-423a-b97d-824985cfeeb9",
+          "path": "dataset_v1/images/2e83638f-ece1-423a-b97d-824985cfeeb9.jpg",
+          "sha256": "fa409f4856abc815564dc45753fa5e5510a2986c070715f3f5225bb8071a5cb6"
+        },
+        {
+          "name": "target",
+          "id": "be7ab0d6-74ac-4cfd-a6f3-70a6e06bf56b",
+          "path": "dataset_v1/images/be7ab0d6-74ac-4cfd-a6f3-70a6e06bf56b.jpg",
+          "sha256": "de4598a4460fcc0fb5f046cf0bc547711aa4fc7ff0a5ab7bf37159465c0f0b3a"
+        },
+        {
+          "name": "next1",
+          "id": "85a0cac9-ad26-4ed4-974c-96569da1f890",
+          "path": "dataset_v1/images/85a0cac9-ad26-4ed4-974c-96569da1f890.jpg",
+          "sha256": "dbacb91e6b12fd6d619dce24efd7412f80319e94116401d81935eb502d09e944"
+        },
+        {
+          "name": "next2",
+          "id": "43a16752-24f0-4027-85d3-09bc1a2949f5",
+          "path": "dataset_v1/images/43a16752-24f0-4027-85d3-09bc1a2949f5.jpg",
+          "sha256": "6e96d33e78bda663afbec2f80028b1762bffc5ea518caabfaac3f7ecbcfd87f9"
+        }
+      ],
+      "target": 2,
+      "projection": {
+        "size": 2200,
+        "fov": 163.302054963582
+      },
+      "manifest": {
+        "path": "controlled_v2/prepared/bourges_045/manifest.json",
+        "sha256": "c1e48cb4097c87855d5e6caace59b1864f51e02351b203e3e2dbbfcae3e6a531"
+      },
+      "annotation": {
+        "path": "controlled_v2/annotations/bourges_045.json",
+        "sha256": "71b6e02017b051fe277d1566f69a5435d9317586515b8f3244830e34080cf48a"
+      },
+      "masks": {
+        "path": "controlled_v2/prepared/bourges_045/masks.npz",
+        "sha256": "564b99fb3cc6f541c6d52993b537a5b74a612a2cb6a71a0f00d636643e58b900"
+      },
+      "scoring_only_strata": {
+        "path": "controlled_v2/prepared/bourges_045/scoring_only_strata.npz",
+        "sha256": "18172062f47ab8e5275bf4e60f52eda15faf4e04f1a869c49a217c40da7f5fcf"
+      },
+      "jobs": [
+        {
+          "key": "forward_disc_mild",
+          "mask_key": "hidden_forward_disc_mild",
+          "kind": "controlled",
+          "mask_sha256": "331b31a12912a9c305c908f94e18962139f10801929883a63d7d85c5de86b305"
+        },
+        {
+          "key": "forward_disc_severe",
+          "mask_key": "hidden_forward_disc_severe",
+          "kind": "controlled",
+          "mask_sha256": "11f2678b845c7f04f6d0e7caba0d1073b7fe667d26649ae658f7fb51cef386ef"
+        },
+        {
+          "key": "forward_vehicle_mild",
+          "mask_key": "hidden_forward_vehicle_mild",
+          "kind": "controlled",
+          "mask_sha256": "148705a32853f22f0c02574483600d4727bec4081c65f19a07c064919a49cf28"
+        },
+        {
+          "key": "forward_vehicle_severe",
+          "mask_key": "hidden_forward_vehicle_severe",
+          "kind": "controlled",
+          "mask_sha256": "5eced51f800af4949a5b4a2eea36809ee94e2e464425e5ecce79cb775d02f55b"
+        },
+        {
+          "key": "forward_strip_mild",
+          "mask_key": "hidden_forward_strip_mild",
+          "kind": "controlled",
+          "mask_sha256": "64ee14728cae4d952e2e0981d9f6bd585c8918dd191f58e6e8d1cdaf377a3dac"
+        },
+        {
+          "key": "forward_strip_severe",
+          "mask_key": "hidden_forward_strip_severe",
+          "kind": "controlled",
+          "mask_sha256": "7bd8ebd329edb0c5793425f853e378802422395cb160132fe82dfedbd1caabb4"
+        },
+        {
+          "key": "rear_disc_mild",
+          "mask_key": "hidden_rear_disc_mild",
+          "kind": "controlled",
+          "mask_sha256": "20d11d93888a9c00ac785eeff65ae20617eed9e72543da4c03b37774e9822074"
+        },
+        {
+          "key": "rear_disc_severe",
+          "mask_key": "hidden_rear_disc_severe",
+          "kind": "controlled",
+          "mask_sha256": "e86758b882d3fcdf183c001bcf6c6ec6e2a5b2ed063d7ca9fd2fcf624667838b"
+        },
+        {
+          "key": "rear_vehicle_mild",
+          "mask_key": "hidden_rear_vehicle_mild",
+          "kind": "controlled",
+          "mask_sha256": "f86bb754bebac538891e9edf91347a56b788568e5ed234bbc3b25d8580400474"
+        },
+        {
+          "key": "rear_vehicle_severe",
+          "mask_key": "hidden_rear_vehicle_severe",
+          "kind": "controlled",
+          "mask_sha256": "c9c60ff9aa9b61a5f4886b9478f6c74c20fa557e4070ca4a48430ce1cc855dad"
+        },
+        {
+          "key": "rear_strip_mild",
+          "mask_key": "hidden_rear_strip_mild",
+          "kind": "controlled",
+          "mask_sha256": "5bc2c83eaaceb1b5a7bb36d748952a230ac87a546a0344f089204bdb0ec2c097"
+        },
+        {
+          "key": "rear_strip_severe",
+          "mask_key": "hidden_rear_strip_severe",
+          "kind": "controlled",
+          "mask_sha256": "8433c6ee00c7291679dbdb4821f6ada54140dbdd701d5a78f7e23004324b07d0"
+        },
+        {
+          "key": "footprint",
+          "mask_key": "region_footprint",
+          "kind": "natural"
+        }
+      ],
+      "conditions": [
+        {
+          "key": "forward_opaque_disc_mild",
+          "location": "forward",
+          "family": "opaque_disc",
+          "severity": "mild",
+          "mask_key": "hidden_forward_disc_mild"
+        },
+        {
+          "key": "forward_opaque_disc_severe",
+          "location": "forward",
+          "family": "opaque_disc",
+          "severity": "severe",
+          "mask_key": "hidden_forward_disc_severe"
+        },
+        {
+          "key": "forward_opaque_vehicle_mild",
+          "location": "forward",
+          "family": "opaque_vehicle",
+          "severity": "mild",
+          "mask_key": "hidden_forward_vehicle_mild"
+        },
+        {
+          "key": "forward_opaque_vehicle_severe",
+          "location": "forward",
+          "family": "opaque_vehicle",
+          "severity": "severe",
+          "mask_key": "hidden_forward_vehicle_severe"
+        },
+        {
+          "key": "forward_missing_strip_mild",
+          "location": "forward",
+          "family": "missing_strip",
+          "severity": "mild",
+          "mask_key": "hidden_forward_strip_mild"
+        },
+        {
+          "key": "forward_missing_strip_severe",
+          "location": "forward",
+          "family": "missing_strip",
+          "severity": "severe",
+          "mask_key": "hidden_forward_strip_severe"
+        },
+        {
+          "key": "forward_blur_mild",
+          "location": "forward",
+          "family": "blur",
+          "severity": "mild",
+          "mask_key": "hidden_forward_disc_mild"
+        },
+        {
+          "key": "forward_blur_severe",
+          "location": "forward",
+          "family": "blur",
+          "severity": "severe",
+          "mask_key": "hidden_forward_disc_severe"
+        },
+        {
+          "key": "forward_clipping_mild",
+          "location": "forward",
+          "family": "clipping",
+          "severity": "mild",
+          "mask_key": "hidden_forward_disc_mild"
+        },
+        {
+          "key": "forward_clipping_severe",
+          "location": "forward",
+          "family": "clipping",
+          "severity": "severe",
+          "mask_key": "hidden_forward_disc_severe"
+        },
+        {
+          "key": "forward_jpeg_mild",
+          "location": "forward",
+          "family": "jpeg",
+          "severity": "mild",
+          "mask_key": "hidden_forward_disc_mild"
+        },
+        {
+          "key": "forward_jpeg_severe",
+          "location": "forward",
+          "family": "jpeg",
+          "severity": "severe",
+          "mask_key": "hidden_forward_disc_severe"
+        },
+        {
+          "key": "rear_opaque_disc_mild",
+          "location": "rear",
+          "family": "opaque_disc",
+          "severity": "mild",
+          "mask_key": "hidden_rear_disc_mild"
+        },
+        {
+          "key": "rear_opaque_disc_severe",
+          "location": "rear",
+          "family": "opaque_disc",
+          "severity": "severe",
+          "mask_key": "hidden_rear_disc_severe"
+        },
+        {
+          "key": "rear_opaque_vehicle_mild",
+          "location": "rear",
+          "family": "opaque_vehicle",
+          "severity": "mild",
+          "mask_key": "hidden_rear_vehicle_mild"
+        },
+        {
+          "key": "rear_opaque_vehicle_severe",
+          "location": "rear",
+          "family": "opaque_vehicle",
+          "severity": "severe",
+          "mask_key": "hidden_rear_vehicle_severe"
+        },
+        {
+          "key": "rear_missing_strip_mild",
+          "location": "rear",
+          "family": "missing_strip",
+          "severity": "mild",
+          "mask_key": "hidden_rear_strip_mild"
+        },
+        {
+          "key": "rear_missing_strip_severe",
+          "location": "rear",
+          "family": "missing_strip",
+          "severity": "severe",
+          "mask_key": "hidden_rear_strip_severe"
+        },
+        {
+          "key": "rear_blur_mild",
+          "location": "rear",
+          "family": "blur",
+          "severity": "mild",
+          "mask_key": "hidden_rear_disc_mild"
+        },
+        {
+          "key": "rear_blur_severe",
+          "location": "rear",
+          "family": "blur",
+          "severity": "severe",
+          "mask_key": "hidden_rear_disc_severe"
+        },
+        {
+          "key": "rear_clipping_mild",
+          "location": "rear",
+          "family": "clipping",
+          "severity": "mild",
+          "mask_key": "hidden_rear_disc_mild"
+        },
+        {
+          "key": "rear_clipping_severe",
+          "location": "rear",
+          "family": "clipping",
+          "severity": "severe",
+          "mask_key": "hidden_rear_disc_severe"
+        },
+        {
+          "key": "rear_jpeg_mild",
+          "location": "rear",
+          "family": "jpeg",
+          "severity": "mild",
+          "mask_key": "hidden_rear_disc_mild"
+        },
+        {
+          "key": "rear_jpeg_severe",
+          "location": "rear",
+          "family": "jpeg",
+          "severity": "severe",
+          "mask_key": "hidden_rear_disc_severe"
+        }
+      ]
+    }
+  ],
+  "controlled_masks": 72,
+  "natural_masks": 6,
+  "conditions": 144,
+  "comparison_controls": {
+    "previous_three_anchor_battery": {
+      "path": "controlled_v1/summary.json",
+      "sha256": "fea311e3dfc8d49139b5c4d236ecf0a07f8684c043cc52805ab90224f76e299c"
+    },
+    "previous_control_audit": {
+      "path": "controlled_v1/audit_001.json",
+      "sha256": "a9fa71a37a2f694891ed879d1d87fc963e5d2082fe5a72c1178b80be3bb1de82"
+    },
+    "alsace_footprint": {
+      "path": "sequence_v6/results/alsace_fields_0/footprint.json",
+      "sha256": "30ee4b6eb4b9b6be52a2ee667df42ca05e62522577484f78b4f1e540d31729e4"
+    }
+  },
+  "methods": [
+    "loftr_homography",
+    "loftr_metric_free"
+  ],
+  "baselines": [
+    "as_damaged",
+    "telea_r3"
+  ],
+  "input_isolation": "Only sanitized RGB/allowed masks enter registration. Evaluation RGB and scoring-only texture strata enter after registration and never choose donors.",
+  "natural_track": "Source support/abstention only; no clean target truth. Five annotated source images per query.",
+  "correlation": "Disc/blur/clipping/JPEG sharing a mask reuse the same donor prediction; conditions/pixels are not independent trials.",
+  "promotion": "No automatic promotion; preserve zero-coverage scenes, low-texture limitations, angular mismatch and same-pixel controls."
+}

@@ -1,0 +1,1662 @@
+{
+  "plan": {
+    "path": "controlled_v2/baseline_v1/execution_plan.json",
+    "sha256": "91d6659ca13f0774e78fa3c01648a8a970520421a812dcb3e7bd26878e6f07da"
+  },
+  "audit": {
+    "path": "controlled_v2/baseline_v1/audit_001.json",
+    "sha256": "689e47accf85240424fe7dbfe8a8c42c5c58031e960558e15484884a49c7c96a"
+  },
+  "source": {
+    "path": "diagnose_expanded_baseline.py",
+    "sha256": "77d83d66867c6629c18e7c5360815b9750bfe0745506f8b0b2109710e954795e"
+  },
+  "scenes": [
+    {
+      "scene": "gironde_013",
+      "area": "gironde",
+      "unique_pair_caches": 55,
+      "pair_proposal_reasons": {
+        "edge train/held-out support failed": 23,
+        "edge proposal passes held-out correspondence check": 32
+      },
+      "accepted_pair_count": 32,
+      "rejected_pair_count": 23,
+      "raw_match_counts": {
+        "count": 55,
+        "minimum": 61,
+        "median": 323.0,
+        "maximum": 833
+      },
+      "rejected_validation_median_px": {
+        "count": 23,
+        "minimum": 6.588256099155997,
+        "median": 363.63885756546995,
+        "maximum": 1141.894144897028
+      },
+      "accepted_validation_median_px": {
+        "count": 32,
+        "minimum": 2.239539348069708,
+        "median": 3.7577010865650946,
+        "maximum": 11.525683276187209
+      },
+      "model_failure_counts": {
+        "loftr_homography": {
+          "accepted_donor_geometry": 13
+        },
+        "loftr_metric_free": {
+          "accepted_donor_geometry": 13
+        }
+      },
+      "groups": [
+        {
+          "job": "cross_junction_disc_mild",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "accepted_donor_geometry",
+          "accepted_donors": 2,
+          "connected_frames": 4,
+          "accepted_graph_edges": 4
+        },
+        {
+          "job": "cross_junction_disc_mild",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "accepted_donor_geometry",
+          "accepted_donors": 2,
+          "connected_frames": 4,
+          "accepted_graph_edges": 4
+        },
+        {
+          "job": "cross_junction_disc_severe",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "accepted_donor_geometry",
+          "accepted_donors": 2,
+          "connected_frames": 4,
+          "accepted_graph_edges": 4
+        },
+        {
+          "job": "cross_junction_disc_severe",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "accepted_donor_geometry",
+          "accepted_donors": 2,
+          "connected_frames": 4,
+          "accepted_graph_edges": 4
+        },
+        {
+          "job": "cross_junction_vehicle_mild",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "accepted_donor_geometry",
+          "accepted_donors": 2,
+          "connected_frames": 3,
+          "accepted_graph_edges": 3
+        },
+        {
+          "job": "cross_junction_vehicle_mild",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "accepted_donor_geometry",
+          "accepted_donors": 2,
+          "connected_frames": 3,
+          "accepted_graph_edges": 3
+        },
+        {
+          "job": "cross_junction_vehicle_severe",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "accepted_donor_geometry",
+          "accepted_donors": 2,
+          "connected_frames": 3,
+          "accepted_graph_edges": 3
+        },
+        {
+          "job": "cross_junction_vehicle_severe",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "accepted_donor_geometry",
+          "accepted_donors": 2,
+          "connected_frames": 3,
+          "accepted_graph_edges": 3
+        },
+        {
+          "job": "cross_junction_strip_mild",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "accepted_donor_geometry",
+          "accepted_donors": 2,
+          "connected_frames": 4,
+          "accepted_graph_edges": 4
+        },
+        {
+          "job": "cross_junction_strip_mild",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "accepted_donor_geometry",
+          "accepted_donors": 2,
+          "connected_frames": 4,
+          "accepted_graph_edges": 4
+        },
+        {
+          "job": "cross_junction_strip_severe",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "accepted_donor_geometry",
+          "accepted_donors": 2,
+          "connected_frames": 3,
+          "accepted_graph_edges": 3
+        },
+        {
+          "job": "cross_junction_strip_severe",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "accepted_donor_geometry",
+          "accepted_donors": 2,
+          "connected_frames": 3,
+          "accepted_graph_edges": 3
+        },
+        {
+          "job": "rear_lane_disc_mild",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "accepted_donor_geometry",
+          "accepted_donors": 2,
+          "connected_frames": 4,
+          "accepted_graph_edges": 4
+        },
+        {
+          "job": "rear_lane_disc_mild",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "accepted_donor_geometry",
+          "accepted_donors": 2,
+          "connected_frames": 4,
+          "accepted_graph_edges": 4
+        },
+        {
+          "job": "rear_lane_disc_severe",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "accepted_donor_geometry",
+          "accepted_donors": 2,
+          "connected_frames": 3,
+          "accepted_graph_edges": 3
+        },
+        {
+          "job": "rear_lane_disc_severe",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "accepted_donor_geometry",
+          "accepted_donors": 2,
+          "connected_frames": 3,
+          "accepted_graph_edges": 3
+        },
+        {
+          "job": "rear_lane_vehicle_mild",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "accepted_donor_geometry",
+          "accepted_donors": 2,
+          "connected_frames": 3,
+          "accepted_graph_edges": 3
+        },
+        {
+          "job": "rear_lane_vehicle_mild",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "accepted_donor_geometry",
+          "accepted_donors": 2,
+          "connected_frames": 3,
+          "accepted_graph_edges": 3
+        },
+        {
+          "job": "rear_lane_vehicle_severe",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "accepted_donor_geometry",
+          "accepted_donors": 2,
+          "connected_frames": 3,
+          "accepted_graph_edges": 3
+        },
+        {
+          "job": "rear_lane_vehicle_severe",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "accepted_donor_geometry",
+          "accepted_donors": 2,
+          "connected_frames": 3,
+          "accepted_graph_edges": 3
+        },
+        {
+          "job": "rear_lane_strip_mild",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "accepted_donor_geometry",
+          "accepted_donors": 2,
+          "connected_frames": 3,
+          "accepted_graph_edges": 3
+        },
+        {
+          "job": "rear_lane_strip_mild",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "accepted_donor_geometry",
+          "accepted_donors": 2,
+          "connected_frames": 3,
+          "accepted_graph_edges": 3
+        },
+        {
+          "job": "rear_lane_strip_severe",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "accepted_donor_geometry",
+          "accepted_donors": 2,
+          "connected_frames": 3,
+          "accepted_graph_edges": 3
+        },
+        {
+          "job": "rear_lane_strip_severe",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "accepted_donor_geometry",
+          "accepted_donors": 2,
+          "connected_frames": 3,
+          "accepted_graph_edges": 3
+        },
+        {
+          "job": "footprint",
+          "kind": "natural",
+          "method": "loftr_homography",
+          "state": "accepted_donor_geometry",
+          "accepted_donors": 2,
+          "connected_frames": 4,
+          "accepted_graph_edges": 4
+        },
+        {
+          "job": "footprint",
+          "kind": "natural",
+          "method": "loftr_metric_free",
+          "state": "accepted_donor_geometry",
+          "accepted_donors": 2,
+          "connected_frames": 4,
+          "accepted_graph_edges": 4
+        }
+      ]
+    },
+    {
+      "scene": "gironde_129",
+      "area": "gironde",
+      "unique_pair_caches": 55,
+      "pair_proposal_reasons": {
+        "edge proposal passes held-out correspondence check": 20,
+        "edge train/held-out support failed": 35
+      },
+      "accepted_pair_count": 20,
+      "rejected_pair_count": 35,
+      "raw_match_counts": {
+        "count": 55,
+        "minimum": 77,
+        "median": 138.0,
+        "maximum": 266
+      },
+      "rejected_validation_median_px": {
+        "count": 35,
+        "minimum": 13.495158133054371,
+        "median": 29.904692418512987,
+        "maximum": 255.79151634551255
+      },
+      "accepted_validation_median_px": {
+        "count": 20,
+        "minimum": 2.9101402064105537,
+        "median": 17.556164824561808,
+        "maximum": 167.92578126401042
+      },
+      "model_failure_counts": {
+        "loftr_homography": {
+          "accepted_donor_geometry": 8,
+          "optimizer_nonconverged": 1,
+          "no_accepted_donors": 3,
+          "target_disconnected": 1
+        },
+        "loftr_metric_free": {
+          "accepted_donor_geometry": 8,
+          "no_accepted_donors": 4,
+          "target_disconnected": 1
+        }
+      },
+      "groups": [
+        {
+          "job": "forward_disc_mild",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "accepted_donor_geometry",
+          "accepted_donors": 1,
+          "connected_frames": 3,
+          "accepted_graph_edges": 2
+        },
+        {
+          "job": "forward_disc_mild",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "accepted_donor_geometry",
+          "accepted_donors": 1,
+          "connected_frames": 3,
+          "accepted_graph_edges": 2
+        },
+        {
+          "job": "forward_disc_severe",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "accepted_donor_geometry",
+          "accepted_donors": 1,
+          "connected_frames": 3,
+          "accepted_graph_edges": 2
+        },
+        {
+          "job": "forward_disc_severe",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "accepted_donor_geometry",
+          "accepted_donors": 1,
+          "connected_frames": 3,
+          "accepted_graph_edges": 2
+        },
+        {
+          "job": "forward_vehicle_mild",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "accepted_donor_geometry",
+          "accepted_donors": 1,
+          "connected_frames": 5,
+          "accepted_graph_edges": 4
+        },
+        {
+          "job": "forward_vehicle_mild",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "accepted_donor_geometry",
+          "accepted_donors": 1,
+          "connected_frames": 5,
+          "accepted_graph_edges": 4
+        },
+        {
+          "job": "forward_vehicle_severe",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "accepted_donor_geometry",
+          "accepted_donors": 1,
+          "connected_frames": 3,
+          "accepted_graph_edges": 2
+        },
+        {
+          "job": "forward_vehicle_severe",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "accepted_donor_geometry",
+          "accepted_donors": 1,
+          "connected_frames": 3,
+          "accepted_graph_edges": 2
+        },
+        {
+          "job": "forward_strip_mild",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "optimizer_nonconverged",
+          "accepted_donors": 0,
+          "connected_frames": 3,
+          "accepted_graph_edges": 3
+        },
+        {
+          "job": "forward_strip_mild",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "no_accepted_donors",
+          "accepted_donors": 0,
+          "connected_frames": 3,
+          "accepted_graph_edges": 3
+        },
+        {
+          "job": "forward_strip_severe",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "accepted_donor_geometry",
+          "accepted_donors": 1,
+          "connected_frames": 3,
+          "accepted_graph_edges": 2
+        },
+        {
+          "job": "forward_strip_severe",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "accepted_donor_geometry",
+          "accepted_donors": 1,
+          "connected_frames": 3,
+          "accepted_graph_edges": 2
+        },
+        {
+          "job": "rear_disc_mild",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "accepted_donor_geometry",
+          "accepted_donors": 1,
+          "connected_frames": 3,
+          "accepted_graph_edges": 2
+        },
+        {
+          "job": "rear_disc_mild",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "accepted_donor_geometry",
+          "accepted_donors": 1,
+          "connected_frames": 3,
+          "accepted_graph_edges": 2
+        },
+        {
+          "job": "rear_disc_severe",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "no_accepted_donors",
+          "accepted_donors": 0,
+          "connected_frames": 3,
+          "accepted_graph_edges": 3
+        },
+        {
+          "job": "rear_disc_severe",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "no_accepted_donors",
+          "accepted_donors": 0,
+          "connected_frames": 3,
+          "accepted_graph_edges": 3
+        },
+        {
+          "job": "rear_vehicle_mild",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": null
+        },
+        {
+          "job": "rear_vehicle_mild",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": 0
+        },
+        {
+          "job": "rear_vehicle_severe",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "no_accepted_donors",
+          "accepted_donors": 0,
+          "connected_frames": 3,
+          "accepted_graph_edges": 3
+        },
+        {
+          "job": "rear_vehicle_severe",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "no_accepted_donors",
+          "accepted_donors": 0,
+          "connected_frames": 3,
+          "accepted_graph_edges": 3
+        },
+        {
+          "job": "rear_strip_mild",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "accepted_donor_geometry",
+          "accepted_donors": 3,
+          "connected_frames": 5,
+          "accepted_graph_edges": 5
+        },
+        {
+          "job": "rear_strip_mild",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "accepted_donor_geometry",
+          "accepted_donors": 1,
+          "connected_frames": 5,
+          "accepted_graph_edges": 5
+        },
+        {
+          "job": "rear_strip_severe",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "no_accepted_donors",
+          "accepted_donors": 0,
+          "connected_frames": 3,
+          "accepted_graph_edges": 2
+        },
+        {
+          "job": "rear_strip_severe",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "no_accepted_donors",
+          "accepted_donors": 0,
+          "connected_frames": 3,
+          "accepted_graph_edges": 2
+        },
+        {
+          "job": "footprint",
+          "kind": "natural",
+          "method": "loftr_homography",
+          "state": "accepted_donor_geometry",
+          "accepted_donors": 1,
+          "connected_frames": 3,
+          "accepted_graph_edges": 2
+        },
+        {
+          "job": "footprint",
+          "kind": "natural",
+          "method": "loftr_metric_free",
+          "state": "accepted_donor_geometry",
+          "accepted_donors": 1,
+          "connected_frames": 3,
+          "accepted_graph_edges": 2
+        }
+      ]
+    },
+    {
+      "scene": "nantes_005",
+      "area": "nantes",
+      "unique_pair_caches": 55,
+      "pair_proposal_reasons": {
+        "edge train/held-out support failed": 55
+      },
+      "accepted_pair_count": 0,
+      "rejected_pair_count": 55,
+      "raw_match_counts": {
+        "count": 55,
+        "minimum": 23,
+        "median": 113.0,
+        "maximum": 192
+      },
+      "rejected_validation_median_px": {
+        "count": 55,
+        "minimum": 17.805735755227047,
+        "median": 167.62388807807687,
+        "maximum": 719.6214335378226
+      },
+      "accepted_validation_median_px": {
+        "count": 0,
+        "minimum": null,
+        "median": null,
+        "maximum": null
+      },
+      "model_failure_counts": {
+        "loftr_homography": {
+          "target_disconnected": 13
+        },
+        "loftr_metric_free": {
+          "target_disconnected": 13
+        }
+      },
+      "groups": [
+        {
+          "job": "near_rear_disc_mild",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": null
+        },
+        {
+          "job": "near_rear_disc_mild",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": 0
+        },
+        {
+          "job": "near_rear_disc_severe",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": null
+        },
+        {
+          "job": "near_rear_disc_severe",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": 0
+        },
+        {
+          "job": "near_rear_vehicle_mild",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": null
+        },
+        {
+          "job": "near_rear_vehicle_mild",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": 0
+        },
+        {
+          "job": "near_rear_vehicle_severe",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": null
+        },
+        {
+          "job": "near_rear_vehicle_severe",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": 0
+        },
+        {
+          "job": "near_rear_strip_mild",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": null
+        },
+        {
+          "job": "near_rear_strip_mild",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": 0
+        },
+        {
+          "job": "near_rear_strip_severe",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": null
+        },
+        {
+          "job": "near_rear_strip_severe",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": 0
+        },
+        {
+          "job": "far_rear_disc_mild",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": null
+        },
+        {
+          "job": "far_rear_disc_mild",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": 0
+        },
+        {
+          "job": "far_rear_disc_severe",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": null
+        },
+        {
+          "job": "far_rear_disc_severe",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": 0
+        },
+        {
+          "job": "far_rear_vehicle_mild",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": null
+        },
+        {
+          "job": "far_rear_vehicle_mild",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": 0
+        },
+        {
+          "job": "far_rear_vehicle_severe",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": null
+        },
+        {
+          "job": "far_rear_vehicle_severe",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": 0
+        },
+        {
+          "job": "far_rear_strip_mild",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": null
+        },
+        {
+          "job": "far_rear_strip_mild",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": 0
+        },
+        {
+          "job": "far_rear_strip_severe",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": null
+        },
+        {
+          "job": "far_rear_strip_severe",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": 0
+        },
+        {
+          "job": "footprint",
+          "kind": "natural",
+          "method": "loftr_homography",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": null
+        },
+        {
+          "job": "footprint",
+          "kind": "natural",
+          "method": "loftr_metric_free",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": 0
+        }
+      ]
+    },
+    {
+      "scene": "nantes_045",
+      "area": "nantes",
+      "unique_pair_caches": 55,
+      "pair_proposal_reasons": {
+        "edge proposal passes held-out correspondence check": 1,
+        "edge train/held-out support failed": 54
+      },
+      "accepted_pair_count": 1,
+      "rejected_pair_count": 54,
+      "raw_match_counts": {
+        "count": 55,
+        "minimum": 94,
+        "median": 160.0,
+        "maximum": 260
+      },
+      "rejected_validation_median_px": {
+        "count": 54,
+        "minimum": 32.54313450566373,
+        "median": 172.92460655481153,
+        "maximum": 440.7242992208812
+      },
+      "accepted_validation_median_px": {
+        "count": 1,
+        "minimum": 5.03142549892024,
+        "median": 5.03142549892024,
+        "maximum": 5.03142549892024
+      },
+      "model_failure_counts": {
+        "loftr_homography": {
+          "target_disconnected": 13
+        },
+        "loftr_metric_free": {
+          "target_disconnected": 13
+        }
+      },
+      "groups": [
+        {
+          "job": "near_rear_disc_mild",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": null
+        },
+        {
+          "job": "near_rear_disc_mild",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": 0
+        },
+        {
+          "job": "near_rear_disc_severe",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": null
+        },
+        {
+          "job": "near_rear_disc_severe",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": 0
+        },
+        {
+          "job": "near_rear_vehicle_mild",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": null
+        },
+        {
+          "job": "near_rear_vehicle_mild",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": 0
+        },
+        {
+          "job": "near_rear_vehicle_severe",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": null
+        },
+        {
+          "job": "near_rear_vehicle_severe",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": 0
+        },
+        {
+          "job": "near_rear_strip_mild",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": null
+        },
+        {
+          "job": "near_rear_strip_mild",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": 0
+        },
+        {
+          "job": "near_rear_strip_severe",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": null
+        },
+        {
+          "job": "near_rear_strip_severe",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": 0
+        },
+        {
+          "job": "far_left_rear_disc_mild",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": null
+        },
+        {
+          "job": "far_left_rear_disc_mild",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": 0
+        },
+        {
+          "job": "far_left_rear_disc_severe",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": null
+        },
+        {
+          "job": "far_left_rear_disc_severe",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": 0
+        },
+        {
+          "job": "far_left_rear_vehicle_mild",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": null
+        },
+        {
+          "job": "far_left_rear_vehicle_mild",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": 0
+        },
+        {
+          "job": "far_left_rear_vehicle_severe",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": null
+        },
+        {
+          "job": "far_left_rear_vehicle_severe",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": 0
+        },
+        {
+          "job": "far_left_rear_strip_mild",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": null
+        },
+        {
+          "job": "far_left_rear_strip_mild",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": 0
+        },
+        {
+          "job": "far_left_rear_strip_severe",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": null
+        },
+        {
+          "job": "far_left_rear_strip_severe",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": 0
+        },
+        {
+          "job": "footprint",
+          "kind": "natural",
+          "method": "loftr_homography",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": null
+        },
+        {
+          "job": "footprint",
+          "kind": "natural",
+          "method": "loftr_metric_free",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": 0
+        }
+      ]
+    },
+    {
+      "scene": "bourges_003",
+      "area": "bourges",
+      "unique_pair_caches": 55,
+      "pair_proposal_reasons": {
+        "edge train/held-out support failed": 55
+      },
+      "accepted_pair_count": 0,
+      "rejected_pair_count": 55,
+      "raw_match_counts": {
+        "count": 55,
+        "minimum": 41,
+        "median": 125.0,
+        "maximum": 255
+      },
+      "rejected_validation_median_px": {
+        "count": 55,
+        "minimum": 7.057183250499283,
+        "median": 33.51202626219874,
+        "maximum": 1164.8557809338072
+      },
+      "accepted_validation_median_px": {
+        "count": 0,
+        "minimum": null,
+        "median": null,
+        "maximum": null
+      },
+      "model_failure_counts": {
+        "loftr_homography": {
+          "target_disconnected": 13
+        },
+        "loftr_metric_free": {
+          "target_disconnected": 13
+        }
+      },
+      "groups": [
+        {
+          "job": "forward_disc_mild",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": null
+        },
+        {
+          "job": "forward_disc_mild",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": 0
+        },
+        {
+          "job": "forward_disc_severe",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": null
+        },
+        {
+          "job": "forward_disc_severe",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": 0
+        },
+        {
+          "job": "forward_vehicle_mild",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": null
+        },
+        {
+          "job": "forward_vehicle_mild",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": 0
+        },
+        {
+          "job": "forward_vehicle_severe",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": null
+        },
+        {
+          "job": "forward_vehicle_severe",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": 0
+        },
+        {
+          "job": "forward_strip_mild",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": null
+        },
+        {
+          "job": "forward_strip_mild",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": 0
+        },
+        {
+          "job": "forward_strip_severe",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": null
+        },
+        {
+          "job": "forward_strip_severe",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": 0
+        },
+        {
+          "job": "rear_disc_mild",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": null
+        },
+        {
+          "job": "rear_disc_mild",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": 0
+        },
+        {
+          "job": "rear_disc_severe",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": null
+        },
+        {
+          "job": "rear_disc_severe",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": 0
+        },
+        {
+          "job": "rear_vehicle_mild",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": null
+        },
+        {
+          "job": "rear_vehicle_mild",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": 0
+        },
+        {
+          "job": "rear_vehicle_severe",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": null
+        },
+        {
+          "job": "rear_vehicle_severe",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": 0
+        },
+        {
+          "job": "rear_strip_mild",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": null
+        },
+        {
+          "job": "rear_strip_mild",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": 0
+        },
+        {
+          "job": "rear_strip_severe",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": null
+        },
+        {
+          "job": "rear_strip_severe",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": 0
+        },
+        {
+          "job": "footprint",
+          "kind": "natural",
+          "method": "loftr_homography",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": null
+        },
+        {
+          "job": "footprint",
+          "kind": "natural",
+          "method": "loftr_metric_free",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": 0
+        }
+      ]
+    },
+    {
+      "scene": "bourges_045",
+      "area": "bourges",
+      "unique_pair_caches": 55,
+      "pair_proposal_reasons": {
+        "edge train/held-out support failed": 54,
+        "edge proposal passes held-out correspondence check": 1
+      },
+      "accepted_pair_count": 1,
+      "rejected_pair_count": 54,
+      "raw_match_counts": {
+        "count": 55,
+        "minimum": 26,
+        "median": 53.0,
+        "maximum": 132
+      },
+      "rejected_validation_median_px": {
+        "count": 54,
+        "minimum": 7.2091156598823005,
+        "median": 236.16558603543461,
+        "maximum": 5770.51926926564
+      },
+      "accepted_validation_median_px": {
+        "count": 1,
+        "minimum": 72.54323033242028,
+        "median": 72.54323033242028,
+        "maximum": 72.54323033242028
+      },
+      "model_failure_counts": {
+        "loftr_homography": {
+          "target_disconnected": 12,
+          "no_accepted_donors": 1
+        },
+        "loftr_metric_free": {
+          "target_disconnected": 12,
+          "optimizer_nonconverged": 1
+        }
+      },
+      "groups": [
+        {
+          "job": "forward_disc_mild",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": null
+        },
+        {
+          "job": "forward_disc_mild",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": 0
+        },
+        {
+          "job": "forward_disc_severe",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": null
+        },
+        {
+          "job": "forward_disc_severe",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": 0
+        },
+        {
+          "job": "forward_vehicle_mild",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": null
+        },
+        {
+          "job": "forward_vehicle_mild",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": 0
+        },
+        {
+          "job": "forward_vehicle_severe",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": null
+        },
+        {
+          "job": "forward_vehicle_severe",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": 0
+        },
+        {
+          "job": "forward_strip_mild",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": null
+        },
+        {
+          "job": "forward_strip_mild",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": 0
+        },
+        {
+          "job": "forward_strip_severe",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": null
+        },
+        {
+          "job": "forward_strip_severe",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": 0
+        },
+        {
+          "job": "rear_disc_mild",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": null
+        },
+        {
+          "job": "rear_disc_mild",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": 0
+        },
+        {
+          "job": "rear_disc_severe",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": null
+        },
+        {
+          "job": "rear_disc_severe",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": 0
+        },
+        {
+          "job": "rear_vehicle_mild",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "no_accepted_donors",
+          "accepted_donors": 0,
+          "connected_frames": 2,
+          "accepted_graph_edges": 1
+        },
+        {
+          "job": "rear_vehicle_mild",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "optimizer_nonconverged",
+          "accepted_donors": 0,
+          "connected_frames": 2,
+          "accepted_graph_edges": 1
+        },
+        {
+          "job": "rear_vehicle_severe",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": null
+        },
+        {
+          "job": "rear_vehicle_severe",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": 0
+        },
+        {
+          "job": "rear_strip_mild",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": null
+        },
+        {
+          "job": "rear_strip_mild",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": 0
+        },
+        {
+          "job": "rear_strip_severe",
+          "kind": "controlled",
+          "method": "loftr_homography",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": null
+        },
+        {
+          "job": "rear_strip_severe",
+          "kind": "controlled",
+          "method": "loftr_metric_free",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": 0
+        },
+        {
+          "job": "footprint",
+          "kind": "natural",
+          "method": "loftr_homography",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": null
+        },
+        {
+          "job": "footprint",
+          "kind": "natural",
+          "method": "loftr_metric_free",
+          "state": "target_disconnected",
+          "accepted_donors": 0,
+          "connected_frames": 1,
+          "accepted_graph_edges": 0
+        }
+      ]
+    }
+  ],
+  "uses_clean_target_rgb": false,
+  "selects_new_matches_or_donors": false,
+  "interpretation": "Registration/heldout-correspondence diagnostics only. Accepted geometry is not pixel support or correctness. Donor-only pairs deduplicated; mask-dependent pair observations remain correlated."
+}

@@ -1,0 +1,1214 @@
+{
+  "created_at_utc": "2026-10-31T17:40:32.908944+00:00",
+  "status": "expanded_baseline_complete_not_promoted",
+  "change": "Benchmark runner/scoring/audit expansion only; matcher, model weights, geometry, donor ranking and acceptance gates unchanged.",
+  "artifacts": {
+    "plan": {
+      "path": "controlled_v2/baseline_v1/execution_plan.json",
+      "sha256": "91d6659ca13f0774e78fa3c01648a8a970520421a812dcb3e7bd26878e6f07da"
+    },
+    "runner_tests": {
+      "path": "controlled_v2/baseline_v1/runner_validation.json",
+      "sha256": "4a40e74fd40a65fb16e7e5adb2fe986c7e7c71e9b1f7368a9630cc560ce1b983"
+    },
+    "summary": {
+      "path": "controlled_v2/baseline_v1/summary.json",
+      "sha256": "503fc1a5ece8d6198f3777315362ee313d229c7b87bb54ac127884030c712cc2"
+    },
+    "audit": {
+      "path": "controlled_v2/baseline_v1/audit_001.json",
+      "sha256": "689e47accf85240424fe7dbfe8a8c42c5c58031e960558e15484884a49c7c96a"
+    },
+    "visible_diagnostics": {
+      "path": "controlled_v2/baseline_v1/visible_evidence_diagnostic.json",
+      "sha256": "27a06c02153c4e7b1cb5e5398685dad81c6e094064292be1d58b8ac92cf7da34"
+    },
+    "retained_controls": {
+      "path": "controlled_v2/baseline_v1/retained_control_registry.json",
+      "sha256": "624203516933b8b299e29847b334e166ff9c212d92dbb8c4f6647de70cb0eee9"
+    }
+  },
+  "model": {
+    "checkpoint_sha256": "21f5bec5968178e8bc8b7633441836fe5de4f47d861dd2cd7dc38e271b0479ec",
+    "adapter_sha256": "b7d3ce798db5c76ba989ac71ccc0fc5e6d0814da08b02006c892aed9babf287e",
+    "packages": {
+      "kornia": "0.9.0",
+      "torch": "2.15.0",
+      "numpy": "2.5.4",
+      "opencv-python-headless": "5.0.0.93"
+    },
+    "installed_sources": {
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/loftr.py": "771263d3c8005d893ec9a2f71a12e1f0c188034a20623b0c759b63f9baf1f626",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/__init__.py": "8e60213949b09309fdec44d45e14d9181858bbd66de3cbe1c8173b64e4b3eaec",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/utils/position_encoding.py": "32e16a9e297ba115f9d20b6a7fba8cbeb7b2008a2891df170b441db919a9afcf",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/utils/__init__.py": "417973f07a3e714f493f6a97f0b157acb0ae8dcf0a3549b5079324cbbf3ab45d",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/utils/coarse_matching.py": "9269b2380bf984604ff5316e156ebded38b6b25eea7b237b6fd573db40b03e12",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/utils/supervision.py": "48adbb3a3ef3418cc35ffa58c0d77571cc913a66dc0e47041a252a2dca4074ea",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/utils/fine_matching.py": "354d3ac5485774e250f1590f27fd2216b5adb671cc237cdbae0950e53cf2d39e",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/utils/geometry.py": "d40b83ef0708bef7fd0c4ee6e425b20b78a73297052c6d7089f4c027bd1cb14a",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/loftr_module/fine_preprocess.py": "ff5c9e50a6ddb2ff44259250563695528bd08bf58c160b821b038629cb0abefd",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/loftr_module/__init__.py": "f282770d670f07e81151aeb2e5e6aa9a782dff74e741e3d609a07d7b411d2781",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/loftr_module/transformer.py": "79fcf1028cf23939f23b82ee6a22ee7a82154967cecc496cd3a23239c797ac20",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/loftr_module/linear_attention.py": "e39a8a5c1ef15f26601a29bf4ab5ea3025b000d2b024e23a226de09d6dec2789",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/backbone/__init__.py": "13f27ca439ff868fa3486db27b05b7dff8bde76ed98ee320ee72cb16a7832e39",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/backbone/resnet_fpn.py": "c67986c9d10fa8a8d412cf37926e7d2b24f848586906d585d8b06b13d1c61577"
+    }
+  },
+  "source_hashes": {
+    "run_dense.py": "bc3096d5977a5b2fd2ecd6444e7d394e3ebe40a401e73f37029ed6fc30face04",
+    "dense_experiment.py": "59d18a71738d818f349def1b65e1d3ea69d0631e93ff1317d77ddcd2c60eb080",
+    "dense_matching.py": "b7d3ce798db5c76ba989ac71ccc0fc5e6d0814da08b02006c892aed9babf287e",
+    "validate_dense_model.py": "c985a0088c8b62db5529ee8360b158eb1cd86e36502ee92c4da76bd840030b54",
+    "sequence_geometry.py": "e7ecd253de1ca48076ea56c277533fbdf4438e889625cfb7a279266a87edb31c",
+    "constrained_sequence.py": "a3ba9e2460c00de146f9e1d077ad2c08c6783a7c87320b97bea83a8cab93e24d",
+    "metric_plane.py": "73f0320c82821b6b2ff93309ae6b58ea980195bb582ed7d466d8ad5238cccb75",
+    "trajectory_matching.py": "ba7def19017d7d9750cb4dab41946ae72d1f987da35da183b22ca02d040d26c3",
+    "matching_v2.py": "31c21cde51d791a78936145579a49998a1506698a2f78cad3f98574f0e08cf77",
+    "repair.py": "779e3679ae205637fe66cd25f5f7214bc9c6c153d4acfd6b8c9fa8915b8f4c88",
+    "benchmark.py": "18901c663f774dca04b40b9857718a30e3c73b87de888b47ca15d3870f20dd1e",
+    "resource_guard.py": "4d192fe4fbba2ffc068a9fe5e3de5e29b43b434b35b79f438d848f2445d09814",
+    "controlled_occlusions.py": "b8935e24359bf53bb59e117c229479a157b3d55f420b2f26111dc271406e27b3",
+    "prepare_area_benchmark.py": "68c04e8731719611f9be77cf94460a4244883cd402d33f2e285d8c5472caa4a5",
+    "prepare_annotated_case_v2.py": "0f0aa743386c2040199fb05abb313498b30fec4480d704e6db3e2014039aed4b",
+    "area_recovery_metrics.py": "c604e4f5b235ea51e489d8e0e4bbba4feeeeeb697048a696d978be17db2edfca",
+    "run_expanded_baseline.py": "7fd41f076eabfebb946d7f842c4ed04c05ce1eb1fcaaa00efcfd2b135175e3dc",
+    "audit_expanded_baseline.py": "275541bddfaa7c0220999050e0870ad09f96355ba1e3a04f29ffc8859cc4b23c",
+    "summarize_expanded_baseline.py": "fa529545df5d63269923c359737cf7cd1559add963048f8a21eedbe1e014921c",
+    "test_expanded_baseline.py": "1b2a793903392a414846313661a17e5e431856d0ca8bcf946e81f2fb8375276f",
+    "validate_dense_run_v2.py": "66abd28e0075b55735d5bd44441f1528de18b367d558386c862309bd536a7bfc",
+    "audit_area_annotations.py": "4c9a0af803c5bafbb2d13b439092a998402d59a4106d6bc09ef1bdfde6f126dc",
+    "audit_controlled_benchmark.py": "ad2d46363ed4c20af9035bd044ebfcbf182188c6fea9eb716008d16a585f57ab"
+  },
+  "results": {
+    "additional_anchors": 6,
+    "new_controlled_conditions": 144,
+    "new_distinct_controlled_masks": 72,
+    "new_natural_masks": 6,
+    "new_method_evaluations": 156,
+    "independently_audited": true,
+    "tests_passed": 8,
+    "total_annotated_anchors": 9,
+    "total_controlled_conditions": 216,
+    "total_distinct_controlled_masks": 108,
+    "total_reviewed_frames": 45,
+    "all_four_new_nantes_bourges_anchors_abstain": true,
+    "gironde_aggregates": [
+      {
+        "area": "gironde",
+        "family": "blur",
+        "severity": "both",
+        "method": "loftr_metric_free",
+        "policy": "candidate",
+        "conditions": 8,
+        "anchors": 2,
+        "mask_pixels": 947312,
+        "accepted_pixels": 346019,
+        "coverage": 0.3652640312800851,
+        "abstention": 0.6347359687199149,
+        "equal_anchor_mean_coverage": 0.38050795334668364,
+        "zero_coverage_conditions": 1,
+        "mask_solid_angle_sr": 0.42773604472888455,
+        "accepted_solid_angle_sr": 0.16546729414546127,
+        "angular_coverage": 0.3868444013184364,
+        "angular_abstention": 0.6131555986815636,
+        "rgb_mae_255": 4.989542000102114,
+        "accepted_over_20_fraction": 0.029134238293272885,
+        "fraction_of_mask_with_rgb_mae_le_20": 0.3546223419528096,
+        "maximum_condition_p90_rgb": 18.66666603088379,
+        "gradient_mae": 1.6178145883823152,
+        "gradient_pixels": 322023,
+        "edge_orientation_error": 1.030824782529826,
+        "edge_pixels": 28278,
+        "angular_rgb_mae_255": 5.251331270705511,
+        "angular_fraction_with_rgb_mae_le_20": 0.3734701242069522,
+        "strata": {
+          "textured": {
+            "mask_pixels": 94800,
+            "accepted_pixels": 30546,
+            "coverage": 0.32221518987341774,
+            "rgb_mae_255": 10.296841921473625,
+            "accepted_over_20_fraction": 0.17187193085837754
+          },
+          "low_texture": {
+            "mask_pixels": 852512,
+            "accepted_pixels": 315473,
+            "coverage": 0.3700510960549529,
+            "rgb_mae_255": 4.475657187778352,
+            "accepted_over_20_fraction": 0.015313513359304917
+          }
+        },
+        "same_pixel_controls": {
+          "as_damaged": {
+            "pixels": 346019,
+            "source_mae_255": 4.989542000102114,
+            "control_mae_255": 3.758615374685591,
+            "source_better_pixels": 120766,
+            "source_worse_pixels": 207410,
+            "equal_pixels": 17843
+          },
+          "telea_r3": {
+            "pixels": 346019,
+            "source_mae_255": 4.989542000102114,
+            "control_mae_255": 9.694172863339874,
+            "source_better_pixels": 237083,
+            "source_worse_pixels": 99358,
+            "equal_pixels": 9578
+          }
+        }
+      },
+      {
+        "area": "gironde",
+        "family": "blur",
+        "severity": "both",
+        "method": "loftr_metric_free",
+        "policy": "corroborated",
+        "conditions": 8,
+        "anchors": 2,
+        "mask_pixels": 947312,
+        "accepted_pixels": 24311,
+        "coverage": 0.025663139493640956,
+        "abstention": 0.974336860506359,
+        "equal_anchor_mean_coverage": 0.020454472791033046,
+        "zero_coverage_conditions": 5,
+        "mask_solid_angle_sr": 0.42773604472888455,
+        "accepted_solid_angle_sr": 0.022188822940894526,
+        "angular_coverage": 0.051875036519212804,
+        "angular_abstention": 0.9481249634807872,
+        "rgb_mae_255": 4.6692306637598895,
+        "accepted_over_20_fraction": 0.0008638065073423018,
+        "fraction_of_mask_with_rgb_mae_le_20": 0.025640971506747514,
+        "maximum_condition_p90_rgb": 9.0,
+        "gradient_mae": 1.8010113926876246,
+        "gradient_pixels": 8126,
+        "edge_orientation_error": 0.9552781225873338,
+        "edge_pixels": 1249,
+        "angular_rgb_mae_255": 4.698665886199709,
+        "angular_fraction_with_rgb_mae_le_20": 0.051831373252637626,
+        "strata": {
+          "textured": {
+            "mask_pixels": 94800,
+            "accepted_pixels": 4180,
+            "coverage": 0.04409282700421941,
+            "rgb_mae_255": 5.0195374800637955,
+            "accepted_over_20_fraction": 0.002631578947368421
+          },
+          "low_texture": {
+            "mask_pixels": 852512,
+            "accepted_pixels": 20131,
+            "coverage": 0.023613743853458956,
+            "rgb_mae_255": 4.59649297103969,
+            "accepted_over_20_fraction": 0.0004967463116586359
+          }
+        },
+        "same_pixel_controls": {
+          "as_damaged": {
+            "pixels": 24311,
+            "source_mae_255": 4.6692306637598895,
+            "control_mae_255": 3.727050854894218,
+            "source_better_pixels": 8802,
+            "source_worse_pixels": 14441,
+            "equal_pixels": 1068
+          },
+          "telea_r3": {
+            "pixels": 24311,
+            "source_mae_255": 4.6692306637598895,
+            "control_mae_255": 5.758970562022678,
+            "source_better_pixels": 13463,
+            "source_worse_pixels": 9889,
+            "equal_pixels": 959
+          }
+        }
+      },
+      {
+        "area": "gironde",
+        "family": "clipping",
+        "severity": "both",
+        "method": "loftr_metric_free",
+        "policy": "candidate",
+        "conditions": 8,
+        "anchors": 2,
+        "mask_pixels": 947312,
+        "accepted_pixels": 346019,
+        "coverage": 0.3652640312800851,
+        "abstention": 0.6347359687199149,
+        "equal_anchor_mean_coverage": 0.38050795334668364,
+        "zero_coverage_conditions": 1,
+        "mask_solid_angle_sr": 0.42773604472888455,
+        "accepted_solid_angle_sr": 0.16546729414546127,
+        "angular_coverage": 0.3868444013184364,
+        "angular_abstention": 0.6131555986815636,
+        "rgb_mae_255": 4.989542000102114,
+        "accepted_over_20_fraction": 0.029134238293272885,
+        "fraction_of_mask_with_rgb_mae_le_20": 0.3546223419528096,
+        "maximum_condition_p90_rgb": 18.66666603088379,
+        "gradient_mae": 1.6178145883823152,
+        "gradient_pixels": 322023,
+        "edge_orientation_error": 1.030824782529826,
+        "edge_pixels": 28278,
+        "angular_rgb_mae_255": 5.251331270705511,
+        "angular_fraction_with_rgb_mae_le_20": 0.3734701242069522,
+        "strata": {
+          "textured": {
+            "mask_pixels": 94800,
+            "accepted_pixels": 30546,
+            "coverage": 0.32221518987341774,
+            "rgb_mae_255": 10.296841921473625,
+            "accepted_over_20_fraction": 0.17187193085837754
+          },
+          "low_texture": {
+            "mask_pixels": 852512,
+            "accepted_pixels": 315473,
+            "coverage": 0.3700510960549529,
+            "rgb_mae_255": 4.475657187778352,
+            "accepted_over_20_fraction": 0.015313513359304917
+          }
+        },
+        "same_pixel_controls": {
+          "as_damaged": {
+            "pixels": 346019,
+            "source_mae_255": 4.989542000102114,
+            "control_mae_255": 72.27914266750285,
+            "source_better_pixels": 344302,
+            "source_worse_pixels": 1669,
+            "equal_pixels": 48
+          },
+          "telea_r3": {
+            "pixels": 346019,
+            "source_mae_255": 4.989542000102114,
+            "control_mae_255": 9.694172863339874,
+            "source_better_pixels": 237083,
+            "source_worse_pixels": 99358,
+            "equal_pixels": 9578
+          }
+        }
+      },
+      {
+        "area": "gironde",
+        "family": "clipping",
+        "severity": "both",
+        "method": "loftr_metric_free",
+        "policy": "corroborated",
+        "conditions": 8,
+        "anchors": 2,
+        "mask_pixels": 947312,
+        "accepted_pixels": 24311,
+        "coverage": 0.025663139493640956,
+        "abstention": 0.974336860506359,
+        "equal_anchor_mean_coverage": 0.020454472791033046,
+        "zero_coverage_conditions": 5,
+        "mask_solid_angle_sr": 0.42773604472888455,
+        "accepted_solid_angle_sr": 0.022188822940894526,
+        "angular_coverage": 0.051875036519212804,
+        "angular_abstention": 0.9481249634807872,
+        "rgb_mae_255": 4.6692306637598895,
+        "accepted_over_20_fraction": 0.0008638065073423018,
+        "fraction_of_mask_with_rgb_mae_le_20": 0.025640971506747514,
+        "maximum_condition_p90_rgb": 9.0,
+        "gradient_mae": 1.8010113926876246,
+        "gradient_pixels": 8126,
+        "edge_orientation_error": 0.9552781225873338,
+        "edge_pixels": 1249,
+        "angular_rgb_mae_255": 4.698665886199709,
+        "angular_fraction_with_rgb_mae_le_20": 0.051831373252637626,
+        "strata": {
+          "textured": {
+            "mask_pixels": 94800,
+            "accepted_pixels": 4180,
+            "coverage": 0.04409282700421941,
+            "rgb_mae_255": 5.0195374800637955,
+            "accepted_over_20_fraction": 0.002631578947368421
+          },
+          "low_texture": {
+            "mask_pixels": 852512,
+            "accepted_pixels": 20131,
+            "coverage": 0.023613743853458956,
+            "rgb_mae_255": 4.59649297103969,
+            "accepted_over_20_fraction": 0.0004967463116586359
+          }
+        },
+        "same_pixel_controls": {
+          "as_damaged": {
+            "pixels": 24311,
+            "source_mae_255": 4.6692306637598895,
+            "control_mae_255": 84.22964913002345,
+            "source_better_pixels": 24311,
+            "source_worse_pixels": 0,
+            "equal_pixels": 0
+          },
+          "telea_r3": {
+            "pixels": 24311,
+            "source_mae_255": 4.6692306637598895,
+            "control_mae_255": 5.758970562022678,
+            "source_better_pixels": 13463,
+            "source_worse_pixels": 9889,
+            "equal_pixels": 959
+          }
+        }
+      },
+      {
+        "area": "gironde",
+        "family": "jpeg",
+        "severity": "both",
+        "method": "loftr_metric_free",
+        "policy": "candidate",
+        "conditions": 8,
+        "anchors": 2,
+        "mask_pixels": 947312,
+        "accepted_pixels": 346019,
+        "coverage": 0.3652640312800851,
+        "abstention": 0.6347359687199149,
+        "equal_anchor_mean_coverage": 0.38050795334668364,
+        "zero_coverage_conditions": 1,
+        "mask_solid_angle_sr": 0.42773604472888455,
+        "accepted_solid_angle_sr": 0.16546729414546127,
+        "angular_coverage": 0.3868444013184364,
+        "angular_abstention": 0.6131555986815636,
+        "rgb_mae_255": 4.989542000102114,
+        "accepted_over_20_fraction": 0.029134238293272885,
+        "fraction_of_mask_with_rgb_mae_le_20": 0.3546223419528096,
+        "maximum_condition_p90_rgb": 18.66666603088379,
+        "gradient_mae": 1.6178145883823152,
+        "gradient_pixels": 322023,
+        "edge_orientation_error": 1.030824782529826,
+        "edge_pixels": 28278,
+        "angular_rgb_mae_255": 5.251331270705511,
+        "angular_fraction_with_rgb_mae_le_20": 0.3734701242069522,
+        "strata": {
+          "textured": {
+            "mask_pixels": 94800,
+            "accepted_pixels": 30546,
+            "coverage": 0.32221518987341774,
+            "rgb_mae_255": 10.296841921473625,
+            "accepted_over_20_fraction": 0.17187193085837754
+          },
+          "low_texture": {
+            "mask_pixels": 852512,
+            "accepted_pixels": 315473,
+            "coverage": 0.3700510960549529,
+            "rgb_mae_255": 4.475657187778352,
+            "accepted_over_20_fraction": 0.015313513359304917
+          }
+        },
+        "same_pixel_controls": {
+          "as_damaged": {
+            "pixels": 346019,
+            "source_mae_255": 4.989542000102114,
+            "control_mae_255": 5.444990978337413,
+            "source_better_pixels": 191057,
+            "source_worse_pixels": 141831,
+            "equal_pixels": 13131
+          },
+          "telea_r3": {
+            "pixels": 346019,
+            "source_mae_255": 4.989542000102114,
+            "control_mae_255": 9.694172863339874,
+            "source_better_pixels": 237083,
+            "source_worse_pixels": 99358,
+            "equal_pixels": 9578
+          }
+        }
+      },
+      {
+        "area": "gironde",
+        "family": "jpeg",
+        "severity": "both",
+        "method": "loftr_metric_free",
+        "policy": "corroborated",
+        "conditions": 8,
+        "anchors": 2,
+        "mask_pixels": 947312,
+        "accepted_pixels": 24311,
+        "coverage": 0.025663139493640956,
+        "abstention": 0.974336860506359,
+        "equal_anchor_mean_coverage": 0.020454472791033046,
+        "zero_coverage_conditions": 5,
+        "mask_solid_angle_sr": 0.42773604472888455,
+        "accepted_solid_angle_sr": 0.022188822940894526,
+        "angular_coverage": 0.051875036519212804,
+        "angular_abstention": 0.9481249634807872,
+        "rgb_mae_255": 4.6692306637598895,
+        "accepted_over_20_fraction": 0.0008638065073423018,
+        "fraction_of_mask_with_rgb_mae_le_20": 0.025640971506747514,
+        "maximum_condition_p90_rgb": 9.0,
+        "gradient_mae": 1.8010113926876246,
+        "gradient_pixels": 8126,
+        "edge_orientation_error": 0.9552781225873338,
+        "edge_pixels": 1249,
+        "angular_rgb_mae_255": 4.698665886199709,
+        "angular_fraction_with_rgb_mae_le_20": 0.051831373252637626,
+        "strata": {
+          "textured": {
+            "mask_pixels": 94800,
+            "accepted_pixels": 4180,
+            "coverage": 0.04409282700421941,
+            "rgb_mae_255": 5.0195374800637955,
+            "accepted_over_20_fraction": 0.002631578947368421
+          },
+          "low_texture": {
+            "mask_pixels": 852512,
+            "accepted_pixels": 20131,
+            "coverage": 0.023613743853458956,
+            "rgb_mae_255": 4.59649297103969,
+            "accepted_over_20_fraction": 0.0004967463116586359
+          }
+        },
+        "same_pixel_controls": {
+          "as_damaged": {
+            "pixels": 24311,
+            "source_mae_255": 4.6692306637598895,
+            "control_mae_255": 6.20838303648554,
+            "source_better_pixels": 15939,
+            "source_worse_pixels": 7668,
+            "equal_pixels": 704
+          },
+          "telea_r3": {
+            "pixels": 24311,
+            "source_mae_255": 4.6692306637598895,
+            "control_mae_255": 5.758970562022678,
+            "source_better_pixels": 13463,
+            "source_worse_pixels": 9889,
+            "equal_pixels": 959
+          }
+        }
+      },
+      {
+        "area": "gironde",
+        "family": "missing_strip",
+        "severity": "both",
+        "method": "loftr_metric_free",
+        "policy": "candidate",
+        "conditions": 8,
+        "anchors": 2,
+        "mask_pixels": 638580,
+        "accepted_pixels": 233365,
+        "coverage": 0.36544364057753137,
+        "abstention": 0.6345563594224686,
+        "equal_anchor_mean_coverage": 0.3631157547349722,
+        "zero_coverage_conditions": 2,
+        "mask_solid_angle_sr": 0.3296027484432956,
+        "accepted_solid_angle_sr": 0.13286899460867097,
+        "angular_coverage": 0.4031185881677487,
+        "angular_abstention": 0.5968814118322513,
+        "rgb_mae_255": 5.3615780715474335,
+        "accepted_over_20_fraction": 0.038167677243802656,
+        "fraction_of_mask_with_rgb_mae_le_20": 0.35149550565316795,
+        "maximum_condition_p90_rgb": 26.66666603088379,
+        "gradient_mae": 1.7569839426329852,
+        "gradient_pixels": 214594,
+        "edge_orientation_error": 1.0546333988870589,
+        "edge_pixels": 24630,
+        "angular_rgb_mae_255": 5.643962479485489,
+        "angular_fraction_with_rgb_mae_le_20": 0.3853963639129001,
+        "strata": {
+          "textured": {
+            "mask_pixels": 72670,
+            "accepted_pixels": 27584,
+            "coverage": 0.3795789183982386,
+            "rgb_mae_255": 10.380897138437742,
+            "accepted_over_20_fraction": 0.17310759860788863
+          },
+          "low_texture": {
+            "mask_pixels": 565910,
+            "accepted_pixels": 205781,
+            "coverage": 0.3636284921630648,
+            "rgb_mae_255": 4.688761353088964,
+            "accepted_over_20_fraction": 0.020079599185541912
+          }
+        },
+        "same_pixel_controls": {
+          "as_damaged": {
+            "pixels": 233365,
+            "source_mae_255": 5.3615780715474335,
+            "control_mae_255": 182.10230183046585,
+            "source_better_pixels": 233365,
+            "source_worse_pixels": 0,
+            "equal_pixels": 0
+          },
+          "telea_r3": {
+            "pixels": 233365,
+            "source_mae_255": 5.3615780715474335,
+            "control_mae_255": 9.03583799341518,
+            "source_better_pixels": 155736,
+            "source_worse_pixels": 70686,
+            "equal_pixels": 6943
+          }
+        }
+      },
+      {
+        "area": "gironde",
+        "family": "missing_strip",
+        "severity": "both",
+        "method": "loftr_metric_free",
+        "policy": "corroborated",
+        "conditions": 8,
+        "anchors": 2,
+        "mask_pixels": 638580,
+        "accepted_pixels": 36009,
+        "coverage": 0.05638917598421498,
+        "abstention": 0.943610824015785,
+        "equal_anchor_mean_coverage": 0.04543103274254108,
+        "zero_coverage_conditions": 4,
+        "mask_solid_angle_sr": 0.3296027484432956,
+        "accepted_solid_angle_sr": 0.03548059913426668,
+        "angular_coverage": 0.10764655119485665,
+        "angular_abstention": 0.8923534488051433,
+        "rgb_mae_255": 4.744193581234321,
+        "accepted_over_20_fraction": 0.0008053542170013417,
+        "fraction_of_mask_with_rgb_mae_le_20": 0.05634376272354286,
+        "maximum_condition_p90_rgb": 10.0,
+        "gradient_mae": 1.8366007493920766,
+        "gradient_pixels": 11735,
+        "edge_orientation_error": 1.001207852602508,
+        "edge_pixels": 1896,
+        "angular_rgb_mae_255": 4.84428636950574,
+        "angular_fraction_with_rgb_mae_le_20": 0.10753924474696065,
+        "strata": {
+          "textured": {
+            "mask_pixels": 72670,
+            "accepted_pixels": 7061,
+            "coverage": 0.09716526764827302,
+            "rgb_mae_255": 4.991172166359817,
+            "accepted_over_20_fraction": 0.001982721994051834
+          },
+          "low_texture": {
+            "mask_pixels": 565910,
+            "accepted_pixels": 28948,
+            "coverage": 0.05115301019596755,
+            "rgb_mae_255": 4.683950531988393,
+            "accepted_over_20_fraction": 0.0005181705126433605
+          }
+        },
+        "same_pixel_controls": {
+          "as_damaged": {
+            "pixels": 36009,
+            "source_mae_255": 4.744193581234321,
+            "control_mae_255": 171.50105992020514,
+            "source_better_pixels": 36009,
+            "source_worse_pixels": 0,
+            "equal_pixels": 0
+          },
+          "telea_r3": {
+            "pixels": 36009,
+            "source_mae_255": 4.744193581234321,
+            "control_mae_255": 9.584650133762857,
+            "source_better_pixels": 25543,
+            "source_worse_pixels": 9504,
+            "equal_pixels": 962
+          }
+        }
+      },
+      {
+        "area": "gironde",
+        "family": "opaque_disc",
+        "severity": "both",
+        "method": "loftr_metric_free",
+        "policy": "candidate",
+        "conditions": 8,
+        "anchors": 2,
+        "mask_pixels": 947312,
+        "accepted_pixels": 346019,
+        "coverage": 0.3652640312800851,
+        "abstention": 0.6347359687199149,
+        "equal_anchor_mean_coverage": 0.38050795334668364,
+        "zero_coverage_conditions": 1,
+        "mask_solid_angle_sr": 0.42773604472888455,
+        "accepted_solid_angle_sr": 0.16546729414546127,
+        "angular_coverage": 0.3868444013184364,
+        "angular_abstention": 0.6131555986815636,
+        "rgb_mae_255": 4.989542000102114,
+        "accepted_over_20_fraction": 0.029134238293272885,
+        "fraction_of_mask_with_rgb_mae_le_20": 0.3546223419528096,
+        "maximum_condition_p90_rgb": 18.66666603088379,
+        "gradient_mae": 1.6178145883823152,
+        "gradient_pixels": 322023,
+        "edge_orientation_error": 1.030824782529826,
+        "edge_pixels": 28278,
+        "angular_rgb_mae_255": 5.251331270705511,
+        "angular_fraction_with_rgb_mae_le_20": 0.3734701242069522,
+        "strata": {
+          "textured": {
+            "mask_pixels": 94800,
+            "accepted_pixels": 30546,
+            "coverage": 0.32221518987341774,
+            "rgb_mae_255": 10.296841921473625,
+            "accepted_over_20_fraction": 0.17187193085837754
+          },
+          "low_texture": {
+            "mask_pixels": 852512,
+            "accepted_pixels": 315473,
+            "coverage": 0.3700510960549529,
+            "rgb_mae_255": 4.475657187778352,
+            "accepted_over_20_fraction": 0.015313513359304917
+          }
+        },
+        "same_pixel_controls": {
+          "as_damaged": {
+            "pixels": 346019,
+            "source_mae_255": 4.989542000102114,
+            "control_mae_255": 182.72085733249713,
+            "source_better_pixels": 346019,
+            "source_worse_pixels": 0,
+            "equal_pixels": 0
+          },
+          "telea_r3": {
+            "pixels": 346019,
+            "source_mae_255": 4.989542000102114,
+            "control_mae_255": 9.694172863339874,
+            "source_better_pixels": 237083,
+            "source_worse_pixels": 99358,
+            "equal_pixels": 9578
+          }
+        }
+      },
+      {
+        "area": "gironde",
+        "family": "opaque_disc",
+        "severity": "both",
+        "method": "loftr_metric_free",
+        "policy": "corroborated",
+        "conditions": 8,
+        "anchors": 2,
+        "mask_pixels": 947312,
+        "accepted_pixels": 24311,
+        "coverage": 0.025663139493640956,
+        "abstention": 0.974336860506359,
+        "equal_anchor_mean_coverage": 0.020454472791033046,
+        "zero_coverage_conditions": 5,
+        "mask_solid_angle_sr": 0.42773604472888455,
+        "accepted_solid_angle_sr": 0.022188822940894526,
+        "angular_coverage": 0.051875036519212804,
+        "angular_abstention": 0.9481249634807872,
+        "rgb_mae_255": 4.6692306637598895,
+        "accepted_over_20_fraction": 0.0008638065073423018,
+        "fraction_of_mask_with_rgb_mae_le_20": 0.025640971506747514,
+        "maximum_condition_p90_rgb": 9.0,
+        "gradient_mae": 1.8010113926876246,
+        "gradient_pixels": 8126,
+        "edge_orientation_error": 0.9552781225873338,
+        "edge_pixels": 1249,
+        "angular_rgb_mae_255": 4.698665886199709,
+        "angular_fraction_with_rgb_mae_le_20": 0.051831373252637626,
+        "strata": {
+          "textured": {
+            "mask_pixels": 94800,
+            "accepted_pixels": 4180,
+            "coverage": 0.04409282700421941,
+            "rgb_mae_255": 5.0195374800637955,
+            "accepted_over_20_fraction": 0.002631578947368421
+          },
+          "low_texture": {
+            "mask_pixels": 852512,
+            "accepted_pixels": 20131,
+            "coverage": 0.023613743853458956,
+            "rgb_mae_255": 4.59649297103969,
+            "accepted_over_20_fraction": 0.0004967463116586359
+          }
+        },
+        "same_pixel_controls": {
+          "as_damaged": {
+            "pixels": 24311,
+            "source_mae_255": 4.6692306637598895,
+            "control_mae_255": 170.77035086997657,
+            "source_better_pixels": 24311,
+            "source_worse_pixels": 0,
+            "equal_pixels": 0
+          },
+          "telea_r3": {
+            "pixels": 24311,
+            "source_mae_255": 4.6692306637598895,
+            "control_mae_255": 5.758970562022678,
+            "source_better_pixels": 13463,
+            "source_worse_pixels": 9889,
+            "equal_pixels": 959
+          }
+        }
+      },
+      {
+        "area": "gironde",
+        "family": "opaque_vehicle",
+        "severity": "both",
+        "method": "loftr_metric_free",
+        "policy": "candidate",
+        "conditions": 8,
+        "anchors": 2,
+        "mask_pixels": 1074420,
+        "accepted_pixels": 317186,
+        "coverage": 0.29521602352897375,
+        "abstention": 0.7047839764710262,
+        "equal_anchor_mean_coverage": 0.28463943674233394,
+        "zero_coverage_conditions": 2,
+        "mask_solid_angle_sr": 0.4981071789553093,
+        "accepted_solid_angle_sr": 0.15240047543156973,
+        "angular_coverage": 0.30595920289926853,
+        "angular_abstention": 0.6940407971007314,
+        "rgb_mae_255": 4.859315984942589,
+        "accepted_over_20_fraction": 0.021041281771578824,
+        "fraction_of_mask_with_rgb_mae_le_20": 0.28900429999441557,
+        "maximum_condition_p90_rgb": 18.33333396911621,
+        "gradient_mae": 1.6306181998309772,
+        "gradient_pixels": 295638,
+        "edge_orientation_error": 1.1607984507397153,
+        "edge_pixels": 23822,
+        "angular_rgb_mae_255": 5.095064530089017,
+        "angular_fraction_with_rgb_mae_le_20": 0.2985170251805733,
+        "strata": {
+          "textured": {
+            "mask_pixels": 103503,
+            "accepted_pixels": 25962,
+            "coverage": 0.2508333091794441,
+            "rgb_mae_255": 7.9414657319672335,
+            "accepted_over_20_fraction": 0.0945227640397504
+          },
+          "low_texture": {
+            "mask_pixels": 970917,
+            "accepted_pixels": 291224,
+            "coverage": 0.2999473693425906,
+            "rgb_mae_255": 4.584548892490546,
+            "accepted_over_20_fraction": 0.014490563964508419
+          }
+        },
+        "same_pixel_controls": {
+          "as_damaged": {
+            "pixels": 317186,
+            "source_mae_255": 4.859315984942589,
+            "control_mae_255": 148.96719485307253,
+            "source_better_pixels": 317186,
+            "source_worse_pixels": 0,
+            "equal_pixels": 0
+          },
+          "telea_r3": {
+            "pixels": 317186,
+            "source_mae_255": 4.859315984942589,
+            "control_mae_255": 9.391568354214877,
+            "source_better_pixels": 223080,
+            "source_worse_pixels": 85619,
+            "equal_pixels": 8487
+          }
+        }
+      },
+      {
+        "area": "gironde",
+        "family": "opaque_vehicle",
+        "severity": "both",
+        "method": "loftr_metric_free",
+        "policy": "corroborated",
+        "conditions": 8,
+        "anchors": 2,
+        "mask_pixels": 1074420,
+        "accepted_pixels": 38167,
+        "coverage": 0.035523352134174714,
+        "abstention": 0.9644766478658253,
+        "equal_anchor_mean_coverage": 0.028318966220838522,
+        "zero_coverage_conditions": 5,
+        "mask_solid_angle_sr": 0.4981071789553093,
+        "accepted_solid_angle_sr": 0.035326904498234606,
+        "angular_coverage": 0.07092229542309843,
+        "angular_abstention": 0.9290777045769015,
+        "rgb_mae_255": 4.915616457498188,
+        "accepted_over_20_fraction": 0.0017030418948306147,
+        "fraction_of_mask_with_rgb_mae_le_20": 0.0354628543772454,
+        "maximum_condition_p90_rgb": 10.333333015441895,
+        "gradient_mae": 1.8711684572218445,
+        "gradient_pixels": 12239,
+        "edge_orientation_error": 1.1040137606920193,
+        "edge_pixels": 1857,
+        "angular_rgb_mae_255": 5.000757245628334,
+        "angular_fraction_with_rgb_mae_le_20": 0.070785632909587,
+        "strata": {
+          "textured": {
+            "mask_pixels": 103503,
+            "accepted_pixels": 6574,
+            "coverage": 0.06351506719611992,
+            "rgb_mae_255": 5.33140655105973,
+            "accepted_over_20_fraction": 0.004411317310617584
+          },
+          "low_texture": {
+            "mask_pixels": 970917,
+            "accepted_pixels": 31593,
+            "coverage": 0.03253934167390209,
+            "rgb_mae_255": 4.829097162873632,
+            "accepted_over_20_fraction": 0.0011394929256480866
+          }
+        },
+        "same_pixel_controls": {
+          "as_damaged": {
+            "pixels": 38167,
+            "source_mae_255": 4.915616457498188,
+            "control_mae_255": 139.41326276626404,
+            "source_better_pixels": 38167,
+            "source_worse_pixels": 0,
+            "equal_pixels": 0
+          },
+          "telea_r3": {
+            "pixels": 38167,
+            "source_mae_255": 4.915616457498188,
+            "control_mae_255": 6.841940245063362,
+            "source_better_pixels": 23796,
+            "source_worse_pixels": 13014,
+            "equal_pixels": 1357
+          }
+        }
+      }
+    ],
+    "natural_support_without_truth": [
+      {
+        "scene": "gironde_013",
+        "policies": {
+          "candidate": {
+            "accepted_pixels": 104852,
+            "coverage": 0.5879397548475367,
+            "abstention": 0.4120602451524633,
+            "single_view_pixels": 47807,
+            "multi_view_pixels": 57045
+          },
+          "corroborated": {
+            "accepted_pixels": 44865,
+            "coverage": 0.2515728560374121,
+            "abstention": 0.7484271439625879,
+            "single_view_pixels": 0,
+            "multi_view_pixels": 44865
+          },
+          "strict": {
+            "accepted_pixels": 24710,
+            "coverage": 0.1385571218697081,
+            "abstention": 0.8614428781302919,
+            "single_view_pixels": 0,
+            "multi_view_pixels": 24710
+          }
+        },
+        "extended": {
+          "candidate": {
+            "mask_pixels": 178338,
+            "accepted_pixels": 104852,
+            "mask_solid_angle_sr": 2.3857318923153343,
+            "accepted_solid_angle_sr": 1.8085950860006248,
+            "angular_coverage": 0.7580881539230283,
+            "angular_abstention": 0.2419118460769717
+          },
+          "corroborated": {
+            "mask_pixels": 178338,
+            "accepted_pixels": 44865,
+            "mask_solid_angle_sr": 2.3857318923153343,
+            "accepted_solid_angle_sr": 0.6021668672453776,
+            "angular_coverage": 0.2524034109553607,
+            "angular_abstention": 0.7475965890446393
+          },
+          "strict": {
+            "mask_pixels": 178338,
+            "accepted_pixels": 24710,
+            "mask_solid_angle_sr": 2.3857318923153343,
+            "accepted_solid_angle_sr": 0.32307939057663243,
+            "angular_coverage": 0.1354214996317488,
+            "angular_abstention": 0.8645785003682512
+          }
+        }
+      },
+      {
+        "scene": "gironde_129",
+        "policies": {
+          "candidate": {
+            "accepted_pixels": 34765,
+            "coverage": 0.19493882403077303,
+            "abstention": 0.805061175969227,
+            "single_view_pixels": 34765,
+            "multi_view_pixels": 0
+          },
+          "corroborated": {
+            "accepted_pixels": 0,
+            "coverage": 0.0,
+            "abstention": 1.0,
+            "single_view_pixels": 0,
+            "multi_view_pixels": 0
+          },
+          "strict": {
+            "accepted_pixels": 0,
+            "coverage": 0.0,
+            "abstention": 1.0,
+            "single_view_pixels": 0,
+            "multi_view_pixels": 0
+          }
+        },
+        "extended": {
+          "candidate": {
+            "mask_pixels": 178338,
+            "accepted_pixels": 34765,
+            "mask_solid_angle_sr": 2.3857318923153343,
+            "accepted_solid_angle_sr": 0.48471640599581756,
+            "angular_coverage": 0.20317304201580003,
+            "angular_abstention": 0.7968269579842
+          },
+          "corroborated": {
+            "mask_pixels": 178338,
+            "accepted_pixels": 0,
+            "mask_solid_angle_sr": 2.3857318923153343,
+            "accepted_solid_angle_sr": 0.0,
+            "angular_coverage": 0.0,
+            "angular_abstention": 1.0
+          },
+          "strict": {
+            "mask_pixels": 178338,
+            "accepted_pixels": 0,
+            "mask_solid_angle_sr": 2.3857318923153343,
+            "accepted_solid_angle_sr": 0.0,
+            "angular_coverage": 0.0,
+            "angular_abstention": 1.0
+          }
+        }
+      },
+      {
+        "scene": "nantes_005",
+        "policies": {
+          "candidate": {
+            "accepted_pixels": 0,
+            "coverage": 0.0,
+            "abstention": 1.0,
+            "single_view_pixels": 0,
+            "multi_view_pixels": 0
+          },
+          "corroborated": {
+            "accepted_pixels": 0,
+            "coverage": 0.0,
+            "abstention": 1.0,
+            "single_view_pixels": 0,
+            "multi_view_pixels": 0
+          },
+          "strict": {
+            "accepted_pixels": 0,
+            "coverage": 0.0,
+            "abstention": 1.0,
+            "single_view_pixels": 0,
+            "multi_view_pixels": 0
+          }
+        },
+        "extended": {
+          "candidate": {
+            "mask_pixels": 436810,
+            "accepted_pixels": 0,
+            "mask_solid_angle_sr": 1.3974283419404803,
+            "accepted_solid_angle_sr": 0.0,
+            "angular_coverage": 0.0,
+            "angular_abstention": 1.0
+          },
+          "corroborated": {
+            "mask_pixels": 436810,
+            "accepted_pixels": 0,
+            "mask_solid_angle_sr": 1.3974283419404803,
+            "accepted_solid_angle_sr": 0.0,
+            "angular_coverage": 0.0,
+            "angular_abstention": 1.0
+          },
+          "strict": {
+            "mask_pixels": 436810,
+            "accepted_pixels": 0,
+            "mask_solid_angle_sr": 1.3974283419404803,
+            "accepted_solid_angle_sr": 0.0,
+            "angular_coverage": 0.0,
+            "angular_abstention": 1.0
+          }
+        }
+      },
+      {
+        "scene": "nantes_045",
+        "policies": {
+          "candidate": {
+            "accepted_pixels": 0,
+            "coverage": 0.0,
+            "abstention": 1.0,
+            "single_view_pixels": 0,
+            "multi_view_pixels": 0
+          },
+          "corroborated": {
+            "accepted_pixels": 0,
+            "coverage": 0.0,
+            "abstention": 1.0,
+            "single_view_pixels": 0,
+            "multi_view_pixels": 0
+          },
+          "strict": {
+            "accepted_pixels": 0,
+            "coverage": 0.0,
+            "abstention": 1.0,
+            "single_view_pixels": 0,
+            "multi_view_pixels": 0
+          }
+        },
+        "extended": {
+          "candidate": {
+            "mask_pixels": 716423,
+            "accepted_pixels": 0,
+            "mask_solid_angle_sr": 1.3444150856715407,
+            "accepted_solid_angle_sr": 0.0,
+            "angular_coverage": 0.0,
+            "angular_abstention": 1.0
+          },
+          "corroborated": {
+            "mask_pixels": 716423,
+            "accepted_pixels": 0,
+            "mask_solid_angle_sr": 1.3444150856715407,
+            "accepted_solid_angle_sr": 0.0,
+            "angular_coverage": 0.0,
+            "angular_abstention": 1.0
+          },
+          "strict": {
+            "mask_pixels": 716423,
+            "accepted_pixels": 0,
+            "mask_solid_angle_sr": 1.3444150856715407,
+            "accepted_solid_angle_sr": 0.0,
+            "angular_coverage": 0.0,
+            "angular_abstention": 1.0
+          }
+        }
+      },
+      {
+        "scene": "bourges_003",
+        "policies": {
+          "candidate": {
+            "accepted_pixels": 0,
+            "coverage": 0.0,
+            "abstention": 1.0,
+            "single_view_pixels": 0,
+            "multi_view_pixels": 0
+          },
+          "corroborated": {
+            "accepted_pixels": 0,
+            "coverage": 0.0,
+            "abstention": 1.0,
+            "single_view_pixels": 0,
+            "multi_view_pixels": 0
+          },
+          "strict": {
+            "accepted_pixels": 0,
+            "coverage": 0.0,
+            "abstention": 1.0,
+            "single_view_pixels": 0,
+            "multi_view_pixels": 0
+          }
+        },
+        "extended": {
+          "candidate": {
+            "mask_pixels": 184513,
+            "accepted_pixels": 0,
+            "mask_solid_angle_sr": 2.7769458390823414,
+            "accepted_solid_angle_sr": 0.0,
+            "angular_coverage": 0.0,
+            "angular_abstention": 1.0
+          },
+          "corroborated": {
+            "mask_pixels": 184513,
+            "accepted_pixels": 0,
+            "mask_solid_angle_sr": 2.7769458390823414,
+            "accepted_solid_angle_sr": 0.0,
+            "angular_coverage": 0.0,
+            "angular_abstention": 1.0
+          },
+          "strict": {
+            "mask_pixels": 184513,
+            "accepted_pixels": 0,
+            "mask_solid_angle_sr": 2.7769458390823414,
+            "accepted_solid_angle_sr": 0.0,
+            "angular_coverage": 0.0,
+            "angular_abstention": 1.0
+          }
+        }
+      },
+      {
+        "scene": "bourges_045",
+        "policies": {
+          "candidate": {
+            "accepted_pixels": 0,
+            "coverage": 0.0,
+            "abstention": 1.0,
+            "single_view_pixels": 0,
+            "multi_view_pixels": 0
+          },
+          "corroborated": {
+            "accepted_pixels": 0,
+            "coverage": 0.0,
+            "abstention": 1.0,
+            "single_view_pixels": 0,
+            "multi_view_pixels": 0
+          },
+          "strict": {
+            "accepted_pixels": 0,
+            "coverage": 0.0,
+            "abstention": 1.0,
+            "single_view_pixels": 0,
+            "multi_view_pixels": 0
+          }
+        },
+        "extended": {
+          "candidate": {
+            "mask_pixels": 184513,
+            "accepted_pixels": 0,
+            "mask_solid_angle_sr": 2.7769458390823414,
+            "accepted_solid_angle_sr": 0.0,
+            "angular_coverage": 0.0,
+            "angular_abstention": 1.0
+          },
+          "corroborated": {
+            "mask_pixels": 184513,
+            "accepted_pixels": 0,
+            "mask_solid_angle_sr": 2.7769458390823414,
+            "accepted_solid_angle_sr": 0.0,
+            "angular_coverage": 0.0,
+            "angular_abstention": 1.0
+          },
+          "strict": {
+            "mask_pixels": 184513,
+            "accepted_pixels": 0,
+            "mask_solid_angle_sr": 2.7769458390823414,
+            "accepted_solid_angle_sr": 0.0,
+            "angular_coverage": 0.0,
+            "angular_abstention": 1.0
+          }
+        }
+      }
+    ]
+  },
+  "conclusions": [
+    "Native model performance has not improved in this run; broader fixed controls now expose weaknesses before tuning.",
+    "Across the two new Gironde anchors, metric-free candidates cover36.53% disc/29.52% vehicle/36.54% strip pixels with4.99/4.86/5.36 RGB MAE. These are different target masks from earlier reports, not before/after gains.",
+    "On accepted textured pixels, above20 RGB-error tails are17.19% disc,9.45% vehicle,17.31% strip despite only2.91%/2.10%/3.82% tails overall. Low-texture asphalt conceals important failures.",
+    "Two-view policy reduces coverage to2.57%/3.55%/5.64%, with lower observed tails, but donor agreement still is not independently calibrated geometric reliability.",
+    "Same accepted Gironde pixels: source transfer beats Telea on this expanded opaque/strip subset but still worsens blur versus unchanged input,4.99 versus3.76 MAE. Earlier original Gironde strip control favored Telea. Neither can be advertised as universal.",
+    "Real Gironde footprint support is58.79% and19.49% projected,75.81% and20.32% angular; two-view support25.16% and0%. This measures availability only, with no clean under-car truth.",
+    "Nantes and Bourges still produce zero controlled and natural coverage at all four new anchors. Their four windows admit only2 of220 unique masked pair proposals, so another unchanged geometry-only fit is not justified.",
+    "All nine anchors are reused development/train. No held-out route image was read or scored. Controlled patches cover substantially smaller angular cones than the real ego masks."
+  ],
+  "graph": {
+    "candidate_graph": {
+      "path": "network_v1/candidate_graph.json",
+      "sha256": "98bc787697d71979ed4e818a797c789685a7c5f0b05ca5d3025e4d8979615eb2"
+    },
+    "new_visual_evidence": {
+      "path": "network_v1/visual_evidence_v2.json",
+      "sha256": "141bcefe3f6950d4ddde9449dce97c741d6fc5650e9e80badb7c948897a386ba"
+    },
+    "query_method_donor_decisions": 624,
+    "new_target_donor_pairs": 24,
+    "limitation": "Repeated query-specific decisions on the same donors are correlated. Metadata graph links elsewhere remain unverified."
+  },
+  "resources": {
+    "free_disk_gib": 14.34305191040039,
+    "image_cache_gib": 0.9676234927028418,
+    "reserved_gib": 0.5,
+    "minimum_free_gib": 8,
+    "safe_to_start_heavy_job": true,
+    "safe_to_start_acquisition": true,
+    "blockers": []
+  },
+  "new_downloads": 0,
+  "dataset_scaling": "315 admitted collections,100 frozen selected windows,20 complete/1 incomplete/79 pending; secondary acquisition unchanged while primary battery completed.",
+  "next_experiment": {
+    "hypothesis": "Ground detail and inter-view sampling changes may be lost in the global640px nadir resize. A bounded native-scale crop matcher could improve consistent evidence on the failed urban targets without changing the plane model.",
+    "requirements": [
+      "Create new versioned adapter/runner/plan; preserve every signed baseline and prior benchmark.",
+      "Predeclare crop sizes, pairing heuristic, overlap, deduplication and correspondence budget from allowed RGB/metadata only. Do not use clean target truth or scoring texture to choose crops, sources or confidence.",
+      "Prove crop-coordinate transforms on synthetic ground geometry; require actual MPS model translation and excluded-RGB invariance checks before road inference. No CPU fallback.",
+      "Deduplicate overlapping crop matches before held-out checks so repeated observations cannot inflate support; retain strict geometry/convergence/visibility and support gates.",
+      "Compare all72 new masks plus6 natural masks, the original36 controlled masks/3 natural anchors and all10 original Gironde/Alsace regions. Retained-control registry pins originals; no cherry-picked successes.",
+      "Report common/gained/lost pixels and all coverage/error/gradient/texture tails by area, family and severity, with unchanged-input and Telea same-pixel controls.",
+      "No promotion from coverage alone, donor agreement or low asphalt RGB error. All failures remain in denominators."
+    ]
+  }
+}

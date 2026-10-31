@@ -1,0 +1,719 @@
+{
+  "scene": "bourges_003",
+  "area": "bourges",
+  "job": {
+    "key": "footprint",
+    "mask_key": "region_footprint",
+    "kind": "natural"
+  },
+  "signature": {
+    "plan_sha256": "91d6659ca13f0774e78fa3c01648a8a970520421a812dcb3e7bd26878e6f07da",
+    "certificate": {
+      "path": "sequence_v6/model_validation_001.json",
+      "sha256": "04325bf0a79009ebeae8fb1c8ec4258e42a9a0e76eb05afb6a868a0635419e4a"
+    }
+  },
+  "graphs": {
+    "loftr_homography": {
+      "connected_frames": 1,
+      "reason": "target disconnected",
+      "poses": {
+        "2": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      }
+    },
+    "loftr_metric_free": {
+      "model": "metric_free",
+      "connected_frames": 1,
+      "edges": 0,
+      "optimizer_success": false,
+      "reason": "target disconnected",
+      "poses": {
+        "2": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      }
+    }
+  },
+  "correspondences": [
+    {
+      "i": 0,
+      "j": 1,
+      "path": "controlled_v2/baseline_v1/bourges_003/pairs/donor_only_0_1.npz",
+      "sha256": "de10377c5ff6b66f8e24a517e69f080bd730b693e161d8270e0395efcd3d65ad",
+      "matches": 178,
+      "proposal": {
+        "i": 0,
+        "j": 1,
+        "matches": 178,
+        "accepted": false,
+        "train_inliers": 15,
+        "inlier_ratio": 0.11278195488721804,
+        "validation_matches": 45,
+        "validation_inliers": 8,
+        "validation_fraction": 0.17777777777777778,
+        "validation_median_px": 40.55103990990799,
+        "reason": "edge train/held-out support failed"
+      },
+      "spatial_holdout": {
+        "folds": [
+          {
+            "block": 0,
+            "train": 156,
+            "heldout": 22,
+            "status": "measured",
+            "median_px": 17.507641019675795,
+            "fraction_below_5px": 0.2727272727272727,
+            "train_inliers": 20
+          },
+          {
+            "block": 1,
+            "train": 128,
+            "heldout": 50,
+            "status": "measured",
+            "median_px": 27.202990289025173,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 17
+          },
+          {
+            "block": 2,
+            "train": 151,
+            "heldout": 27,
+            "status": "measured",
+            "median_px": 28.34920779391084,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 18
+          },
+          {
+            "block": 3,
+            "train": 99,
+            "heldout": 79,
+            "status": "measured",
+            "median_px": 46.4970266913726,
+            "fraction_below_5px": 0.06329113924050633,
+            "train_inliers": 14
+          }
+        ],
+        "interpretation": "Spatial extrapolation diagnostic, not a calibrated probability or an acceptance gate"
+      },
+      "matcher": {
+        "matches": 178,
+        "max_side": 640,
+        "method": "masked_loftr_outdoor_640",
+        "minimum_confidence": 0.2003374695777893,
+        "weights": "explicit local checkpoint; caller must retain SHA-256"
+      }
+    },
+    {
+      "i": 0,
+      "j": 2,
+      "path": "controlled_v2/baseline_v1/bourges_003/pairs/footprint_0_2.npz",
+      "sha256": "9ed0facc8bce4fe97dfb35aa8c1d00a20b6ec4d28bfb6186aa7190403834aebf",
+      "matches": 157,
+      "proposal": {
+        "i": 0,
+        "j": 2,
+        "matches": 157,
+        "accepted": false,
+        "train_inliers": 11,
+        "inlier_ratio": 0.09401709401709402,
+        "validation_matches": 40,
+        "validation_inliers": 0,
+        "validation_fraction": 0.0,
+        "validation_median_px": 51.71994830122677,
+        "reason": "edge train/held-out support failed"
+      },
+      "spatial_holdout": {
+        "folds": [
+          {
+            "block": 0,
+            "train": 142,
+            "heldout": 15,
+            "status": "measured",
+            "median_px": 39.628274691771935,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 16
+          },
+          {
+            "block": 1,
+            "train": 115,
+            "heldout": 42,
+            "status": "measured",
+            "median_px": 185.29337706249515,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 15
+          },
+          {
+            "block": 2,
+            "train": 122,
+            "heldout": 35,
+            "status": "measured",
+            "median_px": 95.39134041530006,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 17
+          },
+          {
+            "block": 3,
+            "train": 92,
+            "heldout": 65,
+            "status": "measured",
+            "median_px": 511.9935188943277,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 11
+          }
+        ],
+        "interpretation": "Spatial extrapolation diagnostic, not a calibrated probability or an acceptance gate"
+      },
+      "matcher": {
+        "method": "masked_loftr_outdoor_640",
+        "matches": 157,
+        "max_side": 640,
+        "minimum_confidence": 0.20115149021148682,
+        "weights": "explicit local checkpoint; caller must retain SHA-256"
+      }
+    },
+    {
+      "i": 1,
+      "j": 2,
+      "path": "controlled_v2/baseline_v1/bourges_003/pairs/footprint_1_2.npz",
+      "sha256": "e3e068840b26ba4dc6904c66e019dbaf6564319437f0f97a162e6c104f03916c",
+      "matches": 255,
+      "proposal": {
+        "i": 1,
+        "j": 2,
+        "matches": 255,
+        "accepted": false,
+        "train_inliers": 23,
+        "inlier_ratio": 0.12041884816753927,
+        "validation_matches": 64,
+        "validation_inliers": 9,
+        "validation_fraction": 0.140625,
+        "validation_median_px": 28.26700984211819,
+        "reason": "edge train/held-out support failed"
+      },
+      "spatial_holdout": {
+        "folds": [
+          {
+            "block": 0,
+            "train": 229,
+            "heldout": 26,
+            "status": "measured",
+            "median_px": 8.06191839871379,
+            "fraction_below_5px": 0.19230769230769232,
+            "train_inliers": 21
+          },
+          {
+            "block": 1,
+            "train": 174,
+            "heldout": 81,
+            "status": "measured",
+            "median_px": 183.6343939435477,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 21
+          },
+          {
+            "block": 2,
+            "train": 209,
+            "heldout": 46,
+            "status": "measured",
+            "median_px": 78.41213822890991,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 22
+          },
+          {
+            "block": 3,
+            "train": 153,
+            "heldout": 102,
+            "status": "measured",
+            "median_px": 32.49259468732586,
+            "fraction_below_5px": 0.049019607843137254,
+            "train_inliers": 24
+          }
+        ],
+        "interpretation": "Spatial extrapolation diagnostic, not a calibrated probability or an acceptance gate"
+      },
+      "matcher": {
+        "method": "masked_loftr_outdoor_640",
+        "matches": 255,
+        "max_side": 640,
+        "minimum_confidence": 0.20087437331676483,
+        "weights": "explicit local checkpoint; caller must retain SHA-256"
+      }
+    },
+    {
+      "i": 1,
+      "j": 3,
+      "path": "controlled_v2/baseline_v1/bourges_003/pairs/donor_only_1_3.npz",
+      "sha256": "63a0b7bf5dbc3705ea5190176ae77fc3b9969469988bb9a6216b18cceb738938",
+      "matches": 129,
+      "proposal": {
+        "i": 1,
+        "j": 3,
+        "matches": 129,
+        "accepted": false,
+        "train_inliers": 12,
+        "inlier_ratio": 0.125,
+        "validation_matches": 33,
+        "validation_inliers": 2,
+        "validation_fraction": 0.06060606060606061,
+        "validation_median_px": 44.049864655158224,
+        "reason": "edge train/held-out support failed"
+      },
+      "spatial_holdout": {
+        "folds": [
+          {
+            "block": 0,
+            "train": 115,
+            "heldout": 14,
+            "status": "measured",
+            "median_px": 53.24854274531668,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 12
+          },
+          {
+            "block": 1,
+            "train": 99,
+            "heldout": 30,
+            "status": "measured",
+            "median_px": 133.63375575429092,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 15
+          },
+          {
+            "block": 2,
+            "train": 91,
+            "heldout": 38,
+            "status": "measured",
+            "median_px": 42.431010054981755,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 12
+          },
+          {
+            "block": 3,
+            "train": 82,
+            "heldout": 47,
+            "status": "measured",
+            "median_px": 54.380457400564886,
+            "fraction_below_5px": 0.0425531914893617,
+            "train_inliers": 13
+          }
+        ],
+        "interpretation": "Spatial extrapolation diagnostic, not a calibrated probability or an acceptance gate"
+      },
+      "matcher": {
+        "matches": 129,
+        "max_side": 640,
+        "method": "masked_loftr_outdoor_640",
+        "minimum_confidence": 0.2011346071958542,
+        "weights": "explicit local checkpoint; caller must retain SHA-256"
+      }
+    },
+    {
+      "i": 2,
+      "j": 3,
+      "path": "controlled_v2/baseline_v1/bourges_003/pairs/footprint_2_3.npz",
+      "sha256": "0566d634d48bb6860f89565cdbafbb82827fff945d4963dcbe170fb237af1a45",
+      "matches": 171,
+      "proposal": {
+        "i": 2,
+        "j": 3,
+        "matches": 171,
+        "accepted": false,
+        "train_inliers": 17,
+        "inlier_ratio": 0.1328125,
+        "validation_matches": 43,
+        "validation_inliers": 8,
+        "validation_fraction": 0.18604651162790697,
+        "validation_median_px": 26.764077856052673,
+        "reason": "edge train/held-out support failed"
+      },
+      "spatial_holdout": {
+        "folds": [
+          {
+            "block": 0,
+            "train": 149,
+            "heldout": 22,
+            "status": "measured",
+            "median_px": 31.662839129259506,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 17
+          },
+          {
+            "block": 1,
+            "train": 115,
+            "heldout": 56,
+            "status": "measured",
+            "median_px": 23.864634866645172,
+            "fraction_below_5px": 0.17857142857142858,
+            "train_inliers": 16
+          },
+          {
+            "block": 2,
+            "train": 129,
+            "heldout": 42,
+            "status": "measured",
+            "median_px": 88.78593089373041,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 23
+          },
+          {
+            "block": 3,
+            "train": 120,
+            "heldout": 51,
+            "status": "measured",
+            "median_px": 58.824560700242245,
+            "fraction_below_5px": 0.0392156862745098,
+            "train_inliers": 17
+          }
+        ],
+        "interpretation": "Spatial extrapolation diagnostic, not a calibrated probability or an acceptance gate"
+      },
+      "matcher": {
+        "method": "masked_loftr_outdoor_640",
+        "matches": 171,
+        "max_side": 640,
+        "minimum_confidence": 0.2009398192167282,
+        "weights": "explicit local checkpoint; caller must retain SHA-256"
+      }
+    },
+    {
+      "i": 2,
+      "j": 4,
+      "path": "controlled_v2/baseline_v1/bourges_003/pairs/footprint_2_4.npz",
+      "sha256": "a3911d14db8f2e63c58233050a9d9f640b9f7bc6b24e4028e83f217215364467",
+      "matches": 156,
+      "proposal": {
+        "i": 2,
+        "j": 4,
+        "matches": 156,
+        "accepted": false,
+        "train_inliers": 15,
+        "inlier_ratio": 0.1282051282051282,
+        "validation_matches": 39,
+        "validation_inliers": 6,
+        "validation_fraction": 0.15384615384615385,
+        "validation_median_px": 27.313241591720466,
+        "reason": "edge train/held-out support failed"
+      },
+      "spatial_holdout": {
+        "folds": [
+          {
+            "block": 0,
+            "train": 114,
+            "heldout": 42,
+            "status": "measured",
+            "median_px": 40.521190670571826,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 13
+          },
+          {
+            "block": 1,
+            "train": 112,
+            "heldout": 44,
+            "status": "measured",
+            "median_px": 27.39161197212036,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 16
+          },
+          {
+            "block": 2,
+            "train": 125,
+            "heldout": 31,
+            "status": "measured",
+            "median_px": 47.85789570923106,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 23
+          },
+          {
+            "block": 3,
+            "train": 117,
+            "heldout": 39,
+            "status": "measured",
+            "median_px": 191.97390824406625,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 21
+          }
+        ],
+        "interpretation": "Spatial extrapolation diagnostic, not a calibrated probability or an acceptance gate"
+      },
+      "matcher": {
+        "method": "masked_loftr_outdoor_640",
+        "matches": 156,
+        "max_side": 640,
+        "minimum_confidence": 0.20038634538650513,
+        "weights": "explicit local checkpoint; caller must retain SHA-256"
+      }
+    },
+    {
+      "i": 3,
+      "j": 4,
+      "path": "controlled_v2/baseline_v1/bourges_003/pairs/donor_only_3_4.npz",
+      "sha256": "a9dc5d47ecba8d71b612b3ade0d802381910138ee70ac8ab3593451ea5bcfa23",
+      "matches": 141,
+      "proposal": {
+        "i": 3,
+        "j": 4,
+        "matches": 141,
+        "accepted": false,
+        "train_inliers": 13,
+        "inlier_ratio": 0.12380952380952381,
+        "validation_matches": 36,
+        "validation_inliers": 9,
+        "validation_fraction": 0.25,
+        "validation_median_px": 27.4335529190965,
+        "reason": "edge train/held-out support failed"
+      },
+      "spatial_holdout": {
+        "folds": [
+          {
+            "block": 0,
+            "train": 123,
+            "heldout": 18,
+            "status": "measured",
+            "median_px": 51.68465195824205,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 17
+          },
+          {
+            "block": 1,
+            "train": 104,
+            "heldout": 37,
+            "status": "measured",
+            "median_px": 57.177515983640255,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 17
+          },
+          {
+            "block": 2,
+            "train": 108,
+            "heldout": 33,
+            "status": "measured",
+            "median_px": 43.18453116642094,
+            "fraction_below_5px": 0.030303030303030304,
+            "train_inliers": 16
+          },
+          {
+            "block": 3,
+            "train": 88,
+            "heldout": 53,
+            "status": "measured",
+            "median_px": 111.51771933830797,
+            "fraction_below_5px": 0.018867924528301886,
+            "train_inliers": 13
+          }
+        ],
+        "interpretation": "Spatial extrapolation diagnostic, not a calibrated probability or an acceptance gate"
+      },
+      "matcher": {
+        "matches": 141,
+        "max_side": 640,
+        "method": "masked_loftr_outdoor_640",
+        "minimum_confidence": 0.20005439221858978,
+        "weights": "explicit local checkpoint; caller must retain SHA-256"
+      }
+    }
+  ],
+  "methods": {
+    "loftr_homography": {
+      "policies": {
+        "candidate": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "abstention": 1.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0
+        },
+        "corroborated": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "abstention": 1.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0
+        },
+        "strict": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "abstention": 1.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0
+        }
+      },
+      "extended": {
+        "candidate": {
+          "mask_pixels": 184513,
+          "accepted_pixels": 0,
+          "mask_solid_angle_sr": 2.7769458390823414,
+          "accepted_solid_angle_sr": 0.0,
+          "angular_coverage": 0.0,
+          "angular_abstention": 1.0
+        },
+        "corroborated": {
+          "mask_pixels": 184513,
+          "accepted_pixels": 0,
+          "mask_solid_angle_sr": 2.7769458390823414,
+          "accepted_solid_angle_sr": 0.0,
+          "angular_coverage": 0.0,
+          "angular_abstention": 1.0
+        },
+        "strict": {
+          "mask_pixels": 184513,
+          "accepted_pixels": 0,
+          "mask_solid_angle_sr": 2.7769458390823414,
+          "accepted_solid_angle_sr": 0.0,
+          "angular_coverage": 0.0,
+          "angular_abstention": 1.0
+        }
+      },
+      "registrations": [
+        {
+          "method": "homography",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "optimizer did not converge or target disconnected"
+        },
+        {
+          "method": "homography",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "optimizer did not converge or target disconnected"
+        },
+        {
+          "method": "homography",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "optimizer did not converge or target disconnected"
+        },
+        {
+          "method": "homography",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "optimizer did not converge or target disconnected"
+        }
+      ],
+      "evidence": {
+        "path": "controlled_v2/baseline_v1/bourges_003/groups/footprint_loftr_homography.npz",
+        "sha256": "f07bcae157b6deb0fad5995fa771c913a0493b0bb6170405d7721f321b3a3351"
+      }
+    },
+    "loftr_metric_free": {
+      "policies": {
+        "candidate": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "abstention": 1.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0
+        },
+        "corroborated": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "abstention": 1.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0
+        },
+        "strict": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "abstention": 1.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0
+        }
+      },
+      "extended": {
+        "candidate": {
+          "mask_pixels": 184513,
+          "accepted_pixels": 0,
+          "mask_solid_angle_sr": 2.7769458390823414,
+          "accepted_solid_angle_sr": 0.0,
+          "angular_coverage": 0.0,
+          "angular_abstention": 1.0
+        },
+        "corroborated": {
+          "mask_pixels": 184513,
+          "accepted_pixels": 0,
+          "mask_solid_angle_sr": 2.7769458390823414,
+          "accepted_solid_angle_sr": 0.0,
+          "angular_coverage": 0.0,
+          "angular_abstention": 1.0
+        },
+        "strict": {
+          "mask_pixels": 184513,
+          "accepted_pixels": 0,
+          "mask_solid_angle_sr": 2.7769458390823414,
+          "accepted_solid_angle_sr": 0.0,
+          "angular_coverage": 0.0,
+          "angular_abstention": 1.0
+        }
+      },
+      "registrations": [
+        {
+          "method": "metric_free",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "optimizer did not converge or target disconnected"
+        },
+        {
+          "method": "metric_free",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "optimizer did not converge or target disconnected"
+        },
+        {
+          "method": "metric_free",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "optimizer did not converge or target disconnected"
+        },
+        {
+          "method": "metric_free",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "optimizer did not converge or target disconnected"
+        }
+      ],
+      "evidence": {
+        "path": "controlled_v2/baseline_v1/bourges_003/groups/footprint_loftr_metric_free.npz",
+        "sha256": "f07bcae157b6deb0fad5995fa771c913a0493b0bb6170405d7721f321b3a3351"
+      }
+    }
+  },
+  "created_at_utc": "2026-10-31T17:33:31.727859+00:00",
+  "runtime_seconds": 3.3594244999985676
+}

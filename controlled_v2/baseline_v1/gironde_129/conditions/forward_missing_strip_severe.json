@@ -1,0 +1,274 @@
+{
+  "scene": "gironde_129",
+  "area": "gironde",
+  "condition": {
+    "key": "forward_missing_strip_severe",
+    "location": "forward",
+    "family": "missing_strip",
+    "severity": "severe",
+    "mask_key": "hidden_forward_strip_severe"
+  },
+  "signature": {
+    "plan_sha256": "91d6659ca13f0774e78fa3c01648a8a970520421a812dcb3e7bd26878e6f07da",
+    "certificate": {
+      "path": "sequence_v6/model_validation_001.json",
+      "sha256": "04325bf0a79009ebeae8fb1c8ec4258e42a9a0e76eb05afb6a868a0635419e4a"
+    }
+  },
+  "geometry": {
+    "path": "controlled_v2/baseline_v1/gironde_129/groups/forward_strip_severe.json",
+    "sha256": "03c42ee0c227e6818d67e4b9c175eb8d9134626f7aa381d3c09bdb0c5bd3e883"
+  },
+  "baselines": {
+    "as_damaged": {
+      "metrics": {
+        "coverage": 1.0,
+        "abstention": 0.0,
+        "accepted_pixels": 63377,
+        "error": {
+          "pixels": 63377,
+          "mae_255": 195.73294202418333,
+          "psnr_db": 2.282485787314933,
+          "p90_rgb": 207.6666717529297,
+          "over_20_fraction": 1.0
+        },
+        "gradient": {
+          "pixels": 59705,
+          "gradient_mae": 1.1469440460205078,
+          "edge_pixels": 6085,
+          "orientation_error": 1.0
+        },
+        "appearance": {
+          "mask_pixels": 63377,
+          "accepted_pixels": 63377,
+          "accepted_rgb_mae_le_threshold_pixels": {
+            "10": 0,
+            "20": 0
+          },
+          "fraction_of_mask_with_rgb_mae_le_threshold": {
+            "10": 0.0,
+            "20": 0.0
+          },
+          "accepted_textured_pixels": 6291,
+          "accepted_low_texture_pixels": 57086
+        }
+      },
+      "extended": {
+        "mask_pixels": 63377,
+        "accepted_pixels": 63377,
+        "mask_solid_angle_sr": 0.03396494752925429,
+        "accepted_solid_angle_sr": 0.03396494752925429,
+        "angular_coverage": 1.0,
+        "angular_abstention": 0.0,
+        "angular_rgb_mae_255": 196.39001016897092,
+        "angular_rgb_mae_le_20_fraction_of_mask": 0.0,
+        "accepted_rgb_mae_le_threshold_pixels": {
+          "10": 0,
+          "20": 0
+        },
+        "strata": {
+          "textured": {
+            "mask_pixels": 6291,
+            "accepted_pixels": 6291,
+            "coverage": 1.0,
+            "rgb_mae_255": 210.66359349335028,
+            "over_20_fraction": 1.0
+          },
+          "low_texture": {
+            "mask_pixels": 57086,
+            "accepted_pixels": 57086,
+            "coverage": 1.0,
+            "rgb_mae_255": 194.08755211435377,
+            "over_20_fraction": 1.0
+          }
+        }
+      },
+      "evidence": {
+        "path": "controlled_v2/baseline_v1/gironde_129/conditions/forward_missing_strip_severe_as_damaged.npz",
+        "sha256": "70ad0f1cb61b4a6ae63f8d8d50e03c76e36a8aa0bb0438307b38724375e734d9"
+      }
+    },
+    "telea_r3": {
+      "metrics": {
+        "coverage": 1.0,
+        "abstention": 0.0,
+        "accepted_pixels": 63377,
+        "error": {
+          "pixels": 63377,
+          "mae_255": 7.669617263886479,
+          "psnr_db": 27.562939827503076,
+          "p90_rgb": 16.66666603088379,
+          "over_20_fraction": 0.06885778752544298
+        },
+        "gradient": {
+          "pixels": 59705,
+          "gradient_mae": 1.1680010557174683,
+          "edge_pixels": 6085,
+          "orientation_error": 0.8532389402389526
+        },
+        "appearance": {
+          "mask_pixels": 63377,
+          "accepted_pixels": 63377,
+          "accepted_rgb_mae_le_threshold_pixels": {
+            "10": 47854,
+            "20": 59013
+          },
+          "fraction_of_mask_with_rgb_mae_le_threshold": {
+            "10": 0.7550688735661202,
+            "20": 0.931142212474557
+          },
+          "accepted_textured_pixels": 6291,
+          "accepted_low_texture_pixels": 57086
+        }
+      },
+      "extended": {
+        "mask_pixels": 63377,
+        "accepted_pixels": 63377,
+        "mask_solid_angle_sr": 0.03396494752925429,
+        "accepted_solid_angle_sr": 0.03396494752925429,
+        "angular_coverage": 1.0,
+        "angular_abstention": 0.0,
+        "angular_rgb_mae_255": 7.517375257021425,
+        "angular_rgb_mae_le_20_fraction_of_mask": 0.9283225489327588,
+        "accepted_rgb_mae_le_threshold_pixels": {
+          "10": 47854,
+          "20": 59013
+        },
+        "strata": {
+          "textured": {
+            "mask_pixels": 6291,
+            "accepted_pixels": 6291,
+            "coverage": 1.0,
+            "rgb_mae_255": 15.800720606156945,
+            "over_20_fraction": 0.34366555396598314
+          },
+          "low_texture": {
+            "mask_pixels": 57086,
+            "accepted_pixels": 57086,
+            "coverage": 1.0,
+            "rgb_mae_255": 6.773552184423502,
+            "over_20_fraction": 0.03857338051361104
+          }
+        }
+      },
+      "evidence": {
+        "path": "controlled_v2/baseline_v1/gironde_129/conditions/forward_missing_strip_severe_telea_r3.npz",
+        "sha256": "69fe733deceb51800e56a8f7baa5c106374bbac5195a172357cf05b63f3a4ad6"
+      }
+    }
+  },
+  "same_pixel_controls": {
+    "loftr_homography": {
+      "candidate": {
+        "as_damaged": {
+          "pixels": 46118,
+          "source_mae_255": 8.573897393642396,
+          "control_mae_255": 195.06901860444944,
+          "source_better_pixels": 46118,
+          "source_worse_pixels": 0,
+          "equal_pixels": 0
+        },
+        "telea_r3": {
+          "pixels": 46118,
+          "source_mae_255": 8.573897393642396,
+          "control_mae_255": 7.653208436329994,
+          "source_better_pixels": 20980,
+          "source_worse_pixels": 23793,
+          "equal_pixels": 1345
+        }
+      },
+      "corroborated": {
+        "as_damaged": {
+          "pixels": 0,
+          "source_mae_255": null,
+          "control_mae_255": null,
+          "source_better_pixels": 0,
+          "source_worse_pixels": 0,
+          "equal_pixels": 0
+        },
+        "telea_r3": {
+          "pixels": 0,
+          "source_mae_255": null,
+          "control_mae_255": null,
+          "source_better_pixels": 0,
+          "source_worse_pixels": 0,
+          "equal_pixels": 0
+        }
+      },
+      "strict": {
+        "as_damaged": {
+          "pixels": 0,
+          "source_mae_255": null,
+          "control_mae_255": null,
+          "source_better_pixels": 0,
+          "source_worse_pixels": 0,
+          "equal_pixels": 0
+        },
+        "telea_r3": {
+          "pixels": 0,
+          "source_mae_255": null,
+          "control_mae_255": null,
+          "source_better_pixels": 0,
+          "source_worse_pixels": 0,
+          "equal_pixels": 0
+        }
+      }
+    },
+    "loftr_metric_free": {
+      "candidate": {
+        "as_damaged": {
+          "pixels": 46575,
+          "source_mae_255": 6.346323134728931,
+          "control_mae_255": 195.64543209876544,
+          "source_better_pixels": 46575,
+          "source_worse_pixels": 0,
+          "equal_pixels": 0
+        },
+        "telea_r3": {
+          "pixels": 46575,
+          "source_mae_255": 6.346323134728931,
+          "control_mae_255": 7.839176954732511,
+          "source_better_pixels": 26383,
+          "source_worse_pixels": 18632,
+          "equal_pixels": 1560
+        }
+      },
+      "corroborated": {
+        "as_damaged": {
+          "pixels": 0,
+          "source_mae_255": null,
+          "control_mae_255": null,
+          "source_better_pixels": 0,
+          "source_worse_pixels": 0,
+          "equal_pixels": 0
+        },
+        "telea_r3": {
+          "pixels": 0,
+          "source_mae_255": null,
+          "control_mae_255": null,
+          "source_better_pixels": 0,
+          "source_worse_pixels": 0,
+          "equal_pixels": 0
+        }
+      },
+      "strict": {
+        "as_damaged": {
+          "pixels": 0,
+          "source_mae_255": null,
+          "control_mae_255": null,
+          "source_better_pixels": 0,
+          "source_worse_pixels": 0,
+          "equal_pixels": 0
+        },
+        "telea_r3": {
+          "pixels": 0,
+          "source_mae_255": null,
+          "control_mae_255": null,
+          "source_better_pixels": 0,
+          "source_worse_pixels": 0,
+          "equal_pixels": 0
+        }
+      }
+    }
+  }
+}
