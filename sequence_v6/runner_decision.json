@@ -1,0 +1,74 @@
+{
+  "created_at_utc": "2026-10-31T13:25:51.168199+00:00",
+  "status": "runner_validated_locally_actual_model_and_roads_pending",
+  "promotion": false,
+  "failure_identified": "New dense matcher lacked an end-to-end runner; hard-road sparse graphs remain unsupported. Storage still prevents learned inference.",
+  "hypothesis": "An isolated, resumable runner can retain the frozen geometry/control rules and reject leakage or coherent but visibly wrong correspondence sets before model experiments.",
+  "change": [
+    "Added run_dense.py for 3 fixed failed roads and 15 regions, maximum5 regions per invocation, default1.",
+    "Hashes pin images, masks, sources, controls and local model; per-pair immutable cache resumes without rematching.",
+    "Added actual-MPS model preflight command and fail-closed certificate gate; this command has NOT been executed.",
+    "Hidden target truth enters only after registration; existing convergence, support, geometry and fusion thresholds preserved.",
+    "Added spatial quadrant holdout diagnostics and retained predictions for later scoring audits.",
+    "Status monitor now recognizes the model preflight as a heavy process."
+  ],
+  "results": {
+    "unit_tests_passed": 6,
+    "unit_test_command": "work/venv/bin/python -m pytest outputs/panorama-repair/tests/test_dense_experiment.py -q",
+    "control_masks_checked": 30,
+    "control_policy_count_checks": 90,
+    "correct_oracle_recovered_pixels_per_method": 1600,
+    "correct_oracle_coverage": 1.0,
+    "correct_oracle_rgb_mae_255": 0.0,
+    "coherent_wrong_oracle_coverage": 0.0,
+    "coherent_wrong_oracle_abstention": 1.0,
+    "new_real_road_recovery_runs": 0,
+    "new_coverage": null,
+    "new_error": null,
+    "learned_model_executed": false,
+    "installed_model_source_and_package_hashes_verified": true,
+    "model_runtime_imported": false
+  },
+  "validation": {
+    "path": "sequence_v6/runner_validation.json",
+    "sha256": "51dc796730e5eea333cf391d3a00a759b27c6995caf7fe474aa4a5f20e553bf8"
+  },
+  "plan": {
+    "path": "sequence_v6/execution_plan.json",
+    "sha256": "6fa863fd4b9013e493b9f7de1e705410d1a12c90e327ce309227275be0c66dd2"
+  },
+  "sources": {
+    "dense_experiment.py": "59d18a71738d818f349def1b65e1d3ea69d0631e93ff1317d77ddcd2c60eb080",
+    "run_dense.py": "bc3096d5977a5b2fd2ecd6444e7d394e3ebe40a401e73f37029ed6fc30face04",
+    "validate_dense_model.py": "c985a0088c8b62db5529ee8360b158eb1cd86e36502ee92c4da76bd840030b54",
+    "audit_dense_runner.py": "272fe600b4977f260b72bebf914bc6d920b9f56a052b9d479d2763262e572872",
+    "research_status.py": "a5539f18a45f3742843a4e9b641d37f8fc4980b99b5ac229583f300bc28935fa",
+    "tests/test_dense_experiment.py": "93b76e51ed917610f74d93c14b434b5e81225c38b8aeb94aaa4ba1b10ef70612"
+  },
+  "interpretation": "Synthetic oracle controls verify runner mechanics only. They do not establish LoFTR matches, real-road geometry, reliable car-footprint recovery, or held-out generalization.",
+  "limitation": "The model preflight tests a known translation; absolute pixel-center calibration under projective transforms remains unresolved and must be addressed before promotion.",
+  "blocker": {
+    "kind": "insufficient_free_disk",
+    "observed_free_gib": 5.302410125732422,
+    "minimum_free_gib": 8,
+    "planned_job_reservation_gib": 0.5,
+    "admission_requires_free_gib": 8.5,
+    "shortfall_for_planned_job_gib": 3.197589874267578,
+    "first_observed_utc": "2026-10-31T10:08:10+00:00",
+    "last_checked_utc": "2026-10-31T13:25:51.168199+00:00",
+    "consecutive_blocked_heartbeats": 4,
+    "operations_held": [
+      "model checkpoint download",
+      "MPS inference",
+      "image acquisition",
+      "catalog expansion"
+    ],
+    "external_files_deleted": false,
+    "new_recovery_runs": 0,
+    "local_work_completed": "Bounded dense runner, immutable per-pair resumption, model admission certificate, synthetic geometry and control-integrity audit."
+  },
+  "baseline_changed": false,
+  "dataset_expanded": false,
+  "notification_decision": "DONT_NOTIFY",
+  "next": "At >=8.5GiB, download the exact pinned checkpoint, run validate_dense_model.py on MPS, then run_dense.py --run on Gironde/Alsace/Bourges in bounded batches. If still blocked, build an independent saved-result validator, not another unchanged preflight."
+}

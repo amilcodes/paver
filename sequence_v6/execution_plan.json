@@ -1,0 +1,688 @@
+{
+  "experiment": "sequence_v6_dense_matching",
+  "status": "execution_plan_not_model_result",
+  "signature": {
+    "run_dense.py": "bc3096d5977a5b2fd2ecd6444e7d394e3ebe40a401e73f37029ed6fc30face04",
+    "dense_experiment.py": "59d18a71738d818f349def1b65e1d3ea69d0631e93ff1317d77ddcd2c60eb080",
+    "dense_matching.py": "b7d3ce798db5c76ba989ac71ccc0fc5e6d0814da08b02006c892aed9babf287e",
+    "validate_dense_model.py": "c985a0088c8b62db5529ee8360b158eb1cd86e36502ee92c4da76bd840030b54",
+    "sequence_geometry.py": "e7ecd253de1ca48076ea56c277533fbdf4438e889625cfb7a279266a87edb31c",
+    "constrained_sequence.py": "a3ba9e2460c00de146f9e1d077ad2c08c6783a7c87320b97bea83a8cab93e24d",
+    "metric_plane.py": "73f0320c82821b6b2ff93309ae6b58ea980195bb582ed7d466d8ad5238cccb75",
+    "trajectory_matching.py": "ba7def19017d7d9750cb4dab41946ae72d1f987da35da183b22ca02d040d26c3",
+    "matching_v2.py": "31c21cde51d791a78936145579a49998a1506698a2f78cad3f98574f0e08cf77",
+    "repair.py": "779e3679ae205637fe66cd25f5f7214bc9c6c153d4acfd6b8c9fa8915b8f4c88",
+    "benchmark.py": "18901c663f774dca04b40b9857718a30e3c73b87de888b47ca15d3870f20dd1e",
+    "resource_guard.py": "4d192fe4fbba2ffc068a9fe5e3de5e29b43b434b35b79f438d848f2445d09814"
+  },
+  "protocols": [
+    {
+      "path": "sequence_v6/protocol.json",
+      "sha256": "907459359012c9db77a2c4ce7196ebd68191d6d8fb77768bdb30be3bef2a4fd1"
+    },
+    {
+      "path": "sequence_v6/execution_protocol.json",
+      "sha256": "6e286ffc53ef5d9eefa149bccc5b8837689aab69a5a17b98d643b88c05497460"
+    },
+    {
+      "path": "benchmark_v2/protocol.json",
+      "sha256": "f4037b6e0f526654baa3afbf568cfbfa882aff7224ca115b163220770da447c6"
+    }
+  ],
+  "model": {
+    "checkpoint_sha256": "21f5bec5968178e8bc8b7633441836fe5de4f47d861dd2cd7dc38e271b0479ec",
+    "adapter_sha256": "b7d3ce798db5c76ba989ac71ccc0fc5e6d0814da08b02006c892aed9babf287e",
+    "packages": {
+      "kornia": "0.9.0",
+      "torch": "2.15.0",
+      "numpy": "2.5.4",
+      "opencv-python-headless": "5.0.0.93"
+    },
+    "installed_sources": {
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/loftr.py": "771263d3c8005d893ec9a2f71a12e1f0c188034a20623b0c759b63f9baf1f626",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/__init__.py": "8e60213949b09309fdec44d45e14d9181858bbd66de3cbe1c8173b64e4b3eaec",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/utils/position_encoding.py": "32e16a9e297ba115f9d20b6a7fba8cbeb7b2008a2891df170b441db919a9afcf",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/utils/__init__.py": "417973f07a3e714f493f6a97f0b157acb0ae8dcf0a3549b5079324cbbf3ab45d",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/utils/coarse_matching.py": "9269b2380bf984604ff5316e156ebded38b6b25eea7b237b6fd573db40b03e12",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/utils/supervision.py": "48adbb3a3ef3418cc35ffa58c0d77571cc913a66dc0e47041a252a2dca4074ea",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/utils/fine_matching.py": "354d3ac5485774e250f1590f27fd2216b5adb671cc237cdbae0950e53cf2d39e",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/utils/geometry.py": "d40b83ef0708bef7fd0c4ee6e425b20b78a73297052c6d7089f4c027bd1cb14a",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/loftr_module/fine_preprocess.py": "ff5c9e50a6ddb2ff44259250563695528bd08bf58c160b821b038629cb0abefd",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/loftr_module/__init__.py": "f282770d670f07e81151aeb2e5e6aa9a782dff74e741e3d609a07d7b411d2781",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/loftr_module/transformer.py": "79fcf1028cf23939f23b82ee6a22ee7a82154967cecc496cd3a23239c797ac20",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/loftr_module/linear_attention.py": "e39a8a5c1ef15f26601a29bf4ab5ea3025b000d2b024e23a226de09d6dec2789",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/backbone/__init__.py": "13f27ca439ff868fa3486db27b05b7dff8bde76ed98ee320ee72cb16a7832e39",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/backbone/resnet_fpn.py": "c67986c9d10fa8a8d412cf37926e7d2b24f848586906d585d8b06b13d1c61577"
+    }
+  },
+  "policies": {
+    "candidate": {
+      "min_views": 1,
+      "max_disagreement": 18
+    },
+    "corroborated": {
+      "min_views": 2,
+      "max_disagreement": 12
+    },
+    "strict": {
+      "min_views": 2,
+      "max_disagreement": 8
+    }
+  },
+  "cases": [
+    {
+      "case": "gironde_0",
+      "split": "development",
+      "frames": [
+        {
+          "name": "prev2",
+          "id": "50440b36-e1cd-4696-891e-e97f52cada25",
+          "path": "benchmark_v2/data/gironde_0/prev2.jpg",
+          "sha256": "cc02664caed7e72d5fd7215af0bbeb050be9f7799e4d33b79225c0b4a84621f1"
+        },
+        {
+          "name": "prev1",
+          "id": "17f86b15-5d81-401b-ad7c-02d86a91a3e1",
+          "path": "benchmark_v2/data/gironde_0/prev1.jpg",
+          "sha256": "2e373b698ceb748fad1a79fcd2a0166b2c2ef4f2c1318b159a569cb7d525d926"
+        },
+        {
+          "name": "target",
+          "id": "fda158d7-bc27-4f5f-940c-7a55c3b66bee",
+          "path": "benchmark_v2/data/gironde_0/target.jpg",
+          "sha256": "2d247bafbce97435657d3dc66a1f47bd398e11bb55ba394cdc836ac7d1793775"
+        },
+        {
+          "name": "next1",
+          "id": "a589fb9a-e84d-4c80-bc1f-9b8617deee83",
+          "path": "benchmark_v2/data/gironde_0/next1.jpg",
+          "sha256": "48500725d19ea9e2159f4b2cca4d6c04683c1d7c214d2ae40bd726eaf290b558"
+        },
+        {
+          "name": "next2",
+          "id": "0aa5babf-cc5f-4f11-96fa-ef95bce05360",
+          "path": "benchmark_v2/data/gironde_0/next2.jpg",
+          "sha256": "63f08db91101ca751260fbad578a3f756e45485a0504f38b78f5191afa7f6bf4"
+        }
+      ],
+      "projection": {
+        "size": 2200,
+        "fov": 163.302054963582
+      },
+      "inputs": [
+        {
+          "path": "benchmark_v2/data/gironde_0/manifest.json",
+          "sha256": "1ac8f7cb9c73f316b1636b1da2f27fa3784879eff46009f14efc8854a42097ab"
+        },
+        {
+          "path": "sequence_v1/protocol.json",
+          "sha256": "17754d148852911c3f1acd51a9b43f7baf8c47cddf4ecf608f67febc08baff3a"
+        }
+      ],
+      "jobs": [
+        {
+          "region": "footprint",
+          "mask": {
+            "path": "benchmark_v2/results/gironde_0/disk_lightglue/footprint_evidence.npz",
+            "sha256": "48872c622133aa5c4c6b8867877401331b4bcffeb35ffa0c7a5dca43087e2f32"
+          },
+          "mask_key": "mask",
+          "controls": {
+            "homography_converged": {
+              "record": {
+                "path": "sequence_v5/results/sequence_v1/gironde_0/footprint.json",
+                "sha256": "a295d432b32b517c8d03cb4ca280d300e0ba186da560673e2d99a3682b1d263a"
+              },
+              "evidence": {
+                "path": "sequence_v5/results/sequence_v1/gironde_0/footprint_homography_converged_evidence.npz",
+                "sha256": "48872c622133aa5c4c6b8867877401331b4bcffeb35ffa0c7a5dca43087e2f32"
+              }
+            },
+            "metric_free": {
+              "record": {
+                "path": "sequence_v5/results/sequence_v1/gironde_0/footprint.json",
+                "sha256": "a295d432b32b517c8d03cb4ca280d300e0ba186da560673e2d99a3682b1d263a"
+              },
+              "evidence": {
+                "path": "sequence_v5/results/sequence_v1/gironde_0/footprint_metric_free_evidence.npz",
+                "sha256": "48872c622133aa5c4c6b8867877401331b4bcffeb35ffa0c7a5dca43087e2f32"
+              }
+            }
+          }
+        },
+        {
+          "region": "hidden_front",
+          "mask": {
+            "path": "benchmark_v2/results/gironde_0/disk_lightglue/hidden_front_evidence.npz",
+            "sha256": "90413466de197e0dc680b62b3ef13f08274d70b441d5b5d45ef457ac1fdc288a"
+          },
+          "mask_key": "mask",
+          "controls": {
+            "homography_converged": {
+              "record": {
+                "path": "sequence_v5/results/sequence_v1/gironde_0/hidden_front.json",
+                "sha256": "b78515e85f8f538b6c7dc9b65f6d3c7d23801f10b8323d0ee242b98ca1bab255"
+              },
+              "evidence": {
+                "path": "sequence_v5/results/sequence_v1/gironde_0/hidden_front_homography_converged_evidence.npz",
+                "sha256": "0b48ea735828e10c7cdfac4f6b6ce7636fc430f6077e8178524a415791371256"
+              }
+            },
+            "metric_free": {
+              "record": {
+                "path": "sequence_v5/results/sequence_v1/gironde_0/hidden_front.json",
+                "sha256": "b78515e85f8f538b6c7dc9b65f6d3c7d23801f10b8323d0ee242b98ca1bab255"
+              },
+              "evidence": {
+                "path": "sequence_v5/results/sequence_v1/gironde_0/hidden_front_metric_free_evidence.npz",
+                "sha256": "0b48ea735828e10c7cdfac4f6b6ce7636fc430f6077e8178524a415791371256"
+              }
+            }
+          }
+        },
+        {
+          "region": "hidden_rear",
+          "mask": {
+            "path": "benchmark_v2/results/gironde_0/disk_lightglue/hidden_rear_evidence.npz",
+            "sha256": "c88be6a8c5de19d481e724b2d1b78f9d00ee8c3ee0e31600d93cb64d7e8504b3"
+          },
+          "mask_key": "mask",
+          "controls": {
+            "homography_converged": {
+              "record": {
+                "path": "sequence_v5/results/sequence_v1/gironde_0/hidden_rear.json",
+                "sha256": "9b13b7601922aa85feb860e705cb2ce18b6ac5df3298ac0a2f3087b9271fd579"
+              },
+              "evidence": {
+                "path": "sequence_v5/results/sequence_v1/gironde_0/hidden_rear_homography_converged_evidence.npz",
+                "sha256": "37d7dea5ed56cce0b309b0c643904d2dd0e45fffd836e22eeeeb726a8532d581"
+              }
+            },
+            "metric_free": {
+              "record": {
+                "path": "sequence_v5/results/sequence_v1/gironde_0/hidden_rear.json",
+                "sha256": "9b13b7601922aa85feb860e705cb2ce18b6ac5df3298ac0a2f3087b9271fd579"
+              },
+              "evidence": {
+                "path": "sequence_v5/results/sequence_v1/gironde_0/hidden_rear_metric_free_evidence.npz",
+                "sha256": "37d7dea5ed56cce0b309b0c643904d2dd0e45fffd836e22eeeeb726a8532d581"
+              }
+            }
+          }
+        },
+        {
+          "region": "local_front",
+          "mask": {
+            "path": "benchmark_v2/results/gironde_0/disk_lightglue/local_front_evidence.npz",
+            "sha256": "dcf5c0278080040d92815e2b5ad9018fde22f62a85dcf185f0d8123c63934ed4"
+          },
+          "mask_key": "mask",
+          "controls": {
+            "homography_converged": {
+              "record": {
+                "path": "sequence_v5/results/sequence_v1/gironde_0/local_front.json",
+                "sha256": "a3a468d11d8ee6fe0715bc1b64fe7c417dfe040bbb1ba688c27f22bc599acfa8"
+              },
+              "evidence": {
+                "path": "sequence_v5/results/sequence_v1/gironde_0/local_front_homography_converged_evidence.npz",
+                "sha256": "a69138ecbccdce597797fa40626c422a84ef12bfc35b48bdf241bef7fc998fdd"
+              }
+            },
+            "metric_free": {
+              "record": {
+                "path": "sequence_v5/results/sequence_v1/gironde_0/local_front.json",
+                "sha256": "a3a468d11d8ee6fe0715bc1b64fe7c417dfe040bbb1ba688c27f22bc599acfa8"
+              },
+              "evidence": {
+                "path": "sequence_v5/results/sequence_v1/gironde_0/local_front_metric_free_evidence.npz",
+                "sha256": "a69138ecbccdce597797fa40626c422a84ef12bfc35b48bdf241bef7fc998fdd"
+              }
+            }
+          }
+        },
+        {
+          "region": "local_rear",
+          "mask": {
+            "path": "benchmark_v2/results/gironde_0/disk_lightglue/local_rear_evidence.npz",
+            "sha256": "5a20b8d5ab7b73584a54060bf9f9b3e06172bbce315cbee66ebb22a4bcab324b"
+          },
+          "mask_key": "mask",
+          "controls": {
+            "homography_converged": {
+              "record": {
+                "path": "sequence_v5/results/sequence_v1/gironde_0/local_rear.json",
+                "sha256": "02a64f33765a105a9a2afba9522d4d726740030834721d21838f625ef4e0e780"
+              },
+              "evidence": {
+                "path": "sequence_v5/results/sequence_v1/gironde_0/local_rear_homography_converged_evidence.npz",
+                "sha256": "b9a783faad351defabe98add0b7a1e6d510c35aea3d7a2c672496336eac3e7a3"
+              }
+            },
+            "metric_free": {
+              "record": {
+                "path": "sequence_v5/results/sequence_v1/gironde_0/local_rear.json",
+                "sha256": "02a64f33765a105a9a2afba9522d4d726740030834721d21838f625ef4e0e780"
+              },
+              "evidence": {
+                "path": "sequence_v5/results/sequence_v1/gironde_0/local_rear_metric_free_evidence.npz",
+                "sha256": "b9a783faad351defabe98add0b7a1e6d510c35aea3d7a2c672496336eac3e7a3"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "case": "alsace_fields_0",
+      "split": "development",
+      "frames": [
+        {
+          "name": "prev2",
+          "id": "e400768f-a624-40d2-9cc6-2457fe430121",
+          "path": "benchmark_v2/data/alsace_fields_0/prev2.jpg",
+          "sha256": "7baecb518e6e5cb320e8bec8216472b6e8ea0e0f70f19c64203bf3272cec12af"
+        },
+        {
+          "name": "prev1",
+          "id": "44ba9d50-5ffa-437f-b23c-3bd5834e8c5f",
+          "path": "benchmark_v2/data/alsace_fields_0/prev1.jpg",
+          "sha256": "8a409add6415670b051c67834778502bd4789f5932ab2008896198a4cbf13e09"
+        },
+        {
+          "name": "target",
+          "id": "9e7a23d1-3ebd-442b-86de-1003d8032531",
+          "path": "benchmark_v2/data/alsace_fields_0/target.jpg",
+          "sha256": "33455a0f074fa3bc138ee8eb6c6c9bde1b9b8e6aeedd7d0b3eb752d478ebc997"
+        },
+        {
+          "name": "next1",
+          "id": "e0c0fd31-95f9-4e6a-848e-8ddf9d059873",
+          "path": "benchmark_v2/data/alsace_fields_0/next1.jpg",
+          "sha256": "4d7b688c260d2b1a993fffdc2fc930cf32f1b2f492339ec3d32bb5d67bf5a3c5"
+        },
+        {
+          "name": "next2",
+          "id": "f88e6ecb-fea0-4add-84ac-69bece77c142",
+          "path": "benchmark_v2/data/alsace_fields_0/next2.jpg",
+          "sha256": "491334a48e1e00bbfa12f956c15e942b56496d2e5242f3d5d13e29c0973c6dc7"
+        }
+      ],
+      "projection": {
+        "size": 2200,
+        "fov": 163.302054963582
+      },
+      "inputs": [
+        {
+          "path": "benchmark_v2/data/alsace_fields_0/manifest.json",
+          "sha256": "70030b6af81b99fea41302b70edd2edfabdf41988da2ce6c7fe78a8cca1a4e56"
+        },
+        {
+          "path": "sequence_v1/protocol.json",
+          "sha256": "17754d148852911c3f1acd51a9b43f7baf8c47cddf4ecf608f67febc08baff3a"
+        }
+      ],
+      "jobs": [
+        {
+          "region": "footprint",
+          "mask": {
+            "path": "benchmark_v2/results/alsace_fields_0/disk_lightglue/footprint_evidence.npz",
+            "sha256": "af8620443d5f2947df453aeae08717665e65d8681be2150c4e049d60fccd86ec"
+          },
+          "mask_key": "mask",
+          "controls": {
+            "homography_converged": {
+              "record": {
+                "path": "sequence_v5/results/sequence_v1/alsace_fields_0/footprint.json",
+                "sha256": "9cdd29f7b63ce9b43213223f1f7ba1cbac1ce2a756bfe7faf9831fe806f746af"
+              },
+              "evidence": {
+                "path": "sequence_v5/results/sequence_v1/alsace_fields_0/footprint_homography_converged_evidence.npz",
+                "sha256": "af8620443d5f2947df453aeae08717665e65d8681be2150c4e049d60fccd86ec"
+              }
+            },
+            "metric_free": {
+              "record": {
+                "path": "sequence_v5/results/sequence_v1/alsace_fields_0/footprint.json",
+                "sha256": "9cdd29f7b63ce9b43213223f1f7ba1cbac1ce2a756bfe7faf9831fe806f746af"
+              },
+              "evidence": {
+                "path": "sequence_v5/results/sequence_v1/alsace_fields_0/footprint_metric_free_evidence.npz",
+                "sha256": "af8620443d5f2947df453aeae08717665e65d8681be2150c4e049d60fccd86ec"
+              }
+            }
+          }
+        },
+        {
+          "region": "hidden_front",
+          "mask": {
+            "path": "benchmark_v2/results/alsace_fields_0/disk_lightglue/hidden_front_evidence.npz",
+            "sha256": "07f0668d0c909fd9ea8eb748eff475a5e305e11a78ecf0c4b31d1e06015b7ed7"
+          },
+          "mask_key": "mask",
+          "controls": {
+            "homography_converged": {
+              "record": {
+                "path": "sequence_v5/results/sequence_v1/alsace_fields_0/hidden_front.json",
+                "sha256": "73ba529a0328757fb80d27f786b2264c15ec7f69b8bd488abe3dbe3b4ea4f93f"
+              },
+              "evidence": {
+                "path": "sequence_v5/results/sequence_v1/alsace_fields_0/hidden_front_homography_converged_evidence.npz",
+                "sha256": "481a4bdd574b380d7ce240a51356859bdfe6d7e595c2f0bcd84ee13ebe1c3432"
+              }
+            },
+            "metric_free": {
+              "record": {
+                "path": "sequence_v5/results/sequence_v1/alsace_fields_0/hidden_front.json",
+                "sha256": "73ba529a0328757fb80d27f786b2264c15ec7f69b8bd488abe3dbe3b4ea4f93f"
+              },
+              "evidence": {
+                "path": "sequence_v5/results/sequence_v1/alsace_fields_0/hidden_front_metric_free_evidence.npz",
+                "sha256": "481a4bdd574b380d7ce240a51356859bdfe6d7e595c2f0bcd84ee13ebe1c3432"
+              }
+            }
+          }
+        },
+        {
+          "region": "hidden_rear",
+          "mask": {
+            "path": "benchmark_v2/results/alsace_fields_0/disk_lightglue/hidden_rear_evidence.npz",
+            "sha256": "031ef52cafa9fa457052a4b27c6d24033be922ac61c0036aae7f9c0fb38a10a0"
+          },
+          "mask_key": "mask",
+          "controls": {
+            "homography_converged": {
+              "record": {
+                "path": "sequence_v5/results/sequence_v1/alsace_fields_0/hidden_rear.json",
+                "sha256": "81f719b7b9bb35778add5a06e70a96a73916b7d9af9c3289221eb4ed2ed36129"
+              },
+              "evidence": {
+                "path": "sequence_v5/results/sequence_v1/alsace_fields_0/hidden_rear_homography_converged_evidence.npz",
+                "sha256": "025f09873d1e4b1a6fa2fabd4f66f556891d06b8fa68f7f59a5b9fe84434bff8"
+              }
+            },
+            "metric_free": {
+              "record": {
+                "path": "sequence_v5/results/sequence_v1/alsace_fields_0/hidden_rear.json",
+                "sha256": "81f719b7b9bb35778add5a06e70a96a73916b7d9af9c3289221eb4ed2ed36129"
+              },
+              "evidence": {
+                "path": "sequence_v5/results/sequence_v1/alsace_fields_0/hidden_rear_metric_free_evidence.npz",
+                "sha256": "025f09873d1e4b1a6fa2fabd4f66f556891d06b8fa68f7f59a5b9fe84434bff8"
+              }
+            }
+          }
+        },
+        {
+          "region": "local_front",
+          "mask": {
+            "path": "benchmark_v2/results/alsace_fields_0/disk_lightglue/local_front_evidence.npz",
+            "sha256": "3567ee0bc648dd05ddec5313e01f509edc9c3dffc94fc625572651441df809b6"
+          },
+          "mask_key": "mask",
+          "controls": {
+            "homography_converged": {
+              "record": {
+                "path": "sequence_v5/results/sequence_v1/alsace_fields_0/local_front.json",
+                "sha256": "69a52d46ca54ce35597db9c5f293b60788958748483fcfc1acf003c72165416c"
+              },
+              "evidence": {
+                "path": "sequence_v5/results/sequence_v1/alsace_fields_0/local_front_homography_converged_evidence.npz",
+                "sha256": "d910152ab5f32fd4d2f1d74af64cd7462c3282a1a897f7f19a98efb20a103760"
+              }
+            },
+            "metric_free": {
+              "record": {
+                "path": "sequence_v5/results/sequence_v1/alsace_fields_0/local_front.json",
+                "sha256": "69a52d46ca54ce35597db9c5f293b60788958748483fcfc1acf003c72165416c"
+              },
+              "evidence": {
+                "path": "sequence_v5/results/sequence_v1/alsace_fields_0/local_front_metric_free_evidence.npz",
+                "sha256": "d910152ab5f32fd4d2f1d74af64cd7462c3282a1a897f7f19a98efb20a103760"
+              }
+            }
+          }
+        },
+        {
+          "region": "local_rear",
+          "mask": {
+            "path": "benchmark_v2/results/alsace_fields_0/disk_lightglue/local_rear_evidence.npz",
+            "sha256": "069f80ac843c965b7eae542ee5886c81d4dd0ebb56dd9751702ab027ec5de890"
+          },
+          "mask_key": "mask",
+          "controls": {
+            "homography_converged": {
+              "record": {
+                "path": "sequence_v5/results/sequence_v1/alsace_fields_0/local_rear.json",
+                "sha256": "63233c7adf3ff6bff6c547f2f50c3ab073a36596629da45936f37aaaa2155d2f"
+              },
+              "evidence": {
+                "path": "sequence_v5/results/sequence_v1/alsace_fields_0/local_rear_homography_converged_evidence.npz",
+                "sha256": "c001117af2bf2a2bae0686d11ab5b749c6c357ce5ca0dd7c3a1e8c275aaeda86"
+              }
+            },
+            "metric_free": {
+              "record": {
+                "path": "sequence_v5/results/sequence_v1/alsace_fields_0/local_rear.json",
+                "sha256": "63233c7adf3ff6bff6c547f2f50c3ab073a36596629da45936f37aaaa2155d2f"
+              },
+              "evidence": {
+                "path": "sequence_v5/results/sequence_v1/alsace_fields_0/local_rear_metric_free_evidence.npz",
+                "sha256": "c001117af2bf2a2bae0686d11ab5b749c6c357ce5ca0dd7c3a1e8c275aaeda86"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "case": "bourges_turn_001",
+      "split": "train",
+      "frames": [
+        {
+          "name": "prev2",
+          "id": "4fc9daad-9fec-4e96-9536-3b45fb73b786",
+          "path": "dataset_v1/images/4fc9daad-9fec-4e96-9536-3b45fb73b786.jpg",
+          "sha256": "3e1b028791aa0f9fee1fc50e9688db3e64d4498c7e2fd0900f55538787656521"
+        },
+        {
+          "name": "prev1",
+          "id": "a8af5016-576f-4223-b182-05a683cb81c5",
+          "path": "dataset_v1/images/a8af5016-576f-4223-b182-05a683cb81c5.jpg",
+          "sha256": "569ba0f7624f14fb271dd4bbf2f23cb0fd38e92d67d05c8bef6a65334536f909"
+        },
+        {
+          "name": "target",
+          "id": "1a9e9b37-1d3e-45ee-ae9f-f4035a792212",
+          "path": "dataset_v1/images/1a9e9b37-1d3e-45ee-ae9f-f4035a792212.jpg",
+          "sha256": "80679e337c7ad3b746e4ad18578676467fe13387ebf4891c4078e759a2df607b"
+        },
+        {
+          "name": "next1",
+          "id": "441990f7-dac4-4cf3-b5ae-717444487850",
+          "path": "dataset_v1/images/441990f7-dac4-4cf3-b5ae-717444487850.jpg",
+          "sha256": "5250a156036a1f5200cc665743eed6c63cd46075af5bfceaa485eb36887c03f2"
+        },
+        {
+          "name": "next2",
+          "id": "c80f4ab6-1453-457a-8e89-7a83e57d929a",
+          "path": "dataset_v1/images/c80f4ab6-1453-457a-8e89-7a83e57d929a.jpg",
+          "sha256": "f9f2fa2247f4b7e724257dab32cfd1a5bfd231fd61419111075bb6a66ea78a88"
+        }
+      ],
+      "projection": {
+        "size": 2200,
+        "fov": 163.302054963582
+      },
+      "inputs": [
+        {
+          "path": "benchmark_v3/annotations_train_001.json",
+          "sha256": "edc78692c20993590f0f31245e75d88b0933cf36da87392f14d6a37d56c2f366"
+        },
+        {
+          "path": "benchmark_v3/prepared/bourges_turn_001/manifest.json",
+          "sha256": "f458e5d7ff86ac67b132dab99c8a87a31a18ea77cd80843138e305bc8aaf3db3"
+        },
+        {
+          "path": "benchmark_v3/prepared/bourges_turn_001/masks.npz",
+          "sha256": "ad4246eb09db412b38d83ae23eea4aa6e5141f51b5e246095dee2fe0c34dea37"
+        },
+        {
+          "path": "dataset_v1/splits_v1.json",
+          "sha256": "687828f2ace7d355da66df5d3582fe757d6fe2abb0dc172f15f8254909f5fcc7"
+        }
+      ],
+      "jobs": [
+        {
+          "region": "footprint",
+          "mask": {
+            "path": "benchmark_v3/prepared/bourges_turn_001/masks.npz",
+            "sha256": "ad4246eb09db412b38d83ae23eea4aa6e5141f51b5e246095dee2fe0c34dea37"
+          },
+          "mask_key": "region_footprint",
+          "controls": {
+            "joint_homography": {
+              "record": {
+                "path": "benchmark_v3/results/bourges_turn_001/footprint.json",
+                "sha256": "8e9bbc8208760993f32a76072ec868fef80e38e143bea9be78f9fe9a6b80d477"
+              },
+              "evidence": {
+                "path": "benchmark_v3/results/bourges_turn_001/footprint_joint_homography_evidence.npz",
+                "sha256": "1661e6b5da61548b0126bd2438640aa01dee5c3f13ba1240416e621ad4e71047"
+              }
+            },
+            "metric_free": {
+              "record": {
+                "path": "benchmark_v3/results/bourges_turn_001/footprint.json",
+                "sha256": "8e9bbc8208760993f32a76072ec868fef80e38e143bea9be78f9fe9a6b80d477"
+              },
+              "evidence": {
+                "path": "benchmark_v3/results/bourges_turn_001/footprint_metric_free_evidence.npz",
+                "sha256": "1661e6b5da61548b0126bd2438640aa01dee5c3f13ba1240416e621ad4e71047"
+              }
+            }
+          }
+        },
+        {
+          "region": "large_front",
+          "mask": {
+            "path": "benchmark_v3/prepared/bourges_turn_001/masks.npz",
+            "sha256": "ad4246eb09db412b38d83ae23eea4aa6e5141f51b5e246095dee2fe0c34dea37"
+          },
+          "mask_key": "region_large_front",
+          "controls": {
+            "joint_homography": {
+              "record": {
+                "path": "benchmark_v3/results/bourges_turn_001/large_front.json",
+                "sha256": "d5bc8ad667d088340647d7d0e751e7e469ee888a03f56259deafd314f973c2c2"
+              },
+              "evidence": {
+                "path": "benchmark_v3/results/bourges_turn_001/large_front_joint_homography_evidence.npz",
+                "sha256": "04a23070f777c933f5ebf9bf8885c58efc6e66f7a9628c91d1241f3170e55413"
+              }
+            },
+            "metric_free": {
+              "record": {
+                "path": "benchmark_v3/results/bourges_turn_001/large_front.json",
+                "sha256": "d5bc8ad667d088340647d7d0e751e7e469ee888a03f56259deafd314f973c2c2"
+              },
+              "evidence": {
+                "path": "benchmark_v3/results/bourges_turn_001/large_front_metric_free_evidence.npz",
+                "sha256": "04a23070f777c933f5ebf9bf8885c58efc6e66f7a9628c91d1241f3170e55413"
+              }
+            }
+          }
+        },
+        {
+          "region": "large_rear",
+          "mask": {
+            "path": "benchmark_v3/prepared/bourges_turn_001/masks.npz",
+            "sha256": "ad4246eb09db412b38d83ae23eea4aa6e5141f51b5e246095dee2fe0c34dea37"
+          },
+          "mask_key": "region_large_rear",
+          "controls": {
+            "joint_homography": {
+              "record": {
+                "path": "benchmark_v3/results/bourges_turn_001/large_rear.json",
+                "sha256": "1054b4c2eb906c5d7120504a5f7d759b8fce2655b0f7c05978610299257254e7"
+              },
+              "evidence": {
+                "path": "benchmark_v3/results/bourges_turn_001/large_rear_joint_homography_evidence.npz",
+                "sha256": "dc119f9ffe05ce568333c8e2ca4a8a085b333d329939f02c5722d3655d9d1758"
+              }
+            },
+            "metric_free": {
+              "record": {
+                "path": "benchmark_v3/results/bourges_turn_001/large_rear.json",
+                "sha256": "1054b4c2eb906c5d7120504a5f7d759b8fce2655b0f7c05978610299257254e7"
+              },
+              "evidence": {
+                "path": "benchmark_v3/results/bourges_turn_001/large_rear_metric_free_evidence.npz",
+                "sha256": "dc119f9ffe05ce568333c8e2ca4a8a085b333d329939f02c5722d3655d9d1758"
+              }
+            }
+          }
+        },
+        {
+          "region": "local_front",
+          "mask": {
+            "path": "benchmark_v3/prepared/bourges_turn_001/masks.npz",
+            "sha256": "ad4246eb09db412b38d83ae23eea4aa6e5141f51b5e246095dee2fe0c34dea37"
+          },
+          "mask_key": "region_local_front",
+          "controls": {
+            "joint_homography": {
+              "record": {
+                "path": "benchmark_v3/results/bourges_turn_001/local_front.json",
+                "sha256": "00038ba5879e9abf2b22f7798a0891c1aa671e5864f07eba4ea757ff0315b404"
+              },
+              "evidence": {
+                "path": "benchmark_v3/results/bourges_turn_001/local_front_joint_homography_evidence.npz",
+                "sha256": "2f73be9167d40962b21895596cc194b56a20b50b1b89f6d55556f7414afa6034"
+              }
+            },
+            "metric_free": {
+              "record": {
+                "path": "benchmark_v3/results/bourges_turn_001/local_front.json",
+                "sha256": "00038ba5879e9abf2b22f7798a0891c1aa671e5864f07eba4ea757ff0315b404"
+              },
+              "evidence": {
+                "path": "benchmark_v3/results/bourges_turn_001/local_front_metric_free_evidence.npz",
+                "sha256": "2f73be9167d40962b21895596cc194b56a20b50b1b89f6d55556f7414afa6034"
+              }
+            }
+          }
+        },
+        {
+          "region": "local_rear",
+          "mask": {
+            "path": "benchmark_v3/prepared/bourges_turn_001/masks.npz",
+            "sha256": "ad4246eb09db412b38d83ae23eea4aa6e5141f51b5e246095dee2fe0c34dea37"
+          },
+          "mask_key": "region_local_rear",
+          "controls": {
+            "joint_homography": {
+              "record": {
+                "path": "benchmark_v3/results/bourges_turn_001/local_rear.json",
+                "sha256": "fc7c6427dbe99c86c64eaa795bfcc90b3fbcd6304d82c490a8dc1bda1ad7f49e"
+              },
+              "evidence": {
+                "path": "benchmark_v3/results/bourges_turn_001/local_rear_joint_homography_evidence.npz",
+                "sha256": "ce795a0583ea7c9c92d928374738690897ea306586ed70c11b3f26779e6428e9"
+              }
+            },
+            "metric_free": {
+              "record": {
+                "path": "benchmark_v3/results/bourges_turn_001/local_rear.json",
+                "sha256": "fc7c6427dbe99c86c64eaa795bfcc90b3fbcd6304d82c490a8dc1bda1ad7f49e"
+              },
+              "evidence": {
+                "path": "benchmark_v3/results/bourges_turn_001/local_rear_metric_free_evidence.npz",
+                "sha256": "ce795a0583ea7c9c92d928374738690897ea306586ed70c11b3f26779e6428e9"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

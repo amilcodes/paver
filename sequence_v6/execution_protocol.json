@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "status": "frozen_before_learned_inference",
+  "initial_scope": "Five frames per fixed failed road: Gironde, Alsace and the previously evaluated Bourges train case; all five frozen regions each.",
+  "methods": ["loftr_homography", "loftr_metric_free"],
+  "controls": "Reuse exact cached converged homography and metric_free results from sequence_v5/sequence_v1 or benchmark_v3 Bourges. Verify identical masks and policy counts, retain hashes.",
+  "model_admission": "Pinned local checkpoint, installed source/package checks, MPS only, passed actual-model translation and excluded-pixel correspondence-invariance certificate. No implicit download.",
+  "registration": "Sanitize all excluded source and target RGB before matching, fitting and photometric audits. Original hidden target RGB enters only scoring after registration returns.",
+  "geometry_and_fusion": "Unchanged propose_edge, fit_graph, fit_metric_graph, audit_poses, convex-hull support, convergence rejection and benchmark_v2 policy thresholds.",
+  "resumption": "Immutable execution plan; source/model/mask hashes in pair cache; donor-only matches reused across regions. Existing different output must be versioned, never overwritten.",
+  "spatial_validation": "Four source-image quadrant holdouts per proposed pair are diagnostics only. Random correspondence holdout and donor agreement are not calibrated correctness estimates.",
+  "measurements": ["coverage", "abstention", "single/multiple-view counts", "hidden RGB MAE/PSNR/p90/fraction above20", "hidden gradient error", "same accepted pixels RGB error against each cached control", "graph connectivity and rejection reasons"],
+  "limitations": ["Actual footprint has no ground truth", "No gradient comparison on common accepted pixels because old controls do not retain predicted RGB", "Known-translation model check does not settle absolute pixel-center convention", "Bourges is training data and repeatedly used roads are development", "No default promotion from this experiment"],
+  "resources": {"one_heavy_process": true, "maximum_regions_per_invocation": 5, "default_regions_per_invocation": 1, "minimum_free_disk_gib": 8, "job_reservation_gib": 0.5}
+}
