@@ -1,0 +1,87 @@
+{
+  "version": 1,
+  "status": "data_collection_and_annotation_spec_not_evaluated",
+  "created_at_utc": "2026-10-31T15:37:29.307472+00:00",
+  "objective": "Use a few contiguous mapped areas with different real obstructions, then measure reconstruction under controlled damage with hidden clean references.",
+  "areas": [
+    "gironde",
+    "nantes",
+    "bourges"
+  ],
+  "natural_classes": [
+    "vehicle_and_sensor_rig",
+    "off_centre_large_vehicle",
+    "opaque_nadir_graphic",
+    "moving_adjacent_traffic",
+    "shadows",
+    "apparent_sky_overexposure"
+  ],
+  "natural_class_scope": "Tags confirmed on anchor photos only; extended frames need individual inspection. Shadows are nuisance appearance, not necessarily missing geometry.",
+  "evaluation_tracks": [
+    {
+      "name": "natural_obstructions",
+      "truth": "No clean target image for genuinely occluded or clipped pixels",
+      "metrics": [
+        "candidate transfer coverage",
+        "abstention",
+        "donor visibility/support",
+        "seam and boundary review"
+      ],
+      "restriction": "Never call donor agreement a measured correctness rate"
+    },
+    {
+      "name": "controlled_corruptions",
+      "truth": "Original visible static pixels sealed away before feature extraction/pose fitting/model selection",
+      "metrics": [
+        "coverage jointly with RGB/gradient/edge-alignment error",
+        "same-pixel and gained/lost pixel quality",
+        "area-weighted and equal-route summaries",
+        "failure and abstention by corruption type and severity"
+      ],
+      "restriction": "Synthetic damage is a restoration benchmark, not proof of real under-car correctness"
+    },
+    {
+      "name": "geometry_reference",
+      "candidate": "360Loc",
+      "truth": "Published camera poses can independently check registration",
+      "status": "Primary source verified; no image archive acquired and dataset-use terms not established from README"
+    }
+  ],
+  "controlled_families": [
+    {
+      "kind": "opaque_disc_and_vehicle_silhouette",
+      "purpose": "Missing-data recovery"
+    },
+    {
+      "kind": "irregular_off_centre_block",
+      "purpose": "Large irregular camera equipment obstruction"
+    },
+    {
+      "kind": "missing_tile_or_seam_strip",
+      "purpose": "Localized missing image/stitching region"
+    },
+    {
+      "kind": "localized_blur",
+      "purpose": "Loss of texture detail"
+    },
+    {
+      "kind": "exposure_clipping",
+      "purpose": "Loss of brightness detail"
+    },
+    {
+      "kind": "compression",
+      "purpose": "Codec degradation"
+    }
+  ],
+  "annotation_requirements": [
+    "Select multiple spatially separated targets per area before scoring; nearby views are donors, never independent test samples.",
+    "Review ground, structures, movers, equipment, shadows, existing anonymization and saturation per selected frame.",
+    "Freeze mask sizes, positions and severities on eligible visible static surfaces; record pixel area and solid angle, not just equirectangular pixel percentage.",
+    "Keep target clean RGB inaccessible to matching, geometry, candidate selection and confidence gates. Blur/clipping tracks use only explicitly declared degraded inputs.",
+    "Retain natural obstructions on all inputs; never synthesize a clean under-car target from another viewpoint and call it exact truth.",
+    "Audit donor field-of-view and sampling density; label apparently unobservable locations without using target truth to choose outputs."
+  ],
+  "split_policy": "These three areas are already development/train. Do not promote any sub-window to independent test. Existing frozen test collections remain sealed.",
+  "next_action": "Verify and inspect the acquired areas, annotate additional targets, then implement deterministic corruption generation and input-isolation tests before new model tuning.",
+  "current_algorithm_scope": "Existing code fits a road plane. Building facades, sky, equipment and moving objects require separate models/masks; never feed their matches into the road-plane fit."
+}

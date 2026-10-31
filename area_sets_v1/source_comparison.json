@@ -1,0 +1,53 @@
+{
+  "created_at_utc": "2026-10-31T15:37:29.307472+00:00",
+  "sources": [
+    {
+      "name": "Panoramax IGN",
+      "role": "Primary real outdoor data",
+      "urls": [
+        "https://docs.panoramax.fr/how-to-contribute/use-panoramax/",
+        "https://docs.panoramax.fr/api/",
+        "https://docs.panoramax.fr/web-viewer/03_URL_settings/"
+      ],
+      "access": "Public, per-image etalab-2.0 verified for selected source frames",
+      "mapping": "GPS positions, capture links and optional heading; not exact6DoF",
+      "clean_obstructed_pairs": false
+    },
+    {
+      "name": "360Loc",
+      "role": "Complementary geometry benchmark",
+      "urls": [
+        "https://huajianup.github.io/research/360Loc/",
+        "https://github.com/HuajianUP/360Loc",
+        "https://hkustvgd.com/statics/360loc/"
+      ],
+      "verified": "Four mapped scenes; omnidirectional source images and ground-truth6DoF camera poses",
+      "archives_bytes": {
+        "atrium": 7865983474,
+        "concourse": 4351935036,
+        "hall": 7105215364,
+        "piatrium": 7141461593
+      },
+      "access": "Direct archive directory fetched successfully with urllib; web reader could not open it",
+      "license_status": "No dataset-use grant established from inspected README/directory; do not assume toolkit/data licenses are identical",
+      "download_status": "Metadata/README only; no image archive downloaded",
+      "clean_obstructed_pairs": "Not established by inspected primary descriptions"
+    },
+    {
+      "name": "OmniScenes",
+      "role": "Possible indoor extension",
+      "urls": [
+        "https://github.com/82magnolia/piccolo#downloading-omniscenes-update-new-scenes-added"
+      ],
+      "verified": "Primary README describes7 indoor scenes, images, point clouds, pose files and changed scenes",
+      "access": "Download links provided; archive access/use terms not verified",
+      "download_status": "README only",
+      "fit": "Less direct fit for outdoor camera-car scars; retain as candidate, not acquired benchmark"
+    }
+  ],
+  "source_snapshot_sha256": {
+    "360loc_readme.txt": "4cdaa447792cf9e02a18fed8c73eb3356166a9cd1eafd14de58e5896bbe056ed",
+    "omniscenes_readme.txt": "cb3f369d2c3e89d4ffca4dc400477b3f328637c306ec5216b757a7df1c4a7880",
+    "360loc_download_page.txt": "9b8196b0133aaf74a9de0043335e7fbe6008b03b02a447b51abc426b15233476"
+  }
+}

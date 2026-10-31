@@ -1,0 +1,45 @@
+{
+  "created_at_utc": "2026-10-31T15:48:51.399899+00:00",
+  "user_direction": "A few strong mapped photosphere areas with different natural occlusions/corruptions, followed by controlled improvement benchmarks.",
+  "selected": {
+    "gironde": {
+      "planned_frames": 145,
+      "full_collection": true,
+      "metres": 435.2
+    },
+    "nantes": {
+      "planned_frames": 51,
+      "full_collection": false,
+      "metres": 409.1
+    },
+    "bourges": {
+      "planned_frames": 51,
+      "full_collection": false,
+      "metres": 641.7
+    }
+  },
+  "status": "Selection and metadata plans complete; image acquisition active, independent image audit and extended-frame annotation pending.",
+  "planned_images": 247,
+  "verified_cached_at_record": 124,
+  "process": [
+    {
+      "pid": 18529,
+      "command": "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python outputs/panorama-repair/acquire_area_sets.py --download"
+    }
+  ],
+  "references": {
+    "gironde_plan.json": "85cfca724459d60ae4c32439ff122231b90c4946207678da7f50b929f9bca276",
+    "bourges_plan.json": "72eae820bc647da186b7a7ab3df721db16212027f5361e1d1aec12f99a822a03",
+    "nantes_plan.json": "54fa784f1ee6568ed5b7a2c63a1e700c0c6f222e8be576898b8be2ead6bb471c"
+  },
+  "source_comparison": "area_sets_v1/source_comparison.json",
+  "benchmark_protocol": "area_sets_v1/benchmark_protocol.json",
+  "preview": "area_sets_v1/three_anchor_examples.jpg",
+  "tests_passed": 4,
+  "restrictions": [
+    "No new real under-car ground truth claimed.",
+    "These existing development/train routes are not independent evaluation sets.",
+    "Full source-collection availability is separate from cached and annotated counts."
+  ],
+  "automation": "Existing hourly heartbeat updated to prioritize area datasets and controlled-corruption benchmarks; schedule and quiet-notification intent retained."
+}
