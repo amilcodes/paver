@@ -1,0 +1,47 @@
+{
+  "created_at_utc": "2026-10-31T16:34:47.160676+00:00",
+  "status": "annotation_and_controlled_mask_expansion_complete_no_model_result",
+  "hypothesis": "Existing recovery estimates used only three anchors and predominantly low-texture asphalt. Additional metadata-selected positions with road markings, junctions, traffic and shadows provide stronger development controls before matcher tuning.",
+  "control": {
+    "path": "controlled_v1/summary.json",
+    "sha256": "fea311e3dfc8d49139b5c4d236ecf0a07f8684c043cc52805ab90224f76e299c"
+  },
+  "selection": {
+    "path": "controlled_v2/annotation_selection.json",
+    "sha256": "14c781fe5a8d8d0d04de2db64435a36105c2ffff4b3e2d7f47d14c09f3d15a0a"
+  },
+  "protocol": {
+    "path": "controlled_v2/benchmark_protocol.json",
+    "sha256": "6c82ef1373991ef3ec0a3b1554616863990cb5a837a3b73f6535ecc5188ec5f6"
+  },
+  "validation": {
+    "path": "controlled_v2/annotation_audit_001.json",
+    "sha256": "2a8a4706f2bbdbac5bdc50c797e25dfadf5b6841afe85947dd1460f2ab6a84fe"
+  },
+  "sources": {
+    "preview_area_annotations.py": "e377ef37044b402c3ad003a2b43aebd28f2ad602b4a6fe09a15b5cc1076d73c0",
+    "draft_area_annotations.py": "cdd9fd3196488208c616ce46196b741a79bc4468ad7972114b576cad8f9be409",
+    "prepare_area_benchmark.py": "68c04e8731719611f9be77cf94460a4244883cd402d33f2e285d8c5472caa4a5",
+    "audit_area_annotations.py": "4c9a0af803c5bafbb2d13b439092a998402d59a4106d6bc09ef1bdfde6f126dc",
+    "test_area_benchmark.py": "21129f95afec5fcb40f3295f9f97f0f4dc993ec6e1274619c01129f3fc50182c"
+  },
+  "results": {
+    "additional_anchors": 6,
+    "reviewed_additional_frames": 30,
+    "new_prepared_conditions": 144,
+    "new_distinct_masks": 72,
+    "total_annotated_area_anchors": 9,
+    "total_reviewed_area_source_frames": 45,
+    "new_recovery_runs": 0,
+    "new_downloads": 0,
+    "tests_passed": 7
+  },
+  "observed_limitations": [
+    "Nantes005 enters an overpass shadow; the final donor retains only217110 eligible projected pixels after conservative masking. Preserve this failure mode, not relax annotations to improve connectivity.",
+    "Nantes045 vehicle is clipped by the finite nadir view; mask counts are not full-sphere car dimensions.",
+    "Bourges045 speed cushions are raised, so their matches/ground truth are excluded from this planar benchmark. A future3D track should handle them explicitly.",
+    "Angular-size audit exposes proxy mismatch: maximum prepared masks occupy about4.3\u20135.2% of the annotated obstruction solid angle for Gironde/Bourges, and28\u201329% for Nantes, despite projected-area ratios up to148%. These road patches are not equivalent to recovering the complete central car cone."
+  ],
+  "decision": "Freeze reviewed masks and conditions; no method promotion or recovery improvement claim. Keep projected and angular measures and scoring-only texture strata separate.",
+  "next_action": "Implement a NEW bounded execution plan/runner for all six additional anchors using unchanged pinned baseline and strict truth isolation before native-scale ablation. Preserve existing72-condition results; compare methods on identical masks, include unchanged-input/Telea controls, retain failures, and require new output audit. Do not read scoring-only strata for correspondence/source selection."
+}

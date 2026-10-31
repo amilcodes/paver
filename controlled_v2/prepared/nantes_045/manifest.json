@@ -1,0 +1,424 @@
+{
+  "scene_id": "nantes_045",
+  "area": "nantes",
+  "target_id": "1ab04838-e8e5-48c9-aba1-e2cf240760a6",
+  "split": "train",
+  "annotation": {
+    "path": "controlled_v2/annotations/nantes_045.json",
+    "sha256": "04cc8b09b06c2c5073c05199c73da6716a48169d89757d6f67436e9aa0a11e10"
+  },
+  "masks": {
+    "path": "controlled_v2/prepared/nantes_045/masks.npz",
+    "sha256": "d310297d15170913c17ed8d0acef64137da8bfc25147abb6173b2c9cbc705a39"
+  },
+  "scoring_only_strata": {
+    "path": "controlled_v2/prepared/nantes_045/scoring_only_strata.npz",
+    "sha256": "bea39036f68994c9e19c78481b34f2dce2d4ec477963102e056105f1c0943dd6"
+  },
+  "compiler": {
+    "path": "prepare_area_benchmark.py",
+    "sha256": "68c04e8731719611f9be77cf94460a4244883cd402d33f2e285d8c5472caa4a5"
+  },
+  "base_compiler": {
+    "path": "prepare_annotated_case_v2.py",
+    "sha256": "0f0aa743386c2040199fb05abb313498b30fec4480d704e6db3e2014039aed4b"
+  },
+  "corruption_source": {
+    "path": "controlled_occlusions.py",
+    "sha256": "b8935e24359bf53bb59e117c229479a157b3d55f420b2f26111dc271406e27b3"
+  },
+  "projection": {
+    "size": 2200,
+    "fov": 163.302054963582
+  },
+  "frames": {
+    "prev2": {
+      "ego": 716423,
+      "ground": 1802598,
+      "moving": 451810,
+      "shadow": 1527831,
+      "privacy": 0,
+      "uncertain": 12816,
+      "allowed": 780488
+    },
+    "prev1": {
+      "ego": 716423,
+      "ground": 1778230,
+      "moving": 405762,
+      "shadow": 1576231,
+      "privacy": 0,
+      "uncertain": 12816,
+      "allowed": 723810
+    },
+    "target": {
+      "ego": 716423,
+      "ground": 1831900,
+      "moving": 380853,
+      "shadow": 1479431,
+      "privacy": 0,
+      "uncertain": 12816,
+      "allowed": 811086
+    },
+    "next1": {
+      "ego": 716423,
+      "ground": 1934172,
+      "moving": 271882,
+      "shadow": 1527831,
+      "privacy": 0,
+      "uncertain": 12816,
+      "allowed": 902821
+    },
+    "next2": {
+      "ego": 716423,
+      "ground": 1870471,
+      "moving": 534389,
+      "shadow": 1527831,
+      "privacy": 0,
+      "uncertain": 12816,
+      "allowed": 849098
+    }
+  },
+  "mask_specs": [
+    {
+      "key": "near_rear_disc_mild",
+      "location": "near_rear",
+      "shape": "disc",
+      "severity": "mild",
+      "sha256": "0a5fcd7043d054d56c712219b0867081fdbc6fb108561f4bea768b1f87b90031",
+      "pixels": 56161,
+      "solid_angle_sr": 0.13235326923208152,
+      "sphere_fraction": 0.010532338516329119,
+      "projected_area_ratio_to_obstruction": 0.07839083893174842,
+      "angular_area_ratio_to_obstruction": 0.09844673021202416,
+      "scoring_only_textured_fraction": 0.04718576948416161
+    },
+    {
+      "key": "near_rear_disc_severe",
+      "location": "near_rear",
+      "shape": "disc",
+      "severity": "severe",
+      "sha256": "f0790d2fa4c41934fa0968c551cd94e6bf430fabe4eab41135a70cbc6dbde201",
+      "pixels": 147207,
+      "solid_angle_sr": 0.3560527126031223,
+      "sphere_fraction": 0.02833377460603245,
+      "projected_area_ratio_to_obstruction": 0.20547497777151208,
+      "angular_area_ratio_to_obstruction": 0.26483837945426847,
+      "scoring_only_textured_fraction": 0.05313606010583736
+    },
+    {
+      "key": "near_rear_vehicle_mild",
+      "location": "near_rear",
+      "shape": "vehicle",
+      "severity": "mild",
+      "sha256": "f7877dce5b90424f5d88375776d093b9722139237e3f29729d3251ba8ed70043",
+      "pixels": 64400,
+      "solid_angle_sr": 0.15365039934619756,
+      "sphere_fraction": 0.012227110281995534,
+      "projected_area_ratio_to_obstruction": 0.08989102806582144,
+      "angular_area_ratio_to_obstruction": 0.1142879167184059,
+      "scoring_only_textured_fraction": 0.04459627329192547
+    },
+    {
+      "key": "near_rear_vehicle_severe",
+      "location": "near_rear",
+      "shape": "vehicle",
+      "severity": "severe",
+      "sha256": "7be8563b9d93110e25f5a5e1a6ceae9a723b095efaa94397c8b2bcd820c12421",
+      "pixels": 164987,
+      "solid_angle_sr": 0.39053466273524595,
+      "sphere_fraction": 0.031077761011520304,
+      "projected_area_ratio_to_obstruction": 0.23029271812881497,
+      "angular_area_ratio_to_obstruction": 0.29048667104190695,
+      "scoring_only_textured_fraction": 0.053446635189439165
+    },
+    {
+      "key": "near_rear_strip_mild",
+      "location": "near_rear",
+      "shape": "strip",
+      "severity": "mild",
+      "sha256": "a098073c6ec820d6a5af2d6b24fe8477a6b5267b5633c5ae51058484fa0365dc",
+      "pixels": 42876,
+      "solid_angle_sr": 0.13244455741325706,
+      "sphere_fraction": 0.010539602998969097,
+      "projected_area_ratio_to_obstruction": 0.059847324834629824,
+      "angular_area_ratio_to_obstruction": 0.09851463199485037,
+      "scoring_only_textured_fraction": 0.08445284075006997
+    },
+    {
+      "key": "near_rear_strip_severe",
+      "location": "near_rear",
+      "shape": "strip",
+      "severity": "severe",
+      "sha256": "3432af744aa834a2d25ce102ec2fa0f125a2cc5ba662474b3bbd7c3e33878d8a",
+      "pixels": 92929,
+      "solid_angle_sr": 0.272726909839823,
+      "sphere_fraction": 0.02170291790759275,
+      "projected_area_ratio_to_obstruction": 0.12971247433429692,
+      "angular_area_ratio_to_obstruction": 0.202859156183594,
+      "scoring_only_textured_fraction": 0.05606430715922909
+    },
+    {
+      "key": "far_left_rear_disc_mild",
+      "location": "far_left_rear",
+      "shape": "disc",
+      "severity": "mild",
+      "sha256": "ad80c12712f91b1d78eba15a3b3575130f6f5fb1c7f18774fbe7555f2e752457",
+      "pixels": 21212,
+      "solid_angle_sr": 0.005527629969590455,
+      "sphere_fraction": 0.000439874816621612,
+      "projected_area_ratio_to_obstruction": 0.029608206325034234,
+      "angular_area_ratio_to_obstruction": 0.004111550092306039,
+      "scoring_only_textured_fraction": 0.05463888365076372
+    },
+    {
+      "key": "far_left_rear_disc_severe",
+      "location": "far_left_rear",
+      "shape": "disc",
+      "severity": "severe",
+      "sha256": "36e461af5f38b3e320abcbe509c0eacef3c37ddae9bd46d6b2cbec268991395c",
+      "pixels": 56778,
+      "solid_angle_sr": 0.015394238880810495,
+      "sphere_fraction": 0.0012250346065092186,
+      "projected_area_ratio_to_obstruction": 0.07925206198014302,
+      "angular_area_ratio_to_obstruction": 0.01145051037055346,
+      "scoring_only_textured_fraction": 0.07377857620909507
+    },
+    {
+      "key": "far_left_rear_vehicle_mild",
+      "location": "far_left_rear",
+      "shape": "vehicle",
+      "severity": "mild",
+      "sha256": "eb129b4693c8ca8d9bfc32d5c2653fc9f1d96f4bdf44b7e2f2d6e57e3e8ac420",
+      "pixels": 24333,
+      "solid_angle_sr": 0.006381232597106038,
+      "sphere_fraction": 0.0005078023554242795,
+      "projected_area_ratio_to_obstruction": 0.033964571210025364,
+      "angular_area_ratio_to_obstruction": 0.004746475002486741,
+      "scoring_only_textured_fraction": 0.05441170426992151
+    },
+    {
+      "key": "far_left_rear_vehicle_severe",
+      "location": "far_left_rear",
+      "shape": "vehicle",
+      "severity": "severe",
+      "sha256": "2ceeee6fc08c74d1eda5d88c84d5afa186cbfbecc9bfaf959a092cf2b92ccb9d",
+      "pixels": 64640,
+      "solid_angle_sr": 0.01782054043950034,
+      "sphere_fraction": 0.0014181135497577481,
+      "projected_area_ratio_to_obstruction": 0.09022602568594253,
+      "angular_area_ratio_to_obstruction": 0.013255236890323133,
+      "scoring_only_textured_fraction": 0.08066212871287129
+    },
+    {
+      "key": "far_left_rear_strip_mild",
+      "location": "far_left_rear",
+      "shape": "strip",
+      "severity": "mild",
+      "sha256": "99dc1f1c2034804af80ced7aaed92a495d91da23c71d6fda0844bb57ef061824",
+      "pixels": 16029,
+      "solid_angle_sr": 0.004561919264728209,
+      "sphere_fraction": 0.0003630260004838196,
+      "projected_area_ratio_to_obstruction": 0.02237365355383621,
+      "angular_area_ratio_to_obstruction": 0.0033932371879399972,
+      "scoring_only_textured_fraction": 0.03156778339260091
+    },
+    {
+      "key": "far_left_rear_strip_severe",
+      "location": "far_left_rear",
+      "shape": "strip",
+      "severity": "severe",
+      "sha256": "88ae0b2efcfa02dc6be248cfb845a29e161814fbaa7729ecea6864e17b49bfed",
+      "pixels": 35757,
+      "solid_angle_sr": 0.01016454827059865,
+      "sphere_fraction": 0.0008088690507809757,
+      "projected_area_ratio_to_obstruction": 0.04991045792778847,
+      "angular_area_ratio_to_obstruction": 0.007560572905592931,
+      "scoring_only_textured_fraction": 0.06365187236065666
+    }
+  ],
+  "conditions": [
+    {
+      "key": "near_rear_opaque_disc_mild",
+      "location": "near_rear",
+      "family": "opaque_disc",
+      "severity": "mild",
+      "mask_key": "hidden_near_rear_disc_mild"
+    },
+    {
+      "key": "near_rear_opaque_disc_severe",
+      "location": "near_rear",
+      "family": "opaque_disc",
+      "severity": "severe",
+      "mask_key": "hidden_near_rear_disc_severe"
+    },
+    {
+      "key": "near_rear_opaque_vehicle_mild",
+      "location": "near_rear",
+      "family": "opaque_vehicle",
+      "severity": "mild",
+      "mask_key": "hidden_near_rear_vehicle_mild"
+    },
+    {
+      "key": "near_rear_opaque_vehicle_severe",
+      "location": "near_rear",
+      "family": "opaque_vehicle",
+      "severity": "severe",
+      "mask_key": "hidden_near_rear_vehicle_severe"
+    },
+    {
+      "key": "near_rear_missing_strip_mild",
+      "location": "near_rear",
+      "family": "missing_strip",
+      "severity": "mild",
+      "mask_key": "hidden_near_rear_strip_mild"
+    },
+    {
+      "key": "near_rear_missing_strip_severe",
+      "location": "near_rear",
+      "family": "missing_strip",
+      "severity": "severe",
+      "mask_key": "hidden_near_rear_strip_severe"
+    },
+    {
+      "key": "near_rear_blur_mild",
+      "location": "near_rear",
+      "family": "blur",
+      "severity": "mild",
+      "mask_key": "hidden_near_rear_disc_mild"
+    },
+    {
+      "key": "near_rear_blur_severe",
+      "location": "near_rear",
+      "family": "blur",
+      "severity": "severe",
+      "mask_key": "hidden_near_rear_disc_severe"
+    },
+    {
+      "key": "near_rear_clipping_mild",
+      "location": "near_rear",
+      "family": "clipping",
+      "severity": "mild",
+      "mask_key": "hidden_near_rear_disc_mild"
+    },
+    {
+      "key": "near_rear_clipping_severe",
+      "location": "near_rear",
+      "family": "clipping",
+      "severity": "severe",
+      "mask_key": "hidden_near_rear_disc_severe"
+    },
+    {
+      "key": "near_rear_jpeg_mild",
+      "location": "near_rear",
+      "family": "jpeg",
+      "severity": "mild",
+      "mask_key": "hidden_near_rear_disc_mild"
+    },
+    {
+      "key": "near_rear_jpeg_severe",
+      "location": "near_rear",
+      "family": "jpeg",
+      "severity": "severe",
+      "mask_key": "hidden_near_rear_disc_severe"
+    },
+    {
+      "key": "far_left_rear_opaque_disc_mild",
+      "location": "far_left_rear",
+      "family": "opaque_disc",
+      "severity": "mild",
+      "mask_key": "hidden_far_left_rear_disc_mild"
+    },
+    {
+      "key": "far_left_rear_opaque_disc_severe",
+      "location": "far_left_rear",
+      "family": "opaque_disc",
+      "severity": "severe",
+      "mask_key": "hidden_far_left_rear_disc_severe"
+    },
+    {
+      "key": "far_left_rear_opaque_vehicle_mild",
+      "location": "far_left_rear",
+      "family": "opaque_vehicle",
+      "severity": "mild",
+      "mask_key": "hidden_far_left_rear_vehicle_mild"
+    },
+    {
+      "key": "far_left_rear_opaque_vehicle_severe",
+      "location": "far_left_rear",
+      "family": "opaque_vehicle",
+      "severity": "severe",
+      "mask_key": "hidden_far_left_rear_vehicle_severe"
+    },
+    {
+      "key": "far_left_rear_missing_strip_mild",
+      "location": "far_left_rear",
+      "family": "missing_strip",
+      "severity": "mild",
+      "mask_key": "hidden_far_left_rear_strip_mild"
+    },
+    {
+      "key": "far_left_rear_missing_strip_severe",
+      "location": "far_left_rear",
+      "family": "missing_strip",
+      "severity": "severe",
+      "mask_key": "hidden_far_left_rear_strip_severe"
+    },
+    {
+      "key": "far_left_rear_blur_mild",
+      "location": "far_left_rear",
+      "family": "blur",
+      "severity": "mild",
+      "mask_key": "hidden_far_left_rear_disc_mild"
+    },
+    {
+      "key": "far_left_rear_blur_severe",
+      "location": "far_left_rear",
+      "family": "blur",
+      "severity": "severe",
+      "mask_key": "hidden_far_left_rear_disc_severe"
+    },
+    {
+      "key": "far_left_rear_clipping_mild",
+      "location": "far_left_rear",
+      "family": "clipping",
+      "severity": "mild",
+      "mask_key": "hidden_far_left_rear_disc_mild"
+    },
+    {
+      "key": "far_left_rear_clipping_severe",
+      "location": "far_left_rear",
+      "family": "clipping",
+      "severity": "severe",
+      "mask_key": "hidden_far_left_rear_disc_severe"
+    },
+    {
+      "key": "far_left_rear_jpeg_mild",
+      "location": "far_left_rear",
+      "family": "jpeg",
+      "severity": "mild",
+      "mask_key": "hidden_far_left_rear_disc_mild"
+    },
+    {
+      "key": "far_left_rear_jpeg_severe",
+      "location": "far_left_rear",
+      "family": "jpeg",
+      "severity": "severe",
+      "mask_key": "hidden_far_left_rear_disc_severe"
+    }
+  ],
+  "conditions_count": 24,
+  "source_frame_hashes": {
+    "prev2": "c8c946e9b2addae4e7ac1bf1e7fbefc89193556df130cefdbdbfcb36b9c2f95f",
+    "prev1": "51b460051c024d85cb284f997f174d6a21bbea6da83c2f7f6eada53b5d62fb72",
+    "target": "7e4cc0a36045d4dae14e69f6a13c23c4fe7e814a93e9c32111f144ef85dec87f",
+    "next1": "efeb0552392505038f007bf4ab1fd26ed50759847ff4a90cfed51c831cca3abc",
+    "next2": "4a6fe475ee19b35b0b380f4d5aff1a148401bc13dfb7e2dbd230ed445fa39a6d"
+  },
+  "obstruction": {
+    "pixels": 716423,
+    "solid_angle_sr": 1.3444150856715407,
+    "interpretation": "Conservative annotated obstruction envelope in the finite nadir view; not exact physical car dimensions or a clean reference."
+  },
+  "truth_policy": "Scoring-only strata/clean RGB are forbidden inputs to graph retrieval, registration, output selection and confidence. No clean truth beneath real ego mask.",
+  "model_executed": false
+}

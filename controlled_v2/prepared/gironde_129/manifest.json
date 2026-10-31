@@ -1,0 +1,424 @@
+{
+  "scene_id": "gironde_129",
+  "area": "gironde",
+  "target_id": "53dadb5d-20d6-4c95-9881-3d2b05bf6d88",
+  "split": "development",
+  "annotation": {
+    "path": "controlled_v2/annotations/gironde_129.json",
+    "sha256": "537e202aac9359bb3eea3c60bd13af49b8c82fc614b04b7e125bb20e653e7f1b"
+  },
+  "masks": {
+    "path": "controlled_v2/prepared/gironde_129/masks.npz",
+    "sha256": "df24ff70fc70d4d9458d4af0ad714babf63461d8e4876944ec9aac180fd50057"
+  },
+  "scoring_only_strata": {
+    "path": "controlled_v2/prepared/gironde_129/scoring_only_strata.npz",
+    "sha256": "69fb08c0ce577cd2724d43c289e28080d5249cbf9fa4dcc428cbac9dfef38dbf"
+  },
+  "compiler": {
+    "path": "prepare_area_benchmark.py",
+    "sha256": "68c04e8731719611f9be77cf94460a4244883cd402d33f2e285d8c5472caa4a5"
+  },
+  "base_compiler": {
+    "path": "prepare_annotated_case_v2.py",
+    "sha256": "0f0aa743386c2040199fb05abb313498b30fec4480d704e6db3e2014039aed4b"
+  },
+  "corruption_source": {
+    "path": "controlled_occlusions.py",
+    "sha256": "b8935e24359bf53bb59e117c229479a157b3d55f420b2f26111dc271406e27b3"
+  },
+  "projection": {
+    "size": 2200,
+    "fov": 163.302054963582
+  },
+  "frames": {
+    "prev2": {
+      "ego": 178338,
+      "ground": 688416,
+      "moving": 0,
+      "shadow": 0,
+      "privacy": 0,
+      "uncertain": 0,
+      "allowed": 462312
+    },
+    "prev1": {
+      "ego": 178338,
+      "ground": 691664,
+      "moving": 0,
+      "shadow": 0,
+      "privacy": 0,
+      "uncertain": 0,
+      "allowed": 463268
+    },
+    "target": {
+      "ego": 178338,
+      "ground": 737201,
+      "moving": 0,
+      "shadow": 0,
+      "privacy": 0,
+      "uncertain": 0,
+      "allowed": 500045
+    },
+    "next1": {
+      "ego": 178338,
+      "ground": 707130,
+      "moving": 0,
+      "shadow": 0,
+      "privacy": 0,
+      "uncertain": 0,
+      "allowed": 477286
+    },
+    "next2": {
+      "ego": 178338,
+      "ground": 697327,
+      "moving": 0,
+      "shadow": 0,
+      "privacy": 0,
+      "uncertain": 0,
+      "allowed": 468986
+    }
+  },
+  "mask_specs": [
+    {
+      "key": "forward_disc_mild",
+      "location": "forward",
+      "shape": "disc",
+      "severity": "mild",
+      "sha256": "6c5417d1c5ba8911d8a76244ce157fd7622400e5af912c0a0bb1f405b3b8da30",
+      "pixels": 37893,
+      "solid_angle_sr": 0.016913439885449886,
+      "sphere_fraction": 0.0013459287812284848,
+      "projected_area_ratio_to_obstruction": 0.2124785519631262,
+      "angular_area_ratio_to_obstruction": 0.007089413500288804,
+      "scoring_only_textured_fraction": 0.09677249096139129
+    },
+    {
+      "key": "forward_disc_severe",
+      "location": "forward",
+      "shape": "disc",
+      "severity": "severe",
+      "sha256": "6047a31c0e5e7488e02e323d45a6cf9ef5e728bea5102c2125aba5d765d9185b",
+      "pixels": 90088,
+      "solid_angle_sr": 0.04498764160909641,
+      "sphere_fraction": 0.0035800027700671607,
+      "projected_area_ratio_to_obstruction": 0.505153136179614,
+      "angular_area_ratio_to_obstruction": 0.0188569561206797,
+      "scoring_only_textured_fraction": 0.07965544800639375
+    },
+    {
+      "key": "forward_vehicle_mild",
+      "location": "forward",
+      "shape": "vehicle",
+      "severity": "mild",
+      "sha256": "06ad3eff65a414d66ad743b137e0e2dbd838c43c3a152e54bb12f6f4d5270cbf",
+      "pixels": 43323,
+      "solid_angle_sr": 0.019555666776354504,
+      "sphere_fraction": 0.0015561905164573847,
+      "projected_area_ratio_to_obstruction": 0.24292635332907175,
+      "angular_area_ratio_to_obstruction": 0.008196925580508496,
+      "scoring_only_textured_fraction": 0.08925974655494771
+    },
+    {
+      "key": "forward_vehicle_severe",
+      "location": "forward",
+      "shape": "vehicle",
+      "severity": "severe",
+      "sha256": "a5c128328f7999ea5b6bdf06b8130c1df2e4e6bc56939cba2aa2ad5e654dd98a",
+      "pixels": 100954,
+      "solid_angle_sr": 0.052811893951791394,
+      "sphere_fraction": 0.004202636988236285,
+      "projected_area_ratio_to_obstruction": 0.5660823828909151,
+      "angular_area_ratio_to_obstruction": 0.022136558647643287,
+      "scoring_only_textured_fraction": 0.07643084969392
+    },
+    {
+      "key": "forward_strip_mild",
+      "location": "forward",
+      "shape": "strip",
+      "severity": "mild",
+      "sha256": "6e551d1b57dfd11e8e0d4f4a56923cae92ca6503702ec68649dea0d0f4dc507a",
+      "pixels": 29585,
+      "solid_angle_sr": 0.01575149816863701,
+      "sphere_fraction": 0.0012534643973207585,
+      "projected_area_ratio_to_obstruction": 0.16589285514023933,
+      "angular_area_ratio_to_obstruction": 0.0066023756564491005,
+      "scoring_only_textured_fraction": 0.16237958424877472
+    },
+    {
+      "key": "forward_strip_severe",
+      "location": "forward",
+      "shape": "strip",
+      "severity": "severe",
+      "sha256": "dad29a32f2099daecc2cbda57863a7978309292b2dad3f76997b828087fd5fb8",
+      "pixels": 63377,
+      "solid_angle_sr": 0.03396494752925429,
+      "sphere_fraction": 0.0027028446455688387,
+      "projected_area_ratio_to_obstruction": 0.3553757471767094,
+      "angular_area_ratio_to_obstruction": 0.01423669928656215,
+      "scoring_only_textured_fraction": 0.09926313962478502
+    },
+    {
+      "key": "rear_disc_mild",
+      "location": "rear",
+      "shape": "disc",
+      "severity": "mild",
+      "sha256": "fbfa0b4ecbe204beca35e2bf9d01b1cf3299df4401e98c4764afee1ca1959403",
+      "pixels": 61231,
+      "solid_angle_sr": 0.033783224141905294,
+      "sphere_fraction": 0.002688383557882841,
+      "projected_area_ratio_to_obstruction": 0.343342417207774,
+      "angular_area_ratio_to_obstruction": 0.014160528368977344,
+      "scoring_only_textured_fraction": 0.12461008312782741
+    },
+    {
+      "key": "rear_disc_severe",
+      "location": "rear",
+      "shape": "disc",
+      "severity": "severe",
+      "sha256": "d88bad9de95166c76f8bb1a852b92abc30ec728ad6ad0bb974f41ce83f71cf00",
+      "pixels": 163829,
+      "solid_angle_sr": 0.10371358240806189,
+      "sphere_fraction": 0.008253264653005844,
+      "projected_area_ratio_to_obstruction": 0.9186432504569974,
+      "angular_area_ratio_to_obstruction": 0.043472438266065457,
+      "scoring_only_textured_fraction": 0.11907537737518999
+    },
+    {
+      "key": "rear_vehicle_mild",
+      "location": "rear",
+      "shape": "vehicle",
+      "severity": "mild",
+      "sha256": "89f73e648d885f548b9ea3e2158e580511ab5fe1cb15ef3acdee69285aa5866c",
+      "pixels": 70031,
+      "solid_angle_sr": 0.03939443967768809,
+      "sphere_fraction": 0.003134909902519776,
+      "projected_area_ratio_to_obstruction": 0.39268692034227143,
+      "angular_area_ratio_to_obstruction": 0.01651251752327295,
+      "scoring_only_textured_fraction": 0.11602004826434008
+    },
+    {
+      "key": "rear_vehicle_severe",
+      "location": "rear",
+      "shape": "vehicle",
+      "severity": "severe",
+      "sha256": "346cd6963be4ac05f6ff7a5914b748284927d66a4bc1038b7a306649cf798e36",
+      "pixels": 186235,
+      "solid_angle_sr": 0.12355176045753513,
+      "sphere_fraction": 0.009831936702261245,
+      "projected_area_ratio_to_obstruction": 1.0442810842333097,
+      "angular_area_ratio_to_obstruction": 0.05178778087156688,
+      "scoring_only_textured_fraction": 0.11494080060139071
+    },
+    {
+      "key": "rear_strip_mild",
+      "location": "rear",
+      "shape": "strip",
+      "severity": "mild",
+      "sha256": "aab8573d665ac016a18b09af81fe064054893849a40f6cf5093d66892c31958e",
+      "pixels": 46275,
+      "solid_angle_sr": 0.035419814164333624,
+      "sphere_fraction": 0.002818619253825013,
+      "projected_area_ratio_to_obstruction": 0.25947919119873497,
+      "angular_area_ratio_to_obstruction": 0.014846519124141384,
+      "scoring_only_textured_fraction": 0.22722852512155592
+    },
+    {
+      "key": "rear_strip_severe",
+      "location": "rear",
+      "shape": "strip",
+      "severity": "severe",
+      "sha256": "c030cf27c05fea517e607f20008ca7121e91a1657d48c2a74d9c8f1146abd6e1",
+      "pixels": 103039,
+      "solid_angle_sr": 0.07810240035287865,
+      "sphere_fraction": 0.006215191541751414,
+      "projected_area_ratio_to_obstruction": 0.5777736657358499,
+      "angular_area_ratio_to_obstruction": 0.032737291480427366,
+      "scoring_only_textured_fraction": 0.13973349896641077
+    }
+  ],
+  "conditions": [
+    {
+      "key": "forward_opaque_disc_mild",
+      "location": "forward",
+      "family": "opaque_disc",
+      "severity": "mild",
+      "mask_key": "hidden_forward_disc_mild"
+    },
+    {
+      "key": "forward_opaque_disc_severe",
+      "location": "forward",
+      "family": "opaque_disc",
+      "severity": "severe",
+      "mask_key": "hidden_forward_disc_severe"
+    },
+    {
+      "key": "forward_opaque_vehicle_mild",
+      "location": "forward",
+      "family": "opaque_vehicle",
+      "severity": "mild",
+      "mask_key": "hidden_forward_vehicle_mild"
+    },
+    {
+      "key": "forward_opaque_vehicle_severe",
+      "location": "forward",
+      "family": "opaque_vehicle",
+      "severity": "severe",
+      "mask_key": "hidden_forward_vehicle_severe"
+    },
+    {
+      "key": "forward_missing_strip_mild",
+      "location": "forward",
+      "family": "missing_strip",
+      "severity": "mild",
+      "mask_key": "hidden_forward_strip_mild"
+    },
+    {
+      "key": "forward_missing_strip_severe",
+      "location": "forward",
+      "family": "missing_strip",
+      "severity": "severe",
+      "mask_key": "hidden_forward_strip_severe"
+    },
+    {
+      "key": "forward_blur_mild",
+      "location": "forward",
+      "family": "blur",
+      "severity": "mild",
+      "mask_key": "hidden_forward_disc_mild"
+    },
+    {
+      "key": "forward_blur_severe",
+      "location": "forward",
+      "family": "blur",
+      "severity": "severe",
+      "mask_key": "hidden_forward_disc_severe"
+    },
+    {
+      "key": "forward_clipping_mild",
+      "location": "forward",
+      "family": "clipping",
+      "severity": "mild",
+      "mask_key": "hidden_forward_disc_mild"
+    },
+    {
+      "key": "forward_clipping_severe",
+      "location": "forward",
+      "family": "clipping",
+      "severity": "severe",
+      "mask_key": "hidden_forward_disc_severe"
+    },
+    {
+      "key": "forward_jpeg_mild",
+      "location": "forward",
+      "family": "jpeg",
+      "severity": "mild",
+      "mask_key": "hidden_forward_disc_mild"
+    },
+    {
+      "key": "forward_jpeg_severe",
+      "location": "forward",
+      "family": "jpeg",
+      "severity": "severe",
+      "mask_key": "hidden_forward_disc_severe"
+    },
+    {
+      "key": "rear_opaque_disc_mild",
+      "location": "rear",
+      "family": "opaque_disc",
+      "severity": "mild",
+      "mask_key": "hidden_rear_disc_mild"
+    },
+    {
+      "key": "rear_opaque_disc_severe",
+      "location": "rear",
+      "family": "opaque_disc",
+      "severity": "severe",
+      "mask_key": "hidden_rear_disc_severe"
+    },
+    {
+      "key": "rear_opaque_vehicle_mild",
+      "location": "rear",
+      "family": "opaque_vehicle",
+      "severity": "mild",
+      "mask_key": "hidden_rear_vehicle_mild"
+    },
+    {
+      "key": "rear_opaque_vehicle_severe",
+      "location": "rear",
+      "family": "opaque_vehicle",
+      "severity": "severe",
+      "mask_key": "hidden_rear_vehicle_severe"
+    },
+    {
+      "key": "rear_missing_strip_mild",
+      "location": "rear",
+      "family": "missing_strip",
+      "severity": "mild",
+      "mask_key": "hidden_rear_strip_mild"
+    },
+    {
+      "key": "rear_missing_strip_severe",
+      "location": "rear",
+      "family": "missing_strip",
+      "severity": "severe",
+      "mask_key": "hidden_rear_strip_severe"
+    },
+    {
+      "key": "rear_blur_mild",
+      "location": "rear",
+      "family": "blur",
+      "severity": "mild",
+      "mask_key": "hidden_rear_disc_mild"
+    },
+    {
+      "key": "rear_blur_severe",
+      "location": "rear",
+      "family": "blur",
+      "severity": "severe",
+      "mask_key": "hidden_rear_disc_severe"
+    },
+    {
+      "key": "rear_clipping_mild",
+      "location": "rear",
+      "family": "clipping",
+      "severity": "mild",
+      "mask_key": "hidden_rear_disc_mild"
+    },
+    {
+      "key": "rear_clipping_severe",
+      "location": "rear",
+      "family": "clipping",
+      "severity": "severe",
+      "mask_key": "hidden_rear_disc_severe"
+    },
+    {
+      "key": "rear_jpeg_mild",
+      "location": "rear",
+      "family": "jpeg",
+      "severity": "mild",
+      "mask_key": "hidden_rear_disc_mild"
+    },
+    {
+      "key": "rear_jpeg_severe",
+      "location": "rear",
+      "family": "jpeg",
+      "severity": "severe",
+      "mask_key": "hidden_rear_disc_severe"
+    }
+  ],
+  "conditions_count": 24,
+  "source_frame_hashes": {
+    "prev2": "b4652a1285d01809549d1f78c8aa174430ab7830f095fbbd8aaf755439271a3c",
+    "prev1": "3e007342fc70277ab1796bf9b2995c960069713ef46e9a584ff7d21a70e8d00d",
+    "target": "eda2ecf24b2c3148504009229c8f993606904f32e1f622ac9214c3c64d1e4a18",
+    "next1": "6c379cbc734e92adf8fd99472fab363ebbd6131535e6c2886fd0aa399eea1db7",
+    "next2": "659cdfbf3dc2b6dc82759d4ff6b35cc19be315dca61ae19a8bd1538478aade30"
+  },
+  "obstruction": {
+    "pixels": 178338,
+    "solid_angle_sr": 2.3857318923153343,
+    "interpretation": "Conservative annotated obstruction envelope in the finite nadir view; not exact physical car dimensions or a clean reference."
+  },
+  "truth_policy": "Scoring-only strata/clean RGB are forbidden inputs to graph retrieval, registration, output selection and confidence. No clean truth beneath real ego mask.",
+  "model_executed": false
+}
