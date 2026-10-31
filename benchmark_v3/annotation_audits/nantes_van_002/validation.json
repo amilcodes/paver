@@ -1,0 +1,203 @@
+{
+  "created": "2026-10-31T12:23:28.169574+00:00",
+  "signature": {
+    "audit_annotation_v2.py": "d6cc3de415130c67d770c9b01ef26dc0d0e3ac62a2147d1ee65d3bac3ef06f6a",
+    "prepare_annotated_case_v2.py": "0f0aa743386c2040199fb05abb313498b30fec4480d704e6db3e2014039aed4b",
+    "dense_matching.py": "b7d3ce798db5c76ba989ac71ccc0fc5e6d0814da08b02006c892aed9babf287e",
+    "repair.py": "779e3679ae205637fe66cd25f5f7214bc9c6c153d4acfd6b8c9fa8915b8f4c88",
+    "benchmark.py": "18901c663f774dca04b40b9857718a30e3c73b87de888b47ca15d3870f20dd1e",
+    "annotation": "8573442e7052f5cab4277b6e49216f8b657be6d32d847c3da9a1ecb3a72e03ed",
+    "manifest": "0b353bbc570637d74c37345b4b37e08c865cc3a3a08dc801ee3a9deb4bb99956"
+  },
+  "split": "train",
+  "source_manifest_mask_hashes_pass": true,
+  "per_frame_nuisance_ablation": [
+    {
+      "frame": "prev2",
+      "ego_only_ground_pixels": 944183,
+      "nuisance_pixels_in_ego_only_ground": 75982,
+      "nuisance_fraction_of_ego_only_ground": 0.08047380645489274,
+      "valid_static_ground_pixels": 846452,
+      "nuisance_pixels_in_valid_ground": 0
+    },
+    {
+      "frame": "prev1",
+      "ego_only_ground_pixels": 925734,
+      "nuisance_pixels_in_ego_only_ground": 72407,
+      "nuisance_fraction_of_ego_only_ground": 0.07821577256533735,
+      "valid_static_ground_pixels": 830886,
+      "nuisance_pixels_in_valid_ground": 0
+    },
+    {
+      "frame": "target",
+      "ego_only_ground_pixels": 888267,
+      "nuisance_pixels_in_ego_only_ground": 65540,
+      "nuisance_fraction_of_ego_only_ground": 0.0737841212158056,
+      "valid_static_ground_pixels": 801019,
+      "nuisance_pixels_in_valid_ground": 0
+    },
+    {
+      "frame": "next1",
+      "ego_only_ground_pixels": 845703,
+      "nuisance_pixels_in_ego_only_ground": 60259,
+      "nuisance_fraction_of_ego_only_ground": 0.07125314679030345,
+      "valid_static_ground_pixels": 764379,
+      "nuisance_pixels_in_valid_ground": 0
+    },
+    {
+      "frame": "next2",
+      "ego_only_ground_pixels": 805212,
+      "nuisance_pixels_in_ego_only_ground": 58255,
+      "nuisance_fraction_of_ego_only_ground": 0.07234740664570324,
+      "valid_static_ground_pixels": 726011,
+      "nuisance_pixels_in_valid_ground": 0
+    }
+  ],
+  "regions": {
+    "footprint": {
+      "pixels": 458812,
+      "ratio_to_footprint": 1.0
+    },
+    "large_front": {
+      "pixels": 109020,
+      "ratio_to_footprint": 0.23761366311256027,
+      "fraction_clipped": 0.0
+    },
+    "large_rear": {
+      "pixels": 430560,
+      "ratio_to_footprint": 0.938423580900238,
+      "fraction_clipped": 0.0
+    },
+    "local_front": {
+      "pixels": 21658,
+      "ratio_to_footprint": 0.04720451949818226,
+      "fraction_clipped": 0.0
+    },
+    "local_rear": {
+      "pixels": 37327,
+      "ratio_to_footprint": 0.0813557622730007,
+      "fraction_clipped": 0.0
+    }
+  },
+  "perturbations": [
+    {
+      "region": "footprint",
+      "pattern": 0,
+      "input_bit_identical": true
+    },
+    {
+      "region": "footprint",
+      "pattern": 255,
+      "input_bit_identical": true
+    },
+    {
+      "region": "footprint",
+      "pattern": "invert",
+      "input_bit_identical": true
+    },
+    {
+      "region": "large_front",
+      "pattern": 0,
+      "input_bit_identical": true
+    },
+    {
+      "region": "large_front",
+      "pattern": 255,
+      "input_bit_identical": true
+    },
+    {
+      "region": "large_front",
+      "pattern": "invert",
+      "input_bit_identical": true
+    },
+    {
+      "region": "large_rear",
+      "pattern": 0,
+      "input_bit_identical": true
+    },
+    {
+      "region": "large_rear",
+      "pattern": 255,
+      "input_bit_identical": true
+    },
+    {
+      "region": "large_rear",
+      "pattern": "invert",
+      "input_bit_identical": true
+    },
+    {
+      "region": "local_front",
+      "pattern": 0,
+      "input_bit_identical": true
+    },
+    {
+      "region": "local_front",
+      "pattern": 255,
+      "input_bit_identical": true
+    },
+    {
+      "region": "local_front",
+      "pattern": "invert",
+      "input_bit_identical": true
+    },
+    {
+      "region": "local_rear",
+      "pattern": 0,
+      "input_bit_identical": true
+    },
+    {
+      "region": "local_rear",
+      "pattern": 255,
+      "input_bit_identical": true
+    },
+    {
+      "region": "local_rear",
+      "pattern": "invert",
+      "input_bit_identical": true
+    }
+  ],
+  "input_isolation_checks_passed": 15,
+  "blind_mask_transfer_controls": [
+    {
+      "case": "gironde_0",
+      "source_path": "benchmark_v2/results/gironde_0/disk_lightglue/footprint_evidence.npz",
+      "source_sha256": "48872c622133aa5c4c6b8867877401331b4bcffeb35ffa0c7a5dca43087e2f32",
+      "ego_recall_if_blindly_reused": 0.25903638091418707,
+      "mask_non_ego_fraction_if_blindly_reused": 0.5220844291102693
+    },
+    {
+      "case": "alsace_fields_0",
+      "source_path": "benchmark_v2/results/alsace_fields_0/disk_lightglue/footprint_evidence.npz",
+      "source_sha256": "af8620443d5f2947df453aeae08717665e65d8681be2150c4e049d60fccd86ec",
+      "ego_recall_if_blindly_reused": 0.18341281396301753,
+      "mask_non_ego_fraction_if_blindly_reused": 0.4710215986522843
+    },
+    {
+      "case": "nantes_1",
+      "source_path": "benchmark_v2/results/nantes_1/disk_lightglue/footprint_evidence.npz",
+      "source_sha256": "93cafb6b86be2239c242a4c9549302f90938e519b4ba2371a9595f55c5048b22",
+      "ego_recall_if_blindly_reused": 0.22424217326486665,
+      "mask_non_ego_fraction_if_blindly_reused": 0.5501429783215132
+    }
+  ],
+  "control_note": "Deliberately reusing another scene mask is an unsafe control, not a bug in the original scene-specific masks.",
+  "footprint_boundary_sensitivity": {
+    "boundary_px": 10,
+    "eroded_area": 417409,
+    "annotated_area": 458812,
+    "dilated_area": 498701,
+    "interpretation": "Mask sensitivity, not a confidence interval or recovery score"
+  },
+  "unit_tests_passed": 4,
+  "model_inference_performed": false,
+  "model_weights_used": null,
+  "new_recovery_coverage": null,
+  "new_recovery_error": null,
+  "annotation_frozen_before_first_scoring": true,
+  "limitations": [
+    "Single-reviewer conservative manual silhouettes",
+    "Visible-road proxies, no ground truth under the actual van",
+    "Input invariance is not validation of actual learned matches",
+    "Test collections remain unviewed and unscored"
+  ]
+}

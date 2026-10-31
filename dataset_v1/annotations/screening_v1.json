@@ -1,0 +1,67 @@
+{
+  "status": "two training windows annotated; only Bourges evaluated",
+  "scenes": [
+    {
+      "collection": "0bf007dd-97f9-4572-9614-8b0683a0ec5e",
+      "target_id": "1a9e9b37-1d3e-45ee-ae9f-f4035a792212",
+      "split": "train",
+      "reviewed_at": "2026-10-31T08:19:46.262362+00:00",
+      "reviewer": "Codex visual inspection",
+      "review_scope": "Five-frame nadir contact sheet; screening only",
+      "projection": {
+        "size": 2200,
+        "fov": 163.302054963582
+      },
+      "observed_scene_tags": [
+        "unmarked paved road",
+        "T-junction",
+        "large inter-frame change in road direction",
+        "hedges and walls",
+        "nadir graphic over vehicle"
+      ],
+      "annotation_status": "annotated_and_evaluated",
+      "geometry_grade": "not assessed",
+      "notes": "Per-frame road masks must follow the turn; exclude hedge/wall projections. Vehicle and occluding graphic need a combined mask.",
+      "source_hashes": {
+        "target": "80679e337c7ad3b746e4ad18578676467fe13387ebf4891c4078e759a2df607b",
+        "prev1": "569ba0f7624f14fb271dd4bbf2f23cb0fd38e92d67d05c8bef6a65334536f909",
+        "prev2": "3e1b028791aa0f9fee1fc50e9688db3e64d4498c7e2fd0900f55538787656521",
+        "next1": "5250a156036a1f5200cc665743eed6c63cd46075af5bfceaa485eb36887c03f2",
+        "next2": "f9f2fa2247f4b7e724257dab32cfd1a5bfd231fd61419111075bb6a66ea78a88"
+      },
+      "annotation": "benchmark_v3/annotations_train_001.json",
+      "evaluation_status": "all_methods_abstain_no_accepted_graph_edges"
+    },
+    {
+      "collection": "816fcf1f-d4ee-4ec1-9535-f66c2d608404",
+      "target_id": "f1340f34-7b52-4313-97f6-654c2c11eb0e",
+      "split": "train",
+      "reviewed_at": "2026-10-31T12:25:20.894101+00:00",
+      "reviewer": "Codex visual inspection",
+      "review_scope": "Five per-frame1200px nadirs plus target panorama; separate vehicle/equipment, movers, shadow, road masks frozen",
+      "projection": {
+        "size": 2200,
+        "fov": 163.302054963582
+      },
+      "observed_scene_tags": [
+        "marked paved road",
+        "barriers",
+        "bright sun and shadows",
+        "large off-centre vehicle and equipment occlusion",
+        "moving neighboring traffic"
+      ],
+      "annotation_status": "annotated_frozen_not_evaluated",
+      "geometry_grade": "not assessed",
+      "notes": "Camera/vehicle layout differs substantially from the original centered rigs. Inspect full-resolution equipment boundaries and moving traffic before masking.",
+      "source_hashes": {
+        "target": "46f9d5ccba37c620b391b00d858a85ffdfbd91e7e6130a90aaaacb3e2b0b1788",
+        "prev1": "5afd911614f7333eac2bbfe5a3baeb7124e63346184fa135b108852e13c9a6c9",
+        "prev2": "6064117b1dd6e7e05dce0b577a7c0567257a0d301151101f989103d1639379b9",
+        "next1": "176bf2e62a1e00cb6a1b042507b46bead9a729b8aa989e5f878a37f37dac1b02",
+        "next2": "d87e5464ac3e9e468769c1fb034e4cac5d4637947908084e15422dea9ec339aa"
+      },
+      "annotation": "benchmark_v3/annotations_train_002.json",
+      "evaluation_status": "not_run_storage_blocked"
+    }
+  ]
+}

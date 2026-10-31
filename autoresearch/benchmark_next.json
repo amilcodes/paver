@@ -1,0 +1,36 @@
+{
+  "status": "100-collection acquisition cohort frozen; two train scenes annotated, one evaluated; independent evaluation pending",
+  "target_manifest": "dataset_v1/cohorts/initial_100_v1.json",
+  "independence_unit": "capture collection plus sampled 5 km geographic neighborhood",
+  "test_collections": 26,
+  "do_not_use_for_tuning": "test groups, including all later frames from those collections",
+  "annotation_requirements": [
+    "Source panorama hash and reviewer",
+    "Per-frame vehicle, privacy-blurred, moving-object and visible-road masks",
+    "Verified road surface, markings, curvature, grade, light, rig size and source blur classes",
+    "Freeze hidden ground masks before any method comparison",
+    "Flag incomplete windows, spherical seams, non-planar structures and uncertain ground"
+  ],
+  "evaluation": [
+    "Candidate coverage and abstention on true car masks, explicitly without ground-truth accuracy claims",
+    "Large and local withheld visible-road patches; masked pixels excluded before every feature/tracking/pose operation",
+    "Both equal-route and pooled error/coverage, with spatial block error and boundary alignment",
+    "Same-pixel controls plus coverage-error curves; report failures rather than dropping scenes",
+    "Synthetic calibrated scenes with known poses and full hidden ground truth, reported separately from real captures",
+    "Measure viewpoint and source sampling resolution so grazing-angle texture limits are visible"
+  ],
+  "promotion": "No promotion from donor agreement or pooled pixel counts alone. Require converged geometry, per-road quality checks, no integrity/split failures, and a frozen independent evaluation after development decisions.",
+  "known_limitation": "Withheld visible road is a proxy; it does not reveal the road physically occluded by the actual target camera vehicle. No real under-car reconstruction success rate has been established.",
+  "original_split_manifest": "dataset_v1/splits_v1.json",
+  "admission_manifest": "dataset_v1/admissions/0001.json",
+  "selected_test_collections": 20,
+  "selected_test_groups": 17,
+  "annotation_compilers": [
+    "prepare_annotated_case.py",
+    "prepare_annotated_case_v2.py"
+  ],
+  "annotated_train_scenes": [
+    "bourges_turn_001",
+    "nantes_van_002"
+  ]
+}

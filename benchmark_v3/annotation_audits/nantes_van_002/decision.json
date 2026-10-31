@@ -1,0 +1,54 @@
+{
+  "created": "2026-10-31T12:25:20.894101+00:00",
+  "experiment": "nantes_van_002_annotation",
+  "status": "annotation_frozen_evaluation_pending",
+  "failure_identified": "An off-centre visible capture van and roof rig cannot be represented by another scene's centered footprint; moving traffic and vehicle shadows must not be treated as static road.",
+  "change": "Added separately annotated per-frame ego, static ground, moving traffic, shadow, privacy and uncertain-region categories; boundary margin applies to matching eligibility without enlarging the ego denominator. All masks and four hidden-road regions frozen before scoring.",
+  "measured_annotation_results": {
+    "target_ego_pixels": 458812,
+    "large_rear_proxy_pixels": 430560,
+    "large_rear_fraction_of_ego": 0.938423580900238,
+    "large_front_fraction_of_ego": 0.23761366311256027,
+    "ego_only_ground_contamination_fraction_range": [
+      0.07125314679030345,
+      0.08047380645489274
+    ],
+    "nuisance_pixels_allowed_after_exclusion": 0,
+    "input_isolation_checks": 15,
+    "unit_tests_passed": 4
+  },
+  "control": "Ego-only exclusion leaves manually labeled traffic/shadows eligible; blindly transferred masks from three original roads cover only18-26% of this annotated ego footprint. These are deliberately unsafe mask controls, not defects found in original scene-specific annotations.",
+  "new_recovery_runs": 0,
+  "new_recovery_coverage": null,
+  "new_recovery_error": null,
+  "model_inference_performed": false,
+  "model_weights_used": null,
+  "promotion": false,
+  "blocker": {
+    "kind": "insufficient_free_disk",
+    "observed_free_gib": 5.633995056152344,
+    "minimum_free_gib": 8,
+    "planned_job_reservation_gib": 0.5,
+    "admission_requires_free_gib": 8.5,
+    "shortfall_for_planned_job_gib": 2.8660049438476562,
+    "first_observed_utc": "2026-10-31T10:08:10+00:00",
+    "last_checked_utc": "2026-10-31T12:25:20.894101+00:00",
+    "consecutive_blocked_heartbeats": 3,
+    "operations_held": [
+      "model checkpoint download",
+      "MPS inference",
+      "image acquisition",
+      "catalog expansion"
+    ],
+    "external_files_deleted": false,
+    "new_recovery_runs": 0,
+    "local_work_completed": "Second cached train case annotated and frozen; nuisance-mask compiler and input-isolation controls verified."
+  },
+  "limitations": [
+    "Single-reviewer conservative manual silhouettes",
+    "Visible-road proxies, no ground truth under the actual van",
+    "Input invariance is not validation of actual learned matches",
+    "Test collections remain unviewed and unscored"
+  ],
+  "next": "At >=8.5 GiB free, validate LoFTR on MPS and compare fixed failed roads first. Then run the unchanged run_annotated.py on this newly frozen training case. While storage remains blocked, implement the bounded run_dense.py runner instead of repeating preprocessing or split audits."
+}
