@@ -1,0 +1,13 @@
+{
+  "experiment": "sequence_v4_constrained",
+  "hypothesis": "Lower-degree transforms and spatial-deletion stability reduce unreliable projective extrapolation at useful coverage.",
+  "sources": {"sequence_v1": "all nine five-frame scenes", "sequence_v3": "both difficult eleven-frame scenes"},
+  "matching": "Reuse the exact per-region, hash-verified cached correspondences and v1 edge proposal split. No feature extraction or new hidden-pixel access.",
+  "models": ["homography_converged", "affine", "affine_stable", "similarity", "similarity_stable"],
+  "control": "Replay stored joint homography poses with identical audits, adding mandatory convergence rejection. Confirm original policy counts whenever that solver converged.",
+  "fit": {"loss": "radial Huber IRLS", "scale_px": 2, "maximum_iterations": 80, "convergence_maximum_training_prediction_change_px": 0.001, "full_rank_required": true, "maximum_condition_number": 100000000},
+  "stability": {"method": "delete each occupied world-space block from all training edges simultaneously", "blocks": "2 transverse x 4 longitudinal within target frame, outer coordinates clipped", "minimum_block_matches": 8, "minimum_block_fraction": 0.05, "minimum_remaining_edge_matches": 4, "minimum_deletions": 3, "all_attempts_must_converge_and_retain_donor": true, "maximum_displacement_px": 2, "grid": 96, "interpretation": "sensitivity estimate, not a calibrated confidence interval"},
+  "acceptance": "Mandatory convergence; otherwise preserve original correspondence, spatial hull, positive-transform, photometric audit and fusion policy thresholds. Never expand support.",
+  "evaluation": "Same original hidden masks and Telea same-pixel control. Equal-road and pooled summaries plus same-pixel comparisons. These are development roads.",
+  "limitations": ["Affine and similarity are geometric approximations, not calibrated metric poses", "Deleted blocks and pixels are correlated", "No actual under-car ground truth", "No independently held-out route is tuned or scored in this run"]
+}

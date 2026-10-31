@@ -1,0 +1,25 @@
+{
+  "timestamp": "2026-10-31T08:19:46.262362+00:00",
+  "status": "completed_rejected_as_default",
+  "promotion": false,
+  "tested": "55 fixed regions x 5 model variants = 275 validated region/method runs; same cached matches, original masks and provenance. Nine five-frame scenes plus two eleven-frame scenes.",
+  "finding": "Reduced-degree affine/similarity models do not improve the overall coverage-error tradeoff. Spatial deletion sensitivity eliminates all large hidden-patch recovery. Neither difficult road recovers.",
+  "control_replay": "Converged homography controls reproduce previous policy counts exactly. Nonconverged and disconnected geometry is now forced to abstain.",
+  "five_road_candidate_footprint": {
+    "homography_converged": 0.33122234297521314,
+    "affine": 0.20689921322473367,
+    "affine_stable": 0.031405145171239254,
+    "similarity": 0.02146436010648137,
+    "similarity_stable": 0.0
+  },
+  "large_hidden_affine_same_pixel_mae": {
+    "affine": 11.893517108596445,
+    "control": 13.819530227905508
+  },
+  "local_hidden_affine_same_pixel_mae": {
+    "affine": 7.946985969562634,
+    "control": 5.573617902899014
+  },
+  "interpretation": "Some common large-patch pixels improve, but local errors regress and coverage falls. This is not a reliable recovery gain. Raw RGB error also mixes geometric and exposure error; add geometric/gradient validation before attributing the cause.",
+  "next": "Use calibrated perspective plane constraints and source-view observability instead of further affine threshold tuning. Continue new-cohort annotation and keep test groups untouched."
+}

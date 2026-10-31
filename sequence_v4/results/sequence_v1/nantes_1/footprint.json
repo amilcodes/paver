@@ -1,0 +1,1164 @@
+{
+  "case": "nantes_1",
+  "region": "footprint",
+  "source_experiment": "sequence_v1",
+  "signature": {
+    "run_constrained.py": "262d63a9e724661b94e69388e0ab273774c16637a327dba613779c6094b3d236",
+    "constrained_sequence.py": "a3ba9e2460c00de146f9e1d077ad2c08c6783a7c87320b97bea83a8cab93e24d",
+    "sequence_geometry.py": "e7ecd253de1ca48076ea56c277533fbdf4438e889625cfb7a279266a87edb31c",
+    "matching_v2.py": "31c21cde51d791a78936145579a49998a1506698a2f78cad3f98574f0e08cf77",
+    "repair.py": "779e3679ae205637fe66cd25f5f7214bc9c6c153d4acfd6b8c9fa8915b8f4c88",
+    "benchmark.py": "18901c663f774dca04b40b9857718a30e3c73b87de888b47ca15d3870f20dd1e",
+    "protocol": "a580a0b684229f6c895a133cd0408f8eeabab0d6d654fddbbd2ca4644d27e37d",
+    "baseline_protocol": "f4037b6e0f526654baa3afbf568cfbfa882aff7224ca115b163220770da447c6",
+    "upstream": "924027d81aef5fcf69a74e5fa29894eaa71b3ccac162301509e832c0a0fc3521",
+    "manifest": "45daff5da66de40ade8d92b55627be1fc5e0b7b0468562f30913e8f6ee43feee"
+  },
+  "mask_pixels": 228706,
+  "source_order": [
+    "prev2",
+    "prev1",
+    "next1",
+    "next2"
+  ],
+  "created_at_utc": "2026-10-31T08:13:32.232647+00:00",
+  "graphs": {
+    "homography_converged": {
+      "connected_frames": 5,
+      "edges": 6,
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "nfev": 16,
+      "initial_median_fit_px": 1.4375660234591123,
+      "final_median_fit_px": 1.0659112961861865,
+      "poses": {
+        "2": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "0": [
+          [
+            0.8514741617920357,
+            -0.01148157165887692,
+            143.9248729930427
+          ],
+          [
+            -0.19704396436366492,
+            0.923670182635869,
+            1033.154530148133
+          ],
+          [
+            -5.000444149967702e-05,
+            -5.724031119482468e-06,
+            1.0
+          ]
+        ],
+        "1": [
+          [
+            0.9000372404205949,
+            -0.016518119183319684,
+            84.85369044956083
+          ],
+          [
+            -0.06575226312065557,
+            0.9255804892882524,
+            494.25289505693087
+          ],
+          [
+            -3.929525398780639e-05,
+            -1.2844520817849823e-05,
+            1.0
+          ]
+        ],
+        "3": [
+          [
+            1.2609348466406862,
+            -0.020606069003914984,
+            -158.6171247085791
+          ],
+          [
+            0.11600829183118948,
+            1.1064222751047417,
+            -595.9973753927153
+          ],
+          [
+            0.00012466843563534047,
+            -1.8578132560092722e-05,
+            1.0
+          ]
+        ],
+        "4": [
+          [
+            1.1246468611100315,
+            -0.02493386631156519,
+            -110.29221979975684
+          ],
+          [
+            0.25301094578747174,
+            1.0580235953068478,
+            -1191.2493451023988
+          ],
+          [
+            5.5559643065527675e-05,
+            -2.163766429789262e-05,
+            1.0
+          ]
+        ]
+      },
+      "model": "homography"
+    },
+    "affine": {
+      "model": "affine",
+      "connected_frames": 5,
+      "edges": 6,
+      "optimizer_success": true,
+      "rank": 24,
+      "parameters": 24,
+      "condition_number": 27.634438894078617,
+      "iterations": 21,
+      "maximum_prediction_step_px": 0.0009635602562118042,
+      "median_training_residual_px": 2.2861718519211545,
+      "reason": "converged robust linear graph",
+      "poses": {
+        "2": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "0": [
+          [
+            0.9636406796266215,
+            -0.005158844306902386,
+            83.62876191270993
+          ],
+          [
+            -0.12404771835878692,
+            0.9799995859803953,
+            1004.7894123616359
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "1": [
+          [
+            0.9983769627375242,
+            -0.0029451240496778442,
+            25.97013280439228
+          ],
+          [
+            -0.01866893091570481,
+            0.9947304111428763,
+            458.39834606962336
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "3": [
+          [
+            0.9972324020606465,
+            -0.0013771002919676974,
+            -16.91489161208392
+          ],
+          [
+            0.05505412633710116,
+            1.0112544133280283,
+            -494.3212478547091
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "4": [
+          [
+            1.0239841991043275,
+            -0.001958560493575508,
+            -64.77473632870169
+          ],
+          [
+            0.21682163733539075,
+            1.0458543783033367,
+            -1147.0567880865779
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "spatial_deletion": {
+        "attempts": [
+          {
+            "block": 0,
+            "removed": 38,
+            "model": "affine",
+            "connected_frames": 5,
+            "edges": 6,
+            "optimizer_success": true,
+            "rank": 24,
+            "parameters": 24,
+            "condition_number": 37.69833307715221,
+            "iterations": 23,
+            "maximum_prediction_step_px": 0.0008018150809547483,
+            "median_training_residual_px": 2.3190275888124514,
+            "reason": "converged robust linear graph"
+          },
+          {
+            "block": 1,
+            "removed": 46,
+            "model": "affine",
+            "connected_frames": 5,
+            "edges": 6,
+            "optimizer_success": true,
+            "rank": 24,
+            "parameters": 24,
+            "condition_number": 64.53791919939442,
+            "iterations": 12,
+            "maximum_prediction_step_px": 0.0006869848688854369,
+            "median_training_residual_px": 2.1287449552062405,
+            "reason": "converged robust linear graph"
+          },
+          {
+            "block": 2,
+            "removed": 51,
+            "model": "affine",
+            "connected_frames": 5,
+            "edges": 6,
+            "optimizer_success": true,
+            "rank": 24,
+            "parameters": 24,
+            "condition_number": 27.522127964679292,
+            "iterations": 19,
+            "maximum_prediction_step_px": 0.0007535778745376466,
+            "median_training_residual_px": 2.1835418252523624,
+            "reason": "converged robust linear graph"
+          },
+          {
+            "block": 3,
+            "removed": 22,
+            "model": "affine",
+            "connected_frames": 5,
+            "edges": 6,
+            "optimizer_success": true,
+            "rank": 24,
+            "parameters": 24,
+            "condition_number": 27.56812160685326,
+            "iterations": 21,
+            "maximum_prediction_step_px": 0.000807057283649377,
+            "median_training_residual_px": 2.2584434729802934,
+            "reason": "converged robust linear graph"
+          },
+          {
+            "block": 4,
+            "removed": 28,
+            "model": "affine",
+            "connected_frames": 5,
+            "edges": 6,
+            "optimizer_success": true,
+            "rank": 24,
+            "parameters": 24,
+            "condition_number": 28.87201131905975,
+            "iterations": 16,
+            "maximum_prediction_step_px": 0.0006405964453097444,
+            "median_training_residual_px": 2.1775772949214627,
+            "reason": "converged robust linear graph"
+          },
+          {
+            "block": 5,
+            "removed": 67,
+            "model": "affine",
+            "connected_frames": 5,
+            "edges": 5,
+            "optimizer_success": true,
+            "rank": 24,
+            "parameters": 24,
+            "condition_number": 51.87083305438513,
+            "iterations": 25,
+            "maximum_prediction_step_px": 0.0008194196986115015,
+            "median_training_residual_px": 2.0840602329399425,
+            "reason": "converged robust linear graph"
+          },
+          {
+            "block": 6,
+            "removed": 44,
+            "model": "affine",
+            "connected_frames": 5,
+            "edges": 6,
+            "optimizer_success": true,
+            "rank": 24,
+            "parameters": 24,
+            "condition_number": 29.44357961968636,
+            "iterations": 16,
+            "maximum_prediction_step_px": 0.0005813406913595831,
+            "median_training_residual_px": 2.155006837600834,
+            "reason": "converged robust linear graph"
+          }
+        ],
+        "required_minimum": 3,
+        "all_attempts_required_per_donor": true
+      }
+    },
+    "similarity": {
+      "model": "similarity",
+      "connected_frames": 5,
+      "edges": 6,
+      "optimizer_success": true,
+      "rank": 16,
+      "parameters": 16,
+      "condition_number": 4.866542819780116,
+      "iterations": 29,
+      "maximum_prediction_step_px": 0.0009672482446554425,
+      "median_training_residual_px": 4.325146556850506,
+      "reason": "converged robust linear graph",
+      "poses": {
+        "2": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "0": [
+          [
+            1.000899189007166,
+            0.004772307137814239,
+            33.56735019957705
+          ],
+          [
+            -0.004772307137814239,
+            1.000899189007166,
+            855.1335323306353
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "1": [
+          [
+            0.9956761348687144,
+            -0.002448397880592843,
+            28.981686261665573
+          ],
+          [
+            0.002448397880592843,
+            0.9956761348687144,
+            436.35472825772695
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "3": [
+          [
+            1.011518399052161,
+            -0.001508802272700005,
+            -31.956400800009305
+          ],
+          [
+            0.001508802272700005,
+            1.011518399052161,
+            -436.98745033626255
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "4": [
+          [
+            1.0297319481404428,
+            -0.00368419088028284,
+            -68.63283007475275
+          ],
+          [
+            0.00368419088028284,
+            1.0297319481404428,
+            -894.9828244036644
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "spatial_deletion": {
+        "reason": "base geometry already abstains"
+      }
+    }
+  },
+  "methods": {
+    "homography_converged": {
+      "registrations": [
+        {
+          "method": "homography",
+          "accepted": true,
+          "inliers": 92,
+          "median_reprojection_px": 1.987251784157897,
+          "graph_degree": 2,
+          "heldout_matches": 94,
+          "heldout_inlier_fraction": 0.35106382978723405,
+          "heldout_inliers": 33,
+          "homography": [
+            [
+              0.8514741617920357,
+              -0.01148157165887692,
+              143.9248729930427
+            ],
+            [
+              -0.19704396436366492,
+              0.923670182635869,
+              1033.154530148133
+            ],
+            [
+              -5.000444149967702e-05,
+              -5.724031119482468e-06,
+              1.0
+            ]
+          ],
+          "audit_pixels": 102718,
+          "audit_median_rgb": 7.666666507720947,
+          "audit_p90_rgb": 18.33333396911621,
+          "reason": "converged geometry and visible-ground audit passed"
+        },
+        {
+          "method": "homography",
+          "accepted": true,
+          "inliers": 127,
+          "median_reprojection_px": 1.7049705960457486,
+          "graph_degree": 2,
+          "heldout_matches": 133,
+          "heldout_inlier_fraction": 0.3684210526315789,
+          "heldout_inliers": 49,
+          "homography": [
+            [
+              0.9000372404205949,
+              -0.016518119183319684,
+              84.85369044956083
+            ],
+            [
+              -0.06575226312065557,
+              0.9255804892882524,
+              494.25289505693087
+            ],
+            [
+              -3.929525398780639e-05,
+              -1.2844520817849823e-05,
+              1.0
+            ]
+          ],
+          "audit_pixels": 208768,
+          "audit_median_rgb": 7.0,
+          "audit_p90_rgb": 15.666666984558105,
+          "reason": "converged geometry and visible-ground audit passed"
+        },
+        {
+          "method": "homography",
+          "accepted": true,
+          "inliers": 119,
+          "median_reprojection_px": 2.14023356660482,
+          "graph_degree": 2,
+          "heldout_matches": 121,
+          "heldout_inlier_fraction": 0.4380165289256198,
+          "heldout_inliers": 53,
+          "homography": [
+            [
+              1.2609348466406862,
+              -0.020606069003914984,
+              -158.6171247085791
+            ],
+            [
+              0.11600829183118948,
+              1.1064222751047417,
+              -595.9973753927153
+            ],
+            [
+              0.00012466843563534047,
+              -1.8578132560092722e-05,
+              1.0
+            ]
+          ],
+          "audit_pixels": 154908,
+          "audit_median_rgb": 5.0,
+          "audit_p90_rgb": 13.666666984558105,
+          "reason": "converged geometry and visible-ground audit passed"
+        },
+        {
+          "method": "homography",
+          "accepted": false,
+          "inliers": 77,
+          "median_reprojection_px": 3.073979904921786,
+          "graph_degree": 2,
+          "heldout_matches": 79,
+          "heldout_inlier_fraction": 0.31645569620253167,
+          "heldout_inliers": 25,
+          "homography": [
+            [
+              1.1246468611100315,
+              -0.02493386631156519,
+              -110.29221979975684
+            ],
+            [
+              0.25301094578747174,
+              1.0580235953068478,
+              -1191.2493451023988
+            ],
+            [
+              5.5559643065527675e-05,
+              -2.163766429789262e-05,
+              1.0
+            ]
+          ],
+          "reason": "joint/held-out geometry failed"
+        }
+      ],
+      "policies": {
+        "candidate": {
+          "accepted_pixels": 191447,
+          "coverage": 0.8370877895638943,
+          "single_view_pixels": 132114,
+          "multi_view_pixels": 59333
+        },
+        "corroborated": {
+          "accepted_pixels": 41256,
+          "coverage": 0.1803887960962983,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 41256
+        },
+        "strict": {
+          "accepted_pixels": 25362,
+          "coverage": 0.11089346147455685,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 25362
+        }
+      }
+    },
+    "affine": {
+      "registrations": [
+        {
+          "method": "affine",
+          "accepted": true,
+          "inliers": 92,
+          "median_reprojection_px": 1.8805817095561315,
+          "graph_degree": 2,
+          "heldout_matches": 94,
+          "heldout_inlier_fraction": 0.3617021276595745,
+          "heldout_inliers": 34,
+          "homography": [
+            [
+              0.9636406796266215,
+              -0.005158844306902386,
+              83.62876191270993
+            ],
+            [
+              -0.12404771835878692,
+              0.9799995859803953,
+              1004.7894123616359
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "audit_pixels": 99739,
+          "audit_median_rgb": 8.0,
+          "audit_p90_rgb": 18.66666603088379,
+          "reason": "converged geometry and visible-ground audit passed"
+        },
+        {
+          "method": "affine",
+          "accepted": true,
+          "inliers": 127,
+          "median_reprojection_px": 1.7989244074524344,
+          "graph_degree": 2,
+          "heldout_matches": 133,
+          "heldout_inlier_fraction": 0.38345864661654133,
+          "heldout_inliers": 51,
+          "homography": [
+            [
+              0.9983769627375242,
+              -0.0029451240496778442,
+              25.97013280439228
+            ],
+            [
+              -0.01866893091570481,
+              0.9947304111428763,
+              458.39834606962336
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "audit_pixels": 206326,
+          "audit_median_rgb": 7.0,
+          "audit_p90_rgb": 16.33333396911621,
+          "reason": "converged geometry and visible-ground audit passed"
+        },
+        {
+          "method": "affine",
+          "accepted": true,
+          "inliers": 119,
+          "median_reprojection_px": 2.357091132330621,
+          "graph_degree": 2,
+          "heldout_matches": 121,
+          "heldout_inlier_fraction": 0.4628099173553719,
+          "heldout_inliers": 56,
+          "homography": [
+            [
+              0.9972324020606465,
+              -0.0013771002919676974,
+              -16.91489161208392
+            ],
+            [
+              0.05505412633710116,
+              1.0112544133280283,
+              -494.3212478547091
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "audit_pixels": 155161,
+          "audit_median_rgb": 5.0,
+          "audit_p90_rgb": 13.666666984558105,
+          "reason": "converged geometry and visible-ground audit passed"
+        },
+        {
+          "method": "affine",
+          "accepted": false,
+          "inliers": 77,
+          "median_reprojection_px": 3.566810431451755,
+          "graph_degree": 2,
+          "heldout_matches": 79,
+          "heldout_inlier_fraction": 0.34177215189873417,
+          "heldout_inliers": 27,
+          "homography": [
+            [
+              1.0239841991043275,
+              -0.001958560493575508,
+              -64.77473632870169
+            ],
+            [
+              0.21682163733539075,
+              1.0458543783033367,
+              -1147.0567880865779
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "reason": "joint/held-out geometry failed"
+        }
+      ],
+      "policies": {
+        "candidate": {
+          "accepted_pixels": 189465,
+          "coverage": 0.8284216417584147,
+          "single_view_pixels": 132085,
+          "multi_view_pixels": 57380
+        },
+        "corroborated": {
+          "accepted_pixels": 39493,
+          "coverage": 0.17268020952664118,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 39493
+        },
+        "strict": {
+          "accepted_pixels": 24385,
+          "coverage": 0.10662160153209797,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 24385
+        }
+      }
+    },
+    "affine_stable": {
+      "registrations": [
+        {
+          "method": "affine",
+          "accepted": true,
+          "inliers": 92,
+          "median_reprojection_px": 1.8805817095561315,
+          "graph_degree": 2,
+          "heldout_matches": 94,
+          "heldout_inlier_fraction": 0.3617021276595745,
+          "heldout_inliers": 34,
+          "homography": [
+            [
+              0.9636406796266215,
+              -0.005158844306902386,
+              83.62876191270993
+            ],
+            [
+              -0.12404771835878692,
+              0.9799995859803953,
+              1004.7894123616359
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "audit_pixels": 99739,
+          "audit_median_rgb": 8.0,
+          "audit_p90_rgb": 18.66666603088379,
+          "reason": "converged geometry and visible-ground audit passed",
+          "stability_replicates": 7,
+          "stability_threshold_px": 2,
+          "stable_support_pixels": 23,
+          "original_support_pixels": 295685,
+          "stability_max_on_original_support": 7.285618305206299
+        },
+        {
+          "method": "affine",
+          "accepted": true,
+          "inliers": 127,
+          "median_reprojection_px": 1.7989244074524344,
+          "graph_degree": 2,
+          "heldout_matches": 133,
+          "heldout_inlier_fraction": 0.38345864661654133,
+          "heldout_inliers": 51,
+          "homography": [
+            [
+              0.9983769627375242,
+              -0.0029451240496778442,
+              25.97013280439228
+            ],
+            [
+              -0.01866893091570481,
+              0.9947304111428763,
+              458.39834606962336
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "audit_pixels": 206326,
+          "audit_median_rgb": 7.0,
+          "audit_p90_rgb": 16.33333396911621,
+          "reason": "converged geometry and visible-ground audit passed",
+          "stability_replicates": 7,
+          "stability_threshold_px": 2,
+          "stable_support_pixels": 44710,
+          "original_support_pixels": 520727,
+          "stability_max_on_original_support": 9.037542343139648
+        },
+        {
+          "method": "affine",
+          "accepted": true,
+          "inliers": 119,
+          "median_reprojection_px": 2.357091132330621,
+          "graph_degree": 2,
+          "heldout_matches": 121,
+          "heldout_inlier_fraction": 0.4628099173553719,
+          "heldout_inliers": 56,
+          "homography": [
+            [
+              0.9972324020606465,
+              -0.0013771002919676974,
+              -16.91489161208392
+            ],
+            [
+              0.05505412633710116,
+              1.0112544133280283,
+              -494.3212478547091
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "audit_pixels": 155161,
+          "audit_median_rgb": 5.0,
+          "audit_p90_rgb": 13.666666984558105,
+          "reason": "converged geometry and visible-ground audit passed",
+          "stability_replicates": 7,
+          "stability_threshold_px": 2,
+          "stable_support_pixels": 0,
+          "original_support_pixels": 436340,
+          "stability_max_on_original_support": 34.64157485961914
+        },
+        {
+          "method": "affine",
+          "accepted": false,
+          "inliers": 77,
+          "median_reprojection_px": 3.566810431451755,
+          "graph_degree": 2,
+          "heldout_matches": 79,
+          "heldout_inlier_fraction": 0.34177215189873417,
+          "heldout_inliers": 27,
+          "homography": [
+            [
+              1.0239841991043275,
+              -0.001958560493575508,
+              -64.77473632870169
+            ],
+            [
+              0.21682163733539075,
+              1.0458543783033367,
+              -1147.0567880865779
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "reason": "joint/held-out geometry failed"
+        }
+      ],
+      "policies": {
+        "candidate": {
+          "accepted_pixels": 33345,
+          "coverage": 0.14579853611186414,
+          "single_view_pixels": 33345,
+          "multi_view_pixels": 0
+        },
+        "corroborated": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0
+        },
+        "strict": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0
+        }
+      }
+    },
+    "similarity": {
+      "registrations": [
+        {
+          "method": "similarity",
+          "accepted": false,
+          "inliers": 92,
+          "median_reprojection_px": 9.971233453126484,
+          "graph_degree": 2,
+          "heldout_matches": 94,
+          "heldout_inlier_fraction": 0.1595744680851064,
+          "heldout_inliers": 15,
+          "homography": [
+            [
+              1.000899189007166,
+              0.004772307137814239,
+              33.56735019957705
+            ],
+            [
+              -0.004772307137814239,
+              1.000899189007166,
+              855.1335323306353
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "reason": "joint/held-out geometry failed"
+        },
+        {
+          "method": "similarity",
+          "accepted": false,
+          "inliers": 127,
+          "median_reprojection_px": 2.936088342721287,
+          "graph_degree": 2,
+          "heldout_matches": 133,
+          "heldout_inlier_fraction": 0.2781954887218045,
+          "heldout_inliers": 37,
+          "homography": [
+            [
+              0.9956761348687144,
+              -0.002448397880592843,
+              28.981686261665573
+            ],
+            [
+              0.002448397880592843,
+              0.9956761348687144,
+              436.35472825772695
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "reason": "joint/held-out geometry failed"
+        },
+        {
+          "method": "similarity",
+          "accepted": false,
+          "inliers": 119,
+          "median_reprojection_px": 4.280386004305904,
+          "graph_degree": 2,
+          "heldout_matches": 121,
+          "heldout_inlier_fraction": 0.4049586776859504,
+          "heldout_inliers": 49,
+          "homography": [
+            [
+              1.011518399052161,
+              -0.001508802272700005,
+              -31.956400800009305
+            ],
+            [
+              0.001508802272700005,
+              1.011518399052161,
+              -436.98745033626255
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "reason": "joint/held-out geometry failed"
+        },
+        {
+          "method": "similarity",
+          "accepted": false,
+          "inliers": 77,
+          "median_reprojection_px": 4.890754407042512,
+          "graph_degree": 2,
+          "heldout_matches": 79,
+          "heldout_inlier_fraction": 0.3670886075949367,
+          "heldout_inliers": 29,
+          "homography": [
+            [
+              1.0297319481404428,
+              -0.00368419088028284,
+              -68.63283007475275
+            ],
+            [
+              0.00368419088028284,
+              1.0297319481404428,
+              -894.9828244036644
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "reason": "joint/held-out geometry failed"
+        }
+      ],
+      "policies": {
+        "candidate": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0
+        },
+        "corroborated": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0
+        },
+        "strict": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0
+        }
+      }
+    },
+    "similarity_stable": {
+      "registrations": [
+        {
+          "method": "similarity",
+          "accepted": false,
+          "inliers": 92,
+          "median_reprojection_px": 9.971233453126484,
+          "graph_degree": 2,
+          "heldout_matches": 94,
+          "heldout_inlier_fraction": 0.1595744680851064,
+          "heldout_inliers": 15,
+          "homography": [
+            [
+              1.000899189007166,
+              0.004772307137814239,
+              33.56735019957705
+            ],
+            [
+              -0.004772307137814239,
+              1.000899189007166,
+              855.1335323306353
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "reason": "joint/held-out geometry failed"
+        },
+        {
+          "method": "similarity",
+          "accepted": false,
+          "inliers": 127,
+          "median_reprojection_px": 2.936088342721287,
+          "graph_degree": 2,
+          "heldout_matches": 133,
+          "heldout_inlier_fraction": 0.2781954887218045,
+          "heldout_inliers": 37,
+          "homography": [
+            [
+              0.9956761348687144,
+              -0.002448397880592843,
+              28.981686261665573
+            ],
+            [
+              0.002448397880592843,
+              0.9956761348687144,
+              436.35472825772695
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "reason": "joint/held-out geometry failed"
+        },
+        {
+          "method": "similarity",
+          "accepted": false,
+          "inliers": 119,
+          "median_reprojection_px": 4.280386004305904,
+          "graph_degree": 2,
+          "heldout_matches": 121,
+          "heldout_inlier_fraction": 0.4049586776859504,
+          "heldout_inliers": 49,
+          "homography": [
+            [
+              1.011518399052161,
+              -0.001508802272700005,
+              -31.956400800009305
+            ],
+            [
+              0.001508802272700005,
+              1.011518399052161,
+              -436.98745033626255
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "reason": "joint/held-out geometry failed"
+        },
+        {
+          "method": "similarity",
+          "accepted": false,
+          "inliers": 77,
+          "median_reprojection_px": 4.890754407042512,
+          "graph_degree": 2,
+          "heldout_matches": 79,
+          "heldout_inlier_fraction": 0.3670886075949367,
+          "heldout_inliers": 29,
+          "homography": [
+            [
+              1.0297319481404428,
+              -0.00368419088028284,
+              -68.63283007475275
+            ],
+            [
+              0.00368419088028284,
+              1.0297319481404428,
+              -894.9828244036644
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "reason": "joint/held-out geometry failed"
+        }
+      ],
+      "policies": {
+        "candidate": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0
+        },
+        "corroborated": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0
+        },
+        "strict": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0
+        }
+      }
+    }
+  },
+  "same_pixel_control": {},
+  "runtime_seconds": 2.9545071125030518
+}
