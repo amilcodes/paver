@@ -1,0 +1,44 @@
+{
+  "created": "2026-10-31T10:14:35.546826+00:00",
+  "status": "preprocessing_passed_inference_blocked",
+  "promotion": false,
+  "failure_identified": "Sparse DISK target graphs still disconnected or unsupported on Gironde, Alsace and Bourges. Free disk additionally fell below the saved floor.",
+  "change": "Prepared mask-before-resampling LoFTR adapter with local pinned weights and mandatory MPS; repaired status admission and metadata acquisition guards.",
+  "results": {
+    "input_isolation_checks_passed": 45,
+    "regions": 15,
+    "unsafe_control_leaked_in_regions": 15,
+    "unit_and_regression_tests_passed": 12,
+    "new_matcher_recovery_runs": 0,
+    "new_coverage": null,
+    "new_error": null
+  },
+  "interpretation": "Preprocessing is insensitive to excluded RGB on these fixed masks. This does not establish learned-match quality, MPS compatibility, registration correctness or footprint recovery. Historical controls remain zero coverage.",
+  "blocker": {
+    "kind": "insufficient_free_disk",
+    "observed_free_gib": 5.672801971435547,
+    "minimum_free_gib": 8,
+    "planned_job_reservation_gib": 0.5,
+    "admission_requires_free_gib": 8.5,
+    "shortfall_for_planned_job_gib": 2.827198028564453,
+    "first_observed_utc": "2026-10-31T10:08:10+00:00",
+    "last_checked_utc": "2026-10-31T10:14:35.546826+00:00",
+    "operations_held": [
+      "model checkpoint download",
+      "MPS inference",
+      "image acquisition",
+      "catalog expansion"
+    ],
+    "local_work_completed": [
+      "masked dense matcher adapter",
+      "45 real-road input isolation checks with deliberately unsafe positive control",
+      "resource admission bug fix",
+      "catalog metadata disk guard"
+    ],
+    "external_files_deleted": false
+  },
+  "next": "When at least 8.5 GiB is free, obtain the pinned 46,341,978-byte checkpoint, validate synthetic coordinate convention and actual correspondence invariance on MPS, then build and execute a bounded run_dense.py comparison. Current adapter has no completed end-to-end runner.",
+  "model_repository_revision": "0fb3b456cf176746709c38fa9cf80695a1c82dac",
+  "expected_weight_sha256": "21f5bec5968178e8bc8b7633441836fe5de4f47d861dd2cd7dc38e271b0479ec",
+  "checkpoint_downloaded": false
+}

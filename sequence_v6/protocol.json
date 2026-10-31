@@ -1,0 +1,67 @@
+{
+  "experiment": "sequence_v6_dense_matching",
+  "created": "2026-10-31T10:12:29.364307+00:00",
+  "hypothesis": "A detector-free matcher can provide ground correspondences on unmarked roads whose tiled DISK graph is disconnected.",
+  "status": "prepared_not_inferred",
+  "cases": [
+    "gironde_0",
+    "alsace_fields_0",
+    "bourges_turn_001"
+  ],
+  "initial_sequence_length": 5,
+  "later_sequence_length_if_supported": 11,
+  "methods_planned": [
+    "cached_tiled_homography",
+    "cached_tiled_metric_free",
+    "loftr_homography",
+    "loftr_metric_free"
+  ],
+  "matcher": {
+    "implementation": "Kornia LoFTR outdoor",
+    "pretrained_training_source": "MegaDepth; overlap with evaluation locations unknown",
+    "maximum_input_side": 640,
+    "ground_margin_native_pixels": 32,
+    "maximum_matches": 2048,
+    "deduplication_native_pixel_grid": 6,
+    "coarse_confidence_threshold": 0.2,
+    "masking": "Zero excluded RGB before grayscale/crop/resampling and inference. Use eroded valid masks in attention; retain only allowed output coordinates.",
+    "device": "mps only",
+    "weights_policy": "Explicit local checkpoint with pinned SHA256, no constructor download",
+    "geometry": "Existing propose_edge, fit_graph, fit_metric_graph and audit_poses unchanged; no support expansion"
+  },
+  "evaluation": {
+    "projection": "Existing frozen nadir masks and dimensions",
+    "regions_per_case": 5,
+    "metrics": [
+      "coverage",
+      "RGB error on hidden ground",
+      "gradient error",
+      "abstention",
+      "graph connectivity",
+      "held-out match support"
+    ],
+    "truth": "No ground truth beneath real car; donor agreement is not accuracy",
+    "promotion": "none until actual end-to-end controls pass",
+    "preflight": "Three excluded-pixel perturbations per region; require identical full model inputs. Unsafe resize-before-mask control must detect leakage."
+  },
+  "resource_limits": {
+    "minimum_free_disk_gib": 8,
+    "job_reservation_gib": 0.5,
+    "heavy_jobs": 1,
+    "download_workers": 1,
+    "image_cache_cap_gib": 8
+  },
+  "references": {
+    "kornia_docs": "https://kornia.readthedocs.io/en/latest/models/loftr.html",
+    "original_code_license": "https://github.com/zju3dv/LoFTR/blob/master/LICENSE",
+    "checkpoint_model_card": "https://huggingface.co/kornia/loftr"
+  },
+  "license_notes": "Kornia documentation and original LoFTR repository identify Apache-2.0 code; checkpoint model card separately labels its weights MIT. Retain both source attributions.",
+  "remaining_validation": [
+    "Actual LoFTR MPS inference",
+    "Perturbed-input actual correspondence equality",
+    "Coordinate convention with known synthetic transform and loaded weights",
+    "Fixed-road geometry and recovery controls",
+    "Spatially correlated dense matches require spatial-heldout diagnostics before promotion"
+  ]
+}

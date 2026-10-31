@@ -1,0 +1,1247 @@
+{
+  "created": "2026-10-31T10:12:39.070104+00:00",
+  "signature": {
+    "preflight_dense.py": "8f46d7f8c95980ab464c6ea035941086403617331241b591bce67c5664e0300c",
+    "dense_matching.py": "b7d3ce798db5c76ba989ac71ccc0fc5e6d0814da08b02006c892aed9babf287e",
+    "resource_guard.py": "4d192fe4fbba2ffc068a9fe5e3de5e29b43b434b35b79f438d848f2445d09814",
+    "repair.py": "779e3679ae205637fe66cd25f5f7214bc9c6c153d4acfd6b8c9fa8915b8f4c88",
+    "benchmark.py": "18901c663f774dca04b40b9857718a30e3c73b87de888b47ca15d3870f20dd1e",
+    "protocol": "907459359012c9db77a2c4ce7196ebd68191d6d8fb77768bdb30be3bef2a4fd1"
+  },
+  "regions": 15,
+  "perturbation_checks": 45,
+  "all_safe_inputs_bit_identical": true,
+  "unsafe_control_detected_in_regions": 15,
+  "model_inference_performed": false,
+  "new_recovery_measurements": null,
+  "status": "input_isolation_passed_model_experiment_blocked_by_storage",
+  "resources": {
+    "free_disk_gib": 5.839546203613281,
+    "image_cache_gib": 0.31741894222795963,
+    "reserved_gib": 0.5,
+    "minimum_free_gib": 8,
+    "safe_to_start_heavy_job": false,
+    "safe_to_start_acquisition": false,
+    "blockers": [
+      "free disk after reservation is below the configured minimum"
+    ]
+  },
+  "results": [
+    {
+      "case": "gironde_0",
+      "region": "footprint",
+      "source_path": "benchmark_v2/data/gironde_0/target.jpg",
+      "source_sha256": "2d247bafbce97435657d3dc66a1f47bd398e11bb55ba394cdc836ac7d1793775",
+      "manifest_path": "benchmark_v2/data/gironde_0/manifest.json",
+      "manifest_sha256": "1ac8f7cb9c73f316b1636b1da2f27fa3784879eff46009f14efc8854a42097ab",
+      "mask_sha256": "0472fe58cfdab773f304d1c949cd8422e690a96ee598bc26d0f59aba7e4d178b",
+      "allowed_sha256": "2dc8b16abb4556a5b9630e02921c4f9b48471aef662e91bc0a8afafe9d9e9ef2",
+      "prepared_gray_sha256": "da13ba7f1554e0c7c399518c1ded33727e234a12d25fbc45bcab77827ae0caf1",
+      "prepared_shape": [
+        640,
+        128
+      ],
+      "eligible_input_pixels": 28104,
+      "checks": [
+        {
+          "pattern": 0,
+          "safe_changed_pixels": 0,
+          "unsafe_changed_pixels": 675
+        },
+        {
+          "pattern": 255,
+          "safe_changed_pixels": 0,
+          "unsafe_changed_pixels": 675
+        },
+        {
+          "pattern": "invert",
+          "safe_changed_pixels": 0,
+          "unsafe_changed_pixels": 675
+        }
+      ],
+      "prior_control_path": "sequence_v5/results/sequence_v1/gironde_0/footprint.json",
+      "prior_control_sha256": "a295d432b32b517c8d03cb4ca280d300e0ba186da560673e2d99a3682b1d263a",
+      "prior_control_candidate_metrics": {
+        "homography_converged": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0
+        },
+        "metric_free": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0
+        }
+      }
+    },
+    {
+      "case": "gironde_0",
+      "region": "hidden_front",
+      "source_path": "benchmark_v2/data/gironde_0/target.jpg",
+      "source_sha256": "2d247bafbce97435657d3dc66a1f47bd398e11bb55ba394cdc836ac7d1793775",
+      "manifest_path": "benchmark_v2/data/gironde_0/manifest.json",
+      "manifest_sha256": "1ac8f7cb9c73f316b1636b1da2f27fa3784879eff46009f14efc8854a42097ab",
+      "mask_sha256": "5ad15732a7faeaccbd72ce433e97509bbd85ee2c8917141654f7cdc4b6abb717",
+      "allowed_sha256": "d53d490cccd90c5292c26ba9b1875870365c296fa18edef1fff0c9056e3aa81a",
+      "prepared_gray_sha256": "3f55b6eaa5d295ddaf3acd2ced84be4cc4c749000cc61ae44d80d8286e39543a",
+      "prepared_shape": [
+        640,
+        128
+      ],
+      "eligible_input_pixels": 18139,
+      "checks": [
+        {
+          "pattern": 0,
+          "safe_changed_pixels": 0,
+          "unsafe_changed_pixels": 619
+        },
+        {
+          "pattern": 255,
+          "safe_changed_pixels": 0,
+          "unsafe_changed_pixels": 619
+        },
+        {
+          "pattern": "invert",
+          "safe_changed_pixels": 0,
+          "unsafe_changed_pixels": 619
+        }
+      ],
+      "prior_control_path": "sequence_v5/results/sequence_v1/gironde_0/hidden_front.json",
+      "prior_control_sha256": "b78515e85f8f538b6c7dc9b65f6d3c7d23801f10b8323d0ee242b98ca1bab255",
+      "prior_control_candidate_metrics": {
+        "homography_converged": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          }
+        },
+        "metric_free": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          }
+        }
+      }
+    },
+    {
+      "case": "gironde_0",
+      "region": "hidden_rear",
+      "source_path": "benchmark_v2/data/gironde_0/target.jpg",
+      "source_sha256": "2d247bafbce97435657d3dc66a1f47bd398e11bb55ba394cdc836ac7d1793775",
+      "manifest_path": "benchmark_v2/data/gironde_0/manifest.json",
+      "manifest_sha256": "1ac8f7cb9c73f316b1636b1da2f27fa3784879eff46009f14efc8854a42097ab",
+      "mask_sha256": "b81f4919803877233e976e2286045487f0ca7f6d905da9b912c28032564ac7c5",
+      "allowed_sha256": "844c705c1843bb6aa96ca84410c0d6c56efc48bf7a3f88aaefeb3b42ad94b286",
+      "prepared_gray_sha256": "47d631e543cc7fb7d597479ebad07991f997acddff80bfcb85f0dc0653fbeefa",
+      "prepared_shape": [
+        640,
+        128
+      ],
+      "eligible_input_pixels": 11329,
+      "checks": [
+        {
+          "pattern": 0,
+          "safe_changed_pixels": 0,
+          "unsafe_changed_pixels": 722
+        },
+        {
+          "pattern": 255,
+          "safe_changed_pixels": 0,
+          "unsafe_changed_pixels": 722
+        },
+        {
+          "pattern": "invert",
+          "safe_changed_pixels": 0,
+          "unsafe_changed_pixels": 722
+        }
+      ],
+      "prior_control_path": "sequence_v5/results/sequence_v1/gironde_0/hidden_rear.json",
+      "prior_control_sha256": "9b13b7601922aa85feb860e705cb2ce18b6ac5df3298ac0a2f3087b9271fd579",
+      "prior_control_candidate_metrics": {
+        "homography_converged": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          }
+        },
+        "metric_free": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          }
+        }
+      }
+    },
+    {
+      "case": "gironde_0",
+      "region": "local_front",
+      "source_path": "benchmark_v2/data/gironde_0/target.jpg",
+      "source_sha256": "2d247bafbce97435657d3dc66a1f47bd398e11bb55ba394cdc836ac7d1793775",
+      "manifest_path": "benchmark_v2/data/gironde_0/manifest.json",
+      "manifest_sha256": "1ac8f7cb9c73f316b1636b1da2f27fa3784879eff46009f14efc8854a42097ab",
+      "mask_sha256": "d0289b9d7fbedf5ba941a5b8ad5a73ceabf2bd5664541b21444307b7beb8fd58",
+      "allowed_sha256": "7ddd397ff8b6e766442e2715af86aab402ed292a0eb7f439064bdd9f00b46318",
+      "prepared_gray_sha256": "24fd9cf9430d612704412304ae4b4fa404d37c1f277a2eb2f3d4361c68c10988",
+      "prepared_shape": [
+        640,
+        128
+      ],
+      "eligible_input_pixels": 24707,
+      "checks": [
+        {
+          "pattern": 0,
+          "safe_changed_pixels": 0,
+          "unsafe_changed_pixels": 766
+        },
+        {
+          "pattern": 255,
+          "safe_changed_pixels": 0,
+          "unsafe_changed_pixels": 766
+        },
+        {
+          "pattern": "invert",
+          "safe_changed_pixels": 0,
+          "unsafe_changed_pixels": 766
+        }
+      ],
+      "prior_control_path": "sequence_v5/results/sequence_v1/gironde_0/local_front.json",
+      "prior_control_sha256": "a3a468d11d8ee6fe0715bc1b64fe7c417dfe040bbb1ba688c27f22bc599acfa8",
+      "prior_control_candidate_metrics": {
+        "homography_converged": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          }
+        },
+        "metric_free": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          }
+        }
+      }
+    },
+    {
+      "case": "gironde_0",
+      "region": "local_rear",
+      "source_path": "benchmark_v2/data/gironde_0/target.jpg",
+      "source_sha256": "2d247bafbce97435657d3dc66a1f47bd398e11bb55ba394cdc836ac7d1793775",
+      "manifest_path": "benchmark_v2/data/gironde_0/manifest.json",
+      "manifest_sha256": "1ac8f7cb9c73f316b1636b1da2f27fa3784879eff46009f14efc8854a42097ab",
+      "mask_sha256": "98dc5b3a20122d66086aa2bacbb03e7703fce21d0d6ac4de0520c695d6d7ccd6",
+      "allowed_sha256": "fc4cfec480e8cff544b5e4a86cd559ff90235e513c38936979a512e234e49beb",
+      "prepared_gray_sha256": "3122ca7b6266a524127010fd5276421327e54bc28e44b954d5102d9037bef91b",
+      "prepared_shape": [
+        640,
+        128
+      ],
+      "eligible_input_pixels": 24169,
+      "checks": [
+        {
+          "pattern": 0,
+          "safe_changed_pixels": 0,
+          "unsafe_changed_pixels": 765
+        },
+        {
+          "pattern": 255,
+          "safe_changed_pixels": 0,
+          "unsafe_changed_pixels": 765
+        },
+        {
+          "pattern": "invert",
+          "safe_changed_pixels": 0,
+          "unsafe_changed_pixels": 765
+        }
+      ],
+      "prior_control_path": "sequence_v5/results/sequence_v1/gironde_0/local_rear.json",
+      "prior_control_sha256": "02a64f33765a105a9a2afba9522d4d726740030834721d21838f625ef4e0e780",
+      "prior_control_candidate_metrics": {
+        "homography_converged": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          }
+        },
+        "metric_free": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          }
+        }
+      }
+    },
+    {
+      "case": "alsace_fields_0",
+      "region": "footprint",
+      "source_path": "benchmark_v2/data/alsace_fields_0/target.jpg",
+      "source_sha256": "33455a0f074fa3bc138ee8eb6c6c9bde1b9b8e6aeedd7d0b3eb752d478ebc997",
+      "manifest_path": "benchmark_v2/data/alsace_fields_0/manifest.json",
+      "manifest_sha256": "70030b6af81b99fea41302b70edd2edfabdf41988da2ce6c7fe78a8cca1a4e56",
+      "mask_sha256": "be90b8b923d46bf51acc53e220ab9faaff0445fd4f2f42eb35fdf1104c3056e8",
+      "allowed_sha256": "a2e2e5ae9a05b3da3973716055137c9f5b7c8624ba6052442713852749e8d197",
+      "prepared_gray_sha256": "75accd99524cd209ca464d0800a23f688dcc20fa0a15dbb7a5ddf5a47ee0e955",
+      "prepared_shape": [
+        640,
+        160
+      ],
+      "eligible_input_pixels": 59865,
+      "checks": [
+        {
+          "pattern": 0,
+          "safe_changed_pixels": 0,
+          "unsafe_changed_pixels": 725
+        },
+        {
+          "pattern": 255,
+          "safe_changed_pixels": 0,
+          "unsafe_changed_pixels": 725
+        },
+        {
+          "pattern": "invert",
+          "safe_changed_pixels": 0,
+          "unsafe_changed_pixels": 725
+        }
+      ],
+      "prior_control_path": "sequence_v5/results/sequence_v1/alsace_fields_0/footprint.json",
+      "prior_control_sha256": "9cdd29f7b63ce9b43213223f1f7ba1cbac1ce2a756bfe7faf9831fe806f746af",
+      "prior_control_candidate_metrics": {
+        "homography_converged": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0
+        },
+        "metric_free": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0
+        }
+      }
+    },
+    {
+      "case": "alsace_fields_0",
+      "region": "hidden_front",
+      "source_path": "benchmark_v2/data/alsace_fields_0/target.jpg",
+      "source_sha256": "33455a0f074fa3bc138ee8eb6c6c9bde1b9b8e6aeedd7d0b3eb752d478ebc997",
+      "manifest_path": "benchmark_v2/data/alsace_fields_0/manifest.json",
+      "manifest_sha256": "70030b6af81b99fea41302b70edd2edfabdf41988da2ce6c7fe78a8cca1a4e56",
+      "mask_sha256": "6c977ee045362e17fb3fa8d1e887b6eb2c35cbea1df035af26c5bf3ec4ab0b12",
+      "allowed_sha256": "ff58d56611919330a7bd9b5d7dd251e9d2b59a996aea7aed5df7eb4a589ccd7c",
+      "prepared_gray_sha256": "af68c587501a30bb4c5a191037bf5b2334723f10adcc8d70921e60a5c3c64a99",
+      "prepared_shape": [
+        640,
+        160
+      ],
+      "eligible_input_pixels": 46284,
+      "checks": [
+        {
+          "pattern": 0,
+          "safe_changed_pixels": 0,
+          "unsafe_changed_pixels": 810
+        },
+        {
+          "pattern": 255,
+          "safe_changed_pixels": 0,
+          "unsafe_changed_pixels": 810
+        },
+        {
+          "pattern": "invert",
+          "safe_changed_pixels": 0,
+          "unsafe_changed_pixels": 810
+        }
+      ],
+      "prior_control_path": "sequence_v5/results/sequence_v1/alsace_fields_0/hidden_front.json",
+      "prior_control_sha256": "73ba529a0328757fb80d27f786b2264c15ec7f69b8bd488abe3dbe3b4ea4f93f",
+      "prior_control_candidate_metrics": {
+        "homography_converged": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          }
+        },
+        "metric_free": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          }
+        }
+      }
+    },
+    {
+      "case": "alsace_fields_0",
+      "region": "hidden_rear",
+      "source_path": "benchmark_v2/data/alsace_fields_0/target.jpg",
+      "source_sha256": "33455a0f074fa3bc138ee8eb6c6c9bde1b9b8e6aeedd7d0b3eb752d478ebc997",
+      "manifest_path": "benchmark_v2/data/alsace_fields_0/manifest.json",
+      "manifest_sha256": "70030b6af81b99fea41302b70edd2edfabdf41988da2ce6c7fe78a8cca1a4e56",
+      "mask_sha256": "38264405ffa538a1e5eb880eec6be030ae6c73e84b7084caac28559ae86756c9",
+      "allowed_sha256": "2cd6f1b7cf736014541c9b56aea1368250929df4777fc1ea096c1464031a7425",
+      "prepared_gray_sha256": "fb7fe74616988bc0fe3a2ef5359b2a4f2b5496309b9c3efb1350d331acfa4ffe",
+      "prepared_shape": [
+        640,
+        160
+      ],
+      "eligible_input_pixels": 46287,
+      "checks": [
+        {
+          "pattern": 0,
+          "safe_changed_pixels": 0,
+          "unsafe_changed_pixels": 810
+        },
+        {
+          "pattern": 255,
+          "safe_changed_pixels": 0,
+          "unsafe_changed_pixels": 810
+        },
+        {
+          "pattern": "invert",
+          "safe_changed_pixels": 0,
+          "unsafe_changed_pixels": 810
+        }
+      ],
+      "prior_control_path": "sequence_v5/results/sequence_v1/alsace_fields_0/hidden_rear.json",
+      "prior_control_sha256": "81f719b7b9bb35778add5a06e70a96a73916b7d9af9c3289221eb4ed2ed36129",
+      "prior_control_candidate_metrics": {
+        "homography_converged": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          }
+        },
+        "metric_free": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          }
+        }
+      }
+    },
+    {
+      "case": "alsace_fields_0",
+      "region": "local_front",
+      "source_path": "benchmark_v2/data/alsace_fields_0/target.jpg",
+      "source_sha256": "33455a0f074fa3bc138ee8eb6c6c9bde1b9b8e6aeedd7d0b3eb752d478ebc997",
+      "manifest_path": "benchmark_v2/data/alsace_fields_0/manifest.json",
+      "manifest_sha256": "70030b6af81b99fea41302b70edd2edfabdf41988da2ce6c7fe78a8cca1a4e56",
+      "mask_sha256": "9eaed307053ef506c2c4797eea8ab1cde0c68fd07566b6c17e5114ab5e32a11c",
+      "allowed_sha256": "3624fab429f2f0f7008aca6943175231cb5f2621a3c6c98594b93b69a5dcb4a2",
+      "prepared_gray_sha256": "c1382d96c42712947b46d5e59e1e4ec60647d2b6f1864353f834f0eaf0ab87a0",
+      "prepared_shape": [
+        640,
+        160
+      ],
+      "eligible_input_pixels": 55834,
+      "checks": [
+        {
+          "pattern": 0,
+          "safe_changed_pixels": 0,
+          "unsafe_changed_pixels": 815
+        },
+        {
+          "pattern": 255,
+          "safe_changed_pixels": 0,
+          "unsafe_changed_pixels": 815
+        },
+        {
+          "pattern": "invert",
+          "safe_changed_pixels": 0,
+          "unsafe_changed_pixels": 815
+        }
+      ],
+      "prior_control_path": "sequence_v5/results/sequence_v1/alsace_fields_0/local_front.json",
+      "prior_control_sha256": "69a52d46ca54ce35597db9c5f293b60788958748483fcfc1acf003c72165416c",
+      "prior_control_candidate_metrics": {
+        "homography_converged": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          }
+        },
+        "metric_free": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          }
+        }
+      }
+    },
+    {
+      "case": "alsace_fields_0",
+      "region": "local_rear",
+      "source_path": "benchmark_v2/data/alsace_fields_0/target.jpg",
+      "source_sha256": "33455a0f074fa3bc138ee8eb6c6c9bde1b9b8e6aeedd7d0b3eb752d478ebc997",
+      "manifest_path": "benchmark_v2/data/alsace_fields_0/manifest.json",
+      "manifest_sha256": "70030b6af81b99fea41302b70edd2edfabdf41988da2ce6c7fe78a8cca1a4e56",
+      "mask_sha256": "34e1b9435f26c1cb888b6f7bac13e52ce20f0872b631be76cb56c36e27b7b656",
+      "allowed_sha256": "a17064bea88053ebf0d379eacbd9e85d1a8bdcc3dd12b775523dfc54617cbc71",
+      "prepared_gray_sha256": "b971bb2c8c9dc31ca45ff1605ce12f923eea64d88dd98422dc2b0b3d3ae460d4",
+      "prepared_shape": [
+        640,
+        160
+      ],
+      "eligible_input_pixels": 55833,
+      "checks": [
+        {
+          "pattern": 0,
+          "safe_changed_pixels": 0,
+          "unsafe_changed_pixels": 816
+        },
+        {
+          "pattern": 255,
+          "safe_changed_pixels": 0,
+          "unsafe_changed_pixels": 816
+        },
+        {
+          "pattern": "invert",
+          "safe_changed_pixels": 0,
+          "unsafe_changed_pixels": 816
+        }
+      ],
+      "prior_control_path": "sequence_v5/results/sequence_v1/alsace_fields_0/local_rear.json",
+      "prior_control_sha256": "63233c7adf3ff6bff6c547f2f50c3ab073a36596629da45936f37aaaa2155d2f",
+      "prior_control_candidate_metrics": {
+        "homography_converged": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          }
+        },
+        "metric_free": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          }
+        }
+      }
+    },
+    {
+      "case": "bourges_turn_001",
+      "region": "footprint",
+      "source_path": "dataset_v1/images/1a9e9b37-1d3e-45ee-ae9f-f4035a792212.jpg",
+      "source_sha256": "80679e337c7ad3b746e4ad18578676467fe13387ebf4891c4078e759a2df607b",
+      "manifest_path": "benchmark_v3/prepared/bourges_turn_001/manifest.json",
+      "manifest_sha256": "f458e5d7ff86ac67b132dab99c8a87a31a18ea77cd80843138e305bc8aaf3db3",
+      "mask_sha256": "32260dc59fb483fbff452c523215cb3443583837a897800f556f20171dffceb1",
+      "allowed_sha256": "9b467261fd3e64606b0d0a02f5e7aa423060d7ef06bd4fdd4240aedf9b7f689d",
+      "prepared_gray_sha256": "ba1d9b48e0251ed996d3a38ddeefa6b37abc96cf8e3ef67ea39c1ffc034665d8",
+      "prepared_shape": [
+        640,
+        232
+      ],
+      "eligible_input_pixels": 24128,
+      "checks": [
+        {
+          "pattern": 0,
+          "safe_changed_pixels": 0,
+          "unsafe_changed_pixels": 972
+        },
+        {
+          "pattern": 255,
+          "safe_changed_pixels": 0,
+          "unsafe_changed_pixels": 972
+        },
+        {
+          "pattern": "invert",
+          "safe_changed_pixels": 0,
+          "unsafe_changed_pixels": 972
+        }
+      ],
+      "prior_control_path": "benchmark_v3/results/bourges_turn_001/footprint.json",
+      "prior_control_sha256": "8e9bbc8208760993f32a76072ec868fef80e38e143bea9be78f9fe9a6b80d477",
+      "prior_control_candidate_metrics": {
+        "joint_homography": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0
+        },
+        "metric_free": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0
+        }
+      }
+    },
+    {
+      "case": "bourges_turn_001",
+      "region": "large_front",
+      "source_path": "dataset_v1/images/1a9e9b37-1d3e-45ee-ae9f-f4035a792212.jpg",
+      "source_sha256": "80679e337c7ad3b746e4ad18578676467fe13387ebf4891c4078e759a2df607b",
+      "manifest_path": "benchmark_v3/prepared/bourges_turn_001/manifest.json",
+      "manifest_sha256": "f458e5d7ff86ac67b132dab99c8a87a31a18ea77cd80843138e305bc8aaf3db3",
+      "mask_sha256": "c579cb089b51cf692744983a03f1f18d39b5a687116ed891a3c340b1add84dfc",
+      "allowed_sha256": "26b372dc4c765358c68fbf2e16a5f866d139c52f40a9587dc0c1f43d045d6087",
+      "prepared_gray_sha256": "db4b5b9858c8da1a828287c05d66e8ea3c7820f137aaf41ecfbd323db0b8b3c2",
+      "prepared_shape": [
+        640,
+        232
+      ],
+      "eligible_input_pixels": 18532,
+      "checks": [
+        {
+          "pattern": 0,
+          "safe_changed_pixels": 0,
+          "unsafe_changed_pixels": 918
+        },
+        {
+          "pattern": 255,
+          "safe_changed_pixels": 0,
+          "unsafe_changed_pixels": 918
+        },
+        {
+          "pattern": "invert",
+          "safe_changed_pixels": 0,
+          "unsafe_changed_pixels": 918
+        }
+      ],
+      "prior_control_path": "benchmark_v3/results/bourges_turn_001/large_front.json",
+      "prior_control_sha256": "d5bc8ad667d088340647d7d0e751e7e469ee888a03f56259deafd314f973c2c2",
+      "prior_control_candidate_metrics": {
+        "joint_homography": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          }
+        },
+        "metric_free": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          }
+        }
+      }
+    },
+    {
+      "case": "bourges_turn_001",
+      "region": "large_rear",
+      "source_path": "dataset_v1/images/1a9e9b37-1d3e-45ee-ae9f-f4035a792212.jpg",
+      "source_sha256": "80679e337c7ad3b746e4ad18578676467fe13387ebf4891c4078e759a2df607b",
+      "manifest_path": "benchmark_v3/prepared/bourges_turn_001/manifest.json",
+      "manifest_sha256": "f458e5d7ff86ac67b132dab99c8a87a31a18ea77cd80843138e305bc8aaf3db3",
+      "mask_sha256": "33002825e03b39bd6ba6488cf88607e860fcf49d5a3c203aec0e14445c080a01",
+      "allowed_sha256": "faba40b8a6d123ec7b17b361dcecd904e3e9190694e04e0ac2fa5435a691ab93",
+      "prepared_gray_sha256": "54e5235e2a750e7566b4b8f415ec8d7cb56c2e4d7fe1032e9cacc354461fcb3f",
+      "prepared_shape": [
+        640,
+        232
+      ],
+      "eligible_input_pixels": 13787,
+      "checks": [
+        {
+          "pattern": 0,
+          "safe_changed_pixels": 0,
+          "unsafe_changed_pixels": 1041
+        },
+        {
+          "pattern": 255,
+          "safe_changed_pixels": 0,
+          "unsafe_changed_pixels": 1041
+        },
+        {
+          "pattern": "invert",
+          "safe_changed_pixels": 0,
+          "unsafe_changed_pixels": 1041
+        }
+      ],
+      "prior_control_path": "benchmark_v3/results/bourges_turn_001/large_rear.json",
+      "prior_control_sha256": "1054b4c2eb906c5d7120504a5f7d759b8fce2655b0f7c05978610299257254e7",
+      "prior_control_candidate_metrics": {
+        "joint_homography": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          }
+        },
+        "metric_free": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          }
+        }
+      }
+    },
+    {
+      "case": "bourges_turn_001",
+      "region": "local_front",
+      "source_path": "dataset_v1/images/1a9e9b37-1d3e-45ee-ae9f-f4035a792212.jpg",
+      "source_sha256": "80679e337c7ad3b746e4ad18578676467fe13387ebf4891c4078e759a2df607b",
+      "manifest_path": "benchmark_v3/prepared/bourges_turn_001/manifest.json",
+      "manifest_sha256": "f458e5d7ff86ac67b132dab99c8a87a31a18ea77cd80843138e305bc8aaf3db3",
+      "mask_sha256": "56c3e18e2bc70ff275a3bda1f702027bfd45fac5afc6a3c9ce10a84beffb2e81",
+      "allowed_sha256": "e06f3177f766ed57ad1620827f6e39701839e8be2304e776a10c404a9a152328",
+      "prepared_gray_sha256": "aa9dc2c58a51c92f79a17f3749cf4b44d6c3cdbbea8e2f394657c97011d9e20f",
+      "prepared_shape": [
+        640,
+        232
+      ],
+      "eligible_input_pixels": 21284,
+      "checks": [
+        {
+          "pattern": 0,
+          "safe_changed_pixels": 0,
+          "unsafe_changed_pixels": 1063
+        },
+        {
+          "pattern": 255,
+          "safe_changed_pixels": 0,
+          "unsafe_changed_pixels": 1063
+        },
+        {
+          "pattern": "invert",
+          "safe_changed_pixels": 0,
+          "unsafe_changed_pixels": 1063
+        }
+      ],
+      "prior_control_path": "benchmark_v3/results/bourges_turn_001/local_front.json",
+      "prior_control_sha256": "00038ba5879e9abf2b22f7798a0891c1aa671e5864f07eba4ea757ff0315b404",
+      "prior_control_candidate_metrics": {
+        "joint_homography": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          }
+        },
+        "metric_free": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          }
+        }
+      }
+    },
+    {
+      "case": "bourges_turn_001",
+      "region": "local_rear",
+      "source_path": "dataset_v1/images/1a9e9b37-1d3e-45ee-ae9f-f4035a792212.jpg",
+      "source_sha256": "80679e337c7ad3b746e4ad18578676467fe13387ebf4891c4078e759a2df607b",
+      "manifest_path": "benchmark_v3/prepared/bourges_turn_001/manifest.json",
+      "manifest_sha256": "f458e5d7ff86ac67b132dab99c8a87a31a18ea77cd80843138e305bc8aaf3db3",
+      "mask_sha256": "1249b41b144aff3693da6bcf092293f17fe39f4f069d3ee760cde094a08902f3",
+      "allowed_sha256": "3e68fec3bd3f3d6da5416fe30edd969a02a496bb47f4ce2658c23646df9d5a96",
+      "prepared_gray_sha256": "b66fc48280f78a60328c7591e9db15d34a161849e9509320aed3d8b553f2b866",
+      "prepared_shape": [
+        640,
+        232
+      ],
+      "eligible_input_pixels": 21060,
+      "checks": [
+        {
+          "pattern": 0,
+          "safe_changed_pixels": 0,
+          "unsafe_changed_pixels": 1063
+        },
+        {
+          "pattern": 255,
+          "safe_changed_pixels": 0,
+          "unsafe_changed_pixels": 1063
+        },
+        {
+          "pattern": "invert",
+          "safe_changed_pixels": 0,
+          "unsafe_changed_pixels": 1063
+        }
+      ],
+      "prior_control_path": "benchmark_v3/results/bourges_turn_001/local_rear.json",
+      "prior_control_sha256": "fc7c6427dbe99c86c64eaa795bfcc90b3fbcd6304d82c490a8dc1bda1ad7f49e",
+      "prior_control_candidate_metrics": {
+        "joint_homography": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          }
+        },
+        "metric_free": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          }
+        }
+      }
+    }
+  ],
+  "limitation": "Preprocessing invariance only; actual learned matches, MPS operation, registration and recovery still need validation. Previous controls are references, not reruns."
+}

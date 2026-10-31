@@ -1,0 +1,26 @@
+{
+  "created": "2026-10-31T10:14:35.546826+00:00",
+  "regions_checked": 15,
+  "perturbation_checks_passed": 45,
+  "unsafe_positive_control_regions": 15,
+  "prior_control_method_region_records_referenced": 30,
+  "prior_controls_rerun": false,
+  "all_prior_control_candidate_coverage_zero": true,
+  "code_source_manifest_prior_control_hashes_pass": true,
+  "model_inference_performed": false,
+  "new_recovery_measurements": null,
+  "tests": {
+    "command": "work/venv/bin/python -m pytest -q outputs/panorama-repair/tests/test_dense_preflight.py outputs/panorama-repair/tests/test_dataset.py",
+    "passed": 12
+  },
+  "runtime_guard_check": "dataset.py catalog --queries 1 --ring 1 refused before catalog/network work: Storage guard: preserve 8 GiB free",
+  "source_hashes": {
+    "dataset.py": "49263be4cf8aff8a2bd519491862de36eb7cf5e971d07379eb249513d139b051",
+    "research_status.py": "25ec5e93577a3fba8ec8db671a99a98c2abe27b35884c6fdcf710ad5fe7a5c8c",
+    "resource_guard.py": "4d192fe4fbba2ffc068a9fe5e3de5e29b43b434b35b79f438d848f2445d09814",
+    "dense_matching.py": "b7d3ce798db5c76ba989ac71ccc0fc5e6d0814da08b02006c892aed9babf287e",
+    "preflight_dense.py": "8f46d7f8c95980ab464c6ea035941086403617331241b591bce67c5664e0300c",
+    "tests/test_dense_preflight.py": "51dfd9aacd98e9782d649fbdb0fb56dd14847deaeea039cd7de7cefd59b1e751",
+    "tests/test_dataset.py": "eab6fcf403e32b867c5775caafb5bcedac880a3608eb9a708aeb12cf91269e7f"
+  }
+}
