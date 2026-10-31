@@ -1,0 +1,98 @@
+{
+  "key": "rear_opaque_vehicle_severe",
+  "location": "rear",
+  "family": "opaque_vehicle",
+  "severity": "severe",
+  "mask_key": "rear_vehicle_severe",
+  "area": "nantes",
+  "signature": {
+    "plan_sha256": "3c18df4887ccd07b4d8ec03e69e29bb0ec9d7afa21f8388410b2c04cf290305b",
+    "certificate": {
+      "path": "sequence_v6/model_validation_001.json",
+      "sha256": "04325bf0a79009ebeae8fb1c8ec4258e42a9a0e76eb05afb6a868a0635419e4a"
+    }
+  },
+  "baselines": {
+    "as_damaged": {
+      "metrics": {
+        "coverage": 1.0,
+        "abstention": 0.0,
+        "accepted_pixels": 313039,
+        "error": {
+          "pixels": 313039,
+          "mae_255": 159.9858856777164,
+          "psnr_db": 3.9834300575480626,
+          "p90_rgb": 187.0,
+          "over_20_fraction": 1.0
+        },
+        "gradient": {
+          "pixels": 305971,
+          "gradient_mae": 0.802659809589386,
+          "edge_pixels": 19488,
+          "orientation_error": 1.0
+        },
+        "appearance": {
+          "mask_pixels": 313039,
+          "accepted_pixels": 313039,
+          "accepted_rgb_mae_le_threshold_pixels": {
+            "10": 0,
+            "20": 0
+          },
+          "fraction_of_mask_with_rgb_mae_le_threshold": {
+            "10": 0.0,
+            "20": 0.0
+          },
+          "accepted_textured_pixels": 19920,
+          "accepted_low_texture_pixels": 293119
+        }
+      },
+      "evidence": {
+        "path": "controlled_v1/nantes/scenarios/rear_opaque_vehicle_severe_as_damaged.npz",
+        "sha256": "096ef20adcf967f9d979c7aa3b369b145dd775b3fe218db745dadf8048699a6c"
+      }
+    },
+    "telea_r3": {
+      "metrics": {
+        "coverage": 1.0,
+        "abstention": 0.0,
+        "accepted_pixels": 313039,
+        "error": {
+          "pixels": 313039,
+          "mae_255": 15.304606348303778,
+          "psnr_db": 22.537529702378563,
+          "p90_rgb": 30.33333396911621,
+          "over_20_fraction": 0.2897178945754363
+        },
+        "gradient": {
+          "pixels": 305971,
+          "gradient_mae": 0.9347679018974304,
+          "edge_pixels": 19488,
+          "orientation_error": 0.8117712140083313
+        },
+        "appearance": {
+          "mask_pixels": 313039,
+          "accepted_pixels": 313039,
+          "accepted_rgb_mae_le_threshold_pixels": {
+            "10": 116987,
+            "20": 222346
+          },
+          "fraction_of_mask_with_rgb_mae_le_threshold": {
+            "10": 0.3737138184060133,
+            "20": 0.7102821054245637
+          },
+          "accepted_textured_pixels": 19920,
+          "accepted_low_texture_pixels": 293119
+        }
+      },
+      "evidence": {
+        "path": "controlled_v1/nantes/scenarios/rear_opaque_vehicle_severe_telea_r3.npz",
+        "sha256": "5dee828acd49268620ebd485c9d356a41a855afd932f94314551995093cac2d4"
+      }
+    }
+  },
+  "geometry": {
+    "path": "controlled_v1/nantes/groups/rear_vehicle_severe.json",
+    "sha256": "7bf4af2cc17398a7390d6c61011076d8137c07358e7f96ac7a8419529f57682b"
+  },
+  "interpretation": "Source-only reconstruction excludes all damaged pixels. Shared masks reuse identical geometry; as_damaged/Telea are controls, not accepted recovery."
+}

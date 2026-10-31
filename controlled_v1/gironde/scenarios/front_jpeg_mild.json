@@ -1,0 +1,98 @@
+{
+  "key": "front_jpeg_mild",
+  "location": "front",
+  "family": "jpeg",
+  "severity": "mild",
+  "mask_key": "front_disc_mild",
+  "area": "gironde",
+  "signature": {
+    "plan_sha256": "3c18df4887ccd07b4d8ec03e69e29bb0ec9d7afa21f8388410b2c04cf290305b",
+    "certificate": {
+      "path": "sequence_v6/model_validation_001.json",
+      "sha256": "04325bf0a79009ebeae8fb1c8ec4258e42a9a0e76eb05afb6a868a0635419e4a"
+    }
+  },
+  "baselines": {
+    "as_damaged": {
+      "metrics": {
+        "coverage": 1.0,
+        "abstention": 0.0,
+        "accepted_pixels": 41977,
+        "error": {
+          "pixels": 41977,
+          "mae_255": 3.254274166011546,
+          "psnr_db": 36.21394558548865,
+          "p90_rgb": 4.666666507720947,
+          "over_20_fraction": 0.0
+        },
+        "gradient": {
+          "pixels": 38965,
+          "gradient_mae": 0.8394506573677063,
+          "edge_pixels": 1244,
+          "orientation_error": 0.2688690423965454
+        },
+        "appearance": {
+          "mask_pixels": 41977,
+          "accepted_pixels": 41977,
+          "accepted_rgb_mae_le_threshold_pixels": {
+            "10": 41952,
+            "20": 41977
+          },
+          "fraction_of_mask_with_rgb_mae_le_threshold": {
+            "10": 0.9994044357624413,
+            "20": 1.0
+          },
+          "accepted_textured_pixels": 1357,
+          "accepted_low_texture_pixels": 40620
+        }
+      },
+      "evidence": {
+        "path": "controlled_v1/gironde/scenarios/front_jpeg_mild_as_damaged.npz",
+        "sha256": "c35740fdd28a9288dddd7f1d908dca84359c3389513406ce6ab80ba4563ba71a"
+      }
+    },
+    "telea_r3": {
+      "metrics": {
+        "coverage": 1.0,
+        "abstention": 0.0,
+        "accepted_pixels": 41977,
+        "error": {
+          "pixels": 41977,
+          "mae_255": 4.528344887279542,
+          "psnr_db": 30.972994470883656,
+          "p90_rgb": 8.0,
+          "over_20_fraction": 0.026276294161088214
+        },
+        "gradient": {
+          "pixels": 38965,
+          "gradient_mae": 0.9427064657211304,
+          "edge_pixels": 1244,
+          "orientation_error": 0.9967371821403503
+        },
+        "appearance": {
+          "mask_pixels": 41977,
+          "accepted_pixels": 41977,
+          "accepted_rgb_mae_le_threshold_pixels": {
+            "10": 39240,
+            "20": 40874
+          },
+          "fraction_of_mask_with_rgb_mae_le_threshold": {
+            "10": 0.9347976272720776,
+            "20": 0.9737237058389118
+          },
+          "accepted_textured_pixels": 1357,
+          "accepted_low_texture_pixels": 40620
+        }
+      },
+      "evidence": {
+        "path": "controlled_v1/gironde/scenarios/front_jpeg_mild_telea_r3.npz",
+        "sha256": "98631fef3e3a5b589536dce3c443f6f8f8f847a41e84916abd54c27109928251"
+      }
+    }
+  },
+  "geometry": {
+    "path": "controlled_v1/gironde/groups/front_disc_mild.json",
+    "sha256": "03867fa5e5804e4b2fef330c39abd26baee3d83349f2ccdb053f25707775cd20"
+  },
+  "interpretation": "Source-only reconstruction excludes all damaged pixels. Shared masks reuse identical geometry; as_damaged/Telea are controls, not accepted recovery."
+}

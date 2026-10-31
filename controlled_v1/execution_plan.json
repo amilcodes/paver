@@ -1,0 +1,1192 @@
+{
+  "version": 1,
+  "name": "controlled_v1",
+  "status": "frozen_before_new_scores",
+  "signature": {
+    "run_dense.py": "bc3096d5977a5b2fd2ecd6444e7d394e3ebe40a401e73f37029ed6fc30face04",
+    "dense_experiment.py": "59d18a71738d818f349def1b65e1d3ea69d0631e93ff1317d77ddcd2c60eb080",
+    "dense_matching.py": "b7d3ce798db5c76ba989ac71ccc0fc5e6d0814da08b02006c892aed9babf287e",
+    "validate_dense_model.py": "c985a0088c8b62db5529ee8360b158eb1cd86e36502ee92c4da76bd840030b54",
+    "sequence_geometry.py": "e7ecd253de1ca48076ea56c277533fbdf4438e889625cfb7a279266a87edb31c",
+    "constrained_sequence.py": "a3ba9e2460c00de146f9e1d077ad2c08c6783a7c87320b97bea83a8cab93e24d",
+    "metric_plane.py": "73f0320c82821b6b2ff93309ae6b58ea980195bb582ed7d466d8ad5238cccb75",
+    "trajectory_matching.py": "ba7def19017d7d9750cb4dab41946ae72d1f987da35da183b22ca02d040d26c3",
+    "matching_v2.py": "31c21cde51d791a78936145579a49998a1506698a2f78cad3f98574f0e08cf77",
+    "repair.py": "779e3679ae205637fe66cd25f5f7214bc9c6c153d4acfd6b8c9fa8915b8f4c88",
+    "benchmark.py": "18901c663f774dca04b40b9857718a30e3c73b87de888b47ca15d3870f20dd1e",
+    "resource_guard.py": "4d192fe4fbba2ffc068a9fe5e3de5e29b43b434b35b79f438d848f2445d09814",
+    "panosphere_graph.py": "03f346e23b75015eed7f81837aabbee99e320731c87bfdbe9fb117080586b8de",
+    "controlled_occlusions.py": "b8935e24359bf53bb59e117c229479a157b3d55f420b2f26111dc271406e27b3",
+    "prepare_controlled_benchmark.py": "61a7c900c97b21ce646eb8d9876b4cf900b86988e56ff7daed8df9c5659d8043",
+    "run_controlled_benchmark.py": "833f0ebfa8f06ff937b5d85de21d590811d9eb9f12c2f4e32e63c32b9a22928f",
+    "audit_controlled_benchmark.py": "ad2d46363ed4c20af9035bd044ebfcbf182188c6fea9eb716008d16a585f57ab",
+    "summarize_controlled_benchmark.py": "9dd894ebbfaa54f629fa7b9524e3520f734c6b19511dde3de0a3a2b0b41e9767",
+    "validate_dense_run_v2.py": "66abd28e0075b55735d5bd44441f1528de18b367d558386c862309bd536a7bfc",
+    "test_controlled_occlusions.py": "0854c9f0d26c995d8d9ee05891c824dcb2e1b903ff5b1e9d1509dab14d8c6e95"
+  },
+  "graph": {
+    "path": "network_v1/candidate_graph.json",
+    "sha256": "98bc787697d71979ed4e818a797c789685a7c5f0b05ca5d3025e4d8979615eb2"
+  },
+  "dataset_audit": {
+    "path": "area_sets_v1/audit_001.json",
+    "sha256": "0b87dabe3c22a6dd68c6eaede138ad91085ef5ab764bddd77b8420d90d715c04"
+  },
+  "model": {
+    "checkpoint_sha256": "21f5bec5968178e8bc8b7633441836fe5de4f47d861dd2cd7dc38e271b0479ec",
+    "adapter_sha256": "b7d3ce798db5c76ba989ac71ccc0fc5e6d0814da08b02006c892aed9babf287e",
+    "packages": {
+      "kornia": "0.9.0",
+      "torch": "2.15.0",
+      "numpy": "2.5.4",
+      "opencv-python-headless": "5.0.0.93"
+    },
+    "installed_sources": {
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/loftr.py": "771263d3c8005d893ec9a2f71a12e1f0c188034a20623b0c759b63f9baf1f626",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/__init__.py": "8e60213949b09309fdec44d45e14d9181858bbd66de3cbe1c8173b64e4b3eaec",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/utils/position_encoding.py": "32e16a9e297ba115f9d20b6a7fba8cbeb7b2008a2891df170b441db919a9afcf",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/utils/__init__.py": "417973f07a3e714f493f6a97f0b157acb0ae8dcf0a3549b5079324cbbf3ab45d",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/utils/coarse_matching.py": "9269b2380bf984604ff5316e156ebded38b6b25eea7b237b6fd573db40b03e12",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/utils/supervision.py": "48adbb3a3ef3418cc35ffa58c0d77571cc913a66dc0e47041a252a2dca4074ea",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/utils/fine_matching.py": "354d3ac5485774e250f1590f27fd2216b5adb671cc237cdbae0950e53cf2d39e",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/utils/geometry.py": "d40b83ef0708bef7fd0c4ee6e425b20b78a73297052c6d7089f4c027bd1cb14a",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/loftr_module/fine_preprocess.py": "ff5c9e50a6ddb2ff44259250563695528bd08bf58c160b821b038629cb0abefd",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/loftr_module/__init__.py": "f282770d670f07e81151aeb2e5e6aa9a782dff74e741e3d609a07d7b411d2781",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/loftr_module/transformer.py": "79fcf1028cf23939f23b82ee6a22ee7a82154967cecc496cd3a23239c797ac20",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/loftr_module/linear_attention.py": "e39a8a5c1ef15f26601a29bf4ab5ea3025b000d2b024e23a226de09d6dec2789",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/backbone/__init__.py": "13f27ca439ff868fa3486db27b05b7dff8bde76ed98ee320ee72cb16a7832e39",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/backbone/resnet_fpn.py": "c67986c9d10fa8a8d412cf37926e7d2b24f848586906d585d8b06b13d1c61577"
+    }
+  },
+  "policies": {
+    "candidate": {
+      "min_views": 1,
+      "max_disagreement": 18
+    },
+    "corroborated": {
+      "min_views": 2,
+      "max_disagreement": 12
+    },
+    "strict": {
+      "min_views": 2,
+      "max_disagreement": 8
+    }
+  },
+  "areas": [
+    {
+      "area": "gironde",
+      "case": "gironde_0",
+      "split": "development",
+      "frames": [
+        {
+          "name": "prev2",
+          "id": "50440b36-e1cd-4696-891e-e97f52cada25",
+          "path": "benchmark_v2/data/gironde_0/prev2.jpg",
+          "sha256": "cc02664caed7e72d5fd7215af0bbeb050be9f7799e4d33b79225c0b4a84621f1"
+        },
+        {
+          "name": "prev1",
+          "id": "17f86b15-5d81-401b-ad7c-02d86a91a3e1",
+          "path": "benchmark_v2/data/gironde_0/prev1.jpg",
+          "sha256": "2e373b698ceb748fad1a79fcd2a0166b2c2ef4f2c1318b159a569cb7d525d926"
+        },
+        {
+          "name": "target",
+          "id": "fda158d7-bc27-4f5f-940c-7a55c3b66bee",
+          "path": "benchmark_v2/data/gironde_0/target.jpg",
+          "sha256": "2d247bafbce97435657d3dc66a1f47bd398e11bb55ba394cdc836ac7d1793775"
+        },
+        {
+          "name": "next1",
+          "id": "a589fb9a-e84d-4c80-bc1f-9b8617deee83",
+          "path": "benchmark_v2/data/gironde_0/next1.jpg",
+          "sha256": "48500725d19ea9e2159f4b2cca4d6c04683c1d7c214d2ae40bd726eaf290b558"
+        },
+        {
+          "name": "next2",
+          "id": "0aa5babf-cc5f-4f11-96fa-ef95bce05360",
+          "path": "benchmark_v2/data/gironde_0/next2.jpg",
+          "sha256": "63f08db91101ca751260fbad578a3f756e45485a0504f38b78f5191afa7f6bf4"
+        }
+      ],
+      "target": 2,
+      "projection": {
+        "size": 2200,
+        "fov": 163.302054963582
+      },
+      "inputs": [
+        {
+          "path": "benchmark_v2/protocol.json",
+          "sha256": "f4037b6e0f526654baa3afbf568cfbfa882aff7224ca115b163220770da447c6"
+        },
+        {
+          "path": "benchmark_v2/data/gironde_0/manifest.json",
+          "sha256": "1ac8f7cb9c73f316b1636b1da2f27fa3784879eff46009f14efc8854a42097ab"
+        },
+        {
+          "path": "benchmark_v2/results/gironde_0/disk_lightglue/hidden_front_evidence.npz",
+          "sha256": "90413466de197e0dc680b62b3ef13f08274d70b441d5b5d45ef457ac1fdc288a"
+        },
+        {
+          "path": "benchmark_v2/results/gironde_0/disk_lightglue/hidden_rear_evidence.npz",
+          "sha256": "c88be6a8c5de19d481e724b2d1b78f9d00ee8c3ee0e31600d93cb64d7e8504b3"
+        },
+        {
+          "path": "area_sets_v1/gironde_manifest.json",
+          "sha256": "bf4c7046823addf2f3160443cd15d13dbc49e4e0cff62642c033a4d50194737c"
+        }
+      ],
+      "masks": {
+        "path": "controlled_v1/gironde/masks.npz",
+        "sha256": "b9b9dadc31d86a02a3623462350a002fb9bece2a84640c5ae0d2b8a3d62e0d87"
+      },
+      "mask_specs": [
+        {
+          "key": "front_disc_mild",
+          "location": "front",
+          "shape": "disc",
+          "severity": "mild",
+          "pixels": 41977,
+          "ratio_to_real_footprint": 0.1687979025422025,
+          "sha256": "f23b3cf7cd14dea66985abc9ecfc439b19c4abfb26bed1e959c3d18da967da9b"
+        },
+        {
+          "key": "front_disc_severe",
+          "location": "front",
+          "shape": "disc",
+          "severity": "severe",
+          "pixels": 112245,
+          "ratio_to_real_footprint": 0.45135956764060126,
+          "sha256": "12b2cab05c2bf1ef85b1bbd9bcdb3f9d065690bd86b13dcfbffd6e354df39291"
+        },
+        {
+          "key": "front_vehicle_mild",
+          "location": "front",
+          "shape": "vehicle",
+          "severity": "mild",
+          "pixels": 48351,
+          "ratio_to_real_footprint": 0.19442902984534466,
+          "sha256": "ca2194e24672c60ba4ef03ef4a12d75d5521ccc6902dbef60b1948c6d58bdbdd"
+        },
+        {
+          "key": "front_vehicle_severe",
+          "location": "front",
+          "shape": "vehicle",
+          "severity": "severe",
+          "pixels": 121659,
+          "ratio_to_real_footprint": 0.4892151422298357,
+          "sha256": "fdd311ec98438499cc0fdd673baffcb0bdb6f80190833ed5ad8c5f5ce0e958e4"
+        },
+        {
+          "key": "front_strip_mild",
+          "location": "front",
+          "shape": "strip",
+          "severity": "mild",
+          "pixels": 32600,
+          "ratio_to_real_footprint": 0.13109111234427903,
+          "sha256": "621e17dd7e33a3f973d03c34c91746c6440600298c46f63222a72882263beb16"
+        },
+        {
+          "key": "front_strip_severe",
+          "location": "front",
+          "shape": "strip",
+          "severity": "severe",
+          "pixels": 69933,
+          "ratio_to_real_footprint": 0.2812145631770695,
+          "sha256": "2485a265bf5e3f8e892ff992f2dd7e31a7d06c4c9e765630e16ac62d71215a52"
+        },
+        {
+          "key": "rear_disc_mild",
+          "location": "rear",
+          "shape": "disc",
+          "severity": "mild",
+          "pixels": 64071,
+          "ratio_to_real_footprint": 0.2576422901536903,
+          "sha256": "91466c2bec9153ca9a7dc846712e2831c1f41e757245c0164e97a0f7c821ae07"
+        },
+        {
+          "key": "rear_disc_severe",
+          "location": "rear",
+          "shape": "disc",
+          "severity": "severe",
+          "pixels": 165139,
+          "ratio_to_real_footprint": 0.6640569080190766,
+          "sha256": "7f100f26c8432224957f4634b0c70fbd47eaa6100e727e0adfd7df459fc79f83"
+        },
+        {
+          "key": "rear_vehicle_mild",
+          "location": "rear",
+          "shape": "vehicle",
+          "severity": "mild",
+          "pixels": 72976,
+          "ratio_to_real_footprint": 0.2934510740624573,
+          "sha256": "e71a47551a57e959ea09736414cc5499192c11fc09174f67397f602b2b4c03fa"
+        },
+        {
+          "key": "rear_vehicle_severe",
+          "location": "rear",
+          "shape": "vehicle",
+          "severity": "severe",
+          "pixels": 176376,
+          "ratio_to_real_footprint": 0.7092431297802012,
+          "sha256": "df5641fc6057f5e26cf2661548a897ea20552a6d8256e80d9f254f77200fe1b6"
+        },
+        {
+          "key": "rear_strip_mild",
+          "location": "rear",
+          "shape": "strip",
+          "severity": "mild",
+          "pixels": 48576,
+          "ratio_to_real_footprint": 0.1953337997925061,
+          "sha256": "b062a6090701b2864c976ac2ef9a75ce0c907e7cef2fe6fdc1182ec5d14bb3e3"
+        },
+        {
+          "key": "rear_strip_severe",
+          "location": "rear",
+          "shape": "strip",
+          "severity": "severe",
+          "pixels": 104001,
+          "ratio_to_real_footprint": 0.4182087967766063,
+          "sha256": "4828610f6f89f782fbe3c29b393e7bcce0ec059ecd44dbea1eb5f7a3acac5c93"
+        }
+      ],
+      "scenarios": [
+        {
+          "key": "front_opaque_disc_mild",
+          "location": "front",
+          "family": "opaque_disc",
+          "severity": "mild",
+          "mask_key": "front_disc_mild"
+        },
+        {
+          "key": "front_opaque_disc_severe",
+          "location": "front",
+          "family": "opaque_disc",
+          "severity": "severe",
+          "mask_key": "front_disc_severe"
+        },
+        {
+          "key": "front_opaque_vehicle_mild",
+          "location": "front",
+          "family": "opaque_vehicle",
+          "severity": "mild",
+          "mask_key": "front_vehicle_mild"
+        },
+        {
+          "key": "front_opaque_vehicle_severe",
+          "location": "front",
+          "family": "opaque_vehicle",
+          "severity": "severe",
+          "mask_key": "front_vehicle_severe"
+        },
+        {
+          "key": "front_missing_strip_mild",
+          "location": "front",
+          "family": "missing_strip",
+          "severity": "mild",
+          "mask_key": "front_strip_mild"
+        },
+        {
+          "key": "front_missing_strip_severe",
+          "location": "front",
+          "family": "missing_strip",
+          "severity": "severe",
+          "mask_key": "front_strip_severe"
+        },
+        {
+          "key": "front_blur_mild",
+          "location": "front",
+          "family": "blur",
+          "severity": "mild",
+          "mask_key": "front_disc_mild"
+        },
+        {
+          "key": "front_blur_severe",
+          "location": "front",
+          "family": "blur",
+          "severity": "severe",
+          "mask_key": "front_disc_severe"
+        },
+        {
+          "key": "front_clipping_mild",
+          "location": "front",
+          "family": "clipping",
+          "severity": "mild",
+          "mask_key": "front_disc_mild"
+        },
+        {
+          "key": "front_clipping_severe",
+          "location": "front",
+          "family": "clipping",
+          "severity": "severe",
+          "mask_key": "front_disc_severe"
+        },
+        {
+          "key": "front_jpeg_mild",
+          "location": "front",
+          "family": "jpeg",
+          "severity": "mild",
+          "mask_key": "front_disc_mild"
+        },
+        {
+          "key": "front_jpeg_severe",
+          "location": "front",
+          "family": "jpeg",
+          "severity": "severe",
+          "mask_key": "front_disc_severe"
+        },
+        {
+          "key": "rear_opaque_disc_mild",
+          "location": "rear",
+          "family": "opaque_disc",
+          "severity": "mild",
+          "mask_key": "rear_disc_mild"
+        },
+        {
+          "key": "rear_opaque_disc_severe",
+          "location": "rear",
+          "family": "opaque_disc",
+          "severity": "severe",
+          "mask_key": "rear_disc_severe"
+        },
+        {
+          "key": "rear_opaque_vehicle_mild",
+          "location": "rear",
+          "family": "opaque_vehicle",
+          "severity": "mild",
+          "mask_key": "rear_vehicle_mild"
+        },
+        {
+          "key": "rear_opaque_vehicle_severe",
+          "location": "rear",
+          "family": "opaque_vehicle",
+          "severity": "severe",
+          "mask_key": "rear_vehicle_severe"
+        },
+        {
+          "key": "rear_missing_strip_mild",
+          "location": "rear",
+          "family": "missing_strip",
+          "severity": "mild",
+          "mask_key": "rear_strip_mild"
+        },
+        {
+          "key": "rear_missing_strip_severe",
+          "location": "rear",
+          "family": "missing_strip",
+          "severity": "severe",
+          "mask_key": "rear_strip_severe"
+        },
+        {
+          "key": "rear_blur_mild",
+          "location": "rear",
+          "family": "blur",
+          "severity": "mild",
+          "mask_key": "rear_disc_mild"
+        },
+        {
+          "key": "rear_blur_severe",
+          "location": "rear",
+          "family": "blur",
+          "severity": "severe",
+          "mask_key": "rear_disc_severe"
+        },
+        {
+          "key": "rear_clipping_mild",
+          "location": "rear",
+          "family": "clipping",
+          "severity": "mild",
+          "mask_key": "rear_disc_mild"
+        },
+        {
+          "key": "rear_clipping_severe",
+          "location": "rear",
+          "family": "clipping",
+          "severity": "severe",
+          "mask_key": "rear_disc_severe"
+        },
+        {
+          "key": "rear_jpeg_mild",
+          "location": "rear",
+          "family": "jpeg",
+          "severity": "mild",
+          "mask_key": "rear_disc_mild"
+        },
+        {
+          "key": "rear_jpeg_severe",
+          "location": "rear",
+          "family": "jpeg",
+          "severity": "severe",
+          "mask_key": "rear_disc_severe"
+        }
+      ],
+      "reuse_donor_pairs": [
+        {
+          "i": 0,
+          "j": 1,
+          "path": "sequence_v6/results/gironde_0/pairs/donor_only_0_1.npz",
+          "sha256": "6cb49a3d1483f79531cc4737255da5430b4e19b70e5fb923c8171072961c4783"
+        },
+        {
+          "i": 1,
+          "j": 3,
+          "path": "sequence_v6/results/gironde_0/pairs/donor_only_1_3.npz",
+          "sha256": "45dc389c1aaa766aa32b8bf6b421e1841eb3a3c77a0370d9f5cf2ee7a3067aba"
+        },
+        {
+          "i": 3,
+          "j": 4,
+          "path": "sequence_v6/results/gironde_0/pairs/donor_only_3_4.npz",
+          "sha256": "4e77ef2868c35171f3808deb46f45e516e8beaa3007639dbd4b93308fcc14d9e"
+        }
+      ],
+      "graph_donor_candidates": 12,
+      "annotated_donors_used": 4,
+      "annotation_limit": "Only original five source frames have masks; other graph neighbors are not silently admitted."
+    },
+    {
+      "area": "nantes",
+      "case": "nantes_van_002",
+      "split": "train",
+      "frames": [
+        {
+          "name": "prev2",
+          "id": "7af84377-f633-4d85-aa52-e4e76c083e34",
+          "path": "dataset_v1/images/7af84377-f633-4d85-aa52-e4e76c083e34.jpg",
+          "sha256": "6064117b1dd6e7e05dce0b577a7c0567257a0d301151101f989103d1639379b9"
+        },
+        {
+          "name": "prev1",
+          "id": "64c4b42d-d6a7-4f24-a44f-18ba7c5ad94e",
+          "path": "dataset_v1/images/64c4b42d-d6a7-4f24-a44f-18ba7c5ad94e.jpg",
+          "sha256": "5afd911614f7333eac2bbfe5a3baeb7124e63346184fa135b108852e13c9a6c9"
+        },
+        {
+          "name": "target",
+          "id": "f1340f34-7b52-4313-97f6-654c2c11eb0e",
+          "path": "dataset_v1/images/f1340f34-7b52-4313-97f6-654c2c11eb0e.jpg",
+          "sha256": "46f9d5ccba37c620b391b00d858a85ffdfbd91e7e6130a90aaaacb3e2b0b1788"
+        },
+        {
+          "name": "next1",
+          "id": "bb16bd11-b598-4243-9d56-65f628369bf5",
+          "path": "dataset_v1/images/bb16bd11-b598-4243-9d56-65f628369bf5.jpg",
+          "sha256": "176bf2e62a1e00cb6a1b042507b46bead9a729b8aa989e5f878a37f37dac1b02"
+        },
+        {
+          "name": "next2",
+          "id": "388749c9-792b-43a5-befe-396443c0e967",
+          "path": "dataset_v1/images/388749c9-792b-43a5-befe-396443c0e967.jpg",
+          "sha256": "d87e5464ac3e9e468769c1fb034e4cac5d4637947908084e15422dea9ec339aa"
+        }
+      ],
+      "target": 2,
+      "projection": {
+        "size": 2200,
+        "fov": 163.302054963582
+      },
+      "inputs": [
+        {
+          "path": "benchmark_v3/annotations_train_002.json",
+          "sha256": "8573442e7052f5cab4277b6e49216f8b657be6d32d847c3da9a1ecb3a72e03ed"
+        },
+        {
+          "path": "benchmark_v3/prepared/nantes_van_002/manifest.json",
+          "sha256": "0b353bbc570637d74c37345b4b37e08c865cc3a3a08dc801ee3a9deb4bb99956"
+        },
+        {
+          "path": "benchmark_v3/prepared/nantes_van_002/masks.npz",
+          "sha256": "ec77b080fc567035f3a5aab7428e1ecb554a1ebb44e6e7a97e52f249cba10990"
+        },
+        {
+          "path": "area_sets_v1/nantes_manifest.json",
+          "sha256": "e1729eb3bfdad7aec476f26aba574ab3d7ad08f354bfd6edaed5ce2dfb621371"
+        }
+      ],
+      "masks": {
+        "path": "controlled_v1/nantes/masks.npz",
+        "sha256": "0b1a859c2badbcae8059213585b184722932f022d8ff5b7ba30fbd12c5f85e3a"
+      },
+      "mask_specs": [
+        {
+          "key": "front_disc_mild",
+          "location": "front",
+          "shape": "disc",
+          "severity": "mild",
+          "pixels": 32034,
+          "ratio_to_real_footprint": 0.06981944674507205,
+          "sha256": "07d2531ad054c38cec1c398cc24a8dfbb580c866309773306e8ddd141ebf3a6d"
+        },
+        {
+          "key": "front_disc_severe",
+          "location": "front",
+          "shape": "disc",
+          "severity": "severe",
+          "pixels": 81105,
+          "ratio_to_real_footprint": 0.17677174964909376,
+          "sha256": "45daa847b2a722959b32936f8c38806a7152ea65f21e453fb4ca020b0bc6020f"
+        },
+        {
+          "key": "front_vehicle_mild",
+          "location": "front",
+          "shape": "vehicle",
+          "severity": "mild",
+          "pixels": 36618,
+          "ratio_to_real_footprint": 0.0798104670322485,
+          "sha256": "f2fdad5aeb5edc9230d2d43dab25e4a041f793fd323eb6a77715ac239fe2a511"
+        },
+        {
+          "key": "front_vehicle_severe",
+          "location": "front",
+          "shape": "vehicle",
+          "severity": "severe",
+          "pixels": 90391,
+          "ratio_to_real_footprint": 0.19701097617324742,
+          "sha256": "38991decb05bacb8ebc08a3fb2837718398c6344a5260ab44793b67ac580a032"
+        },
+        {
+          "key": "front_strip_mild",
+          "location": "front",
+          "shape": "strip",
+          "severity": "mild",
+          "pixels": 24840,
+          "ratio_to_real_footprint": 0.054139821975013734,
+          "sha256": "4b988c68978ad389639686a16132967d53ff4fd19f4b8e1e0ecfab1c89805a76"
+        },
+        {
+          "key": "front_strip_severe",
+          "location": "front",
+          "shape": "strip",
+          "severity": "severe",
+          "pixels": 53820,
+          "ratio_to_real_footprint": 0.11730294761252975,
+          "sha256": "96001fb496653e2fae7420124f0a27f4325dbbd5597d8becc8698b2e4053a270"
+        },
+        {
+          "key": "rear_disc_mild",
+          "location": "rear",
+          "shape": "disc",
+          "severity": "mild",
+          "pixels": 103109,
+          "ratio_to_real_footprint": 0.22473039066109865,
+          "sha256": "f3e9c5a74e3020e12f6f36ac55af9ebde5da41f084d8a255cb63be94aa1f1d0a"
+        },
+        {
+          "key": "rear_disc_severe",
+          "location": "rear",
+          "shape": "disc",
+          "severity": "severe",
+          "pixels": 274165,
+          "ratio_to_real_footprint": 0.5975541180265556,
+          "sha256": "282f0f1b3ece163b585197a77bad0bdd6a6d6f86b01d0a399e696519477410b5"
+        },
+        {
+          "key": "rear_vehicle_mild",
+          "location": "rear",
+          "shape": "vehicle",
+          "severity": "mild",
+          "pixels": 117223,
+          "ratio_to_real_footprint": 0.2554924457076101,
+          "sha256": "7bdb64aea793710a1adfae84cc18e43b31d9340c1653cb19e96a2dbdd73bde50"
+        },
+        {
+          "key": "rear_vehicle_severe",
+          "location": "rear",
+          "shape": "vehicle",
+          "severity": "severe",
+          "pixels": 313039,
+          "ratio_to_real_footprint": 0.6822816316922835,
+          "sha256": "a5639f41084d9387f52fca34c295072ab974e593cbc664b9ed3205aa66d83f64"
+        },
+        {
+          "key": "rear_strip_mild",
+          "location": "rear",
+          "shape": "strip",
+          "severity": "mild",
+          "pixels": 78660,
+          "ratio_to_real_footprint": 0.17144276958754348,
+          "sha256": "942f025966ab2daaf0154048842a21ae8d6ef15cd8d2669d314ddb76c69ac9b2"
+        },
+        {
+          "key": "rear_strip_severe",
+          "location": "rear",
+          "shape": "strip",
+          "severity": "severe",
+          "pixels": 172500,
+          "ratio_to_real_footprint": 0.37597098593759537,
+          "sha256": "ad7a581d03aa6aeb52e6010071c3ad942b68c97cde2b06b746eb18061ec18dee"
+        }
+      ],
+      "scenarios": [
+        {
+          "key": "front_opaque_disc_mild",
+          "location": "front",
+          "family": "opaque_disc",
+          "severity": "mild",
+          "mask_key": "front_disc_mild"
+        },
+        {
+          "key": "front_opaque_disc_severe",
+          "location": "front",
+          "family": "opaque_disc",
+          "severity": "severe",
+          "mask_key": "front_disc_severe"
+        },
+        {
+          "key": "front_opaque_vehicle_mild",
+          "location": "front",
+          "family": "opaque_vehicle",
+          "severity": "mild",
+          "mask_key": "front_vehicle_mild"
+        },
+        {
+          "key": "front_opaque_vehicle_severe",
+          "location": "front",
+          "family": "opaque_vehicle",
+          "severity": "severe",
+          "mask_key": "front_vehicle_severe"
+        },
+        {
+          "key": "front_missing_strip_mild",
+          "location": "front",
+          "family": "missing_strip",
+          "severity": "mild",
+          "mask_key": "front_strip_mild"
+        },
+        {
+          "key": "front_missing_strip_severe",
+          "location": "front",
+          "family": "missing_strip",
+          "severity": "severe",
+          "mask_key": "front_strip_severe"
+        },
+        {
+          "key": "front_blur_mild",
+          "location": "front",
+          "family": "blur",
+          "severity": "mild",
+          "mask_key": "front_disc_mild"
+        },
+        {
+          "key": "front_blur_severe",
+          "location": "front",
+          "family": "blur",
+          "severity": "severe",
+          "mask_key": "front_disc_severe"
+        },
+        {
+          "key": "front_clipping_mild",
+          "location": "front",
+          "family": "clipping",
+          "severity": "mild",
+          "mask_key": "front_disc_mild"
+        },
+        {
+          "key": "front_clipping_severe",
+          "location": "front",
+          "family": "clipping",
+          "severity": "severe",
+          "mask_key": "front_disc_severe"
+        },
+        {
+          "key": "front_jpeg_mild",
+          "location": "front",
+          "family": "jpeg",
+          "severity": "mild",
+          "mask_key": "front_disc_mild"
+        },
+        {
+          "key": "front_jpeg_severe",
+          "location": "front",
+          "family": "jpeg",
+          "severity": "severe",
+          "mask_key": "front_disc_severe"
+        },
+        {
+          "key": "rear_opaque_disc_mild",
+          "location": "rear",
+          "family": "opaque_disc",
+          "severity": "mild",
+          "mask_key": "rear_disc_mild"
+        },
+        {
+          "key": "rear_opaque_disc_severe",
+          "location": "rear",
+          "family": "opaque_disc",
+          "severity": "severe",
+          "mask_key": "rear_disc_severe"
+        },
+        {
+          "key": "rear_opaque_vehicle_mild",
+          "location": "rear",
+          "family": "opaque_vehicle",
+          "severity": "mild",
+          "mask_key": "rear_vehicle_mild"
+        },
+        {
+          "key": "rear_opaque_vehicle_severe",
+          "location": "rear",
+          "family": "opaque_vehicle",
+          "severity": "severe",
+          "mask_key": "rear_vehicle_severe"
+        },
+        {
+          "key": "rear_missing_strip_mild",
+          "location": "rear",
+          "family": "missing_strip",
+          "severity": "mild",
+          "mask_key": "rear_strip_mild"
+        },
+        {
+          "key": "rear_missing_strip_severe",
+          "location": "rear",
+          "family": "missing_strip",
+          "severity": "severe",
+          "mask_key": "rear_strip_severe"
+        },
+        {
+          "key": "rear_blur_mild",
+          "location": "rear",
+          "family": "blur",
+          "severity": "mild",
+          "mask_key": "rear_disc_mild"
+        },
+        {
+          "key": "rear_blur_severe",
+          "location": "rear",
+          "family": "blur",
+          "severity": "severe",
+          "mask_key": "rear_disc_severe"
+        },
+        {
+          "key": "rear_clipping_mild",
+          "location": "rear",
+          "family": "clipping",
+          "severity": "mild",
+          "mask_key": "rear_disc_mild"
+        },
+        {
+          "key": "rear_clipping_severe",
+          "location": "rear",
+          "family": "clipping",
+          "severity": "severe",
+          "mask_key": "rear_disc_severe"
+        },
+        {
+          "key": "rear_jpeg_mild",
+          "location": "rear",
+          "family": "jpeg",
+          "severity": "mild",
+          "mask_key": "rear_disc_mild"
+        },
+        {
+          "key": "rear_jpeg_severe",
+          "location": "rear",
+          "family": "jpeg",
+          "severity": "severe",
+          "mask_key": "rear_disc_severe"
+        }
+      ],
+      "reuse_donor_pairs": [],
+      "graph_donor_candidates": 12,
+      "annotated_donors_used": 4,
+      "annotation_limit": "Only original five source frames have masks; other graph neighbors are not silently admitted."
+    },
+    {
+      "area": "bourges",
+      "case": "bourges_turn_001",
+      "split": "train",
+      "frames": [
+        {
+          "name": "prev2",
+          "id": "4fc9daad-9fec-4e96-9536-3b45fb73b786",
+          "path": "dataset_v1/images/4fc9daad-9fec-4e96-9536-3b45fb73b786.jpg",
+          "sha256": "3e1b028791aa0f9fee1fc50e9688db3e64d4498c7e2fd0900f55538787656521"
+        },
+        {
+          "name": "prev1",
+          "id": "a8af5016-576f-4223-b182-05a683cb81c5",
+          "path": "dataset_v1/images/a8af5016-576f-4223-b182-05a683cb81c5.jpg",
+          "sha256": "569ba0f7624f14fb271dd4bbf2f23cb0fd38e92d67d05c8bef6a65334536f909"
+        },
+        {
+          "name": "target",
+          "id": "1a9e9b37-1d3e-45ee-ae9f-f4035a792212",
+          "path": "dataset_v1/images/1a9e9b37-1d3e-45ee-ae9f-f4035a792212.jpg",
+          "sha256": "80679e337c7ad3b746e4ad18578676467fe13387ebf4891c4078e759a2df607b"
+        },
+        {
+          "name": "next1",
+          "id": "441990f7-dac4-4cf3-b5ae-717444487850",
+          "path": "dataset_v1/images/441990f7-dac4-4cf3-b5ae-717444487850.jpg",
+          "sha256": "5250a156036a1f5200cc665743eed6c63cd46075af5bfceaa485eb36887c03f2"
+        },
+        {
+          "name": "next2",
+          "id": "c80f4ab6-1453-457a-8e89-7a83e57d929a",
+          "path": "dataset_v1/images/c80f4ab6-1453-457a-8e89-7a83e57d929a.jpg",
+          "sha256": "f9f2fa2247f4b7e724257dab32cfd1a5bfd231fd61419111075bb6a66ea78a88"
+        }
+      ],
+      "target": 2,
+      "projection": {
+        "size": 2200,
+        "fov": 163.302054963582
+      },
+      "inputs": [
+        {
+          "path": "benchmark_v3/annotations_train_001.json",
+          "sha256": "edc78692c20993590f0f31245e75d88b0933cf36da87392f14d6a37d56c2f366"
+        },
+        {
+          "path": "benchmark_v3/prepared/bourges_turn_001/manifest.json",
+          "sha256": "f458e5d7ff86ac67b132dab99c8a87a31a18ea77cd80843138e305bc8aaf3db3"
+        },
+        {
+          "path": "benchmark_v3/prepared/bourges_turn_001/masks.npz",
+          "sha256": "ad4246eb09db412b38d83ae23eea4aa6e5141f51b5e246095dee2fe0c34dea37"
+        },
+        {
+          "path": "area_sets_v1/bourges_manifest.json",
+          "sha256": "299d3118df143bf3616ccf588a99f865512e9ef80b62ad84977f5e57b74e2cbe"
+        }
+      ],
+      "masks": {
+        "path": "controlled_v1/bourges/masks.npz",
+        "sha256": "3336af6b6b68067f0df43291b31f1d3501e3f8d0b7c0d87dcd71f2bd56540500"
+      },
+      "mask_specs": [
+        {
+          "key": "front_disc_mild",
+          "location": "front",
+          "shape": "disc",
+          "severity": "mild",
+          "pixels": 23100,
+          "ratio_to_real_footprint": 0.11781987330538299,
+          "sha256": "7bb51113722b436327a3b9149a9a3a94733d2b452f4cb8cafc6ed2cf470cdb87"
+        },
+        {
+          "key": "front_disc_severe",
+          "location": "front",
+          "shape": "disc",
+          "severity": "severe",
+          "pixels": 61609,
+          "ratio_to_real_footprint": 0.314232232661097,
+          "sha256": "4f5ff017ac902f57672285869af1409dd28e8bb961331ecc3122f68ee923c6ee"
+        },
+        {
+          "key": "front_vehicle_mild",
+          "location": "front",
+          "shape": "vehicle",
+          "severity": "mild",
+          "pixels": 26593,
+          "ratio_to_real_footprint": 0.13563566626883333,
+          "sha256": "d4c56234bad0f637665e4c5be824080795465c7cf95ed039bc14dfffd9851f87"
+        },
+        {
+          "key": "front_vehicle_severe",
+          "location": "front",
+          "shape": "vehicle",
+          "severity": "severe",
+          "pixels": 70674,
+          "ratio_to_real_footprint": 0.36046760718548215,
+          "sha256": "60d060501da304165074b2678833051c7d7ab591712305f081ac22cc0053ed86"
+        },
+        {
+          "key": "front_strip_mild",
+          "location": "front",
+          "shape": "strip",
+          "severity": "mild",
+          "pixels": 15630,
+          "ratio_to_real_footprint": 0.07971968050922668,
+          "sha256": "32bd3deb0a737459619df3eaa223294fbafeb813992739b22e7bff2bccce91f4"
+        },
+        {
+          "key": "front_strip_severe",
+          "location": "front",
+          "shape": "strip",
+          "severity": "severe",
+          "pixels": 37418,
+          "ratio_to_real_footprint": 0.19084779304505717,
+          "sha256": "278cebe2a14500965e5e9586c59add7e928dd83fe26ea12468a92f11325fe894"
+        },
+        {
+          "key": "rear_disc_mild",
+          "location": "rear",
+          "shape": "disc",
+          "severity": "mild",
+          "pixels": 36119,
+          "ratio_to_real_footprint": 0.1842223378319103,
+          "sha256": "5e98f74e64377457f3367d834c8e9fbca65b7bbe10c53a23ab020a16dbc0cba1"
+        },
+        {
+          "key": "rear_disc_severe",
+          "location": "rear",
+          "shape": "disc",
+          "severity": "severe",
+          "pixels": 95728,
+          "ratio_to_real_footprint": 0.48825371566137243,
+          "sha256": "33a4e2fee955fd000de7f453cb18d9ea9a1fb164f70844ad3617d5dc4d01b5da"
+        },
+        {
+          "key": "rear_vehicle_mild",
+          "location": "rear",
+          "shape": "vehicle",
+          "severity": "mild",
+          "pixels": 40808,
+          "ratio_to_real_footprint": 0.2081382419846783,
+          "sha256": "2f917d8e3216c13650078ae5c172e021278d3e5e64eadb1d6043ace3fcf0d115"
+        },
+        {
+          "key": "rear_vehicle_severe",
+          "location": "rear",
+          "shape": "vehicle",
+          "severity": "severe",
+          "pixels": 109022,
+          "ratio_to_real_footprint": 0.5560587977272495,
+          "sha256": "3e6c8587a8f3545a9e0d28072e97b9ad999ee5e0f619641ee9d318e346909f99"
+        },
+        {
+          "key": "rear_strip_mild",
+          "location": "rear",
+          "shape": "strip",
+          "severity": "mild",
+          "pixels": 27148,
+          "ratio_to_real_footprint": 0.138466403484612,
+          "sha256": "bdcd6ebf9688b9a385f9ca46b5f0c6f2b9d9efe56ad9294d7fcb72087bc077e5"
+        },
+        {
+          "key": "rear_strip_severe",
+          "location": "rear",
+          "shape": "strip",
+          "severity": "severe",
+          "pixels": 60466,
+          "ratio_to_real_footprint": 0.30840244412481765,
+          "sha256": "0517457040c484e0477df4ec640792e4638830670f549596fcd1dfc601ee2380"
+        }
+      ],
+      "scenarios": [
+        {
+          "key": "front_opaque_disc_mild",
+          "location": "front",
+          "family": "opaque_disc",
+          "severity": "mild",
+          "mask_key": "front_disc_mild"
+        },
+        {
+          "key": "front_opaque_disc_severe",
+          "location": "front",
+          "family": "opaque_disc",
+          "severity": "severe",
+          "mask_key": "front_disc_severe"
+        },
+        {
+          "key": "front_opaque_vehicle_mild",
+          "location": "front",
+          "family": "opaque_vehicle",
+          "severity": "mild",
+          "mask_key": "front_vehicle_mild"
+        },
+        {
+          "key": "front_opaque_vehicle_severe",
+          "location": "front",
+          "family": "opaque_vehicle",
+          "severity": "severe",
+          "mask_key": "front_vehicle_severe"
+        },
+        {
+          "key": "front_missing_strip_mild",
+          "location": "front",
+          "family": "missing_strip",
+          "severity": "mild",
+          "mask_key": "front_strip_mild"
+        },
+        {
+          "key": "front_missing_strip_severe",
+          "location": "front",
+          "family": "missing_strip",
+          "severity": "severe",
+          "mask_key": "front_strip_severe"
+        },
+        {
+          "key": "front_blur_mild",
+          "location": "front",
+          "family": "blur",
+          "severity": "mild",
+          "mask_key": "front_disc_mild"
+        },
+        {
+          "key": "front_blur_severe",
+          "location": "front",
+          "family": "blur",
+          "severity": "severe",
+          "mask_key": "front_disc_severe"
+        },
+        {
+          "key": "front_clipping_mild",
+          "location": "front",
+          "family": "clipping",
+          "severity": "mild",
+          "mask_key": "front_disc_mild"
+        },
+        {
+          "key": "front_clipping_severe",
+          "location": "front",
+          "family": "clipping",
+          "severity": "severe",
+          "mask_key": "front_disc_severe"
+        },
+        {
+          "key": "front_jpeg_mild",
+          "location": "front",
+          "family": "jpeg",
+          "severity": "mild",
+          "mask_key": "front_disc_mild"
+        },
+        {
+          "key": "front_jpeg_severe",
+          "location": "front",
+          "family": "jpeg",
+          "severity": "severe",
+          "mask_key": "front_disc_severe"
+        },
+        {
+          "key": "rear_opaque_disc_mild",
+          "location": "rear",
+          "family": "opaque_disc",
+          "severity": "mild",
+          "mask_key": "rear_disc_mild"
+        },
+        {
+          "key": "rear_opaque_disc_severe",
+          "location": "rear",
+          "family": "opaque_disc",
+          "severity": "severe",
+          "mask_key": "rear_disc_severe"
+        },
+        {
+          "key": "rear_opaque_vehicle_mild",
+          "location": "rear",
+          "family": "opaque_vehicle",
+          "severity": "mild",
+          "mask_key": "rear_vehicle_mild"
+        },
+        {
+          "key": "rear_opaque_vehicle_severe",
+          "location": "rear",
+          "family": "opaque_vehicle",
+          "severity": "severe",
+          "mask_key": "rear_vehicle_severe"
+        },
+        {
+          "key": "rear_missing_strip_mild",
+          "location": "rear",
+          "family": "missing_strip",
+          "severity": "mild",
+          "mask_key": "rear_strip_mild"
+        },
+        {
+          "key": "rear_missing_strip_severe",
+          "location": "rear",
+          "family": "missing_strip",
+          "severity": "severe",
+          "mask_key": "rear_strip_severe"
+        },
+        {
+          "key": "rear_blur_mild",
+          "location": "rear",
+          "family": "blur",
+          "severity": "mild",
+          "mask_key": "rear_disc_mild"
+        },
+        {
+          "key": "rear_blur_severe",
+          "location": "rear",
+          "family": "blur",
+          "severity": "severe",
+          "mask_key": "rear_disc_severe"
+        },
+        {
+          "key": "rear_clipping_mild",
+          "location": "rear",
+          "family": "clipping",
+          "severity": "mild",
+          "mask_key": "rear_disc_mild"
+        },
+        {
+          "key": "rear_clipping_severe",
+          "location": "rear",
+          "family": "clipping",
+          "severity": "severe",
+          "mask_key": "rear_disc_severe"
+        },
+        {
+          "key": "rear_jpeg_mild",
+          "location": "rear",
+          "family": "jpeg",
+          "severity": "mild",
+          "mask_key": "rear_disc_mild"
+        },
+        {
+          "key": "rear_jpeg_severe",
+          "location": "rear",
+          "family": "jpeg",
+          "severity": "severe",
+          "mask_key": "rear_disc_severe"
+        }
+      ],
+      "reuse_donor_pairs": [
+        {
+          "i": 0,
+          "j": 1,
+          "path": "sequence_v6/results/bourges_turn_001/pairs/donor_only_0_1.npz",
+          "sha256": "1df0c203ca602c034605e76be9efb410a056bd30052eb5d927d573b4f3c1023e"
+        },
+        {
+          "i": 1,
+          "j": 3,
+          "path": "sequence_v6/results/bourges_turn_001/pairs/donor_only_1_3.npz",
+          "sha256": "5e096ddb059f0a7fc842d27f957ef4264d81a316bb1d4dcb14c1881a7da0871b"
+        },
+        {
+          "i": 3,
+          "j": 4,
+          "path": "sequence_v6/results/bourges_turn_001/pairs/donor_only_3_4.npz",
+          "sha256": "9ace5bfae81ce18ea070c298d5ef62748c70ebfc54492184b24fb0d370d4f0bc"
+        }
+      ],
+      "graph_donor_candidates": 12,
+      "annotated_donors_used": 4,
+      "annotation_limit": "Only original five source frames have masks; other graph neighbors are not silently admitted."
+    }
+  ],
+  "families": [
+    "opaque_disc",
+    "opaque_vehicle",
+    "missing_strip",
+    "blur",
+    "clipping",
+    "jpeg"
+  ],
+  "severities": [
+    "mild",
+    "severe"
+  ],
+  "anchor_count": 3,
+  "scenario_count": 72,
+  "distinct_geometry_masks": 36,
+  "benchmark_scope": "Three existing development/train anchors, two reviewed visible-ground locations each. Not a held-out population result.",
+  "geometry_inputs": "Target pixels in the entire corruption mask are zeroed before preprocessing regardless of corruption family. Raw hidden RGB is scoring-only.",
+  "source_only_baseline": "Same mask produces identical donor reconstruction across disc/blur/clipping/jpeg tracks by design. These are correlated conditions, not independent evidence.",
+  "baselines": [
+    "as_damaged",
+    "telea_r3",
+    "loftr_homography",
+    "loftr_metric_free"
+  ],
+  "appearance_thresholds": [
+    10,
+    20
+  ],
+  "reliability_limit": "RGB thresholds measure appearance on withheld visible ground, not a calibrated probability of correct real under-car geometry."
+}

@@ -1,0 +1,81 @@
+{
+  "status": "baseline_complete_not_promoted",
+  "summary": {
+    "path": "controlled_v1/summary.json",
+    "sha256": "fea311e3dfc8d49139b5c4d236ecf0a07f8684c043cc52805ab90224f76e299c"
+  },
+  "audit": {
+    "path": "controlled_v1/audit_001.json",
+    "sha256": "a9fa71a37a2f694891ed879d1d87fc963e5d2082fe5a72c1178b80be3bb1de82"
+  },
+  "visible_only_diagnostics": {
+    "gironde": {
+      "unique_pair_caches": 51,
+      "proposal_reasons": {
+        "edge proposal passes held-out correspondence check": 20,
+        "edge train/held-out support failed": 31
+      },
+      "five_frame_heading_degrees": [
+        265,
+        265,
+        261,
+        265,
+        261
+      ],
+      "heading_range_degrees": 4,
+      "note": "Donor-only caches deduplicated. Remaining target-mask conditions are correlated."
+    },
+    "nantes": {
+      "unique_pair_caches": 51,
+      "proposal_reasons": {
+        "edge train/held-out support failed": 51
+      },
+      "five_frame_heading_degrees": [
+        205,
+        206,
+        206,
+        206,
+        206
+      ],
+      "heading_range_degrees": 1,
+      "note": "Donor-only caches deduplicated. Remaining target-mask conditions are correlated."
+    },
+    "bourges": {
+      "unique_pair_caches": 51,
+      "proposal_reasons": {
+        "edge train/held-out support failed": 46,
+        "edge proposal passes held-out correspondence check": 5
+      },
+      "five_frame_heading_degrees": [
+        168,
+        173,
+        171,
+        170,
+        170
+      ],
+      "heading_range_degrees": 5,
+      "note": "Donor-only caches deduplicated. Remaining target-mask conditions are correlated."
+    }
+  },
+  "conclusions": [
+    "Nantes and Bourges reconstruct0% under all frozen policies; rejection remains mandatory.",
+    "Gironde source-only metric-free candidate mask coverage16.82% disc,17.97% vehicle and71.52% strip; masks/conditions differ from earlier benchmarks.",
+    "About4% of accepted Gironde pixels are textured under the declared gradient criterion; RGB agreement on plain asphalt alone does not establish precise alignment.",
+    "Candidate coverage is predominantly single-view; stricter two-view policy has much less coverage.",
+    "The five-frame heading ranges are4deg/1deg/5deg: small heading correction alone is unlikely to explain the hard-area failures."
+  ],
+  "next_experiment": {
+    "priority": "visible-only native-sampling/scale-aware matching on Nantes and Bourges with Gironde and Alsace controls",
+    "hypothesis": "Uniformly resizing a large nadir to640px discards ground detail and mixes severe scale changes between viewpoints; native-scale ground crops may improve correspondence inlier support.",
+    "restrictions": [
+      "Predeclare crop scales/overlap/matching budget using only metadata and allowed image regions; no hidden-target input.",
+      "Transform points back to original coordinates; retain existing geometry acceptance and heldout partitions.",
+      "Do not broaden support hulls or relax gates to increase apparent coverage.",
+      "Run all36 masks, report by family and severity, and common/gained/lost-pixel error; retain zero-result routes."
+    ],
+    "annotation_selection": {
+      "path": "controlled_v2/annotation_selection.json",
+      "sha256": "14c781fe5a8d8d0d04de2db64435a36105c2ffff4b3e2d7f47d14c09f3d15a0a"
+    }
+  }
+}

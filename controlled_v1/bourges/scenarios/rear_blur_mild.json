@@ -1,0 +1,98 @@
+{
+  "key": "rear_blur_mild",
+  "location": "rear",
+  "family": "blur",
+  "severity": "mild",
+  "mask_key": "rear_disc_mild",
+  "area": "bourges",
+  "signature": {
+    "plan_sha256": "3c18df4887ccd07b4d8ec03e69e29bb0ec9d7afa21f8388410b2c04cf290305b",
+    "certificate": {
+      "path": "sequence_v6/model_validation_001.json",
+      "sha256": "04325bf0a79009ebeae8fb1c8ec4258e42a9a0e76eb05afb6a868a0635419e4a"
+    }
+  },
+  "baselines": {
+    "as_damaged": {
+      "metrics": {
+        "coverage": 1.0,
+        "abstention": 0.0,
+        "accepted_pixels": 36119,
+        "error": {
+          "pixels": 36119,
+          "mae_255": 1.893186411583931,
+          "psnr_db": 39.79780942369027,
+          "p90_rgb": 4.0,
+          "over_20_fraction": 0.00022149007447603756
+        },
+        "gradient": {
+          "pixels": 33299,
+          "gradient_mae": 0.8154551386833191,
+          "edge_pixels": 883,
+          "orientation_error": 0.9338144063949585
+        },
+        "appearance": {
+          "mask_pixels": 36119,
+          "accepted_pixels": 36119,
+          "accepted_rgb_mae_le_threshold_pixels": {
+            "10": 35965,
+            "20": 36111
+          },
+          "fraction_of_mask_with_rgb_mae_le_threshold": {
+            "10": 0.9957363160663363,
+            "20": 0.999778509925524
+          },
+          "accepted_textured_pixels": 982,
+          "accepted_low_texture_pixels": 35137
+        }
+      },
+      "evidence": {
+        "path": "controlled_v1/bourges/scenarios/rear_blur_mild_as_damaged.npz",
+        "sha256": "4e000540eb181bb4a241e31320a4edbc2a07d5bf6c0bba22ba5dc59b480a1191"
+      }
+    },
+    "telea_r3": {
+      "metrics": {
+        "coverage": 1.0,
+        "abstention": 0.0,
+        "accepted_pixels": 36119,
+        "error": {
+          "pixels": 36119,
+          "mae_255": 5.942006515499691,
+          "psnr_db": 30.715623558804666,
+          "p90_rgb": 12.333333015441895,
+          "over_20_fraction": 0.001079764113070683
+        },
+        "gradient": {
+          "pixels": 33299,
+          "gradient_mae": 0.8621982336044312,
+          "edge_pixels": 883,
+          "orientation_error": 0.9241756796836853
+        },
+        "appearance": {
+          "mask_pixels": 36119,
+          "accepted_pixels": 36119,
+          "accepted_rgb_mae_le_threshold_pixels": {
+            "10": 29196,
+            "20": 36080
+          },
+          "fraction_of_mask_with_rgb_mae_le_threshold": {
+            "10": 0.808328026800299,
+            "20": 0.9989202358869294
+          },
+          "accepted_textured_pixels": 982,
+          "accepted_low_texture_pixels": 35137
+        }
+      },
+      "evidence": {
+        "path": "controlled_v1/bourges/scenarios/rear_blur_mild_telea_r3.npz",
+        "sha256": "be4ed95b849512a839c6bb17726568c1546075f7217f112a00d30fe119246cf3"
+      }
+    }
+  },
+  "geometry": {
+    "path": "controlled_v1/bourges/groups/rear_disc_mild.json",
+    "sha256": "de9e54f890333953086bbc5d93e765b0b1110bb23a13b24efe5033722c865aa6"
+  },
+  "interpretation": "Source-only reconstruction excludes all damaged pixels. Shared masks reuse identical geometry; as_damaged/Telea are controls, not accepted recovery."
+}

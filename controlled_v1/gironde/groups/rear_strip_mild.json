@@ -1,0 +1,1116 @@
+{
+  "area": "gironde",
+  "case": "gironde_0",
+  "mask_key": "rear_strip_mild",
+  "signature": {
+    "plan_sha256": "3c18df4887ccd07b4d8ec03e69e29bb0ec9d7afa21f8388410b2c04cf290305b",
+    "certificate": {
+      "path": "sequence_v6/model_validation_001.json",
+      "sha256": "04325bf0a79009ebeae8fb1c8ec4258e42a9a0e76eb05afb6a868a0635419e4a"
+    }
+  },
+  "created_at_utc": "2026-10-31T16:07:37.977235+00:00",
+  "correspondences": [
+    {
+      "i": 0,
+      "j": 1,
+      "path": "controlled_v1/gironde/pairs/donor_only_0_1.npz",
+      "sha256": "6cb49a3d1483f79531cc4737255da5430b4e19b70e5fb923c8171072961c4783",
+      "matches": 166,
+      "proposal": {
+        "i": 0,
+        "j": 1,
+        "matches": 166,
+        "accepted": true,
+        "train_inliers": 58,
+        "inlier_ratio": 0.46774193548387094,
+        "validation_matches": 42,
+        "validation_inliers": 20,
+        "validation_fraction": 0.47619047619047616,
+        "validation_median_px": 5.381478527341667,
+        "reason": "edge proposal passes held-out correspondence check"
+      },
+      "spatial_holdout": {
+        "folds": [
+          {
+            "block": 0,
+            "train": 121,
+            "heldout": 45,
+            "status": "measured",
+            "median_px": 124.52124312740324,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 58
+          },
+          {
+            "block": 1,
+            "train": 153,
+            "heldout": 13,
+            "status": "measured",
+            "median_px": 145.13461740923964,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 70
+          },
+          {
+            "block": 2,
+            "train": 79,
+            "heldout": 87,
+            "status": "measured",
+            "median_px": 181.050813282413,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 19
+          },
+          {
+            "block": 3,
+            "train": 145,
+            "heldout": 21,
+            "status": "measured",
+            "median_px": 228.43456875652078,
+            "fraction_below_5px": 0.09523809523809523,
+            "train_inliers": 74
+          }
+        ],
+        "interpretation": "Spatial extrapolation diagnostic, not a calibrated probability or an acceptance gate"
+      },
+      "matcher": {
+        "matches": 166,
+        "max_side": 640,
+        "method": "masked_loftr_outdoor_640",
+        "minimum_confidence": 0.20012889802455902,
+        "weights": "explicit local checkpoint; caller must retain SHA-256"
+      }
+    },
+    {
+      "i": 0,
+      "j": 2,
+      "path": "controlled_v1/gironde/pairs/rear_strip_mild_0_2.npz",
+      "sha256": "d636e4801315d79990a4cf52f0a0426911b3bf1c46814cc67797eb3c131de870",
+      "matches": 70,
+      "proposal": {
+        "i": 0,
+        "j": 2,
+        "matches": 70,
+        "accepted": false,
+        "train_inliers": 12,
+        "inlier_ratio": 0.23076923076923078,
+        "validation_matches": 18,
+        "validation_inliers": 1,
+        "validation_fraction": 0.05555555555555555,
+        "validation_median_px": 56.578363898097095,
+        "reason": "edge train/held-out support failed"
+      },
+      "spatial_holdout": {
+        "folds": [
+          {
+            "block": 0,
+            "train": 42,
+            "heldout": 28,
+            "status": "measured",
+            "median_px": 87.00120898454841,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 10
+          },
+          {
+            "block": 1,
+            "train": 61,
+            "heldout": 9,
+            "status": "measured",
+            "median_px": 9.84264623014957,
+            "fraction_below_5px": 0.1111111111111111,
+            "train_inliers": 11
+          },
+          {
+            "block": 2,
+            "train": 43,
+            "heldout": 27,
+            "status": "measured",
+            "median_px": 204.8715194167537,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 14
+          },
+          {
+            "block": 3,
+            "train": 64,
+            "heldout": 6,
+            "status": "insufficient spatial support"
+          }
+        ],
+        "interpretation": "Spatial extrapolation diagnostic, not a calibrated probability or an acceptance gate"
+      },
+      "matcher": {
+        "method": "masked_loftr_outdoor_640",
+        "matches": 70,
+        "max_side": 640,
+        "minimum_confidence": 0.21099577844142914,
+        "weights": "explicit local checkpoint; caller must retain SHA-256"
+      }
+    },
+    {
+      "i": 1,
+      "j": 2,
+      "path": "controlled_v1/gironde/pairs/rear_strip_mild_1_2.npz",
+      "sha256": "04624cab584c4a5976db51a65868e8e47a73b9b318afffc2bbacca40d714b6bb",
+      "matches": 110,
+      "proposal": {
+        "i": 1,
+        "j": 2,
+        "matches": 110,
+        "accepted": true,
+        "train_inliers": 19,
+        "inlier_ratio": 0.23170731707317074,
+        "validation_matches": 28,
+        "validation_inliers": 11,
+        "validation_fraction": 0.39285714285714285,
+        "validation_median_px": 49.679448380565304,
+        "reason": "edge proposal passes held-out correspondence check"
+      },
+      "spatial_holdout": {
+        "folds": [
+          {
+            "block": 0,
+            "train": 60,
+            "heldout": 50,
+            "status": "measured",
+            "median_px": 129.76920237685312,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 17
+          },
+          {
+            "block": 1,
+            "train": 96,
+            "heldout": 14,
+            "status": "measured",
+            "median_px": 125.83888126518235,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 26
+          },
+          {
+            "block": 2,
+            "train": 68,
+            "heldout": 42,
+            "status": "measured",
+            "median_px": 30.902485433957093,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 22
+          },
+          {
+            "block": 3,
+            "train": 106,
+            "heldout": 4,
+            "status": "insufficient spatial support"
+          }
+        ],
+        "interpretation": "Spatial extrapolation diagnostic, not a calibrated probability or an acceptance gate"
+      },
+      "matcher": {
+        "method": "masked_loftr_outdoor_640",
+        "matches": 110,
+        "max_side": 640,
+        "minimum_confidence": 0.20248010754585266,
+        "weights": "explicit local checkpoint; caller must retain SHA-256"
+      }
+    },
+    {
+      "i": 1,
+      "j": 3,
+      "path": "controlled_v1/gironde/pairs/donor_only_1_3.npz",
+      "sha256": "45dc389c1aaa766aa32b8bf6b421e1841eb3a3c77a0370d9f5cf2ee7a3067aba",
+      "matches": 131,
+      "proposal": {
+        "i": 1,
+        "j": 3,
+        "matches": 131,
+        "accepted": false,
+        "train_inliers": 14,
+        "inlier_ratio": 0.14285714285714285,
+        "validation_matches": 33,
+        "validation_inliers": 7,
+        "validation_fraction": 0.21212121212121213,
+        "validation_median_px": 25.965653004065256,
+        "reason": "edge train/held-out support failed"
+      },
+      "spatial_holdout": {
+        "folds": [
+          {
+            "block": 0,
+            "train": 94,
+            "heldout": 37,
+            "status": "measured",
+            "median_px": 111.81876577791463,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 16
+          },
+          {
+            "block": 1,
+            "train": 111,
+            "heldout": 20,
+            "status": "measured",
+            "median_px": 71.96650486064226,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 14
+          },
+          {
+            "block": 2,
+            "train": 85,
+            "heldout": 46,
+            "status": "measured",
+            "median_px": 43.14058906409836,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 21
+          },
+          {
+            "block": 3,
+            "train": 103,
+            "heldout": 28,
+            "status": "measured",
+            "median_px": 27.892146665797576,
+            "fraction_below_5px": 0.10714285714285714,
+            "train_inliers": 19
+          }
+        ],
+        "interpretation": "Spatial extrapolation diagnostic, not a calibrated probability or an acceptance gate"
+      },
+      "matcher": {
+        "matches": 131,
+        "max_side": 640,
+        "method": "masked_loftr_outdoor_640",
+        "minimum_confidence": 0.20266349613666534,
+        "weights": "explicit local checkpoint; caller must retain SHA-256"
+      }
+    },
+    {
+      "i": 2,
+      "j": 3,
+      "path": "controlled_v1/gironde/pairs/rear_strip_mild_2_3.npz",
+      "sha256": "8188f26f8593487960df65693d7ac5a2eed81dcaa492d25a522a16f235e17fe4",
+      "matches": 128,
+      "proposal": {
+        "i": 2,
+        "j": 3,
+        "matches": 128,
+        "accepted": true,
+        "train_inliers": 21,
+        "inlier_ratio": 0.21875,
+        "validation_matches": 32,
+        "validation_inliers": 12,
+        "validation_fraction": 0.375,
+        "validation_median_px": 8.738372958728737,
+        "reason": "edge proposal passes held-out correspondence check"
+      },
+      "spatial_holdout": {
+        "folds": [
+          {
+            "block": 0,
+            "train": 73,
+            "heldout": 55,
+            "status": "measured",
+            "median_px": 43.028011621957305,
+            "fraction_below_5px": 0.03636363636363636,
+            "train_inliers": 15
+          },
+          {
+            "block": 1,
+            "train": 110,
+            "heldout": 18,
+            "status": "measured",
+            "median_px": 136.65837792768247,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 29
+          },
+          {
+            "block": 2,
+            "train": 94,
+            "heldout": 34,
+            "status": "measured",
+            "median_px": 104.02112855682424,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 26
+          },
+          {
+            "block": 3,
+            "train": 107,
+            "heldout": 21,
+            "status": "measured",
+            "median_px": 20.3609064464005,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 25
+          }
+        ],
+        "interpretation": "Spatial extrapolation diagnostic, not a calibrated probability or an acceptance gate"
+      },
+      "matcher": {
+        "method": "masked_loftr_outdoor_640",
+        "matches": 128,
+        "max_side": 640,
+        "minimum_confidence": 0.20400893688201904,
+        "weights": "explicit local checkpoint; caller must retain SHA-256"
+      }
+    },
+    {
+      "i": 2,
+      "j": 4,
+      "path": "controlled_v1/gironde/pairs/rear_strip_mild_2_4.npz",
+      "sha256": "927e0b4bd0a6a5e703361290879d11e86a387903939e553cf999ce9b962c3386",
+      "matches": 83,
+      "proposal": {
+        "i": 2,
+        "j": 4,
+        "matches": 83,
+        "accepted": false,
+        "train_inliers": 9,
+        "inlier_ratio": 0.14516129032258066,
+        "validation_matches": 21,
+        "validation_inliers": 0,
+        "validation_fraction": 0.0,
+        "validation_median_px": 58.84212350041337,
+        "reason": "edge train/held-out support failed"
+      },
+      "spatial_holdout": {
+        "folds": [
+          {
+            "block": 0,
+            "train": 51,
+            "heldout": 32,
+            "status": "measured",
+            "median_px": 97.04392410567979,
+            "fraction_below_5px": 0.0625,
+            "train_inliers": 9
+          },
+          {
+            "block": 1,
+            "train": 68,
+            "heldout": 15,
+            "status": "measured",
+            "median_px": 216.76485016071533,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 11
+          },
+          {
+            "block": 2,
+            "train": 62,
+            "heldout": 21,
+            "status": "measured",
+            "median_px": 124.06032656369965,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 10
+          },
+          {
+            "block": 3,
+            "train": 68,
+            "heldout": 15,
+            "status": "measured",
+            "median_px": 36.378423325554515,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 9
+          }
+        ],
+        "interpretation": "Spatial extrapolation diagnostic, not a calibrated probability or an acceptance gate"
+      },
+      "matcher": {
+        "method": "masked_loftr_outdoor_640",
+        "matches": 83,
+        "max_side": 640,
+        "minimum_confidence": 0.207687646150589,
+        "weights": "explicit local checkpoint; caller must retain SHA-256"
+      }
+    },
+    {
+      "i": 3,
+      "j": 4,
+      "path": "controlled_v1/gironde/pairs/donor_only_3_4.npz",
+      "sha256": "4e77ef2868c35171f3808deb46f45e516e8beaa3007639dbd4b93308fcc14d9e",
+      "matches": 226,
+      "proposal": {
+        "i": 3,
+        "j": 4,
+        "matches": 226,
+        "accepted": true,
+        "train_inliers": 69,
+        "inlier_ratio": 0.40828402366863903,
+        "validation_matches": 57,
+        "validation_inliers": 33,
+        "validation_fraction": 0.5789473684210527,
+        "validation_median_px": 3.7579465163842056,
+        "reason": "edge proposal passes held-out correspondence check"
+      },
+      "spatial_holdout": {
+        "folds": [
+          {
+            "block": 0,
+            "train": 163,
+            "heldout": 63,
+            "status": "measured",
+            "median_px": 83.18877030896185,
+            "fraction_below_5px": 0.31746031746031744,
+            "train_inliers": 74
+          },
+          {
+            "block": 1,
+            "train": 213,
+            "heldout": 13,
+            "status": "measured",
+            "median_px": 139.18621307713963,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 93
+          },
+          {
+            "block": 2,
+            "train": 123,
+            "heldout": 103,
+            "status": "measured",
+            "median_px": 12.352978083190505,
+            "fraction_below_5px": 0.06796116504854369,
+            "train_inliers": 33
+          },
+          {
+            "block": 3,
+            "train": 179,
+            "heldout": 47,
+            "status": "measured",
+            "median_px": 6.447406770842913,
+            "fraction_below_5px": 0.44680851063829785,
+            "train_inliers": 78
+          }
+        ],
+        "interpretation": "Spatial extrapolation diagnostic, not a calibrated probability or an acceptance gate"
+      },
+      "matcher": {
+        "matches": 226,
+        "max_side": 640,
+        "method": "masked_loftr_outdoor_640",
+        "minimum_confidence": 0.20147237181663513,
+        "weights": "explicit local checkpoint; caller must retain SHA-256"
+      }
+    }
+  ],
+  "graphs": {
+    "loftr_homography": {
+      "connected_frames": 5,
+      "edges": 4,
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "nfev": 17,
+      "initial_median_fit_px": 0.8385876439051003,
+      "final_median_fit_px": 0.7929338584821721,
+      "poses": {
+        "2": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "0": [
+          [
+            1.011980143057139,
+            -0.09509372397569098,
+            40.892687300406386
+          ],
+          [
+            -0.05549192990599825,
+            1.0533275975619554,
+            310.56285431999464
+          ],
+          [
+            1.6601460656653945e-05,
+            -3.946997485546591e-05,
+            1.0
+          ]
+        ],
+        "1": [
+          [
+            1.054104446074643,
+            -0.030016077821721086,
+            -8.934577718264674
+          ],
+          [
+            -0.07549155152422869,
+            1.0835492126541846,
+            181.6105900240311
+          ],
+          [
+            2.9148195510623475e-05,
+            -4.3027441894978305e-06,
+            1.0
+          ]
+        ],
+        "3": [
+          [
+            1.004747323592817,
+            0.039313448636574606,
+            -19.552127029045973
+          ],
+          [
+            -0.028760216925124392,
+            0.9777846575872688,
+            -87.51427618328567
+          ],
+          [
+            9.036464615659983e-06,
+            1.3270871337957373e-05,
+            1.0
+          ]
+        ],
+        "4": [
+          [
+            0.8503548308934056,
+            0.033512754115112,
+            63.83353282637089
+          ],
+          [
+            -0.13726294995161487,
+            0.8351057332388548,
+            -36.35696104782997
+          ],
+          [
+            -4.544256409286201e-05,
+            -8.185932065786201e-06,
+            1.0
+          ]
+        ]
+      }
+    },
+    "loftr_metric_free": {
+      "model": "metric_free",
+      "connected_frames": 5,
+      "edges": 4,
+      "optimizer_success": true,
+      "solver_converged": true,
+      "boundary_hits": [],
+      "solver_message": "`ftol` termination condition is satisfied.",
+      "nfev": 40,
+      "parameters": 26,
+      "initial_plane_tilt": [
+        -0.036876060549415245,
+        -0.004427645271169812
+      ],
+      "plane_tilt_rad": [
+        -0.036392436544195536,
+        0.011541534274117493
+      ],
+      "initial_median_fit_px": 8.459225475365686,
+      "median_training_residual_px": 1.5686964176614309,
+      "camera_parameters": {
+        "0": [
+          -0.030911720140279736,
+          0.005899161435202506,
+          -0.046103106363033934,
+          -0.11679132983831225,
+          2.0676654590074697,
+          -0.012097213939282073
+        ],
+        "1": [
+          -0.03563455298109052,
+          0.006728454796183835,
+          -0.020724099233008542,
+          -0.05524872208187222,
+          1.021068353117979,
+          -0.0038724219217122703
+        ],
+        "3": [
+          -0.0379648949315575,
+          0.013252607231982825,
+          0.024115699385586928,
+          0.019528124740904984,
+          -1.066328894623724,
+          0.01655166647092818
+        ],
+        "4": [
+          -0.03402706978533753,
+          0.012624519069261963,
+          0.04681720177925128,
+          0.015075288894700875,
+          -2.1287121134698075,
+          0.034537978455698747
+        ]
+      },
+      "target_height_m": null,
+      "reason": "converged physical plane model",
+      "poses": {
+        "2": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "0": [
+          [
+            0.9203156340466501,
+            -0.0941545301547461,
+            72.1407360588214
+          ],
+          [
+            0.011688812762966277,
+            0.9835626396868336,
+            231.43882612495534
+          ],
+          [
+            -4.204705580207725e-05,
+            -4.1891176621738254e-05,
+            1.0
+          ]
+        ],
+        "1": [
+          [
+            0.947155102507586,
+            -0.03397916597934223,
+            34.5641275909463
+          ],
+          [
+            -0.008919867564267481,
+            1.0080610444878537,
+            110.82386234549541
+          ],
+          [
+            -3.3087654198698235e-05,
+            -1.0662742685816764e-05,
+            1.0
+          ]
+        ],
+        "3": [
+          [
+            1.027063506183671,
+            0.040781992941222665,
+            -36.32496091803648
+          ],
+          [
+            -0.021321498887253248,
+            0.9855569517293963,
+            -96.36313231064022
+          ],
+          [
+            1.5073923298740109e-05,
+            1.4282526348389275e-05,
+            1.0
+          ]
+        ],
+        "4": [
+          [
+            0.984563243822502,
+            0.03797476565078399,
+            -13.404787261851272
+          ],
+          [
+            -0.05250410575650706,
+            0.891852661816191,
+            -135.0475629746605
+          ],
+          [
+            1.4879918735206831e-05,
+            -7.11584877341308e-06,
+            1.0
+          ]
+        ]
+      }
+    }
+  },
+  "methods": {
+    "loftr_homography": {
+      "policies": {
+        "candidate": {
+          "accepted_pixels": 39114,
+          "coverage": 0.8052124505928854,
+          "abstention": 0.19478754940711462,
+          "single_view_pixels": 30135,
+          "multi_view_pixels": 8979,
+          "error": {
+            "pixels": 39114,
+            "mae_255": 6.3571952071721975,
+            "psnr_db": 30.642109409982172,
+            "p90_rgb": 11.333333015441895,
+            "over_20_fraction": 0.0013550135501355014
+          },
+          "gradient": {
+            "pixels": 28122,
+            "gradient_mae": 1.240570068359375,
+            "edge_pixels": 2005,
+            "orientation_error": 0.2913520932197571
+          }
+        },
+        "corroborated": {
+          "accepted_pixels": 3176,
+          "coverage": 0.06538208168642952,
+          "abstention": 0.9346179183135704,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 3176,
+          "error": {
+            "pixels": 3176,
+            "mae_255": 4.349811083123425,
+            "psnr_db": 33.85097643064129,
+            "p90_rgb": 8.0,
+            "over_20_fraction": 0.0
+          },
+          "gradient": {
+            "pixels": 81,
+            "gradient_mae": 1.3810352087020874,
+            "edge_pixels": 6,
+            "orientation_error": 1.8822612762451172
+          }
+        },
+        "strict": {
+          "accepted_pixels": 896,
+          "coverage": 0.01844532279314888,
+          "abstention": 0.9815546772068511,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 896,
+          "error": {
+            "pixels": 896,
+            "mae_255": 3.2172619047619047,
+            "psnr_db": 35.97874121481545,
+            "p90_rgb": 6.333333492279053,
+            "over_20_fraction": 0.0
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          }
+        }
+      },
+      "appearance": {
+        "candidate": {
+          "mask_pixels": 48576,
+          "accepted_pixels": 39114,
+          "accepted_rgb_mae_le_threshold_pixels": {
+            "10": 32993,
+            "20": 39061
+          },
+          "fraction_of_mask_with_rgb_mae_le_threshold": {
+            "10": 0.679203722002635,
+            "20": 0.8041213768115942
+          },
+          "accepted_textured_pixels": 2385,
+          "accepted_low_texture_pixels": 36729
+        },
+        "corroborated": {
+          "mask_pixels": 48576,
+          "accepted_pixels": 3176,
+          "accepted_rgb_mae_le_threshold_pixels": {
+            "10": 3108,
+            "20": 3176
+          },
+          "fraction_of_mask_with_rgb_mae_le_threshold": {
+            "10": 0.06398221343873518,
+            "20": 0.06538208168642952
+          },
+          "accepted_textured_pixels": 127,
+          "accepted_low_texture_pixels": 3049
+        },
+        "strict": {
+          "mask_pixels": 48576,
+          "accepted_pixels": 896,
+          "accepted_rgb_mae_le_threshold_pixels": {
+            "10": 890,
+            "20": 896
+          },
+          "fraction_of_mask_with_rgb_mae_le_threshold": {
+            "10": 0.018321805006587616,
+            "20": 0.01844532279314888
+          },
+          "accepted_textured_pixels": 42,
+          "accepted_low_texture_pixels": 854
+        }
+      },
+      "registrations": [
+        {
+          "method": "homography",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "graph_degree": 1,
+          "reason": "fewer than two graph edges"
+        },
+        {
+          "method": "homography",
+          "accepted": true,
+          "inliers": 77,
+          "median_reprojection_px": 1.3892845434812384,
+          "graph_degree": 2,
+          "heldout_matches": 70,
+          "heldout_inlier_fraction": 0.38571428571428573,
+          "heldout_inliers": 27,
+          "homography": [
+            [
+              1.054104446074643,
+              -0.030016077821721086,
+              -8.934577718264674
+            ],
+            [
+              -0.07549155152422869,
+              1.0835492126541846,
+              181.6105900240311
+            ],
+            [
+              2.9148195510623475e-05,
+              -4.3027441894978305e-06,
+              1.0
+            ]
+          ],
+          "audit_pixels": 108317,
+          "audit_median_rgb": 5.333333492279053,
+          "audit_p90_rgb": 11.0,
+          "reason": "converged geometry and visible-ground audit passed"
+        },
+        {
+          "method": "homography",
+          "accepted": true,
+          "inliers": 90,
+          "median_reprojection_px": 1.4674772409627839,
+          "graph_degree": 2,
+          "heldout_matches": 89,
+          "heldout_inlier_fraction": 0.5168539325842697,
+          "heldout_inliers": 46,
+          "homography": [
+            [
+              1.004747323592817,
+              0.039313448636574606,
+              -19.552127029045973
+            ],
+            [
+              -0.028760216925124392,
+              0.9777846575872688,
+              -87.51427618328567
+            ],
+            [
+              9.036464615659983e-06,
+              1.3270871337957373e-05,
+              1.0
+            ]
+          ],
+          "audit_pixels": 127886,
+          "audit_median_rgb": 5.333333492279053,
+          "audit_p90_rgb": 11.333333015441895,
+          "reason": "converged geometry and visible-ground audit passed"
+        },
+        {
+          "method": "homography",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "graph_degree": 1,
+          "reason": "fewer than two graph edges"
+        }
+      ],
+      "evidence": {
+        "path": "controlled_v1/gironde/groups/rear_strip_mild_loftr_homography.npz",
+        "sha256": "bed62dfcf11f739adf5563c55d96aed851a4f54e80885064c6eb0b5b59924942"
+      }
+    },
+    "loftr_metric_free": {
+      "policies": {
+        "candidate": {
+          "accepted_pixels": 40546,
+          "coverage": 0.8346920289855072,
+          "abstention": 0.1653079710144928,
+          "single_view_pixels": 31606,
+          "multi_view_pixels": 8940,
+          "error": {
+            "pixels": 40546,
+            "mae_255": 6.087628865979381,
+            "psnr_db": 31.017468994491573,
+            "p90_rgb": 11.0,
+            "over_20_fraction": 0.0007399003600848419
+          },
+          "gradient": {
+            "pixels": 30044,
+            "gradient_mae": 1.1913256645202637,
+            "edge_pixels": 2068,
+            "orientation_error": 0.2399110198020935
+          }
+        },
+        "corroborated": {
+          "accepted_pixels": 2910,
+          "coverage": 0.05990612648221344,
+          "abstention": 0.9400938735177866,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 2910,
+          "error": {
+            "pixels": 2910,
+            "mae_255": 3.920274914089347,
+            "psnr_db": 34.62619191863504,
+            "p90_rgb": 7.333333492279053,
+            "over_20_fraction": 0.0
+          },
+          "gradient": {
+            "pixels": 118,
+            "gradient_mae": 1.0946500301361084,
+            "edge_pixels": 2,
+            "orientation_error": 1.853010892868042
+          }
+        },
+        "strict": {
+          "accepted_pixels": 844,
+          "coverage": 0.01737483530961792,
+          "abstention": 0.9826251646903821,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 844,
+          "error": {
+            "pixels": 844,
+            "mae_255": 3.0833333333333335,
+            "psnr_db": 36.46503419756013,
+            "p90_rgb": 5.666666507720947,
+            "over_20_fraction": 0.0
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          }
+        }
+      },
+      "appearance": {
+        "candidate": {
+          "mask_pixels": 48576,
+          "accepted_pixels": 40546,
+          "accepted_rgb_mae_le_threshold_pixels": {
+            "10": 35115,
+            "20": 40516
+          },
+          "fraction_of_mask_with_rgb_mae_le_threshold": {
+            "10": 0.7228878458498024,
+            "20": 0.8340744400527009
+          },
+          "accepted_textured_pixels": 2398,
+          "accepted_low_texture_pixels": 38148
+        },
+        "corroborated": {
+          "mask_pixels": 48576,
+          "accepted_pixels": 2910,
+          "accepted_rgb_mae_le_threshold_pixels": {
+            "10": 2876,
+            "20": 2910
+          },
+          "fraction_of_mask_with_rgb_mae_le_threshold": {
+            "10": 0.05920619235836627,
+            "20": 0.05990612648221344
+          },
+          "accepted_textured_pixels": 96,
+          "accepted_low_texture_pixels": 2814
+        },
+        "strict": {
+          "mask_pixels": 48576,
+          "accepted_pixels": 844,
+          "accepted_rgb_mae_le_threshold_pixels": {
+            "10": 842,
+            "20": 844
+          },
+          "fraction_of_mask_with_rgb_mae_le_threshold": {
+            "10": 0.017333662714097496,
+            "20": 0.01737483530961792
+          },
+          "accepted_textured_pixels": 22,
+          "accepted_low_texture_pixels": 822
+        }
+      },
+      "registrations": [
+        {
+          "method": "metric_free",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "graph_degree": 1,
+          "reason": "fewer than two graph edges"
+        },
+        {
+          "method": "metric_free",
+          "accepted": true,
+          "inliers": 77,
+          "median_reprojection_px": 1.5686964176614309,
+          "graph_degree": 2,
+          "heldout_matches": 70,
+          "heldout_inlier_fraction": 0.42857142857142855,
+          "heldout_inliers": 30,
+          "homography": [
+            [
+              0.947155102507586,
+              -0.03397916597934223,
+              34.5641275909463
+            ],
+            [
+              -0.008919867564267481,
+              1.0080610444878537,
+              110.82386234549541
+            ],
+            [
+              -3.3087654198698235e-05,
+              -1.0662742685816764e-05,
+              1.0
+            ]
+          ],
+          "audit_pixels": 110163,
+          "audit_median_rgb": 5.333333492279053,
+          "audit_p90_rgb": 11.0,
+          "reason": "converged geometry and visible-ground audit passed"
+        },
+        {
+          "method": "metric_free",
+          "accepted": true,
+          "inliers": 90,
+          "median_reprojection_px": 1.5547760138580111,
+          "graph_degree": 2,
+          "heldout_matches": 89,
+          "heldout_inlier_fraction": 0.5056179775280899,
+          "heldout_inliers": 45,
+          "homography": [
+            [
+              1.027063506183671,
+              0.040781992941222665,
+              -36.32496091803648
+            ],
+            [
+              -0.021321498887253248,
+              0.9855569517293963,
+              -96.36313231064022
+            ],
+            [
+              1.5073923298740109e-05,
+              1.4282526348389275e-05,
+              1.0
+            ]
+          ],
+          "audit_pixels": 129146,
+          "audit_median_rgb": 5.333333492279053,
+          "audit_p90_rgb": 11.333333015441895,
+          "reason": "converged geometry and visible-ground audit passed"
+        },
+        {
+          "method": "metric_free",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "graph_degree": 1,
+          "reason": "fewer than two graph edges"
+        }
+      ],
+      "evidence": {
+        "path": "controlled_v1/gironde/groups/rear_strip_mild_loftr_metric_free.npz",
+        "sha256": "a590cf6b662d802645ae95b4b458ec2f55644eb560cbe07a060ab007324ab190"
+      }
+    }
+  },
+  "graph_candidates": 12,
+  "annotated_donors_used": 4,
+  "runtime_seconds": 5.341043249994982
+}
