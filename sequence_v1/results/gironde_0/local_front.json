@@ -1,0 +1,408 @@
+{
+  "case": "gironde_0",
+  "region": "local_front",
+  "signature": {
+    "run_sequence.py": "4b8e540847de34022944139dcccc3f7a65434d7b9f4a48f2a313e69d6527e314",
+    "sequence_geometry.py": "e7ecd253de1ca48076ea56c277533fbdf4438e889625cfb7a279266a87edb31c",
+    "matching_v2.py": "31c21cde51d791a78936145579a49998a1506698a2f78cad3f98574f0e08cf77",
+    "repair.py": "779e3679ae205637fe66cd25f5f7214bc9c6c153d4acfd6b8c9fa8915b8f4c88",
+    "benchmark.py": "18901c663f774dca04b40b9857718a30e3c73b87de888b47ca15d3870f20dd1e",
+    "sequence_protocol": "17754d148852911c3f1acd51a9b43f7baf8c47cddf4ecf608f67febc08baff3a",
+    "baseline_protocol": "f4037b6e0f526654baa3afbf568cfbfa882aff7224ca115b163220770da447c6",
+    "manifest": "1ac8f7cb9c73f316b1636b1da2f27fa3784879eff46009f14efc8854a42097ab"
+  },
+  "created_at_utc": "2026-10-31T07:17:44.578803+00:00",
+  "mask_pixels": 23408,
+  "source_order": [
+    "prev2",
+    "prev1",
+    "next1",
+    "next2"
+  ],
+  "pair_proposals": [
+    {
+      "i": 0,
+      "j": 1,
+      "matches": 0,
+      "accepted": false,
+      "reason": "insufficient matches"
+    },
+    {
+      "i": 0,
+      "j": 2,
+      "matches": 0,
+      "accepted": false,
+      "reason": "insufficient matches"
+    },
+    {
+      "i": 1,
+      "j": 2,
+      "matches": 2,
+      "accepted": false,
+      "reason": "insufficient matches"
+    },
+    {
+      "i": 1,
+      "j": 3,
+      "matches": 1,
+      "accepted": false,
+      "reason": "insufficient matches"
+    },
+    {
+      "i": 2,
+      "j": 3,
+      "matches": 2,
+      "accepted": false,
+      "reason": "insufficient matches"
+    },
+    {
+      "i": 2,
+      "j": 4,
+      "matches": 2,
+      "accepted": false,
+      "reason": "insufficient matches"
+    },
+    {
+      "i": 3,
+      "j": 4,
+      "matches": 31,
+      "accepted": true,
+      "train_inliers": 13,
+      "inlier_ratio": 0.5652173913043478,
+      "validation_matches": 8,
+      "validation_inliers": 7,
+      "validation_fraction": 0.875,
+      "validation_median_px": 2.5834184774797904,
+      "reason": "edge proposal passes held-out correspondence check"
+    }
+  ],
+  "correspondences": [
+    {
+      "i": 0,
+      "j": 1,
+      "path": "correspondences/gironde_0/donor_only_0_1.npz",
+      "sha256": "e245c1070883eff131d81d7cc782ff8a04bf933fa07a3ac2c43dc7719754567b"
+    },
+    {
+      "i": 0,
+      "j": 2,
+      "path": "correspondences/gironde_0/local_front_0_2.npz",
+      "sha256": "e245c1070883eff131d81d7cc782ff8a04bf933fa07a3ac2c43dc7719754567b"
+    },
+    {
+      "i": 1,
+      "j": 2,
+      "path": "correspondences/gironde_0/local_front_1_2.npz",
+      "sha256": "d408d489b9f05106dfb6cfd27b672d9493e5917da5d38241a5e47ed5b3c8ef3d"
+    },
+    {
+      "i": 1,
+      "j": 3,
+      "path": "correspondences/gironde_0/donor_only_1_3.npz",
+      "sha256": "e0c1a54493a363059a6ffaa2a8c59d671e6accacc7c328069a07c273ecdfbbdf"
+    },
+    {
+      "i": 2,
+      "j": 3,
+      "path": "correspondences/gironde_0/local_front_2_3.npz",
+      "sha256": "6f985358684105cfa1002cefb94fba63e20886eb104004d9ab6e4d9e5581182f"
+    },
+    {
+      "i": 2,
+      "j": 4,
+      "path": "correspondences/gironde_0/local_front_2_4.npz",
+      "sha256": "19db4d7d6c7f078b5b8a4c4551d4588c5139e6f2edecbb351da4915740535539"
+    },
+    {
+      "i": 3,
+      "j": 4,
+      "path": "correspondences/gironde_0/donor_only_3_4.npz",
+      "sha256": "4be987734c9203bb10853fad73858da22a71478dc588709bb0408788e3b18191"
+    }
+  ],
+  "graph": {
+    "connected_frames": 1,
+    "reason": "target disconnected",
+    "poses": {
+      "2": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  },
+  "methods": {
+    "tiled_pairwise": {
+      "registrations": [
+        {
+          "source_features": 976,
+          "target_features": 937,
+          "matching_scores": [],
+          "method": "tiled_pairwise_control",
+          "matches": 0,
+          "inliers": 0,
+          "accepted": false,
+          "reason": "fewer than 12 learned matches"
+        },
+        {
+          "source_features": 997,
+          "target_features": 937,
+          "matching_scores": [
+            0.5084493160247803,
+            0.2194579541683197
+          ],
+          "method": "tiled_pairwise_control",
+          "matches": 2,
+          "inliers": 0,
+          "accepted": false,
+          "reason": "fewer than 12 learned matches"
+        },
+        {
+          "source_features": 937,
+          "target_features": 967,
+          "matching_scores": [
+            0.7914782166481018,
+            0.23137754201889038
+          ],
+          "method": "tiled_pairwise_control",
+          "matches": 2,
+          "inliers": 0,
+          "accepted": false,
+          "reason": "fewer than 12 learned matches"
+        },
+        {
+          "source_features": 937,
+          "target_features": 1045,
+          "matching_scores": [
+            0.5266796946525574,
+            0.38537460565567017
+          ],
+          "method": "tiled_pairwise_control",
+          "matches": 2,
+          "inliers": 0,
+          "accepted": false,
+          "reason": "fewer than 12 learned matches"
+        }
+      ],
+      "policies": {
+        "candidate": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          }
+        },
+        "corroborated": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          }
+        },
+        "strict": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          }
+        }
+      }
+    },
+    "sequence_graph": {
+      "registrations": [
+        {
+          "method": "joint_planar_sequence",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "frame disconnected from target"
+        },
+        {
+          "method": "joint_planar_sequence",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "frame disconnected from target"
+        },
+        {
+          "method": "joint_planar_sequence",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "frame disconnected from target"
+        },
+        {
+          "method": "joint_planar_sequence",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "frame disconnected from target"
+        }
+      ],
+      "policies": {
+        "candidate": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          }
+        },
+        "corroborated": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          }
+        },
+        "strict": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          }
+        }
+      }
+    }
+  },
+  "same_pixel_comparison": {
+    "candidate": {
+      "tiled_pairwise": {
+        "pixels": 0,
+        "mae_255": null,
+        "psnr_db": null,
+        "p90_rgb": null,
+        "over_20_fraction": null
+      },
+      "sequence_graph": {
+        "pixels": 0,
+        "mae_255": null,
+        "psnr_db": null,
+        "p90_rgb": null,
+        "over_20_fraction": null
+      }
+    },
+    "corroborated": {
+      "tiled_pairwise": {
+        "pixels": 0,
+        "mae_255": null,
+        "psnr_db": null,
+        "p90_rgb": null,
+        "over_20_fraction": null
+      },
+      "sequence_graph": {
+        "pixels": 0,
+        "mae_255": null,
+        "psnr_db": null,
+        "p90_rgb": null,
+        "over_20_fraction": null
+      }
+    },
+    "strict": {
+      "tiled_pairwise": {
+        "pixels": 0,
+        "mae_255": null,
+        "psnr_db": null,
+        "p90_rgb": null,
+        "over_20_fraction": null
+      },
+      "sequence_graph": {
+        "pixels": 0,
+        "mae_255": null,
+        "psnr_db": null,
+        "p90_rgb": null,
+        "over_20_fraction": null
+      }
+    }
+  },
+  "scene_elapsed_seconds": 21.230633974075317
+}

@@ -1,0 +1,61 @@
+{
+  "name": "sequence_graph_v1",
+  "status": "development experiment; benchmark_v2 preserved",
+  "frames": [
+    "prev2",
+    "prev1",
+    "target",
+    "next1",
+    "next2"
+  ],
+  "feature_variant": "DISK on overlapping 1024px tiles at native nadir resolution; <=2048 spatially distributed features; LightGlue",
+  "edge_proposals": {
+    "fit_fraction": 0.75,
+    "minimum_matches": 16,
+    "minimum_train_inliers": 8,
+    "minimum_inlier_ratio": 0.2,
+    "ransac_px": 3,
+    "validation_px": 5,
+    "minimum_validation_inliers": 3,
+    "minimum_validation_fraction": 0.3
+  },
+  "joint_fit": {
+    "model": "planar homography pose graph, target fixed to identity",
+    "loss": "soft_l1",
+    "f_scale_px": 2,
+    "max_nfev": 120,
+    "maximum_points_per_edge": 160,
+    "validation_fraction": 0.3,
+    "minimum_donor_graph_degree": 2
+  },
+  "final_audit": {
+    "minimum_visible_pixels": 500,
+    "median_rgb_max": 12,
+    "p90_rgb_max": 35,
+    "heldout_inlier_threshold_px": 5
+  },
+  "comparison": "Original pairwise baseline; tiled features with original pairwise geometry; tiled features with joint sequence geometry. Same target masks, donor masks and fusion policies.",
+  "limits": [
+    "No measured camera calibration or full 3D road model yet",
+    "Homographies jointly share a reference plane, not physical metric ground truth",
+    "Graph holdout is correspondence validation, not under-car ground truth",
+    "The same nine scenes are development after repeated iteration"
+  ],
+  "experiment": "trajectory_seeded_flow_v2",
+  "hypothesis": "Neighbor road geometry plus GPS provides scale and an initial search location when descriptor matching fails across the target.",
+  "correspondences": {
+    "method": "masked Shi-Tomasi and prior-initialized Lucas-Kanade",
+    "prior": "GPS headings and median scale from accepted v1 sequence edges, per region",
+    "window": 21,
+    "pyramid_levels": 2,
+    "mask_margin": 48,
+    "cycle_error_px": 1,
+    "patch_zncc_min": 0.85,
+    "max_displacement_from_prior_px": 100
+  },
+  "controls": [
+    "benchmark_v2",
+    "sequence_v1",
+    "same trajectory matches pairwise"
+  ]
+}

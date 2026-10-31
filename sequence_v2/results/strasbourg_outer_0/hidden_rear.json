@@ -1,0 +1,1271 @@
+{
+  "case": "strasbourg_outer_0",
+  "region": "hidden_rear",
+  "signature": {
+    "run_trajectory.py": "965396f35ddbff2c1b377761b22b9dd5b4eab60e606d3dcce5a7512d21f82788",
+    "trajectory_matching.py": "ba7def19017d7d9750cb4dab41946ae72d1f987da35da183b22ca02d040d26c3",
+    "sequence_geometry.py": "e7ecd253de1ca48076ea56c277533fbdf4438e889625cfb7a279266a87edb31c",
+    "matching_v2.py": "31c21cde51d791a78936145579a49998a1506698a2f78cad3f98574f0e08cf77",
+    "repair.py": "779e3679ae205637fe66cd25f5f7214bc9c6c153d4acfd6b8c9fa8915b8f4c88",
+    "benchmark.py": "18901c663f774dca04b40b9857718a30e3c73b87de888b47ca15d3870f20dd1e",
+    "sequence_protocol": "8f6336926a450283c2b2f69a1033b1271fe0279754d2aba547396c2a33758816",
+    "baseline_protocol": "f4037b6e0f526654baa3afbf568cfbfa882aff7224ca115b163220770da447c6",
+    "manifest": "6fed508fe27ee1420e243a8396a68f21bc63fc618b5612b1de65d7a0209cfd51"
+  },
+  "created_at_utc": "2026-10-31T07:29:31.998991+00:00",
+  "mask_pixels": 219672,
+  "source_order": [
+    "prev2",
+    "prev1",
+    "next1",
+    "next2"
+  ],
+  "trajectory_prior": {
+    "pixels_per_meter": 75.80854312719225,
+    "scale_edge_count": 3,
+    "edge_scales": [
+      {
+        "i": 0,
+        "j": 1,
+        "pixels_per_meter": 77.65178336912334
+      },
+      {
+        "i": 1,
+        "j": 2,
+        "pixels_per_meter": 67.06656553082135
+      },
+      {
+        "i": 3,
+        "j": 4,
+        "pixels_per_meter": 75.80854312719225
+      }
+    ],
+    "scale_mad": 1.8432402419310847
+  },
+  "pair_proposals": [
+    {
+      "i": 0,
+      "j": 1,
+      "matches": 32,
+      "accepted": true,
+      "train_inliers": 21,
+      "inlier_ratio": 0.875,
+      "validation_matches": 8,
+      "validation_inliers": 6,
+      "validation_fraction": 0.75,
+      "validation_median_px": 1.4805092301344187,
+      "reason": "edge proposal passes held-out correspondence check",
+      "tracking": {
+        "corners": 3500,
+        "prior_visible": 2725,
+        "cycle_pass": 169,
+        "tracked": 32
+      }
+    },
+    {
+      "i": 0,
+      "j": 2,
+      "matches": 9,
+      "accepted": false,
+      "reason": "insufficient matches",
+      "tracking": {
+        "corners": 3500,
+        "prior_visible": 1743,
+        "cycle_pass": 15,
+        "tracked": 9
+      }
+    },
+    {
+      "i": 1,
+      "j": 2,
+      "matches": 29,
+      "accepted": true,
+      "train_inliers": 21,
+      "inlier_ratio": 1.0,
+      "validation_matches": 8,
+      "validation_inliers": 8,
+      "validation_fraction": 1.0,
+      "validation_median_px": 1.426061083898448,
+      "reason": "edge proposal passes held-out correspondence check",
+      "tracking": {
+        "corners": 3500,
+        "prior_visible": 2523,
+        "cycle_pass": 77,
+        "tracked": 29
+      }
+    },
+    {
+      "i": 1,
+      "j": 3,
+      "matches": 4,
+      "accepted": false,
+      "reason": "insufficient matches",
+      "tracking": {
+        "corners": 3500,
+        "prior_visible": 1538,
+        "cycle_pass": 13,
+        "tracked": 4
+      }
+    },
+    {
+      "i": 2,
+      "j": 3,
+      "matches": 47,
+      "accepted": true,
+      "train_inliers": 35,
+      "inlier_ratio": 1.0,
+      "validation_matches": 12,
+      "validation_inliers": 12,
+      "validation_fraction": 1.0,
+      "validation_median_px": 1.1510162366126706,
+      "reason": "edge proposal passes held-out correspondence check",
+      "tracking": {
+        "corners": 2987,
+        "prior_visible": 2774,
+        "cycle_pass": 152,
+        "tracked": 47
+      }
+    },
+    {
+      "i": 2,
+      "j": 4,
+      "matches": 1,
+      "accepted": false,
+      "reason": "insufficient matches",
+      "tracking": {
+        "corners": 2987,
+        "prior_visible": 2558,
+        "cycle_pass": 5,
+        "tracked": 1
+      }
+    },
+    {
+      "i": 3,
+      "j": 4,
+      "matches": 28,
+      "accepted": true,
+      "train_inliers": 17,
+      "inlier_ratio": 0.8095238095238095,
+      "validation_matches": 7,
+      "validation_inliers": 6,
+      "validation_fraction": 0.8571428571428571,
+      "validation_median_px": 0.5806862971694465,
+      "reason": "edge proposal passes held-out correspondence check",
+      "tracking": {
+        "corners": 3500,
+        "prior_visible": 2943,
+        "cycle_pass": 53,
+        "tracked": 28
+      }
+    }
+  ],
+  "correspondences": [
+    {
+      "i": 0,
+      "j": 1,
+      "path": "correspondences/strasbourg_outer_0/hidden_rear_0_1.npz",
+      "sha256": "5df0015b09dc734afac2d1415245f79d202372efa9ba6b3434abb2530858a0cc"
+    },
+    {
+      "i": 0,
+      "j": 2,
+      "path": "correspondences/strasbourg_outer_0/hidden_rear_0_2.npz",
+      "sha256": "0f498ca2ff38b26c4d6a5733b19f00033f22f78cca82b9bcc07237a77b647ebc"
+    },
+    {
+      "i": 1,
+      "j": 2,
+      "path": "correspondences/strasbourg_outer_0/hidden_rear_1_2.npz",
+      "sha256": "46c1bda4ac58f1aa4c66b320554c55bcadf34490732df9fa6aa29d63ed2865e8"
+    },
+    {
+      "i": 1,
+      "j": 3,
+      "path": "correspondences/strasbourg_outer_0/hidden_rear_1_3.npz",
+      "sha256": "b0d26e45804a312f22f0a243c6e9d4cc50d0413d2a779b33e0090fd79c9fd972"
+    },
+    {
+      "i": 2,
+      "j": 3,
+      "path": "correspondences/strasbourg_outer_0/hidden_rear_2_3.npz",
+      "sha256": "7110f673a19d457b26112793ad06dd917e14721833e40bc774f9daf2c7098f45"
+    },
+    {
+      "i": 2,
+      "j": 4,
+      "path": "correspondences/strasbourg_outer_0/hidden_rear_2_4.npz",
+      "sha256": "e3982997263d74bcbe41720123bcac1225d98fbc1037747bb2fd3ddbda3be83c"
+    },
+    {
+      "i": 3,
+      "j": 4,
+      "path": "correspondences/strasbourg_outer_0/hidden_rear_3_4.npz",
+      "sha256": "333b9416540f0235a0d9adc4aadcde37c3291c29ca19f685c73514a49ea51840"
+    }
+  ],
+  "graph": {
+    "connected_frames": 5,
+    "edges": 4,
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied.",
+    "nfev": 35,
+    "initial_median_fit_px": 0.32272168780752963,
+    "final_median_fit_px": 0.33150735700405676,
+    "poses": {
+      "2": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "0": [
+        [
+          -4.292480260512503,
+          -0.35036785610271565,
+          2350.163386352372
+        ],
+        [
+          -5.928875683063261,
+          -2.410485457180571,
+          4204.4531191775195
+        ],
+        [
+          -0.0029579850871305183,
+          -0.0003804081419273136,
+          1.0
+        ]
+      ],
+      "1": [
+        [
+          0.9658956438944358,
+          0.12899851831103734,
+          -31.266288736855206
+        ],
+        [
+          -0.04414712850323243,
+          1.165865637948228,
+          341.94671426295474
+        ],
+        [
+          -5.1977943024472835e-05,
+          0.00011728841937827915,
+          1.0
+        ]
+      ],
+      "3": [
+        [
+          0.46114330897573935,
+          0.03440551735928764,
+          254.17184582553904
+        ],
+        [
+          -0.14541715456231216,
+          0.7708494426577613,
+          -174.48468582224413
+        ],
+        [
+          -0.00028958283671931605,
+          3.47705422593529e-05,
+          1.0
+        ]
+      ],
+      "4": [
+        [
+          0.6507944923149246,
+          0.030860399767706947,
+          143.8541293606177
+        ],
+        [
+          -0.2508121993800583,
+          0.8798561712424945,
+          -487.4526939943381
+        ],
+        [
+          -0.00021462595413554436,
+          3.1609179085768406e-05,
+          1.0
+        ]
+      ]
+    }
+  },
+  "methods": {
+    "trajectory_pairwise": {
+      "registrations": [
+        {
+          "corners": 3500,
+          "prior_visible": 1743,
+          "cycle_pass": 15,
+          "tracked": 9,
+          "method": "trajectory_pairwise_control",
+          "matches": 9,
+          "inliers": 0,
+          "accepted": false,
+          "reason": "fewer than 12 learned matches"
+        },
+        {
+          "corners": 3500,
+          "prior_visible": 2523,
+          "cycle_pass": 77,
+          "tracked": 29,
+          "method": "trajectory_pairwise_control",
+          "matches": 29,
+          "inliers": 29,
+          "accepted": true,
+          "inlier_ratio": 1.0,
+          "median_reprojection_px": 0.9555763006210327,
+          "inlier_hull_fraction": 0.045404961394492446,
+          "homography": [
+            [
+              0.8828212118054589,
+              0.11535672901051902,
+              16.372816412044628
+            ],
+            [
+              -0.06818711671568792,
+              1.109514843856249,
+              356.6158471294646
+            ],
+            [
+              -8.79899317320294e-05,
+              0.00010435585259918637,
+              1.0
+            ]
+          ],
+          "source_inliers": [
+            [
+              990.0,
+              304.0
+            ],
+            [
+              991.0,
+              207.0
+            ],
+            [
+              814.0,
+              1603.0
+            ],
+            [
+              835.0,
+              1628.0
+            ],
+            [
+              828.0,
+              1617.0
+            ],
+            [
+              846.0,
+              1642.0
+            ],
+            [
+              834.0,
+              1636.0
+            ],
+            [
+              822.0,
+              1609.0
+            ],
+            [
+              1186.0,
+              170.0
+            ],
+            [
+              811.0,
+              1589.0
+            ],
+            [
+              822.0,
+              1593.0
+            ],
+            [
+              1187.0,
+              276.0
+            ],
+            [
+              830.0,
+              1599.0
+            ],
+            [
+              1092.0,
+              11.0
+            ],
+            [
+              1190.0,
+              158.0
+            ],
+            [
+              1193.0,
+              308.0
+            ],
+            [
+              841.0,
+              1617.0
+            ],
+            [
+              985.0,
+              336.0
+            ],
+            [
+              984.0,
+              327.0
+            ],
+            [
+              836.0,
+              1608.0
+            ],
+            [
+              1140.0,
+              142.0
+            ],
+            [
+              1191.0,
+              269.0
+            ],
+            [
+              1131.0,
+              157.0
+            ],
+            [
+              1169.0,
+              242.0
+            ],
+            [
+              996.0,
+              338.0
+            ],
+            [
+              993.0,
+              318.0
+            ],
+            [
+              995.0,
+              326.0
+            ],
+            [
+              999.0,
+              181.0
+            ],
+            [
+              1092.0,
+              3.0
+            ]
+          ],
+          "target_inliers": [
+            [
+              979.9334106445312,
+              663.6766967773438
+            ],
+            [
+              979.1885986328125,
+              554.2703247070312
+            ],
+            [
+              838.7147216796875,
+              1898.893798828125
+            ],
+            [
+              858.1585083007812,
+              1921.2403564453125
+            ],
+            [
+              851.6751708984375,
+              1911.5679931640625
+            ],
+            [
+              869.4427490234375,
+              1935.57568359375
+            ],
+            [
+              857.1315307617188,
+              1929.0634765625
+            ],
+            [
+              846.3565673828125,
+              1904.58203125
+            ],
+            [
+              1185.67138671875,
+              508.8254089355469
+            ],
+            [
+              836.2970581054688,
+              1885.2713623046875
+            ],
+            [
+              846.6454467773438,
+              1889.14208984375
+            ],
+            [
+              1185.8687744140625,
+              628.7467041015625
+            ],
+            [
+              854.29638671875,
+              1894.83154296875
+            ],
+            [
+              1084.6240234375,
+              324.15484619140625
+            ],
+            [
+              1189.5714111328125,
+              496.9144287109375
+            ],
+            [
+              1192.5191650390625,
+              664.7239990234375
+            ],
+            [
+              863.947509765625,
+              1910.334228515625
+            ],
+            [
+              975.2901000976562,
+              698.5599975585938
+            ],
+            [
+              974.1812744140625,
+              689.1671752929688
+            ],
+            [
+              859.5067138671875,
+              1902.8358154296875
+            ],
+            [
+              1136.123291015625,
+              478.4873046875
+            ],
+            [
+              1190.0758056640625,
+              621.8021240234375
+            ],
+            [
+              1126.771728515625,
+              493.5121154785156
+            ],
+            [
+              1166.5098876953125,
+              589.4791259765625
+            ],
+            [
+              986.3717041015625,
+              700.6531372070312
+            ],
+            [
+              983.0635986328125,
+              680.2023315429688
+            ],
+            [
+              985.2308349609375,
+              687.4006958007812
+            ],
+            [
+              987.146728515625,
+              524.0770874023438
+            ],
+            [
+              1084.521484375,
+              316.0339050292969
+            ]
+          ],
+          "cv_p90_px": 2.1132948875427244,
+          "audit_pixels": 103616,
+          "audit_median_rgb": 3.3333332538604736,
+          "audit_p90_rgb": 8.0,
+          "reason": "accepted audited planar registration"
+        },
+        {
+          "corners": 2987,
+          "prior_visible": 2774,
+          "cycle_pass": 152,
+          "tracked": 47,
+          "method": "trajectory_pairwise_control",
+          "matches": 47,
+          "inliers": 47,
+          "accepted": false,
+          "inlier_ratio": 1.0,
+          "median_reprojection_px": 0.7335337996482849,
+          "inlier_hull_fraction": 0.003500826446280992,
+          "homography": [
+            [
+              0.6828371531519403,
+              0.01678548818902255,
+              154.57588038724398
+            ],
+            [
+              -0.1390883549839608,
+              0.8803725441994408,
+              -224.95906269221393
+            ],
+            [
+              -0.00016727635083718502,
+              1.604836272011382e-05,
+              0.9999999999999999
+            ]
+          ],
+          "source_inliers": [
+            [
+              966.0115356445312,
+              595.1675415039062
+            ],
+            [
+              983.912841796875,
+              584.2531127929688
+            ],
+            [
+              907.1572265625,
+              547.6926879882812
+            ],
+            [
+              958.2708129882812,
+              489.6497497558594
+            ],
+            [
+              979.072265625,
+              575.651123046875
+            ],
+            [
+              915.1580200195312,
+              554.6226806640625
+            ],
+            [
+              970.1259765625,
+              538.2470703125
+            ],
+            [
+              961.0567626953125,
+              502.44500732421875
+            ],
+            [
+              880.6826782226562,
+              516.5783081054688
+            ],
+            [
+              967.1305541992188,
+              527.7769165039062
+            ],
+            [
+              927.8080444335938,
+              522.92529296875
+            ],
+            [
+              999.6884765625,
+              604.8601684570312
+            ],
+            [
+              931.3560180664062,
+              570.5853881835938
+            ],
+            [
+              933.266357421875,
+              535.4094848632812
+            ],
+            [
+              970.1072387695312,
+              581.057373046875
+            ],
+            [
+              964.1357421875,
+              565.9569702148438
+            ],
+            [
+              904.0571899414062,
+              556.294921875
+            ],
+            [
+              990.3750610351562,
+              568.5925903320312
+            ],
+            [
+              981.2015991210938,
+              484.59619140625
+            ],
+            [
+              959.1399536132812,
+              517.130615234375
+            ],
+            [
+              975.0586547851562,
+              561.5120849609375
+            ],
+            [
+              953.1533203125,
+              568.0533447265625
+            ],
+            [
+              961.1591796875,
+              537.2162475585938
+            ],
+            [
+              964.1932373046875,
+              476.61370849609375
+            ],
+            [
+              971.1380004882812,
+              547.8734741210938
+            ],
+            [
+              983.08203125,
+              700.1456909179688
+            ],
+            [
+              921.9324340820312,
+              530.2264404296875
+            ],
+            [
+              959.1785278320312,
+              544.2728271484375
+            ],
+            [
+              971.1635131835938,
+              519.5086059570312
+            ],
+            [
+              963.2805786132812,
+              441.77435302734375
+            ],
+            [
+              972.2255249023438,
+              480.9713134765625
+            ],
+            [
+              973.1029052734375,
+              495.0428161621094
+            ],
+            [
+              872.5160522460938,
+              521.4286499023438
+            ],
+            [
+              955.1384887695312,
+              579.8538208007812
+            ],
+            [
+              979.0802612304688,
+              535.4445190429688
+            ],
+            [
+              972.2071533203125,
+              471.1927185058594
+            ],
+            [
+              969.1841430664062,
+              461.5849304199219
+            ],
+            [
+              971.2770385742188,
+              444.8743896484375
+            ],
+            [
+              962.256103515625,
+              455.9870910644531
+            ],
+            [
+              961.1827392578125,
+              554.472412109375
+            ],
+            [
+              955.1514892578125,
+              527.0052490234375
+            ],
+            [
+              955.052490234375,
+              587.91455078125
+            ],
+            [
+              955.2192993164062,
+              477.02154541015625
+            ],
+            [
+              954.9967651367188,
+              595.9793701171875
+            ],
+            [
+              953.22265625,
+              455.7242736816406
+            ],
+            [
+              921.7462158203125,
+              543.218017578125
+            ],
+            [
+              977.1307373046875,
+              461.9987487792969
+            ]
+          ],
+          "target_inliers": [
+            [
+              972.0,
+              194.0
+            ],
+            [
+              990.0,
+              181.0
+            ],
+            [
+              914.0,
+              153.0
+            ],
+            [
+              964.0,
+              85.0
+            ],
+            [
+              985.0,
+              172.0
+            ],
+            [
+              922.0,
+              160.0
+            ],
+            [
+              976.0,
+              135.0
+            ],
+            [
+              967.0,
+              100.0
+            ],
+            [
+              888.0,
+              126.0
+            ],
+            [
+              973.0,
+              124.0
+            ],
+            [
+              934.0,
+              124.0
+            ],
+            [
+              1006.0,
+              202.0
+            ],
+            [
+              938.0,
+              174.0
+            ],
+            [
+              940.0,
+              138.0
+            ],
+            [
+              976.0,
+              178.0
+            ],
+            [
+              970.0,
+              163.0
+            ],
+            [
+              911.0,
+              162.0
+            ],
+            [
+              996.0,
+              164.0
+            ],
+            [
+              987.0,
+              77.0
+            ],
+            [
+              965.0,
+              113.0
+            ],
+            [
+              981.0,
+              157.0
+            ],
+            [
+              959.0,
+              168.0
+            ],
+            [
+              967.0,
+              134.0
+            ],
+            [
+              970.0,
+              71.0
+            ],
+            [
+              977.0,
+              145.0
+            ],
+            [
+              989.0,
+              301.0
+            ],
+            [
+              928.0,
+              132.0
+            ],
+            [
+              965.0,
+              142.0
+            ],
+            [
+              977.0,
+              115.0
+            ],
+            [
+              969.0,
+              35.0
+            ],
+            [
+              978.0,
+              74.0
+            ],
+            [
+              979.0,
+              92.0
+            ],
+            [
+              880.0,
+              131.0
+            ],
+            [
+              961.0,
+              179.0
+            ],
+            [
+              985.0,
+              132.0
+            ],
+            [
+              978.0,
+              65.0
+            ],
+            [
+              975.0,
+              56.0
+            ],
+            [
+              977.0,
+              37.0
+            ],
+            [
+              968.0,
+              49.0
+            ],
+            [
+              967.0,
+              153.0
+            ],
+            [
+              961.0,
+              124.0
+            ],
+            [
+              961.0,
+              187.0
+            ],
+            [
+              961.0,
+              71.0
+            ],
+            [
+              961.0,
+              195.0
+            ],
+            [
+              959.0,
+              52.0
+            ],
+            [
+              928.0,
+              147.0
+            ],
+            [
+              983.0,
+              57.0
+            ]
+          ],
+          "reason": "weak or concentrated correspondence support"
+        },
+        {
+          "corners": 2987,
+          "prior_visible": 2558,
+          "cycle_pass": 5,
+          "tracked": 1,
+          "method": "trajectory_pairwise_control",
+          "matches": 1,
+          "inliers": 0,
+          "accepted": false,
+          "reason": "fewer than 12 learned matches"
+        }
+      ],
+      "policies": {
+        "candidate": {
+          "accepted_pixels": 1302,
+          "coverage": 0.0059270184638916205,
+          "single_view_pixels": 1302,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 1302,
+            "mae_255": 6.145161290322581,
+            "psnr_db": 30.647315402964228,
+            "p90_rgb": 11.0,
+            "over_20_fraction": 0.0015360983102918587
+          },
+          "telea_same_pixels": {
+            "pixels": 1302,
+            "mae_255": 2.9278033794162828,
+            "psnr_db": 36.79570885216481,
+            "p90_rgb": 6.0,
+            "over_20_fraction": 0.0
+          }
+        },
+        "corroborated": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          }
+        },
+        "strict": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          }
+        }
+      }
+    },
+    "sequence_graph": {
+      "registrations": [
+        {
+          "method": "joint_planar_sequence",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "graph_degree": 1,
+          "reason": "fewer than two graph edges"
+        },
+        {
+          "method": "joint_planar_sequence",
+          "accepted": true,
+          "inliers": 42,
+          "median_reprojection_px": 0.6230423153445384,
+          "graph_degree": 2,
+          "heldout_matches": 16,
+          "heldout_inlier_fraction": 0.875,
+          "heldout_inliers": 14,
+          "heldout_inlier_median_px": 1.123968381784711,
+          "homography": [
+            [
+              0.9658956438944358,
+              0.12899851831103734,
+              -31.266288736855206
+            ],
+            [
+              -0.04414712850323243,
+              1.165865637948228,
+              341.94671426295474
+            ],
+            [
+              -5.1977943024472835e-05,
+              0.00011728841937827915,
+              1.0
+            ]
+          ],
+          "audit_pixels": 105623,
+          "audit_median_rgb": 3.3333332538604736,
+          "audit_p90_rgb": 8.0,
+          "reason": "joint sequence geometry and visible-ground audit passed"
+        },
+        {
+          "method": "joint_planar_sequence",
+          "accepted": true,
+          "inliers": 52,
+          "median_reprojection_px": 0.6875872226805024,
+          "graph_degree": 2,
+          "heldout_matches": 19,
+          "heldout_inlier_fraction": 0.9473684210526315,
+          "heldout_inliers": 18,
+          "heldout_inlier_median_px": 1.109516968158959,
+          "homography": [
+            [
+              0.46114330897573935,
+              0.03440551735928764,
+              254.17184582553904
+            ],
+            [
+              -0.14541715456231216,
+              0.7708494426577613,
+              -174.48468582224413
+            ],
+            [
+              -0.00028958283671931605,
+              3.47705422593529e-05,
+              1.0
+            ]
+          ],
+          "audit_pixels": 91804,
+          "audit_median_rgb": 3.3333332538604736,
+          "audit_p90_rgb": 7.666666507720947,
+          "reason": "joint sequence geometry and visible-ground audit passed"
+        },
+        {
+          "method": "joint_planar_sequence",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "graph_degree": 1,
+          "reason": "fewer than two graph edges"
+        }
+      ],
+      "policies": {
+        "candidate": {
+          "accepted_pixels": 2091,
+          "coverage": 0.009518737026111657,
+          "single_view_pixels": 2091,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 2091,
+            "mae_255": 6.578032839151921,
+            "psnr_db": 30.126346003547585,
+            "p90_rgb": 11.333333015441895,
+            "over_20_fraction": 0.0009564801530368245
+          },
+          "telea_same_pixels": {
+            "pixels": 2091,
+            "mae_255": 2.697274031563845,
+            "psnr_db": 37.419112100104186,
+            "p90_rgb": 5.333333492279053,
+            "over_20_fraction": 0.0
+          }
+        },
+        "corroborated": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          }
+        },
+        "strict": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          }
+        }
+      }
+    }
+  },
+  "same_pixel_comparison": {
+    "candidate": {
+      "trajectory_pairwise": {
+        "pixels": 1302,
+        "mae_255": 6.145161290322581,
+        "psnr_db": 30.647315402964228,
+        "p90_rgb": 11.0,
+        "over_20_fraction": 0.0015360983102918587
+      },
+      "sequence_graph": {
+        "pixels": 1302,
+        "mae_255": 6.150793650793651,
+        "psnr_db": 30.608036963068624,
+        "p90_rgb": 11.333333015441895,
+        "over_20_fraction": 0.0015360983102918587
+      }
+    },
+    "corroborated": {
+      "trajectory_pairwise": {
+        "pixels": 0,
+        "mae_255": null,
+        "psnr_db": null,
+        "p90_rgb": null,
+        "over_20_fraction": null
+      },
+      "sequence_graph": {
+        "pixels": 0,
+        "mae_255": null,
+        "psnr_db": null,
+        "p90_rgb": null,
+        "over_20_fraction": null
+      }
+    },
+    "strict": {
+      "trajectory_pairwise": {
+        "pixels": 0,
+        "mae_255": null,
+        "psnr_db": null,
+        "p90_rgb": null,
+        "over_20_fraction": null
+      },
+      "sequence_graph": {
+        "pixels": 0,
+        "mae_255": null,
+        "psnr_db": null,
+        "p90_rgb": null,
+        "over_20_fraction": null
+      }
+    }
+  },
+  "scene_elapsed_seconds": 5.626485109329224
+}

@@ -1,0 +1,850 @@
+{
+  "case": "dev_paving",
+  "region": "hidden_rear",
+  "signature": {
+    "run_sequence.py": "4b8e540847de34022944139dcccc3f7a65434d7b9f4a48f2a313e69d6527e314",
+    "sequence_geometry.py": "e7ecd253de1ca48076ea56c277533fbdf4438e889625cfb7a279266a87edb31c",
+    "matching_v2.py": "31c21cde51d791a78936145579a49998a1506698a2f78cad3f98574f0e08cf77",
+    "repair.py": "779e3679ae205637fe66cd25f5f7214bc9c6c153d4acfd6b8c9fa8915b8f4c88",
+    "benchmark.py": "18901c663f774dca04b40b9857718a30e3c73b87de888b47ca15d3870f20dd1e",
+    "sequence_protocol": "17754d148852911c3f1acd51a9b43f7baf8c47cddf4ecf608f67febc08baff3a",
+    "baseline_protocol": "f4037b6e0f526654baa3afbf568cfbfa882aff7224ca115b163220770da447c6",
+    "manifest": "5cadcc2208a67bb7cd3921a773dc60b39d24ff7f0434f892b265e9ea51e9c6e3"
+  },
+  "created_at_utc": "2026-10-31T07:20:16.674595+00:00",
+  "mask_pixels": 234678,
+  "source_order": [
+    "prev2",
+    "prev1",
+    "next1",
+    "next2"
+  ],
+  "pair_proposals": [
+    {
+      "i": 0,
+      "j": 1,
+      "matches": 0,
+      "accepted": false,
+      "reason": "insufficient matches"
+    },
+    {
+      "i": 0,
+      "j": 2,
+      "matches": 0,
+      "accepted": false,
+      "reason": "insufficient matches"
+    },
+    {
+      "i": 1,
+      "j": 2,
+      "matches": 67,
+      "accepted": true,
+      "train_inliers": 32,
+      "inlier_ratio": 0.64,
+      "validation_matches": 17,
+      "validation_inliers": 13,
+      "validation_fraction": 0.7647058823529411,
+      "validation_median_px": 2.879453032869621,
+      "reason": "edge proposal passes held-out correspondence check"
+    },
+    {
+      "i": 1,
+      "j": 3,
+      "matches": 0,
+      "accepted": false,
+      "reason": "insufficient matches"
+    },
+    {
+      "i": 2,
+      "j": 3,
+      "matches": 0,
+      "accepted": false,
+      "reason": "insufficient matches"
+    },
+    {
+      "i": 2,
+      "j": 4,
+      "matches": 0,
+      "accepted": false,
+      "reason": "insufficient matches"
+    },
+    {
+      "i": 3,
+      "j": 4,
+      "matches": 7,
+      "accepted": false,
+      "reason": "insufficient matches"
+    }
+  ],
+  "correspondences": [
+    {
+      "i": 0,
+      "j": 1,
+      "path": "correspondences/dev_paving/donor_only_0_1.npz",
+      "sha256": "e245c1070883eff131d81d7cc782ff8a04bf933fa07a3ac2c43dc7719754567b"
+    },
+    {
+      "i": 0,
+      "j": 2,
+      "path": "correspondences/dev_paving/hidden_rear_0_2.npz",
+      "sha256": "e245c1070883eff131d81d7cc782ff8a04bf933fa07a3ac2c43dc7719754567b"
+    },
+    {
+      "i": 1,
+      "j": 2,
+      "path": "correspondences/dev_paving/hidden_rear_1_2.npz",
+      "sha256": "628bdb156f3979811394e7c56f9e76820c7bf8f735c510ddfd853c636f8ab035"
+    },
+    {
+      "i": 1,
+      "j": 3,
+      "path": "correspondences/dev_paving/donor_only_1_3.npz",
+      "sha256": "e245c1070883eff131d81d7cc782ff8a04bf933fa07a3ac2c43dc7719754567b"
+    },
+    {
+      "i": 2,
+      "j": 3,
+      "path": "correspondences/dev_paving/hidden_rear_2_3.npz",
+      "sha256": "e245c1070883eff131d81d7cc782ff8a04bf933fa07a3ac2c43dc7719754567b"
+    },
+    {
+      "i": 2,
+      "j": 4,
+      "path": "correspondences/dev_paving/hidden_rear_2_4.npz",
+      "sha256": "e245c1070883eff131d81d7cc782ff8a04bf933fa07a3ac2c43dc7719754567b"
+    },
+    {
+      "i": 3,
+      "j": 4,
+      "path": "correspondences/dev_paving/donor_only_3_4.npz",
+      "sha256": "e374957df27745d1c5dafe73d8f4dc6efcc06bcc8c4ddd856bb782eb5ae8cf87"
+    }
+  ],
+  "graph": {
+    "connected_frames": 2,
+    "edges": 1,
+    "optimizer_success": true,
+    "optimizer_message": "`ftol` termination condition is satisfied.",
+    "nfev": 46,
+    "initial_median_fit_px": 1.2380513919203509,
+    "final_median_fit_px": 0.8142754397215981,
+    "poses": {
+      "2": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "1": [
+        [
+          0.4880444911445225,
+          -0.07283177668971967,
+          222.53808820957371
+        ],
+        [
+          -0.3964904132670122,
+          0.4927818526032166,
+          747.7620685004983
+        ],
+        [
+          -0.00019356598062622937,
+          -0.0001570291105905662,
+          1.0
+        ]
+      ]
+    }
+  },
+  "methods": {
+    "tiled_pairwise": {
+      "registrations": [
+        {
+          "source_features": 520,
+          "target_features": 1094,
+          "matching_scores": [],
+          "method": "tiled_pairwise_control",
+          "matches": 0,
+          "inliers": 0,
+          "accepted": false,
+          "reason": "fewer than 12 learned matches"
+        },
+        {
+          "source_features": 1423,
+          "target_features": 1094,
+          "matching_scores": [
+            0.9928116798400879,
+            0.9930946826934814,
+            0.33783823251724243,
+            0.9272881150245667,
+            0.9958842992782593,
+            0.991786003112793,
+            0.9984902143478394,
+            0.302056223154068,
+            0.985895037651062,
+            0.9974289536476135,
+            0.9943548440933228,
+            0.9962173700332642,
+            0.9911565780639648,
+            0.9207655787467957,
+            0.9729150533676147,
+            0.9516355395317078,
+            0.9823358654975891,
+            0.9976248741149902,
+            0.9915125966072083,
+            0.9985116720199585,
+            0.9374890327453613,
+            0.6465197801589966,
+            0.5152960419654846,
+            0.9847285151481628,
+            0.893271803855896,
+            0.9804986119270325,
+            0.942478358745575,
+            0.9815320372581482,
+            0.9769792556762695,
+            0.9890708923339844,
+            0.301901638507843,
+            0.7744277119636536,
+            0.41396117210388184,
+            0.4670863151550293,
+            0.9962793588638306,
+            0.9907930493354797,
+            0.9670929312705994,
+            0.517717719078064,
+            0.9858091473579407,
+            0.9687613248825073,
+            0.9975956678390503,
+            0.9169997572898865,
+            0.985719621181488,
+            0.9649489521980286,
+            0.7120553255081177,
+            0.9594179391860962,
+            0.9857488870620728,
+            0.7635610699653625,
+            0.9744426012039185,
+            0.3932245373725891,
+            0.9739906787872314,
+            0.9476917386054993,
+            0.9775736331939697,
+            0.7847610712051392,
+            0.9982869029045105,
+            0.585634708404541,
+            0.67733234167099,
+            0.9986591935157776,
+            0.2207963615655899,
+            0.9976620078086853,
+            0.9961438775062561,
+            0.9864874482154846,
+            0.21539895236492157,
+            0.8241245746612549,
+            0.9924924373626709,
+            0.9968247413635254,
+            0.9939582943916321
+          ],
+          "method": "tiled_pairwise_control",
+          "matches": 67,
+          "inliers": 42,
+          "accepted": false,
+          "inlier_ratio": 0.6268656716417911,
+          "median_reprojection_px": 1.8427975177764893,
+          "inlier_hull_fraction": 0.0022945247933884296,
+          "homography": [
+            [
+              1.667334237753144,
+              -0.023929004979509297,
+              -324.5203201444464
+            ],
+            [
+              0.669340636689742,
+              1.1847288668498817,
+              -53.983430004432094
+            ],
+            [
+              0.0005191197047063498,
+              -0.00015866139275582175,
+              0.9999999999999999
+            ]
+          ],
+          "source_inliers": [
+            [
+              861.0,
+              1250.0
+            ],
+            [
+              853.0,
+              1276.0
+            ],
+            [
+              871.0,
+              1156.0
+            ],
+            [
+              862.0,
+              1220.0
+            ],
+            [
+              873.0,
+              1087.0
+            ],
+            [
+              861.0,
+              1088.0
+            ],
+            [
+              866.0,
+              1266.0
+            ],
+            [
+              833.0,
+              1190.0
+            ],
+            [
+              835.0,
+              1225.0
+            ],
+            [
+              886.0,
+              1085.0
+            ],
+            [
+              862.0,
+              1276.0
+            ],
+            [
+              841.0,
+              1224.0
+            ],
+            [
+              836.0,
+              1234.0
+            ],
+            [
+              874.0,
+              1121.0
+            ],
+            [
+              876.0,
+              1003.0
+            ],
+            [
+              855.0,
+              1267.0
+            ],
+            [
+              879.0,
+              1052.0
+            ],
+            [
+              878.0,
+              1064.0
+            ],
+            [
+              876.0,
+              1273.0
+            ],
+            [
+              872.0,
+              1290.0
+            ],
+            [
+              883.0,
+              997.0
+            ],
+            [
+              865.0,
+              1243.0
+            ],
+            [
+              871.0,
+              1131.0
+            ],
+            [
+              878.0,
+              1155.0
+            ],
+            [
+              852.0,
+              1258.0
+            ],
+            [
+              879.0,
+              1229.0
+            ],
+            [
+              838.0,
+              1252.0
+            ],
+            [
+              858.0,
+              1205.0
+            ],
+            [
+              847.0,
+              1240.0
+            ],
+            [
+              868.0,
+              1251.0
+            ],
+            [
+              851.0,
+              1098.0
+            ],
+            [
+              860.0,
+              1137.0
+            ],
+            [
+              881.0,
+              984.0
+            ],
+            [
+              845.0,
+              1259.0
+            ],
+            [
+              848.0,
+              1223.0
+            ],
+            [
+              866.0,
+              1229.0
+            ],
+            [
+              885.0,
+              1008.0
+            ],
+            [
+              831.0,
+              1208.0
+            ],
+            [
+              838.0,
+              1244.0
+            ],
+            [
+              828.0,
+              1234.0
+            ],
+            [
+              867.0,
+              1255.0
+            ],
+            [
+              853.0,
+              1222.0
+            ]
+          ],
+          "target_inliers": [
+            [
+              867.0,
+              1605.0
+            ],
+            [
+              861.0,
+              1634.0
+            ],
+            [
+              866.0,
+              1494.0
+            ],
+            [
+              865.0,
+              1571.0
+            ],
+            [
+              860.0,
+              1419.0
+            ],
+            [
+              849.0,
+              1422.0
+            ],
+            [
+              873.0,
+              1620.0
+            ],
+            [
+              832.0,
+              1541.0
+            ],
+            [
+              836.0,
+              1580.0
+            ],
+            [
+              874.0,
+              1416.0
+            ],
+            [
+              870.0,
+              1634.0
+            ],
+            [
+              843.0,
+              1578.0
+            ],
+            [
+              839.0,
+              1589.0
+            ],
+            [
+              866.0,
+              1456.0
+            ],
+            [
+              857.0,
+              1330.0
+            ],
+            [
+              864.0,
+              1626.0
+            ],
+            [
+              867.0,
+              1380.0
+            ],
+            [
+              867.0,
+              1393.0
+            ],
+            [
+              884.0,
+              1630.0
+            ],
+            [
+              882.0,
+              1648.0
+            ],
+            [
+              865.0,
+              1324.0
+            ],
+            [
+              871.0,
+              1597.0
+            ],
+            [
+              863.0,
+              1468.0
+            ],
+            [
+              873.0,
+              1493.0
+            ],
+            [
+              859.0,
+              1614.0
+            ],
+            [
+              882.0,
+              1578.0
+            ],
+            [
+              842.0,
+              1608.0
+            ],
+            [
+              860.0,
+              1555.0
+            ],
+            [
+              851.0,
+              1595.0
+            ],
+            [
+              873.0,
+              1606.0
+            ],
+            [
+              841.0,
+              1433.0
+            ],
+            [
+              853.0,
+              1475.0
+            ],
+            [
+              861.0,
+              1308.0
+            ],
+            [
+              852.0,
+              1615.0
+            ],
+            [
+              851.0,
+              1576.0
+            ],
+            [
+              866.0,
+              1579.0
+            ],
+            [
+              867.0,
+              1333.0
+            ],
+            [
+              832.0,
+              1561.0
+            ],
+            [
+              842.0,
+              1600.0
+            ],
+            [
+              830.0,
+              1590.0
+            ],
+            [
+              872.0,
+              1611.0
+            ],
+            [
+              857.0,
+              1575.0
+            ]
+          ],
+          "reason": "weak or concentrated correspondence support"
+        },
+        {
+          "source_features": 1094,
+          "target_features": 1222,
+          "matching_scores": [],
+          "method": "tiled_pairwise_control",
+          "matches": 0,
+          "inliers": 0,
+          "accepted": false,
+          "reason": "fewer than 12 learned matches"
+        },
+        {
+          "source_features": 1094,
+          "target_features": 524,
+          "matching_scores": [],
+          "method": "tiled_pairwise_control",
+          "matches": 0,
+          "inliers": 0,
+          "accepted": false,
+          "reason": "fewer than 12 learned matches"
+        }
+      ],
+      "policies": {
+        "candidate": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          }
+        },
+        "corroborated": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          }
+        },
+        "strict": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          }
+        }
+      }
+    },
+    "sequence_graph": {
+      "registrations": [
+        {
+          "method": "joint_planar_sequence",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "frame disconnected from target"
+        },
+        {
+          "method": "joint_planar_sequence",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "graph_degree": 1,
+          "reason": "fewer than two graph edges"
+        },
+        {
+          "method": "joint_planar_sequence",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "frame disconnected from target"
+        },
+        {
+          "method": "joint_planar_sequence",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "frame disconnected from target"
+        }
+      ],
+      "policies": {
+        "candidate": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          }
+        },
+        "corroborated": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          }
+        },
+        "strict": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          }
+        }
+      }
+    }
+  },
+  "same_pixel_comparison": {
+    "candidate": {
+      "tiled_pairwise": {
+        "pixels": 0,
+        "mae_255": null,
+        "psnr_db": null,
+        "p90_rgb": null,
+        "over_20_fraction": null
+      },
+      "sequence_graph": {
+        "pixels": 0,
+        "mae_255": null,
+        "psnr_db": null,
+        "p90_rgb": null,
+        "over_20_fraction": null
+      }
+    },
+    "corroborated": {
+      "tiled_pairwise": {
+        "pixels": 0,
+        "mae_255": null,
+        "psnr_db": null,
+        "p90_rgb": null,
+        "over_20_fraction": null
+      },
+      "sequence_graph": {
+        "pixels": 0,
+        "mae_255": null,
+        "psnr_db": null,
+        "p90_rgb": null,
+        "over_20_fraction": null
+      }
+    },
+    "strict": {
+      "tiled_pairwise": {
+        "pixels": 0,
+        "mae_255": null,
+        "psnr_db": null,
+        "p90_rgb": null,
+        "over_20_fraction": null
+      },
+      "sequence_graph": {
+        "pixels": 0,
+        "mae_255": null,
+        "psnr_db": null,
+        "p90_rgb": null,
+        "over_20_fraction": null
+      }
+    }
+  },
+  "scene_elapsed_seconds": 16.857693910598755
+}

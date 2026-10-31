@@ -1,0 +1,287 @@
+{
+  "case": "alsace_fields_0",
+  "region": "footprint",
+  "signature": {
+    "run_sequence.py": "4b8e540847de34022944139dcccc3f7a65434d7b9f4a48f2a313e69d6527e314",
+    "sequence_geometry.py": "e7ecd253de1ca48076ea56c277533fbdf4438e889625cfb7a279266a87edb31c",
+    "matching_v2.py": "31c21cde51d791a78936145579a49998a1506698a2f78cad3f98574f0e08cf77",
+    "repair.py": "779e3679ae205637fe66cd25f5f7214bc9c6c153d4acfd6b8c9fa8915b8f4c88",
+    "benchmark.py": "18901c663f774dca04b40b9857718a30e3c73b87de888b47ca15d3870f20dd1e",
+    "sequence_protocol": "17754d148852911c3f1acd51a9b43f7baf8c47cddf4ecf608f67febc08baff3a",
+    "baseline_protocol": "f4037b6e0f526654baa3afbf568cfbfa882aff7224ca115b163220770da447c6",
+    "manifest": "70030b6af81b99fea41302b70edd2edfabdf41988da2ce6c7fe78a8cca1a4e56"
+  },
+  "created_at_utc": "2026-10-31T07:16:59.613665+00:00",
+  "mask_pixels": 159084,
+  "source_order": [
+    "prev2",
+    "prev1",
+    "next1",
+    "next2"
+  ],
+  "pair_proposals": [
+    {
+      "i": 0,
+      "j": 1,
+      "matches": 103,
+      "accepted": true,
+      "train_inliers": 29,
+      "inlier_ratio": 0.37662337662337664,
+      "validation_matches": 26,
+      "validation_inliers": 15,
+      "validation_fraction": 0.5769230769230769,
+      "validation_median_px": 4.132302121503267,
+      "reason": "edge proposal passes held-out correspondence check"
+    },
+    {
+      "i": 0,
+      "j": 2,
+      "matches": 1,
+      "accepted": false,
+      "reason": "insufficient matches"
+    },
+    {
+      "i": 1,
+      "j": 2,
+      "matches": 2,
+      "accepted": false,
+      "reason": "insufficient matches"
+    },
+    {
+      "i": 1,
+      "j": 3,
+      "matches": 1,
+      "accepted": false,
+      "reason": "insufficient matches"
+    },
+    {
+      "i": 2,
+      "j": 3,
+      "matches": 8,
+      "accepted": false,
+      "reason": "insufficient matches"
+    },
+    {
+      "i": 2,
+      "j": 4,
+      "matches": 1,
+      "accepted": false,
+      "reason": "insufficient matches"
+    },
+    {
+      "i": 3,
+      "j": 4,
+      "matches": 68,
+      "accepted": true,
+      "train_inliers": 15,
+      "inlier_ratio": 0.29411764705882354,
+      "validation_matches": 17,
+      "validation_inliers": 8,
+      "validation_fraction": 0.47058823529411764,
+      "validation_median_px": 6.327150284072543,
+      "reason": "edge proposal passes held-out correspondence check"
+    }
+  ],
+  "correspondences": [
+    {
+      "i": 0,
+      "j": 1,
+      "path": "correspondences/alsace_fields_0/donor_only_0_1.npz",
+      "sha256": "59657a92d4a4d33acddddab94ef5d9cedd84777696eb6e9a0f37356fc3b3089b"
+    },
+    {
+      "i": 0,
+      "j": 2,
+      "path": "correspondences/alsace_fields_0/footprint_0_2.npz",
+      "sha256": "134ba45da2b6e4c1d026726c02c5ed7c1221be4110e48366b3af0e438d409df7"
+    },
+    {
+      "i": 1,
+      "j": 2,
+      "path": "correspondences/alsace_fields_0/footprint_1_2.npz",
+      "sha256": "fb948e7ad812d4734da23597f6cd3172ba1a93330a2ccb851eb637e5ab3469e9"
+    },
+    {
+      "i": 1,
+      "j": 3,
+      "path": "correspondences/alsace_fields_0/donor_only_1_3.npz",
+      "sha256": "6856c43a57a1e061dc87a78581d9499bedd6b2db1aacea032a6cd05f02298289"
+    },
+    {
+      "i": 2,
+      "j": 3,
+      "path": "correspondences/alsace_fields_0/footprint_2_3.npz",
+      "sha256": "3cc99570e4748c1f2c0172ea36c9ba23b0f4286fd0052199c6625c5fd468f1ed"
+    },
+    {
+      "i": 2,
+      "j": 4,
+      "path": "correspondences/alsace_fields_0/footprint_2_4.npz",
+      "sha256": "5e7a4f06d2b87a4534e4d4357293056139055573fdae2478b2fb7c9918842796"
+    },
+    {
+      "i": 3,
+      "j": 4,
+      "path": "correspondences/alsace_fields_0/donor_only_3_4.npz",
+      "sha256": "110a6841d9c487018ca49c423b9b21a058a1467361ce8f787d475b1eb2be9c48"
+    }
+  ],
+  "graph": {
+    "connected_frames": 1,
+    "reason": "target disconnected",
+    "poses": {
+      "2": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  },
+  "methods": {
+    "tiled_pairwise": {
+      "registrations": [
+        {
+          "source_features": 1378,
+          "target_features": 1503,
+          "matching_scores": [
+            0.30474933981895447
+          ],
+          "method": "tiled_pairwise_control",
+          "matches": 1,
+          "inliers": 0,
+          "accepted": false,
+          "reason": "fewer than 12 learned matches"
+        },
+        {
+          "source_features": 1380,
+          "target_features": 1503,
+          "matching_scores": [
+            0.3135867118835449,
+            0.4246905446052551
+          ],
+          "method": "tiled_pairwise_control",
+          "matches": 2,
+          "inliers": 0,
+          "accepted": false,
+          "reason": "fewer than 12 learned matches"
+        },
+        {
+          "source_features": 1503,
+          "target_features": 1453,
+          "matching_scores": [
+            0.23572026193141937,
+            0.5287792086601257,
+            0.20667551457881927,
+            0.2662670910358429,
+            0.22858846187591553,
+            0.24252083897590637,
+            0.2171001136302948,
+            0.22595135867595673
+          ],
+          "method": "tiled_pairwise_control",
+          "matches": 8,
+          "inliers": 0,
+          "accepted": false,
+          "reason": "fewer than 12 learned matches"
+        },
+        {
+          "source_features": 1503,
+          "target_features": 1410,
+          "matching_scores": [
+            0.23028022050857544
+          ],
+          "method": "tiled_pairwise_control",
+          "matches": 1,
+          "inliers": 0,
+          "accepted": false,
+          "reason": "fewer than 12 learned matches"
+        }
+      ],
+      "policies": {
+        "candidate": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0
+        },
+        "corroborated": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0
+        },
+        "strict": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0
+        }
+      }
+    },
+    "sequence_graph": {
+      "registrations": [
+        {
+          "method": "joint_planar_sequence",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "frame disconnected from target"
+        },
+        {
+          "method": "joint_planar_sequence",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "frame disconnected from target"
+        },
+        {
+          "method": "joint_planar_sequence",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "frame disconnected from target"
+        },
+        {
+          "method": "joint_planar_sequence",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "frame disconnected from target"
+        }
+      ],
+      "policies": {
+        "candidate": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0
+        },
+        "corroborated": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0
+        },
+        "strict": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0
+        }
+      }
+    }
+  },
+  "scene_elapsed_seconds": 8.216792106628418
+}
