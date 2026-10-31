@@ -1,0 +1,268 @@
+{
+  "created_at_utc": "2026-10-31T15:23:36.238872+00:00",
+  "status": "completed_length_ablation_not_promoted",
+  "promotion": false,
+  "experiment": "sequence_v7",
+  "region_method_runs": 10,
+  "case": "gironde_0",
+  "split": "development",
+  "plan": {
+    "path": "sequence_v7/execution_plan.json",
+    "sha256": "7b2aed9261a3c4e0a0eb3a7f0112cfda02173ac4bfe0d340fe786d70577bec5b"
+  },
+  "model_checkpoint_sha256": "21f5bec5968178e8bc8b7633441836fe5de4f47d861dd2cd7dc38e271b0479ec",
+  "audits": [
+    {
+      "path": "sequence_v7/audit_001.json",
+      "sha256": "f64e67f80cd1649ffdfb056caebe89a00cb9b96691849011d40a1d8a73c208a4"
+    }
+  ],
+  "summary_sha256": "41afc0b206889c2f26a36c2285904515ec462540b7f361093887949ecc819324",
+  "selection_diagnostic_sha256": "bd063b82f6a448970d7e1f6fdf426e298ae1d5999ce6a612b90ec50cd5436e48",
+  "controls": "Exact v6 images, masks, matching model, pair correspondences, central-pair train/heldout partitions, support and acceptance rules preserved. Only six neighboring frames and their edges added.",
+  "measured_metric_free": {
+    "eleven_frames": {
+      "footprint": {
+        "candidate": {
+          "mask_pixels": 248682,
+          "accepted_pixels": 140740,
+          "coverage": 0.5659436549488905,
+          "abstention": 0.43405634505110946,
+          "single_view_pixels": 21577,
+          "multi_view_pixels": 119163
+        },
+        "corroborated": {
+          "mask_pixels": 248682,
+          "accepted_pixels": 78226,
+          "coverage": 0.3145623728295574,
+          "abstention": 0.6854376271704425,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 78226
+        },
+        "strict": {
+          "mask_pixels": 248682,
+          "accepted_pixels": 42390,
+          "coverage": 0.17045865804521437,
+          "abstention": 0.8295413419547857,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 42390
+        }
+      },
+      "large_hidden": {
+        "candidate": {
+          "mask_pixels": 359673,
+          "accepted_pixels": 56922,
+          "coverage": 0.15826041988139228,
+          "abstention": 0.8417395801186077,
+          "single_view_pixels": 43000,
+          "multi_view_pixels": 13922,
+          "mae_255": 4.81662626049682,
+          "over_20_fraction": 0.025930220301465162,
+          "accepted_rgb_mae_le_20_pixels": 55446,
+          "accepted_rgb_mae_le_20_fraction_of_mask": 0.1541566923288654,
+          "gradient_mae": 1.4299991130828857
+        },
+        "corroborated": {
+          "mask_pixels": 359673,
+          "accepted_pixels": 13425,
+          "coverage": 0.03732557072674346,
+          "abstention": 0.9626744292732565,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 13425,
+          "mae_255": 4.21909373060211,
+          "over_20_fraction": 0.02376163873370577,
+          "accepted_rgb_mae_le_20_pixels": 13106,
+          "accepted_rgb_mae_le_20_fraction_of_mask": 0.0364386539996052,
+          "gradient_mae": 1.2860382795333862
+        },
+        "strict": {
+          "mask_pixels": 359673,
+          "accepted_pixels": 12020,
+          "coverage": 0.03341924470282729,
+          "abstention": 0.9665807552971727,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 12020,
+          "mae_255": 4.139711591791459,
+          "over_20_fraction": 0.024792013311148088,
+          "accepted_rgb_mae_le_20_pixels": 11722,
+          "accepted_rgb_mae_le_20_fraction_of_mask": 0.03259071434330628,
+          "gradient_mae": 1.2523537874221802
+        }
+      },
+      "local_hidden": {
+        "candidate": {
+          "mask_pixels": 46640,
+          "accepted_pixels": 34269,
+          "coverage": 0.7347555746140652,
+          "abstention": 0.26524442538593485,
+          "single_view_pixels": 8960,
+          "multi_view_pixels": 25309,
+          "mae_255": 8.918371317128212,
+          "over_20_fraction": 0.019580378767982725,
+          "accepted_rgb_mae_le_20_pixels": 33598,
+          "accepted_rgb_mae_le_20_fraction_of_mask": 0.720368782161235,
+          "gradient_mae": 1.3286621849222742
+        },
+        "corroborated": {
+          "mask_pixels": 46640,
+          "accepted_pixels": 23341,
+          "coverage": 0.5004502572898799,
+          "abstention": 0.4995497427101201,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 23341,
+          "mae_255": 10.535538323122402,
+          "over_20_fraction": 0.0242063322051326,
+          "accepted_rgb_mae_le_20_pixels": 22776,
+          "accepted_rgb_mae_le_20_fraction_of_mask": 0.488336192109777,
+          "gradient_mae": 1.329231960594934
+        },
+        "strict": {
+          "mask_pixels": 46640,
+          "accepted_pixels": 19892,
+          "coverage": 0.4265008576329331,
+          "abstention": 0.5734991423670669,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 19892,
+          "mae_255": 10.070195723573965,
+          "over_20_fraction": 0.016338226422682487,
+          "accepted_rgb_mae_le_20_pixels": 19567,
+          "accepted_rgb_mae_le_20_fraction_of_mask": 0.419532590051458,
+          "gradient_mae": 1.2634439579600856
+        }
+      }
+    },
+    "five_frame_control": {
+      "footprint": {
+        "candidate": {
+          "mask_pixels": 248682,
+          "accepted_pixels": 54087,
+          "coverage": 0.2174946316983135,
+          "abstention": 0.7825053683016865,
+          "single_view_pixels": 54087,
+          "multi_view_pixels": 0
+        },
+        "corroborated": {
+          "mask_pixels": 248682,
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "abstention": 1.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0
+        },
+        "strict": {
+          "mask_pixels": 248682,
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "abstention": 1.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0
+        }
+      },
+      "large_hidden": {
+        "candidate": {
+          "mask_pixels": 359673,
+          "accepted_pixels": 147658,
+          "coverage": 0.41053401283944024,
+          "abstention": 0.5894659871605598,
+          "single_view_pixels": 138718,
+          "multi_view_pixels": 8940,
+          "mae_255": 4.297401201876408,
+          "over_20_fraction": 0.015325955925178453,
+          "accepted_rgb_mae_le_20_pixels": 145395,
+          "accepted_rgb_mae_le_20_fraction_of_mask": 0.40424218665287637,
+          "gradient_mae": 1.3706577505990976
+        },
+        "corroborated": {
+          "mask_pixels": 359673,
+          "accepted_pixels": 8668,
+          "coverage": 0.02409966830982587,
+          "abstention": 0.9759003316901741,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 8668,
+          "mae_255": 3.5264959237040454,
+          "over_20_fraction": 0.0,
+          "accepted_rgb_mae_le_20_pixels": 8668,
+          "accepted_rgb_mae_le_20_fraction_of_mask": 0.02409966830982587,
+          "gradient_mae": 1.2088813781738281
+        },
+        "strict": {
+          "mask_pixels": 359673,
+          "accepted_pixels": 8070,
+          "coverage": 0.022437046984344112,
+          "abstention": 0.9775629530156559,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 8070,
+          "mae_255": 3.243577034283354,
+          "over_20_fraction": 0.0,
+          "accepted_rgb_mae_le_20_pixels": 8070,
+          "accepted_rgb_mae_le_20_fraction_of_mask": 0.022437046984344112,
+          "gradient_mae": 1.2107905149459839
+        }
+      },
+      "local_hidden": {
+        "candidate": {
+          "mask_pixels": 46640,
+          "accepted_pixels": 34752,
+          "coverage": 0.7451114922813036,
+          "abstention": 0.2548885077186964,
+          "single_view_pixels": 27153,
+          "multi_view_pixels": 7599,
+          "mae_255": 6.096023250460405,
+          "over_20_fraction": 0.004920580110497237,
+          "accepted_rgb_mae_le_20_pixels": 34581,
+          "accepted_rgb_mae_le_20_fraction_of_mask": 0.7414451114922813,
+          "gradient_mae": 1.3432929859070841
+        },
+        "corroborated": {
+          "mask_pixels": 46640,
+          "accepted_pixels": 6351,
+          "coverage": 0.13617066895368782,
+          "abstention": 0.8638293310463122,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 6351,
+          "mae_255": 4.033328084816039,
+          "over_20_fraction": 0.0,
+          "accepted_rgb_mae_le_20_pixels": 6351,
+          "accepted_rgb_mae_le_20_fraction_of_mask": 0.13617066895368782,
+          "gradient_mae": 1.212191104888916
+        },
+        "strict": {
+          "mask_pixels": 46640,
+          "accepted_pixels": 4755,
+          "coverage": 0.10195111492281303,
+          "abstention": 0.8980488850771869,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 4755,
+          "mae_255": 3.417525411847178,
+          "over_20_fraction": 0.0,
+          "accepted_rgb_mae_le_20_pixels": 4755,
+          "accepted_rgb_mae_le_20_fraction_of_mask": 0.10195111492281303,
+          "gradient_mae": 1.1877840757369995
+        }
+      }
+    }
+  },
+  "decision": "Additional neighbors substantially increase candidate footprint support, but the longer metric graph fails convergence on hidden_rear and local-rear errors increase. Reject eleven-frame mode as a general/default improvement.",
+  "failures": [
+    {
+      "region": "hidden_rear",
+      "cause": "Six connected frames; 160-evaluation metric fit fails convergence. Correctly abstains, versus 46.55% coverage from the converged three-frame component in v6."
+    },
+    {
+      "region": "local_rear",
+      "cause": "Added next2 donor supplies20561 accepted pixels at12.01 RGB MAE; existing global inlier-based selector favors it over closer views. This is post-score diagnosis, not an accuracy-based donor-selection rule."
+    }
+  ],
+  "limitations": [
+    "Footprint56.59% candidate coverage and31.46% corroborated coverage are not measured correctness.",
+    "Same-model donors and shared pose graph have correlated errors; agreement does not establish independence.",
+    "Low RGB error on smooth asphalt can conceal positional errors; development-only benchmark.",
+    "Alsace/Bourges unchanged zero in v6; no unchanged reruns this batch."
+  ],
+  "next": [
+    "Alsace matching: inspect known view orientation and native sampling before a predeclared masked rectification/crop experiment; no gate loosening.",
+    "Rural graph: bounded continuation/warm start or larger solver budget with hard convergence; preserve central solution as an input-only fallback, never selected using hidden truth.",
+    "Rural fusion: compare sampling/visibility-aware donor ranking against global inlier count, using no target-hidden RGB. Report gained/lost/common-pixel errors."
+  ],
+  "baseline_changed": false
+}

@@ -1,0 +1,109 @@
+{
+  "created_at_utc": "2026-10-31T15:28:12.134265+00:00",
+  "status": "completed",
+  "new_catalog_queries": 20,
+  "new_collections": 13,
+  "admitted_collections": 315,
+  "new_images_downloaded": 25,
+  "new_complete_train_windows": 5,
+  "selected_complete_windows": 20,
+  "selected_incomplete_windows": 1,
+  "selected_pending_windows": 79,
+  "source_sha256": {
+    "dataset.py": "49263be4cf8aff8a2bd519491862de36eb7cf5e971d07379eb249513d139b051",
+    "dataset_admission.py": "29a54cb053fca937e308ff8e97b6a6df8870cafa4b607e46df528c80a2696af6",
+    "audit_admission_next.py": "db2b63e7411996b0bfd823e8f960af2a0caf48a6cf167960487df25e975c7c5d",
+    "audit_admission.py": "97a366f7b74b6479bcfe001a7a214daa140916a8fb3963c4b7479f39777ad846",
+    "audit_effective_dataset.py": "09272ff1eb23bb17c0d8a8b21a4952808401e98dbd968e972810f669a9a8bed1",
+    "acquire_admitted.py": "1d034bcd8203611f111d24342cd27e8f012dfe54840c4c9ac135da03aa1544f8",
+    "cohort.py": "880d457d0bdbf7ad530c8ade63b83eb2b8a9db2033bbba9f2d88d52da5ddc1b8",
+    "resource_guard.py": "4d192fe4fbba2ffc068a9fe5e3de5e29b43b434b35b79f438d848f2445d09814"
+  },
+  "commands": [
+    "acquire_admitted.py --dry-run --split train --limit 5",
+    "acquire_admitted.py --split train --limit 5",
+    "dataset.py catalog --queries 20 --ring 1",
+    "dataset_admission.py --output <absolute dataset_v1/admission_audits/002>",
+    "audit_admission_next.py --proposal dataset_v1/admission_audits/002/proposal.json --output dataset_v1/admission_audits/002/validation.json",
+    "dataset_admission.py --output <absolute dataset_v1/admission_audits/002> --commit",
+    "audit_effective_dataset.py"
+  ],
+  "windows": [
+    {
+      "collection": "86950a23-7323-42a6-bea8-2c6c4753a6ac",
+      "split": "train",
+      "manifest_path": "dataset_v1/windows/86950a23-7323-42a6-bea8-2c6c4753a6ac.json",
+      "manifest_sha256": "a5f3a8d163389b1b82ae6c7205f4e915430a74f146b24057e89d00077657089c",
+      "frames": 5,
+      "license": [
+        "etalab-2.0"
+      ]
+    },
+    {
+      "collection": "07a5a4f1-70a1-4a11-8f56-1b5df44d5712",
+      "split": "train",
+      "manifest_path": "dataset_v1/windows/07a5a4f1-70a1-4a11-8f56-1b5df44d5712.json",
+      "manifest_sha256": "81b88e5088e1dd3c3f5209af409d6ad4bd0ec353de7abc088238bc27e4ea7af7",
+      "frames": 5,
+      "license": [
+        "etalab-2.0"
+      ]
+    },
+    {
+      "collection": "4549ccc2-30a7-49fb-bc35-1dda069ecf3f",
+      "split": "train",
+      "manifest_path": "dataset_v1/windows/4549ccc2-30a7-49fb-bc35-1dda069ecf3f.json",
+      "manifest_sha256": "111f9ed89271304df6807d764f36a8ce3be20102cf9bb70e116f34424a0c9bdb",
+      "frames": 5,
+      "license": [
+        "etalab-2.0"
+      ]
+    },
+    {
+      "collection": "1001b20e-e6ca-4f63-b78e-f342961fba32",
+      "split": "train",
+      "manifest_path": "dataset_v1/windows/1001b20e-e6ca-4f63-b78e-f342961fba32.json",
+      "manifest_sha256": "9fbfac02905eb630cef9d16f1a34ed4240992dcf0cca5c2496a481f423140b21",
+      "frames": 5,
+      "license": [
+        "etalab-2.0"
+      ]
+    },
+    {
+      "collection": "e2d3f867-6449-4a86-9286-a7daea87f966",
+      "split": "train",
+      "manifest_path": "dataset_v1/windows/e2d3f867-6449-4a86-9286-a7daea87f966.json",
+      "manifest_sha256": "38ce248a2e1542be002965fd08229594619d2e8e9390afc73480e93a35359f34",
+      "frames": 5,
+      "license": [
+        "etalab-2.0"
+      ]
+    }
+  ],
+  "resources": {
+    "free_disk_gib": 22.812686920166016,
+    "image_cache_gib": 0.41773597430437803,
+    "reserved_gib": 0.5,
+    "minimum_free_gib": 8,
+    "safe_to_start_heavy_job": true,
+    "safe_to_start_acquisition": true,
+    "blockers": []
+  },
+  "validation_sha256": "0b2d05adb33a44b33d460a7ca7e683de736372f0ab16cba35d3b064009e2f060",
+  "committed_ledger_sha256": "b7f3f8431c01a4cccaafbbbd627324556cd61eae720f0f2df100bc9118fcd1f3",
+  "effective_audit_sha256": "3197587d9c5c1775cd90a3bd6ea7a193b063c65d59603717657a7392195a08c3",
+  "cohort_sha256": "b0804d3e6e14fcdac301be4ba702d8aa58da702041b2af238c71671e5b72eea7",
+  "quarantined_collections": [],
+  "previous_assignments_preserved": 302,
+  "actual_active_cross_split_edges": 0,
+  "unsafe_control_cross_split_edges": 7,
+  "issues_resolved": [
+    "Initial admission proposal invocation used a relative output against an absolute data root and stopped before ledger creation. Reran with an absolute path; existing snapshot matched."
+  ],
+  "limits": [
+    "Catalog is a geographic proposal sample, not population-representative coverage.",
+    "Only 20/100 selected windows are complete; 1 incomplete and79 pending.",
+    "Held-out validation/test imagery not downloaded, inspected or scored.",
+    "New25 training images remain unannotated and unevaluated."
+  ]
+}
