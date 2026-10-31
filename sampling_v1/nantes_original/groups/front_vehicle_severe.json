@@ -1,0 +1,1450 @@
+{
+  "scene": "nantes_original",
+  "area": "nantes",
+  "job": {
+    "key": "front_vehicle_severe",
+    "kind": "controlled",
+    "mask": {
+      "path": "controlled_v1/nantes/masks.npz",
+      "sha256": "0b1a859c2badbcae8059213585b184722932f022d8ff5b7ba30fbd12c5f85e3a"
+    },
+    "mask_key": "front_vehicle_severe",
+    "control": {
+      "path": "controlled_v1/nantes/groups/front_vehicle_severe.json",
+      "sha256": "f50bbee1e002d7620ea73e7f6e06f9e7916a640ed501d9600ff481701e5e374b"
+    }
+  },
+  "signature": {
+    "plan_sha256": "42e3bd3edc0a7ec4228f917649315750379fea567ff3496502be02b675438bd1",
+    "certificate": {
+      "path": "sampling_v1/model_validation_001.json",
+      "sha256": "b2adde1b80a576bde3b072830d49790318185a9666c2d6153ba23425679de3da"
+    }
+  },
+  "graphs": {
+    "loftr_homography": {
+      "connected_frames": 1,
+      "reason": "target disconnected",
+      "poses": {
+        "2": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      }
+    },
+    "loftr_metric_free": {
+      "model": "metric_free",
+      "connected_frames": 1,
+      "edges": 0,
+      "optimizer_success": false,
+      "reason": "target disconnected",
+      "poses": {
+        "2": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      }
+    }
+  },
+  "correspondences": [
+    {
+      "i": 0,
+      "j": 1,
+      "path": "sampling_v1/pairs/nantes_original/donor_only_0_1.npz",
+      "sha256": "836fe7ad8bfe3017704d716665cd737953b8b3c7a01b40cecfbc28cf2d778a55",
+      "matches": 411,
+      "proposal": {
+        "i": 0,
+        "j": 1,
+        "matches": 411,
+        "accepted": false,
+        "train_inliers": 44,
+        "inlier_ratio": 0.14285714285714285,
+        "validation_matches": 103,
+        "validation_inliers": 22,
+        "validation_fraction": 0.21359223300970873,
+        "validation_median_px": 40.26362944820056,
+        "reason": "edge train/held-out support failed"
+      },
+      "spatial_holdout": {
+        "folds": [
+          {
+            "block": 0,
+            "train": 340,
+            "heldout": 71,
+            "status": "measured",
+            "median_px": 155.02856602887454,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 58
+          },
+          {
+            "block": 1,
+            "train": 411,
+            "heldout": 0,
+            "status": "insufficient spatial support"
+          },
+          {
+            "block": 2,
+            "train": 231,
+            "heldout": 180,
+            "status": "measured",
+            "median_px": 67.5706218944308,
+            "fraction_below_5px": 0.016666666666666666,
+            "train_inliers": 56
+          },
+          {
+            "block": 3,
+            "train": 251,
+            "heldout": 160,
+            "status": "measured",
+            "median_px": 1273.9487971489027,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 22
+          }
+        ],
+        "interpretation": "Spatial extrapolation diagnostic, not a calibrated probability or an acceptance gate"
+      },
+      "matcher": {
+        "matches": 411,
+        "max_side": 960,
+        "method": "masked_loftr_outdoor_960",
+        "minimum_confidence": 0.20012018084526062,
+        "weights": "explicit local checkpoint; caller must retain SHA-256"
+      }
+    },
+    {
+      "i": 0,
+      "j": 2,
+      "path": "sampling_v1/pairs/nantes_original/front_vehicle_severe_0_2.npz",
+      "sha256": "49e37d12330122825d87f56ea1394d70654c7836e38b8f819d68b78f379f61e0",
+      "matches": 228,
+      "proposal": {
+        "i": 0,
+        "j": 2,
+        "matches": 228,
+        "accepted": false,
+        "train_inliers": 22,
+        "inlier_ratio": 0.1286549707602339,
+        "validation_matches": 57,
+        "validation_inliers": 3,
+        "validation_fraction": 0.05263157894736842,
+        "validation_median_px": 95.22402442675558,
+        "reason": "edge train/held-out support failed"
+      },
+      "spatial_holdout": {
+        "folds": [
+          {
+            "block": 0,
+            "train": 208,
+            "heldout": 20,
+            "status": "measured",
+            "median_px": 276.4091570444034,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 28
+          },
+          {
+            "block": 1,
+            "train": 228,
+            "heldout": 0,
+            "status": "insufficient spatial support"
+          },
+          {
+            "block": 2,
+            "train": 118,
+            "heldout": 110,
+            "status": "measured",
+            "median_px": 54.093601045514305,
+            "fraction_below_5px": 0.06363636363636363,
+            "train_inliers": 16
+          },
+          {
+            "block": 3,
+            "train": 130,
+            "heldout": 98,
+            "status": "measured",
+            "median_px": 85.75828936650107,
+            "fraction_below_5px": 0.07142857142857142,
+            "train_inliers": 12
+          }
+        ],
+        "interpretation": "Spatial extrapolation diagnostic, not a calibrated probability or an acceptance gate"
+      },
+      "matcher": {
+        "method": "masked_loftr_outdoor_960",
+        "matches": 228,
+        "max_side": 960,
+        "minimum_confidence": 0.20143011212348938,
+        "weights": "explicit local checkpoint; caller must retain SHA-256"
+      }
+    },
+    {
+      "i": 1,
+      "j": 2,
+      "path": "sampling_v1/pairs/nantes_original/front_vehicle_severe_1_2.npz",
+      "sha256": "ee5826945f2095d1c24c4fd6bdc1ee08a5698c875a7978b6e5d5696663a80e87",
+      "matches": 288,
+      "proposal": {
+        "i": 1,
+        "j": 2,
+        "matches": 288,
+        "accepted": false,
+        "train_inliers": 30,
+        "inlier_ratio": 0.1388888888888889,
+        "validation_matches": 72,
+        "validation_inliers": 9,
+        "validation_fraction": 0.125,
+        "validation_median_px": 87.12342128111166,
+        "reason": "edge train/held-out support failed"
+      },
+      "spatial_holdout": {
+        "folds": [
+          {
+            "block": 0,
+            "train": 255,
+            "heldout": 33,
+            "status": "measured",
+            "median_px": 706.0624524375945,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 36
+          },
+          {
+            "block": 1,
+            "train": 287,
+            "heldout": 1,
+            "status": "insufficient spatial support"
+          },
+          {
+            "block": 2,
+            "train": 169,
+            "heldout": 119,
+            "status": "measured",
+            "median_px": 137.53714216888733,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 25
+          },
+          {
+            "block": 3,
+            "train": 153,
+            "heldout": 135,
+            "status": "measured",
+            "median_px": 52.405068011454276,
+            "fraction_below_5px": 0.022222222222222223,
+            "train_inliers": 13
+          }
+        ],
+        "interpretation": "Spatial extrapolation diagnostic, not a calibrated probability or an acceptance gate"
+      },
+      "matcher": {
+        "method": "masked_loftr_outdoor_960",
+        "matches": 288,
+        "max_side": 960,
+        "minimum_confidence": 0.2011052519083023,
+        "weights": "explicit local checkpoint; caller must retain SHA-256"
+      }
+    },
+    {
+      "i": 1,
+      "j": 3,
+      "path": "sampling_v1/pairs/nantes_original/donor_only_1_3.npz",
+      "sha256": "57674ec2f47127256d08c40fd07ec9a3396971c2cda1e2f1d8591131cae4195e",
+      "matches": 219,
+      "proposal": {
+        "i": 1,
+        "j": 3,
+        "matches": 219,
+        "accepted": false,
+        "train_inliers": 15,
+        "inlier_ratio": 0.09146341463414634,
+        "validation_matches": 55,
+        "validation_inliers": 7,
+        "validation_fraction": 0.12727272727272726,
+        "validation_median_px": 82.09101252955594,
+        "reason": "edge train/held-out support failed"
+      },
+      "spatial_holdout": {
+        "folds": [
+          {
+            "block": 0,
+            "train": 200,
+            "heldout": 19,
+            "status": "measured",
+            "median_px": 80.13791693719713,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 19
+          },
+          {
+            "block": 1,
+            "train": 219,
+            "heldout": 0,
+            "status": "insufficient spatial support"
+          },
+          {
+            "block": 2,
+            "train": 117,
+            "heldout": 102,
+            "status": "measured",
+            "median_px": 163.14008542611958,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 12
+          },
+          {
+            "block": 3,
+            "train": 121,
+            "heldout": 98,
+            "status": "measured",
+            "median_px": 79.70050587467415,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 21
+          }
+        ],
+        "interpretation": "Spatial extrapolation diagnostic, not a calibrated probability or an acceptance gate"
+      },
+      "matcher": {
+        "matches": 219,
+        "max_side": 960,
+        "method": "masked_loftr_outdoor_960",
+        "minimum_confidence": 0.2017471045255661,
+        "weights": "explicit local checkpoint; caller must retain SHA-256"
+      }
+    },
+    {
+      "i": 2,
+      "j": 3,
+      "path": "sampling_v1/pairs/nantes_original/front_vehicle_severe_2_3.npz",
+      "sha256": "9114e29f14d2a7614a169ab3947aa3ec93a079335554e896d751446f6fc4e327",
+      "matches": 320,
+      "proposal": {
+        "i": 2,
+        "j": 3,
+        "matches": 320,
+        "accepted": false,
+        "train_inliers": 26,
+        "inlier_ratio": 0.10833333333333334,
+        "validation_matches": 80,
+        "validation_inliers": 6,
+        "validation_fraction": 0.075,
+        "validation_median_px": 95.30800341464803,
+        "reason": "edge train/held-out support failed"
+      },
+      "spatial_holdout": {
+        "folds": [
+          {
+            "block": 0,
+            "train": 316,
+            "heldout": 4,
+            "status": "insufficient spatial support"
+          },
+          {
+            "block": 1,
+            "train": 319,
+            "heldout": 1,
+            "status": "insufficient spatial support"
+          },
+          {
+            "block": 2,
+            "train": 121,
+            "heldout": 199,
+            "status": "measured",
+            "median_px": 81.02307433501767,
+            "fraction_below_5px": 0.03015075376884422,
+            "train_inliers": 19
+          },
+          {
+            "block": 3,
+            "train": 204,
+            "heldout": 116,
+            "status": "measured",
+            "median_px": 146.88959226432064,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 25
+          }
+        ],
+        "interpretation": "Spatial extrapolation diagnostic, not a calibrated probability or an acceptance gate"
+      },
+      "matcher": {
+        "method": "masked_loftr_outdoor_960",
+        "matches": 320,
+        "max_side": 960,
+        "minimum_confidence": 0.2000768780708313,
+        "weights": "explicit local checkpoint; caller must retain SHA-256"
+      }
+    },
+    {
+      "i": 2,
+      "j": 4,
+      "path": "sampling_v1/pairs/nantes_original/front_vehicle_severe_2_4.npz",
+      "sha256": "b680bbef6eceba5d48a401f630f6c0ae3bf47fa0dc38ba8b2ae88b45473b01e4",
+      "matches": 268,
+      "proposal": {
+        "i": 2,
+        "j": 4,
+        "matches": 268,
+        "accepted": false,
+        "train_inliers": 29,
+        "inlier_ratio": 0.14427860696517414,
+        "validation_matches": 67,
+        "validation_inliers": 9,
+        "validation_fraction": 0.13432835820895522,
+        "validation_median_px": 87.15691424846179,
+        "reason": "edge train/held-out support failed"
+      },
+      "spatial_holdout": {
+        "folds": [
+          {
+            "block": 0,
+            "train": 267,
+            "heldout": 1,
+            "status": "insufficient spatial support"
+          },
+          {
+            "block": 1,
+            "train": 268,
+            "heldout": 0,
+            "status": "insufficient spatial support"
+          },
+          {
+            "block": 2,
+            "train": 116,
+            "heldout": 152,
+            "status": "measured",
+            "median_px": 118.61726007390088,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 14
+          },
+          {
+            "block": 3,
+            "train": 153,
+            "heldout": 115,
+            "status": "measured",
+            "median_px": 111.19469853503571,
+            "fraction_below_5px": 0.008695652173913044,
+            "train_inliers": 22
+          }
+        ],
+        "interpretation": "Spatial extrapolation diagnostic, not a calibrated probability or an acceptance gate"
+      },
+      "matcher": {
+        "method": "masked_loftr_outdoor_960",
+        "matches": 268,
+        "max_side": 960,
+        "minimum_confidence": 0.2002207636833191,
+        "weights": "explicit local checkpoint; caller must retain SHA-256"
+      }
+    },
+    {
+      "i": 3,
+      "j": 4,
+      "path": "sampling_v1/pairs/nantes_original/donor_only_3_4.npz",
+      "sha256": "717e3f7583d8283c4a067407327ac822317902c83fd9e195e7bdcf263c5e090b",
+      "matches": 255,
+      "proposal": {
+        "i": 3,
+        "j": 4,
+        "matches": 255,
+        "accepted": false,
+        "train_inliers": 36,
+        "inlier_ratio": 0.18848167539267016,
+        "validation_matches": 64,
+        "validation_inliers": 8,
+        "validation_fraction": 0.125,
+        "validation_median_px": 21.494695268645387,
+        "reason": "edge train/held-out support failed"
+      },
+      "spatial_holdout": {
+        "folds": [
+          {
+            "block": 0,
+            "train": 222,
+            "heldout": 33,
+            "status": "measured",
+            "median_px": 191.77082471319142,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 47
+          },
+          {
+            "block": 1,
+            "train": 255,
+            "heldout": 0,
+            "status": "insufficient spatial support"
+          },
+          {
+            "block": 2,
+            "train": 89,
+            "heldout": 166,
+            "status": "measured",
+            "median_px": 74.45786290306806,
+            "fraction_below_5px": 0.0,
+            "train_inliers": 10
+          },
+          {
+            "block": 3,
+            "train": 199,
+            "heldout": 56,
+            "status": "measured",
+            "median_px": 62.98626090075583,
+            "fraction_below_5px": 0.05357142857142857,
+            "train_inliers": 44
+          }
+        ],
+        "interpretation": "Spatial extrapolation diagnostic, not a calibrated probability or an acceptance gate"
+      },
+      "matcher": {
+        "matches": 255,
+        "max_side": 960,
+        "method": "masked_loftr_outdoor_960",
+        "minimum_confidence": 0.20179840922355652,
+        "weights": "explicit local checkpoint; caller must retain SHA-256"
+      }
+    }
+  ],
+  "methods": {
+    "loftr_homography": {
+      "policies": {
+        "candidate": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "abstention": 1.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          }
+        },
+        "corroborated": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "abstention": 1.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          }
+        },
+        "strict": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "abstention": 1.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          }
+        }
+      },
+      "extended": {
+        "candidate": {
+          "mask_pixels": 90391,
+          "accepted_pixels": 0,
+          "mask_solid_angle_sr": 0.25833333238368966,
+          "accepted_solid_angle_sr": 0.0,
+          "angular_coverage": 0.0,
+          "angular_abstention": 1.0,
+          "angular_rgb_mae_255": null,
+          "angular_rgb_mae_le_20_fraction_of_mask": 0.0,
+          "accepted_rgb_mae_le_threshold_pixels": {
+            "10": 0,
+            "20": 0
+          },
+          "strata": {
+            "textured": {
+              "mask_pixels": 2764,
+              "accepted_pixels": 0,
+              "coverage": 0.0,
+              "rgb_mae_255": null,
+              "over_20_fraction": null
+            },
+            "low_texture": {
+              "mask_pixels": 87627,
+              "accepted_pixels": 0,
+              "coverage": 0.0,
+              "rgb_mae_255": null,
+              "over_20_fraction": null
+            }
+          }
+        },
+        "corroborated": {
+          "mask_pixels": 90391,
+          "accepted_pixels": 0,
+          "mask_solid_angle_sr": 0.25833333238368966,
+          "accepted_solid_angle_sr": 0.0,
+          "angular_coverage": 0.0,
+          "angular_abstention": 1.0,
+          "angular_rgb_mae_255": null,
+          "angular_rgb_mae_le_20_fraction_of_mask": 0.0,
+          "accepted_rgb_mae_le_threshold_pixels": {
+            "10": 0,
+            "20": 0
+          },
+          "strata": {
+            "textured": {
+              "mask_pixels": 2764,
+              "accepted_pixels": 0,
+              "coverage": 0.0,
+              "rgb_mae_255": null,
+              "over_20_fraction": null
+            },
+            "low_texture": {
+              "mask_pixels": 87627,
+              "accepted_pixels": 0,
+              "coverage": 0.0,
+              "rgb_mae_255": null,
+              "over_20_fraction": null
+            }
+          }
+        },
+        "strict": {
+          "mask_pixels": 90391,
+          "accepted_pixels": 0,
+          "mask_solid_angle_sr": 0.25833333238368966,
+          "accepted_solid_angle_sr": 0.0,
+          "angular_coverage": 0.0,
+          "angular_abstention": 1.0,
+          "angular_rgb_mae_255": null,
+          "angular_rgb_mae_le_20_fraction_of_mask": 0.0,
+          "accepted_rgb_mae_le_threshold_pixels": {
+            "10": 0,
+            "20": 0
+          },
+          "strata": {
+            "textured": {
+              "mask_pixels": 2764,
+              "accepted_pixels": 0,
+              "coverage": 0.0,
+              "rgb_mae_255": null,
+              "over_20_fraction": null
+            },
+            "low_texture": {
+              "mask_pixels": 87627,
+              "accepted_pixels": 0,
+              "coverage": 0.0,
+              "rgb_mae_255": null,
+              "over_20_fraction": null
+            }
+          }
+        }
+      },
+      "control_policies": {
+        "candidate": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "abstention": 1.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          }
+        },
+        "corroborated": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "abstention": 1.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          }
+        },
+        "strict": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "abstention": 1.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          }
+        }
+      },
+      "control_extended": {
+        "candidate": {
+          "mask_pixels": 90391,
+          "accepted_pixels": 0,
+          "mask_solid_angle_sr": 0.25833333238368966,
+          "accepted_solid_angle_sr": 0.0,
+          "angular_coverage": 0.0,
+          "angular_abstention": 1.0,
+          "angular_rgb_mae_255": null,
+          "angular_rgb_mae_le_20_fraction_of_mask": 0.0,
+          "accepted_rgb_mae_le_threshold_pixels": {
+            "10": 0,
+            "20": 0
+          },
+          "strata": {
+            "textured": {
+              "mask_pixels": 2764,
+              "accepted_pixels": 0,
+              "coverage": 0.0,
+              "rgb_mae_255": null,
+              "over_20_fraction": null
+            },
+            "low_texture": {
+              "mask_pixels": 87627,
+              "accepted_pixels": 0,
+              "coverage": 0.0,
+              "rgb_mae_255": null,
+              "over_20_fraction": null
+            }
+          }
+        },
+        "corroborated": {
+          "mask_pixels": 90391,
+          "accepted_pixels": 0,
+          "mask_solid_angle_sr": 0.25833333238368966,
+          "accepted_solid_angle_sr": 0.0,
+          "angular_coverage": 0.0,
+          "angular_abstention": 1.0,
+          "angular_rgb_mae_255": null,
+          "angular_rgb_mae_le_20_fraction_of_mask": 0.0,
+          "accepted_rgb_mae_le_threshold_pixels": {
+            "10": 0,
+            "20": 0
+          },
+          "strata": {
+            "textured": {
+              "mask_pixels": 2764,
+              "accepted_pixels": 0,
+              "coverage": 0.0,
+              "rgb_mae_255": null,
+              "over_20_fraction": null
+            },
+            "low_texture": {
+              "mask_pixels": 87627,
+              "accepted_pixels": 0,
+              "coverage": 0.0,
+              "rgb_mae_255": null,
+              "over_20_fraction": null
+            }
+          }
+        },
+        "strict": {
+          "mask_pixels": 90391,
+          "accepted_pixels": 0,
+          "mask_solid_angle_sr": 0.25833333238368966,
+          "accepted_solid_angle_sr": 0.0,
+          "angular_coverage": 0.0,
+          "angular_abstention": 1.0,
+          "angular_rgb_mae_255": null,
+          "angular_rgb_mae_le_20_fraction_of_mask": 0.0,
+          "accepted_rgb_mae_le_threshold_pixels": {
+            "10": 0,
+            "20": 0
+          },
+          "strata": {
+            "textured": {
+              "mask_pixels": 2764,
+              "accepted_pixels": 0,
+              "coverage": 0.0,
+              "rgb_mae_255": null,
+              "over_20_fraction": null
+            },
+            "low_texture": {
+              "mask_pixels": 87627,
+              "accepted_pixels": 0,
+              "coverage": 0.0,
+              "rgb_mae_255": null,
+              "over_20_fraction": null
+            }
+          }
+        }
+      },
+      "partitions": {
+        "candidate": {
+          "common": {
+            "pixels": 0,
+            "fraction_of_mask": 0.0,
+            "new": {
+              "pixels": 0,
+              "mae_255": null,
+              "p90_rgb": null,
+              "over_20_fraction": null
+            },
+            "control": {
+              "pixels": 0,
+              "mae_255": null,
+              "p90_rgb": null,
+              "over_20_fraction": null
+            }
+          },
+          "gained": {
+            "pixels": 0,
+            "fraction_of_mask": 0.0,
+            "new": {
+              "pixels": 0,
+              "mae_255": null,
+              "p90_rgb": null,
+              "over_20_fraction": null
+            }
+          },
+          "lost": {
+            "pixels": 0,
+            "fraction_of_mask": 0.0,
+            "control": {
+              "pixels": 0,
+              "mae_255": null,
+              "p90_rgb": null,
+              "over_20_fraction": null
+            }
+          }
+        },
+        "corroborated": {
+          "common": {
+            "pixels": 0,
+            "fraction_of_mask": 0.0,
+            "new": {
+              "pixels": 0,
+              "mae_255": null,
+              "p90_rgb": null,
+              "over_20_fraction": null
+            },
+            "control": {
+              "pixels": 0,
+              "mae_255": null,
+              "p90_rgb": null,
+              "over_20_fraction": null
+            }
+          },
+          "gained": {
+            "pixels": 0,
+            "fraction_of_mask": 0.0,
+            "new": {
+              "pixels": 0,
+              "mae_255": null,
+              "p90_rgb": null,
+              "over_20_fraction": null
+            }
+          },
+          "lost": {
+            "pixels": 0,
+            "fraction_of_mask": 0.0,
+            "control": {
+              "pixels": 0,
+              "mae_255": null,
+              "p90_rgb": null,
+              "over_20_fraction": null
+            }
+          }
+        },
+        "strict": {
+          "common": {
+            "pixels": 0,
+            "fraction_of_mask": 0.0,
+            "new": {
+              "pixels": 0,
+              "mae_255": null,
+              "p90_rgb": null,
+              "over_20_fraction": null
+            },
+            "control": {
+              "pixels": 0,
+              "mae_255": null,
+              "p90_rgb": null,
+              "over_20_fraction": null
+            }
+          },
+          "gained": {
+            "pixels": 0,
+            "fraction_of_mask": 0.0,
+            "new": {
+              "pixels": 0,
+              "mae_255": null,
+              "p90_rgb": null,
+              "over_20_fraction": null
+            }
+          },
+          "lost": {
+            "pixels": 0,
+            "fraction_of_mask": 0.0,
+            "control": {
+              "pixels": 0,
+              "mae_255": null,
+              "p90_rgb": null,
+              "over_20_fraction": null
+            }
+          }
+        }
+      },
+      "evidence": {
+        "path": "sampling_v1/nantes_original/groups/front_vehicle_severe_loftr_homography.npz",
+        "sha256": "ee8e925bd51f8346b8550581d9ab53fc55078e7e649176fdae733b4635a90803"
+      },
+      "registrations": [
+        {
+          "method": "homography",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "optimizer did not converge or target disconnected"
+        },
+        {
+          "method": "homography",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "optimizer did not converge or target disconnected"
+        },
+        {
+          "method": "homography",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "optimizer did not converge or target disconnected"
+        },
+        {
+          "method": "homography",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "optimizer did not converge or target disconnected"
+        }
+      ]
+    },
+    "loftr_metric_free": {
+      "policies": {
+        "candidate": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "abstention": 1.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          }
+        },
+        "corroborated": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "abstention": 1.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          }
+        },
+        "strict": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "abstention": 1.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          }
+        }
+      },
+      "extended": {
+        "candidate": {
+          "mask_pixels": 90391,
+          "accepted_pixels": 0,
+          "mask_solid_angle_sr": 0.25833333238368966,
+          "accepted_solid_angle_sr": 0.0,
+          "angular_coverage": 0.0,
+          "angular_abstention": 1.0,
+          "angular_rgb_mae_255": null,
+          "angular_rgb_mae_le_20_fraction_of_mask": 0.0,
+          "accepted_rgb_mae_le_threshold_pixels": {
+            "10": 0,
+            "20": 0
+          },
+          "strata": {
+            "textured": {
+              "mask_pixels": 2764,
+              "accepted_pixels": 0,
+              "coverage": 0.0,
+              "rgb_mae_255": null,
+              "over_20_fraction": null
+            },
+            "low_texture": {
+              "mask_pixels": 87627,
+              "accepted_pixels": 0,
+              "coverage": 0.0,
+              "rgb_mae_255": null,
+              "over_20_fraction": null
+            }
+          }
+        },
+        "corroborated": {
+          "mask_pixels": 90391,
+          "accepted_pixels": 0,
+          "mask_solid_angle_sr": 0.25833333238368966,
+          "accepted_solid_angle_sr": 0.0,
+          "angular_coverage": 0.0,
+          "angular_abstention": 1.0,
+          "angular_rgb_mae_255": null,
+          "angular_rgb_mae_le_20_fraction_of_mask": 0.0,
+          "accepted_rgb_mae_le_threshold_pixels": {
+            "10": 0,
+            "20": 0
+          },
+          "strata": {
+            "textured": {
+              "mask_pixels": 2764,
+              "accepted_pixels": 0,
+              "coverage": 0.0,
+              "rgb_mae_255": null,
+              "over_20_fraction": null
+            },
+            "low_texture": {
+              "mask_pixels": 87627,
+              "accepted_pixels": 0,
+              "coverage": 0.0,
+              "rgb_mae_255": null,
+              "over_20_fraction": null
+            }
+          }
+        },
+        "strict": {
+          "mask_pixels": 90391,
+          "accepted_pixels": 0,
+          "mask_solid_angle_sr": 0.25833333238368966,
+          "accepted_solid_angle_sr": 0.0,
+          "angular_coverage": 0.0,
+          "angular_abstention": 1.0,
+          "angular_rgb_mae_255": null,
+          "angular_rgb_mae_le_20_fraction_of_mask": 0.0,
+          "accepted_rgb_mae_le_threshold_pixels": {
+            "10": 0,
+            "20": 0
+          },
+          "strata": {
+            "textured": {
+              "mask_pixels": 2764,
+              "accepted_pixels": 0,
+              "coverage": 0.0,
+              "rgb_mae_255": null,
+              "over_20_fraction": null
+            },
+            "low_texture": {
+              "mask_pixels": 87627,
+              "accepted_pixels": 0,
+              "coverage": 0.0,
+              "rgb_mae_255": null,
+              "over_20_fraction": null
+            }
+          }
+        }
+      },
+      "control_policies": {
+        "candidate": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "abstention": 1.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          }
+        },
+        "corroborated": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "abstention": 1.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          }
+        },
+        "strict": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "abstention": 1.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          }
+        }
+      },
+      "control_extended": {
+        "candidate": {
+          "mask_pixels": 90391,
+          "accepted_pixels": 0,
+          "mask_solid_angle_sr": 0.25833333238368966,
+          "accepted_solid_angle_sr": 0.0,
+          "angular_coverage": 0.0,
+          "angular_abstention": 1.0,
+          "angular_rgb_mae_255": null,
+          "angular_rgb_mae_le_20_fraction_of_mask": 0.0,
+          "accepted_rgb_mae_le_threshold_pixels": {
+            "10": 0,
+            "20": 0
+          },
+          "strata": {
+            "textured": {
+              "mask_pixels": 2764,
+              "accepted_pixels": 0,
+              "coverage": 0.0,
+              "rgb_mae_255": null,
+              "over_20_fraction": null
+            },
+            "low_texture": {
+              "mask_pixels": 87627,
+              "accepted_pixels": 0,
+              "coverage": 0.0,
+              "rgb_mae_255": null,
+              "over_20_fraction": null
+            }
+          }
+        },
+        "corroborated": {
+          "mask_pixels": 90391,
+          "accepted_pixels": 0,
+          "mask_solid_angle_sr": 0.25833333238368966,
+          "accepted_solid_angle_sr": 0.0,
+          "angular_coverage": 0.0,
+          "angular_abstention": 1.0,
+          "angular_rgb_mae_255": null,
+          "angular_rgb_mae_le_20_fraction_of_mask": 0.0,
+          "accepted_rgb_mae_le_threshold_pixels": {
+            "10": 0,
+            "20": 0
+          },
+          "strata": {
+            "textured": {
+              "mask_pixels": 2764,
+              "accepted_pixels": 0,
+              "coverage": 0.0,
+              "rgb_mae_255": null,
+              "over_20_fraction": null
+            },
+            "low_texture": {
+              "mask_pixels": 87627,
+              "accepted_pixels": 0,
+              "coverage": 0.0,
+              "rgb_mae_255": null,
+              "over_20_fraction": null
+            }
+          }
+        },
+        "strict": {
+          "mask_pixels": 90391,
+          "accepted_pixels": 0,
+          "mask_solid_angle_sr": 0.25833333238368966,
+          "accepted_solid_angle_sr": 0.0,
+          "angular_coverage": 0.0,
+          "angular_abstention": 1.0,
+          "angular_rgb_mae_255": null,
+          "angular_rgb_mae_le_20_fraction_of_mask": 0.0,
+          "accepted_rgb_mae_le_threshold_pixels": {
+            "10": 0,
+            "20": 0
+          },
+          "strata": {
+            "textured": {
+              "mask_pixels": 2764,
+              "accepted_pixels": 0,
+              "coverage": 0.0,
+              "rgb_mae_255": null,
+              "over_20_fraction": null
+            },
+            "low_texture": {
+              "mask_pixels": 87627,
+              "accepted_pixels": 0,
+              "coverage": 0.0,
+              "rgb_mae_255": null,
+              "over_20_fraction": null
+            }
+          }
+        }
+      },
+      "partitions": {
+        "candidate": {
+          "common": {
+            "pixels": 0,
+            "fraction_of_mask": 0.0,
+            "new": {
+              "pixels": 0,
+              "mae_255": null,
+              "p90_rgb": null,
+              "over_20_fraction": null
+            },
+            "control": {
+              "pixels": 0,
+              "mae_255": null,
+              "p90_rgb": null,
+              "over_20_fraction": null
+            }
+          },
+          "gained": {
+            "pixels": 0,
+            "fraction_of_mask": 0.0,
+            "new": {
+              "pixels": 0,
+              "mae_255": null,
+              "p90_rgb": null,
+              "over_20_fraction": null
+            }
+          },
+          "lost": {
+            "pixels": 0,
+            "fraction_of_mask": 0.0,
+            "control": {
+              "pixels": 0,
+              "mae_255": null,
+              "p90_rgb": null,
+              "over_20_fraction": null
+            }
+          }
+        },
+        "corroborated": {
+          "common": {
+            "pixels": 0,
+            "fraction_of_mask": 0.0,
+            "new": {
+              "pixels": 0,
+              "mae_255": null,
+              "p90_rgb": null,
+              "over_20_fraction": null
+            },
+            "control": {
+              "pixels": 0,
+              "mae_255": null,
+              "p90_rgb": null,
+              "over_20_fraction": null
+            }
+          },
+          "gained": {
+            "pixels": 0,
+            "fraction_of_mask": 0.0,
+            "new": {
+              "pixels": 0,
+              "mae_255": null,
+              "p90_rgb": null,
+              "over_20_fraction": null
+            }
+          },
+          "lost": {
+            "pixels": 0,
+            "fraction_of_mask": 0.0,
+            "control": {
+              "pixels": 0,
+              "mae_255": null,
+              "p90_rgb": null,
+              "over_20_fraction": null
+            }
+          }
+        },
+        "strict": {
+          "common": {
+            "pixels": 0,
+            "fraction_of_mask": 0.0,
+            "new": {
+              "pixels": 0,
+              "mae_255": null,
+              "p90_rgb": null,
+              "over_20_fraction": null
+            },
+            "control": {
+              "pixels": 0,
+              "mae_255": null,
+              "p90_rgb": null,
+              "over_20_fraction": null
+            }
+          },
+          "gained": {
+            "pixels": 0,
+            "fraction_of_mask": 0.0,
+            "new": {
+              "pixels": 0,
+              "mae_255": null,
+              "p90_rgb": null,
+              "over_20_fraction": null
+            }
+          },
+          "lost": {
+            "pixels": 0,
+            "fraction_of_mask": 0.0,
+            "control": {
+              "pixels": 0,
+              "mae_255": null,
+              "p90_rgb": null,
+              "over_20_fraction": null
+            }
+          }
+        }
+      },
+      "evidence": {
+        "path": "sampling_v1/nantes_original/groups/front_vehicle_severe_loftr_metric_free.npz",
+        "sha256": "ee8e925bd51f8346b8550581d9ab53fc55078e7e649176fdae733b4635a90803"
+      },
+      "registrations": [
+        {
+          "method": "metric_free",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "optimizer did not converge or target disconnected"
+        },
+        {
+          "method": "metric_free",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "optimizer did not converge or target disconnected"
+        },
+        {
+          "method": "metric_free",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "optimizer did not converge or target disconnected"
+        },
+        {
+          "method": "metric_free",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "optimizer did not converge or target disconnected"
+        }
+      ]
+    }
+  },
+  "created_at_utc": "2026-10-31T18:31:11.050552+00:00",
+  "runtime_seconds": 4.875224750001507
+}

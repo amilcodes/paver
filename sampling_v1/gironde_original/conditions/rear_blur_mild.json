@@ -1,0 +1,142 @@
+{
+  "scene": "gironde_original",
+  "condition": {
+    "spec": {
+      "key": "rear_blur_mild",
+      "location": "rear",
+      "family": "blur",
+      "severity": "mild",
+      "mask_key": "rear_disc_mild"
+    },
+    "job": "rear_disc_mild",
+    "baseline": {
+      "path": "controlled_v1/gironde/scenarios/rear_blur_mild.json",
+      "sha256": "e2ae3aead5033f31b17997596d9e34b3e6e3a44aeec243856f4e6c9ac4573e62"
+    }
+  },
+  "signature": {
+    "plan_sha256": "42e3bd3edc0a7ec4228f917649315750379fea567ff3496502be02b675438bd1",
+    "certificate": {
+      "path": "sampling_v1/model_validation_001.json",
+      "sha256": "b2adde1b80a576bde3b072830d49790318185a9666c2d6153ba23425679de3da"
+    }
+  },
+  "geometry": {
+    "path": "sampling_v1/gironde_original/groups/rear_disc_mild.json",
+    "sha256": "14166c7743cbf0fb6fbd4767ba426694edb70af5ffffca098665add815c05654"
+  },
+  "same_pixel_controls": {
+    "loftr_homography": {
+      "candidate": {
+        "as_damaged": {
+          "pixels": 1844,
+          "source_mae_255": 7.897686189443239,
+          "control_mae_255": 2.1028561099060012,
+          "source_better_pixels": 102,
+          "source_worse_pixels": 1722,
+          "equal_pixels": 20
+        },
+        "telea_r3": {
+          "pixels": 1844,
+          "source_mae_255": 7.897686189443239,
+          "control_mae_255": 2.242407809110629,
+          "source_better_pixels": 96,
+          "source_worse_pixels": 1737,
+          "equal_pixels": 11
+        }
+      },
+      "corroborated": {
+        "as_damaged": {
+          "pixels": 0,
+          "source_mae_255": null,
+          "control_mae_255": null,
+          "source_better_pixels": 0,
+          "source_worse_pixels": 0,
+          "equal_pixels": 0
+        },
+        "telea_r3": {
+          "pixels": 0,
+          "source_mae_255": null,
+          "control_mae_255": null,
+          "source_better_pixels": 0,
+          "source_worse_pixels": 0,
+          "equal_pixels": 0
+        }
+      },
+      "strict": {
+        "as_damaged": {
+          "pixels": 0,
+          "source_mae_255": null,
+          "control_mae_255": null,
+          "source_better_pixels": 0,
+          "source_worse_pixels": 0,
+          "equal_pixels": 0
+        },
+        "telea_r3": {
+          "pixels": 0,
+          "source_mae_255": null,
+          "control_mae_255": null,
+          "source_better_pixels": 0,
+          "source_worse_pixels": 0,
+          "equal_pixels": 0
+        }
+      }
+    },
+    "loftr_metric_free": {
+      "candidate": {
+        "as_damaged": {
+          "pixels": 1760,
+          "source_mae_255": 7.903409090909091,
+          "control_mae_255": 2.1003787878787876,
+          "source_better_pixels": 97,
+          "source_worse_pixels": 1643,
+          "equal_pixels": 20
+        },
+        "telea_r3": {
+          "pixels": 1760,
+          "source_mae_255": 7.903409090909091,
+          "control_mae_255": 2.234469696969697,
+          "source_better_pixels": 91,
+          "source_worse_pixels": 1661,
+          "equal_pixels": 8
+        }
+      },
+      "corroborated": {
+        "as_damaged": {
+          "pixels": 0,
+          "source_mae_255": null,
+          "control_mae_255": null,
+          "source_better_pixels": 0,
+          "source_worse_pixels": 0,
+          "equal_pixels": 0
+        },
+        "telea_r3": {
+          "pixels": 0,
+          "source_mae_255": null,
+          "control_mae_255": null,
+          "source_better_pixels": 0,
+          "source_worse_pixels": 0,
+          "equal_pixels": 0
+        }
+      },
+      "strict": {
+        "as_damaged": {
+          "pixels": 0,
+          "source_mae_255": null,
+          "control_mae_255": null,
+          "source_better_pixels": 0,
+          "source_worse_pixels": 0,
+          "equal_pixels": 0
+        },
+        "telea_r3": {
+          "pixels": 0,
+          "source_mae_255": null,
+          "control_mae_255": null,
+          "source_better_pixels": 0,
+          "source_worse_pixels": 0,
+          "equal_pixels": 0
+        }
+      }
+    }
+  }
+}

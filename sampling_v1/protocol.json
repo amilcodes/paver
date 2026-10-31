@@ -1,0 +1,100 @@
+{
+  "status": "frozen_before_model_validation_and_road_scoring",
+  "hypothesis": "Increasing retained ground-image sampling from640 to960 pixels can improve consistent correspondence evidence on urban failures.",
+  "treatment": {
+    "checkpoint_sha256": "21f5bec5968178e8bc8b7633441836fe5de4f47d861dd2cd7dc38e271b0479ec",
+    "adapter_sha256": "b7d3ce798db5c76ba989ac71ccc0fc5e6d0814da08b02006c892aed9babf287e",
+    "packages": {
+      "kornia": "0.9.0",
+      "torch": "2.15.0",
+      "numpy": "2.5.4",
+      "opencv-python-headless": "5.0.0.93"
+    },
+    "installed_sources": {
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/loftr.py": "771263d3c8005d893ec9a2f71a12e1f0c188034a20623b0c759b63f9baf1f626",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/__init__.py": "8e60213949b09309fdec44d45e14d9181858bbd66de3cbe1c8173b64e4b3eaec",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/utils/position_encoding.py": "32e16a9e297ba115f9d20b6a7fba8cbeb7b2008a2891df170b441db919a9afcf",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/utils/__init__.py": "417973f07a3e714f493f6a97f0b157acb0ae8dcf0a3549b5079324cbbf3ab45d",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/utils/coarse_matching.py": "9269b2380bf984604ff5316e156ebded38b6b25eea7b237b6fd573db40b03e12",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/utils/supervision.py": "48adbb3a3ef3418cc35ffa58c0d77571cc913a66dc0e47041a252a2dca4074ea",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/utils/fine_matching.py": "354d3ac5485774e250f1590f27fd2216b5adb671cc237cdbae0950e53cf2d39e",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/utils/geometry.py": "d40b83ef0708bef7fd0c4ee6e425b20b78a73297052c6d7089f4c027bd1cb14a",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/loftr_module/fine_preprocess.py": "ff5c9e50a6ddb2ff44259250563695528bd08bf58c160b821b038629cb0abefd",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/loftr_module/__init__.py": "f282770d670f07e81151aeb2e5e6aa9a782dff74e741e3d609a07d7b411d2781",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/loftr_module/transformer.py": "79fcf1028cf23939f23b82ee6a22ee7a82154967cecc496cd3a23239c797ac20",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/loftr_module/linear_attention.py": "e39a8a5c1ef15f26601a29bf4ab5ea3025b000d2b024e23a226de09d6dec2789",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/backbone/__init__.py": "13f27ca439ff868fa3486db27b05b7dff8bde76ed98ee320ee72cb16a7832e39",
+      "work/venv/lib/python3.14/site-packages/kornia/feature/loftr/backbone/resnet_fpn.py": "c67986c9d10fa8a8d412cf37926e7d2b24f848586906d585d8b06b13d1c61577"
+    },
+    "treatment_adapter_sha256": "cfdb1934bacd2147973055d20f736a59135f73d9e0ecf148dcb6bd7996f95ba9",
+    "treatment": {
+      "max_side": 960,
+      "base_max_side": 640,
+      "crop": "unchanged allowed-ground bounding box",
+      "margin_original_pixels": 32,
+      "endpoint_dedup_cell_original_pixels": 6,
+      "maximum_matches": 2048,
+      "tiling": false,
+      "confidence_and_geometry_thresholds": "unchanged"
+    }
+  },
+  "scope": "First one-variable sampling ablation. Tiled native-resolution crop retrieval is deferred; existing allowed-ground bounding crop is unchanged, no crop-pair or duplicate-union intervention.",
+  "planned_geometry_groups": 126,
+  "planned_method_evaluations": 252,
+  "controlled_corruption_conditions": 216,
+  "hard_road_control_regions": 10,
+  "controls": [
+    {
+      "path": "controlled_v2/baseline_v1/execution_plan.json",
+      "sha256": "91d6659ca13f0774e78fa3c01648a8a970520421a812dcb3e7bd26878e6f07da"
+    },
+    {
+      "path": "controlled_v1/execution_plan.json",
+      "sha256": "3c18df4887ccd07b4d8ec03e69e29bb0ec9d7afa21f8388410b2c04cf290305b"
+    },
+    {
+      "path": "sequence_v6/execution_plan.json",
+      "sha256": "6fa863fd4b9013e493b9f7de1e705410d1a12c90e327ce309227275be0c66dd2"
+    },
+    {
+      "path": "natural_track_v1/summary.json",
+      "sha256": "47d98ff621d4100061dd848c3204a3870622c80ed827071d96bbee48a72fc17f"
+    }
+  ],
+  "model_validation": {
+    "matches_min": 32,
+    "median_error_px_max_exclusive": 1.5,
+    "p90_error_px_max_exclusive": 3.0,
+    "fixtures": [
+      "1760px translation",
+      "1760px mild projective"
+    ],
+    "excluded_rgb_exact_invariance": true,
+    "device": "mps"
+  },
+  "invariants": [
+    "Weights, preprocessing/crop/margin, filtering/deduplication/cap, pair graph, geometry/support/convergence and policies unchanged.",
+    "Only sanitized allowed ground enters matching; clean hidden target and texture are scoring-only.",
+    "All fixed roads and failures retained; same-mask families remain correlated.",
+    "No promotion with coverage-only gains or material error/abstention regressions; no preauthorized quality tradeoff.",
+    "Original scenes are development/train; no held-out route scored."
+  ],
+  "resources": {
+    "heavy_jobs": 1,
+    "minimum_free_disk_gib": 8,
+    "image_cache_budget_gib": 8,
+    "learned_inference_device": "mps"
+  },
+  "adapter": {
+    "path": "sampling_matcher.py",
+    "sha256": "cfdb1934bacd2147973055d20f736a59135f73d9e0ecf148dcb6bd7996f95ba9"
+  },
+  "validator": {
+    "path": "validate_sampling_model.py",
+    "sha256": "5f9505c90f7642d23b2e4390f43307e5e656753a517c541c0d397fd1ec14b8ee"
+  },
+  "tests": {
+    "path": "test_sampling.py",
+    "sha256": "69eaa0afbc95d51bb93c9ea0286096c796212257cde33d7a7751b2e8e7de3d11"
+  }
+}

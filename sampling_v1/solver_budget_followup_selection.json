@@ -1,0 +1,1419 @@
+{
+  "status": "proposed_frozen_not_executed",
+  "source": {
+    "path": "select_sampling_followup.py",
+    "sha256": "ed9eb7d09fffe6629954984775aebf4c34c467ab961b186f96d363c7048420a7"
+  },
+  "baseline_plan": {
+    "path": "sampling_v1/execution_plan.json",
+    "sha256": "42e3bd3edc0a7ec4228f917649315750379fea567ff3496502be02b675438bd1"
+  },
+  "audit": {
+    "path": "sampling_v1/audit_001.json",
+    "sha256": "7ec4fcc58089d7d0b938aa9369dbda350cb7d25a0a1d1795d04f648d23de50d8"
+  },
+  "selection_rule": "Metric-free fit has connected_frames>1, solver_converged=false, nfev=160 and no boundary hits. No coverage/error/scoring values used.",
+  "intervention": {
+    "old_max_nfev": 160,
+    "new_max_nfev": 640,
+    "initialization": "identical",
+    "bounds": "identical",
+    "tolerances": "identical",
+    "convergence_required": true,
+    "acceptance_and_support_gates": "identical"
+  },
+  "selected": [
+    {
+      "scene": "gironde_129",
+      "job": "forward_disc_mild",
+      "record": {
+        "path": "sampling_v1/gironde_129/groups/forward_disc_mild.json",
+        "sha256": "e4f7a81b8723531b25e135a49a175ea8eac5a974517d9f2c0addb6e0148786cd"
+      },
+      "solver_converged": false,
+      "nfev": 160,
+      "boundary_hits": []
+    },
+    {
+      "scene": "gironde_129",
+      "job": "forward_vehicle_mild",
+      "record": {
+        "path": "sampling_v1/gironde_129/groups/forward_vehicle_mild.json",
+        "sha256": "05307127dfa069527172341be0b3d7861336b9821c150ef5dcba7e593b8fab70"
+      },
+      "solver_converged": false,
+      "nfev": 160,
+      "boundary_hits": []
+    },
+    {
+      "scene": "gironde_129",
+      "job": "forward_vehicle_severe",
+      "record": {
+        "path": "sampling_v1/gironde_129/groups/forward_vehicle_severe.json",
+        "sha256": "8def0a624e06ddcd739b4032692acdaf79cb43ce5da1d9c62e50d8fc149e8627"
+      },
+      "solver_converged": false,
+      "nfev": 160,
+      "boundary_hits": []
+    },
+    {
+      "scene": "gironde_129",
+      "job": "forward_strip_mild",
+      "record": {
+        "path": "sampling_v1/gironde_129/groups/forward_strip_mild.json",
+        "sha256": "d9eb766d5ebcf18130088191d65e6a36db96b2c25cfb0316a9f8df29aa079a92"
+      },
+      "solver_converged": false,
+      "nfev": 160,
+      "boundary_hits": []
+    },
+    {
+      "scene": "gironde_original",
+      "job": "rear_vehicle_severe",
+      "record": {
+        "path": "sampling_v1/gironde_original/groups/rear_vehicle_severe.json",
+        "sha256": "4734a75089f976414e45bf0c640205770e0ff8c0eace86383650b149af93f5fc"
+      },
+      "solver_converged": false,
+      "nfev": 160,
+      "boundary_hits": []
+    },
+    {
+      "scene": "gironde_hard",
+      "job": "hidden_rear",
+      "record": {
+        "path": "sampling_v1/gironde_hard/groups/hidden_rear.json",
+        "sha256": "80cea05e67ed09f5898c85aa194ddd4a4594784585793f57df0526e174df65ff"
+      },
+      "solver_converged": false,
+      "nfev": 160,
+      "boundary_hits": []
+    }
+  ],
+  "reuse_unchanged": [
+    {
+      "scene": "gironde_013",
+      "job": "cross_junction_disc_mild",
+      "record": {
+        "path": "sampling_v1/gironde_013/groups/cross_junction_disc_mild.json",
+        "sha256": "6732be515b87485a6ce8c720e26e7dd614a302b0c5faf9fb26b5e2e1e34491b4"
+      },
+      "solver_converged": true,
+      "nfev": 17,
+      "boundary_hits": []
+    },
+    {
+      "scene": "gironde_013",
+      "job": "cross_junction_disc_severe",
+      "record": {
+        "path": "sampling_v1/gironde_013/groups/cross_junction_disc_severe.json",
+        "sha256": "7775bc76f14b60e01cb56bce1ac7ffdd12ed57ef8ce300047339bbab7088ab90"
+      },
+      "solver_converged": true,
+      "nfev": 20,
+      "boundary_hits": []
+    },
+    {
+      "scene": "gironde_013",
+      "job": "cross_junction_vehicle_mild",
+      "record": {
+        "path": "sampling_v1/gironde_013/groups/cross_junction_vehicle_mild.json",
+        "sha256": "22210522dc33d601003566896cd6599095d2d24225bba1a3111e22292dc54097"
+      },
+      "solver_converged": true,
+      "nfev": 19,
+      "boundary_hits": []
+    },
+    {
+      "scene": "gironde_013",
+      "job": "cross_junction_vehicle_severe",
+      "record": {
+        "path": "sampling_v1/gironde_013/groups/cross_junction_vehicle_severe.json",
+        "sha256": "6361a52289d84982dafe750830e98742b91d2c52cd1114139ae566097e51056a"
+      },
+      "solver_converged": true,
+      "nfev": 15,
+      "boundary_hits": []
+    },
+    {
+      "scene": "gironde_013",
+      "job": "cross_junction_strip_mild",
+      "record": {
+        "path": "sampling_v1/gironde_013/groups/cross_junction_strip_mild.json",
+        "sha256": "f543d36f8eb5ccb08e0d3d2ece4dfbbbff09b587fba76dc8c24e4785e7677fa0"
+      },
+      "solver_converged": true,
+      "nfev": 21,
+      "boundary_hits": []
+    },
+    {
+      "scene": "gironde_013",
+      "job": "cross_junction_strip_severe",
+      "record": {
+        "path": "sampling_v1/gironde_013/groups/cross_junction_strip_severe.json",
+        "sha256": "92fad3ad81dcfb93a5cba3f8b58dcae78231624bc638ebb5f069da1a7c6d2262"
+      },
+      "solver_converged": true,
+      "nfev": 21,
+      "boundary_hits": []
+    },
+    {
+      "scene": "gironde_013",
+      "job": "rear_lane_disc_mild",
+      "record": {
+        "path": "sampling_v1/gironde_013/groups/rear_lane_disc_mild.json",
+        "sha256": "9279302040a2e9f74dcb8920a16db40e2b1cbdc3241d8547945660261fffa5b4"
+      },
+      "solver_converged": true,
+      "nfev": 20,
+      "boundary_hits": []
+    },
+    {
+      "scene": "gironde_013",
+      "job": "rear_lane_disc_severe",
+      "record": {
+        "path": "sampling_v1/gironde_013/groups/rear_lane_disc_severe.json",
+        "sha256": "ac61b1c5f53d921e89d7e557966e0a227fcb7b00b3a45cb4fb3bd8111d086f18"
+      },
+      "solver_converged": true,
+      "nfev": 15,
+      "boundary_hits": []
+    },
+    {
+      "scene": "gironde_013",
+      "job": "rear_lane_vehicle_mild",
+      "record": {
+        "path": "sampling_v1/gironde_013/groups/rear_lane_vehicle_mild.json",
+        "sha256": "0f8369aa3043807eec32db5be2fb80653e3657705e7e0eb3be2acb682211033b"
+      },
+      "solver_converged": true,
+      "nfev": 20,
+      "boundary_hits": []
+    },
+    {
+      "scene": "gironde_013",
+      "job": "rear_lane_vehicle_severe",
+      "record": {
+        "path": "sampling_v1/gironde_013/groups/rear_lane_vehicle_severe.json",
+        "sha256": "94ab7ecb46cea47efccc7cb211ab96761dcea5c1267f0d8073c94dbf0cfc3192"
+      },
+      "solver_converged": true,
+      "nfev": 16,
+      "boundary_hits": []
+    },
+    {
+      "scene": "gironde_013",
+      "job": "rear_lane_strip_mild",
+      "record": {
+        "path": "sampling_v1/gironde_013/groups/rear_lane_strip_mild.json",
+        "sha256": "abaa08619804eb35efc469651e829fc786c8996e18a628c29f05e594e8fe2a1f"
+      },
+      "solver_converged": true,
+      "nfev": 24,
+      "boundary_hits": []
+    },
+    {
+      "scene": "gironde_013",
+      "job": "rear_lane_strip_severe",
+      "record": {
+        "path": "sampling_v1/gironde_013/groups/rear_lane_strip_severe.json",
+        "sha256": "e8d7c02f031e1344a10e2edc473a8f3e4fbc032a8b9e6f014541279cfe113cff"
+      },
+      "solver_converged": true,
+      "nfev": 18,
+      "boundary_hits": []
+    },
+    {
+      "scene": "gironde_013",
+      "job": "footprint",
+      "record": {
+        "path": "sampling_v1/gironde_013/groups/footprint.json",
+        "sha256": "cd64228413782a53758db892b8326c3308cb1559c3cd6a93bb4bb0884fc887c1"
+      },
+      "solver_converged": true,
+      "nfev": 23,
+      "boundary_hits": []
+    },
+    {
+      "scene": "gironde_129",
+      "job": "forward_disc_severe",
+      "record": {
+        "path": "sampling_v1/gironde_129/groups/forward_disc_severe.json",
+        "sha256": "c10de26e4d5c155e5bf8fbde464d8052c664c84cd1ab4fd04d0212c0832125c0"
+      },
+      "solver_converged": true,
+      "nfev": 25,
+      "boundary_hits": []
+    },
+    {
+      "scene": "gironde_129",
+      "job": "forward_strip_severe",
+      "record": {
+        "path": "sampling_v1/gironde_129/groups/forward_strip_severe.json",
+        "sha256": "40a507f2e243328423c30825f8d1bad91b74b373870d71f84b2d1c3a6bd3958d"
+      },
+      "solver_converged": true,
+      "nfev": 25,
+      "boundary_hits": []
+    },
+    {
+      "scene": "gironde_129",
+      "job": "rear_disc_mild",
+      "record": {
+        "path": "sampling_v1/gironde_129/groups/rear_disc_mild.json",
+        "sha256": "18b997cec8f5d56774e80d12c7f68750329b995e8c3dab032bf2df96264014c4"
+      },
+      "solver_converged": true,
+      "nfev": 31,
+      "boundary_hits": []
+    },
+    {
+      "scene": "gironde_129",
+      "job": "rear_disc_severe",
+      "record": {
+        "path": "sampling_v1/gironde_129/groups/rear_disc_severe.json",
+        "sha256": "f0cc75b078833be65802cd36c243311e9a80ffc24bff5aea3418d70124689b8d"
+      },
+      "solver_converged": true,
+      "nfev": 35,
+      "boundary_hits": []
+    },
+    {
+      "scene": "gironde_129",
+      "job": "rear_vehicle_mild",
+      "record": {
+        "path": "sampling_v1/gironde_129/groups/rear_vehicle_mild.json",
+        "sha256": "466238f8063a53c315a081b2556b0c7e23afe7d856437c94729e1fee12626f7b"
+      },
+      "solver_converged": true,
+      "nfev": 32,
+      "boundary_hits": []
+    },
+    {
+      "scene": "gironde_129",
+      "job": "rear_vehicle_severe",
+      "record": {
+        "path": "sampling_v1/gironde_129/groups/rear_vehicle_severe.json",
+        "sha256": "120870926dea23fc75018b1b535a75a7226ff6247354bf727e74658196d0b604"
+      },
+      "solver_converged": true,
+      "nfev": 50,
+      "boundary_hits": []
+    },
+    {
+      "scene": "gironde_129",
+      "job": "rear_strip_mild",
+      "record": {
+        "path": "sampling_v1/gironde_129/groups/rear_strip_mild.json",
+        "sha256": "58d98af3ceafc5f6d324fba968d72833b589e1f69e95eef49a1bf8f1a52a43f9"
+      },
+      "solver_converged": true,
+      "nfev": 20,
+      "boundary_hits": []
+    },
+    {
+      "scene": "gironde_129",
+      "job": "rear_strip_severe",
+      "record": {
+        "path": "sampling_v1/gironde_129/groups/rear_strip_severe.json",
+        "sha256": "0e3d8f12a80d02bf5edfc87f2f87ebded6f2d863cd699e70fd59eb379fb7866d"
+      },
+      "solver_converged": true,
+      "nfev": 25,
+      "boundary_hits": []
+    },
+    {
+      "scene": "gironde_129",
+      "job": "footprint",
+      "record": {
+        "path": "sampling_v1/gironde_129/groups/footprint.json",
+        "sha256": "83c6943bf9ae1d23b4862ced64755540a43eb18ac60816623d83d45d9a8e5914"
+      },
+      "solver_converged": true,
+      "nfev": 39,
+      "boundary_hits": []
+    },
+    {
+      "scene": "nantes_005",
+      "job": "near_rear_disc_mild",
+      "record": {
+        "path": "sampling_v1/nantes_005/groups/near_rear_disc_mild.json",
+        "sha256": "373162f6b7e47f339e7664d9630c50006642798af4e2d6427bc077f96ec41749"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "nantes_005",
+      "job": "near_rear_disc_severe",
+      "record": {
+        "path": "sampling_v1/nantes_005/groups/near_rear_disc_severe.json",
+        "sha256": "49b22e98a5cbf42149d6212e4a3492cf9c5455ba93a486726d1b95f1a5b18f90"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "nantes_005",
+      "job": "near_rear_vehicle_mild",
+      "record": {
+        "path": "sampling_v1/nantes_005/groups/near_rear_vehicle_mild.json",
+        "sha256": "1d8748b3e4893dfdc8c4c8ec0e41836c8f7d79b7164d3fbabac30ffc033af43b"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "nantes_005",
+      "job": "near_rear_vehicle_severe",
+      "record": {
+        "path": "sampling_v1/nantes_005/groups/near_rear_vehicle_severe.json",
+        "sha256": "c8462cd2d784262fabf8f5d4234a988aedd4375cbb23aa0e4c089684e6536eac"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "nantes_005",
+      "job": "near_rear_strip_mild",
+      "record": {
+        "path": "sampling_v1/nantes_005/groups/near_rear_strip_mild.json",
+        "sha256": "3d78f8f9232182fcaf9e8b15958de6d554eff88c285b4764440b6a76ae681e1a"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "nantes_005",
+      "job": "near_rear_strip_severe",
+      "record": {
+        "path": "sampling_v1/nantes_005/groups/near_rear_strip_severe.json",
+        "sha256": "099dbff2e71a71de79a54d97f2566066ba6f34bef59950f9316f3d4bae1342d2"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "nantes_005",
+      "job": "far_rear_disc_mild",
+      "record": {
+        "path": "sampling_v1/nantes_005/groups/far_rear_disc_mild.json",
+        "sha256": "af980878483e74c9c7a558889ed3b0ea110b292aabb3128226717229bb650a5c"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "nantes_005",
+      "job": "far_rear_disc_severe",
+      "record": {
+        "path": "sampling_v1/nantes_005/groups/far_rear_disc_severe.json",
+        "sha256": "49a58eddcd364e6bc7002359c6e7f089abecb13fb645198d370c0c93866ea5d1"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "nantes_005",
+      "job": "far_rear_vehicle_mild",
+      "record": {
+        "path": "sampling_v1/nantes_005/groups/far_rear_vehicle_mild.json",
+        "sha256": "cafbea464d1104309a936b8fbc98c524db05aeb473b2cd137c023e37a592cf01"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "nantes_005",
+      "job": "far_rear_vehicle_severe",
+      "record": {
+        "path": "sampling_v1/nantes_005/groups/far_rear_vehicle_severe.json",
+        "sha256": "57dd63b767e4f5116850d18c69657bbbd17985aa1c09cfb91c485bbe32e90100"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "nantes_005",
+      "job": "far_rear_strip_mild",
+      "record": {
+        "path": "sampling_v1/nantes_005/groups/far_rear_strip_mild.json",
+        "sha256": "84d0024fce15316d85a87e392101f7e1c8b7d1d180aecf0e3f3708e310c22467"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "nantes_005",
+      "job": "far_rear_strip_severe",
+      "record": {
+        "path": "sampling_v1/nantes_005/groups/far_rear_strip_severe.json",
+        "sha256": "fbf7614f569cac2f25a408043d36badd6041816629e2fad6a9d7f8863617dd53"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "nantes_005",
+      "job": "footprint",
+      "record": {
+        "path": "sampling_v1/nantes_005/groups/footprint.json",
+        "sha256": "2f5e5b69b98c2afcedf95a0fd4e9b98a7295d78fe00a94e06dee95ac29705a89"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "nantes_045",
+      "job": "near_rear_disc_mild",
+      "record": {
+        "path": "sampling_v1/nantes_045/groups/near_rear_disc_mild.json",
+        "sha256": "1485a65b9300863cff43e034e8037253d045288453514fdf7be99fab0c615752"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "nantes_045",
+      "job": "near_rear_disc_severe",
+      "record": {
+        "path": "sampling_v1/nantes_045/groups/near_rear_disc_severe.json",
+        "sha256": "b0dcdc3ee88dea5ced1c2f8c77f845facf10b5907d97833e2bd6b263afae1594"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "nantes_045",
+      "job": "near_rear_vehicle_mild",
+      "record": {
+        "path": "sampling_v1/nantes_045/groups/near_rear_vehicle_mild.json",
+        "sha256": "46e584c945bb5a117de3f1528ed86c5abbb529469788e747243d7494154e9ae7"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "nantes_045",
+      "job": "near_rear_vehicle_severe",
+      "record": {
+        "path": "sampling_v1/nantes_045/groups/near_rear_vehicle_severe.json",
+        "sha256": "e38ed1b5f24bae245a9cfbc6548995b61784bc49fc0701de2136cfc7ae67becb"
+      },
+      "solver_converged": true,
+      "nfev": 42,
+      "boundary_hits": []
+    },
+    {
+      "scene": "nantes_045",
+      "job": "near_rear_strip_mild",
+      "record": {
+        "path": "sampling_v1/nantes_045/groups/near_rear_strip_mild.json",
+        "sha256": "ee8e03c1ec729893fee4c43984309e341e9cd2b54b6b1a165784467980bd0df6"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "nantes_045",
+      "job": "near_rear_strip_severe",
+      "record": {
+        "path": "sampling_v1/nantes_045/groups/near_rear_strip_severe.json",
+        "sha256": "75aa6055164c326cea6aaff6dfa951a0dfe5435d36f27f1221deb33227c6b7eb"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "nantes_045",
+      "job": "far_left_rear_disc_mild",
+      "record": {
+        "path": "sampling_v1/nantes_045/groups/far_left_rear_disc_mild.json",
+        "sha256": "b8660cb9fef3aa1abcf206129e7bcfa3d0cf4f7aa466650b96b731a307092bc2"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "nantes_045",
+      "job": "far_left_rear_disc_severe",
+      "record": {
+        "path": "sampling_v1/nantes_045/groups/far_left_rear_disc_severe.json",
+        "sha256": "f3bce3354badc9b1e5a9a0b897f74fa5ef5a6556e3393e3bc475967e5718ed49"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "nantes_045",
+      "job": "far_left_rear_vehicle_mild",
+      "record": {
+        "path": "sampling_v1/nantes_045/groups/far_left_rear_vehicle_mild.json",
+        "sha256": "671e997f78d415dabee226990f88039d2fd9a30ce638a37590b83df5e7b70f73"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "nantes_045",
+      "job": "far_left_rear_vehicle_severe",
+      "record": {
+        "path": "sampling_v1/nantes_045/groups/far_left_rear_vehicle_severe.json",
+        "sha256": "0ba6bfe92ec8972824292f274ccda3931a0c54688845b24790bdbb38fe5db168"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "nantes_045",
+      "job": "far_left_rear_strip_mild",
+      "record": {
+        "path": "sampling_v1/nantes_045/groups/far_left_rear_strip_mild.json",
+        "sha256": "9b8e64daf23ccee1e58efb5847dd1ef0a40cf190a0003f24378af26965d436cb"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "nantes_045",
+      "job": "far_left_rear_strip_severe",
+      "record": {
+        "path": "sampling_v1/nantes_045/groups/far_left_rear_strip_severe.json",
+        "sha256": "ee2059d7f9da19e9db4cb98727752312c46f35ec476e3fa15f52bfe6d94cb485"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "nantes_045",
+      "job": "footprint",
+      "record": {
+        "path": "sampling_v1/nantes_045/groups/footprint.json",
+        "sha256": "7f1b666391995d3d9bdc2ea9e4869a3b483d272e9e2d5ce4c83da83cb8674803"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "bourges_003",
+      "job": "forward_disc_mild",
+      "record": {
+        "path": "sampling_v1/bourges_003/groups/forward_disc_mild.json",
+        "sha256": "98f2f5376d57b2cd48f0c7490b86f907fba6bb4eea04ee6ba27b7872d9a5edd3"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "bourges_003",
+      "job": "forward_disc_severe",
+      "record": {
+        "path": "sampling_v1/bourges_003/groups/forward_disc_severe.json",
+        "sha256": "5e2aeb64dbf7b0848198814ce0e41b2a62dcb3cc3911b933e2ab80db25fe7351"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "bourges_003",
+      "job": "forward_vehicle_mild",
+      "record": {
+        "path": "sampling_v1/bourges_003/groups/forward_vehicle_mild.json",
+        "sha256": "f04f5b4d372c64326f7c85abce1d812fddabc8052600d2a72e428d3ddb7c94f0"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "bourges_003",
+      "job": "forward_vehicle_severe",
+      "record": {
+        "path": "sampling_v1/bourges_003/groups/forward_vehicle_severe.json",
+        "sha256": "e5f76db610282d700f86f194f67ab713da6530bb4550b6632bb9b896eeb0fa8e"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "bourges_003",
+      "job": "forward_strip_mild",
+      "record": {
+        "path": "sampling_v1/bourges_003/groups/forward_strip_mild.json",
+        "sha256": "25869a64f7db818f0a03b4747edbbed732f7e1b6fc10a9db3511d8e4a51674eb"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "bourges_003",
+      "job": "forward_strip_severe",
+      "record": {
+        "path": "sampling_v1/bourges_003/groups/forward_strip_severe.json",
+        "sha256": "abae37f0b4121e1d20350c7cb89b50d5020c80a0df43c14f32e70b9116276270"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "bourges_003",
+      "job": "rear_disc_mild",
+      "record": {
+        "path": "sampling_v1/bourges_003/groups/rear_disc_mild.json",
+        "sha256": "f9400ce9c45a1ef918897699d5280cc165978095c7dbf7f0692579303734022c"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "bourges_003",
+      "job": "rear_disc_severe",
+      "record": {
+        "path": "sampling_v1/bourges_003/groups/rear_disc_severe.json",
+        "sha256": "d611b5537743594b31741e002cfe02993dae825e75d05295825164f6bff197c7"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "bourges_003",
+      "job": "rear_vehicle_mild",
+      "record": {
+        "path": "sampling_v1/bourges_003/groups/rear_vehicle_mild.json",
+        "sha256": "d8ab5cf0d2c3c441f1410509471a9d85e6bdb5c3cb7b0acd19c0c687c3048c7f"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "bourges_003",
+      "job": "rear_vehicle_severe",
+      "record": {
+        "path": "sampling_v1/bourges_003/groups/rear_vehicle_severe.json",
+        "sha256": "34d2240940c60f5806b11328004929a021df7bdb5f18852a9ddd58e04b0cdc48"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "bourges_003",
+      "job": "rear_strip_mild",
+      "record": {
+        "path": "sampling_v1/bourges_003/groups/rear_strip_mild.json",
+        "sha256": "0d7b1f7b74c2a035360dcd4521b1d9d078f53dd9b8fb0d74fe87d53ab9f5b204"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "bourges_003",
+      "job": "rear_strip_severe",
+      "record": {
+        "path": "sampling_v1/bourges_003/groups/rear_strip_severe.json",
+        "sha256": "e615729ac9575da1cdedf33fc19de9070d637816dd78f3f2b3f044f3cdaea1db"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "bourges_003",
+      "job": "footprint",
+      "record": {
+        "path": "sampling_v1/bourges_003/groups/footprint.json",
+        "sha256": "8b4e9fc8f98a4cebcd76ef547ecdde3b8a11824e0e28c92fb0121b08fbbf222d"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "bourges_045",
+      "job": "forward_disc_mild",
+      "record": {
+        "path": "sampling_v1/bourges_045/groups/forward_disc_mild.json",
+        "sha256": "b5e4141376af61bea0221d8670d65addc5b8a07fdfe175ba703ee202600fd6ad"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "bourges_045",
+      "job": "forward_disc_severe",
+      "record": {
+        "path": "sampling_v1/bourges_045/groups/forward_disc_severe.json",
+        "sha256": "ae3716b8d7d767563a77bb0ce9f2226c5c7293c6e6d622a140d41264010d66a8"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "bourges_045",
+      "job": "forward_vehicle_mild",
+      "record": {
+        "path": "sampling_v1/bourges_045/groups/forward_vehicle_mild.json",
+        "sha256": "113780aea9f59a73f15f9e284d811a98b870182684c3d12dcbe8cd93134ca07b"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "bourges_045",
+      "job": "forward_vehicle_severe",
+      "record": {
+        "path": "sampling_v1/bourges_045/groups/forward_vehicle_severe.json",
+        "sha256": "06feac14a7f450d515ad5453fa2bbba678bb80e53c8b38dcfd2b19ba46ad74ff"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "bourges_045",
+      "job": "forward_strip_mild",
+      "record": {
+        "path": "sampling_v1/bourges_045/groups/forward_strip_mild.json",
+        "sha256": "d05fad17116e03e80522307f711e0f0a10b7a8797e65cc1fe9ead0613158cf24"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "bourges_045",
+      "job": "forward_strip_severe",
+      "record": {
+        "path": "sampling_v1/bourges_045/groups/forward_strip_severe.json",
+        "sha256": "dba90c606284cf4b99169a77f358f68924c35eb09c2e716825edf35cb37f3f1a"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "bourges_045",
+      "job": "rear_disc_mild",
+      "record": {
+        "path": "sampling_v1/bourges_045/groups/rear_disc_mild.json",
+        "sha256": "3dddd1e8849ff1a9fd23153cc9018067d315d96b1ae33e4ffaac3bd6176af5c8"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "bourges_045",
+      "job": "rear_disc_severe",
+      "record": {
+        "path": "sampling_v1/bourges_045/groups/rear_disc_severe.json",
+        "sha256": "c5c891af724c96e7bdcd94626780b95a33ba2784e861972ef9da8bd4aba9b9cb"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "bourges_045",
+      "job": "rear_vehicle_mild",
+      "record": {
+        "path": "sampling_v1/bourges_045/groups/rear_vehicle_mild.json",
+        "sha256": "6be0eff0ca506e538513a0a21d1508526b31f08e7e8bff0ae570f45f9b40bf2f"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "bourges_045",
+      "job": "rear_vehicle_severe",
+      "record": {
+        "path": "sampling_v1/bourges_045/groups/rear_vehicle_severe.json",
+        "sha256": "4fe74faea0e1d05e3b482e9307fa0ed26bd5eb3f9a9444db72f097dd799b22d9"
+      },
+      "solver_converged": false,
+      "nfev": 160,
+      "boundary_hits": [
+        3
+      ]
+    },
+    {
+      "scene": "bourges_045",
+      "job": "rear_strip_mild",
+      "record": {
+        "path": "sampling_v1/bourges_045/groups/rear_strip_mild.json",
+        "sha256": "a90c53fcbfe4f515dcf0e165c53282104f418b3590a6cd512241665dede59558"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "bourges_045",
+      "job": "rear_strip_severe",
+      "record": {
+        "path": "sampling_v1/bourges_045/groups/rear_strip_severe.json",
+        "sha256": "ca2d66166429392e3f925f8534f435df052959444b3b0a35e74945255905af51"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "bourges_045",
+      "job": "footprint",
+      "record": {
+        "path": "sampling_v1/bourges_045/groups/footprint.json",
+        "sha256": "03638d9db206ef0716cb92ec053090ff3d37d134063cb12c6058a1f5acfa8ca3"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "gironde_original",
+      "job": "front_disc_mild",
+      "record": {
+        "path": "sampling_v1/gironde_original/groups/front_disc_mild.json",
+        "sha256": "99a3b2f26344f26634465623cbfdf42391fa35505283287d8152267985952603"
+      },
+      "solver_converged": true,
+      "nfev": 33,
+      "boundary_hits": []
+    },
+    {
+      "scene": "gironde_original",
+      "job": "front_disc_severe",
+      "record": {
+        "path": "sampling_v1/gironde_original/groups/front_disc_severe.json",
+        "sha256": "45a84b355bc3a8e3a553425624013578188b7b322a2229f955d5b5f945667394"
+      },
+      "solver_converged": true,
+      "nfev": 29,
+      "boundary_hits": []
+    },
+    {
+      "scene": "gironde_original",
+      "job": "front_vehicle_mild",
+      "record": {
+        "path": "sampling_v1/gironde_original/groups/front_vehicle_mild.json",
+        "sha256": "c15f9e628153d470ca971e8ccaa20f458a5ff243b19edfa914de9a4c062d7c78"
+      },
+      "solver_converged": true,
+      "nfev": 28,
+      "boundary_hits": []
+    },
+    {
+      "scene": "gironde_original",
+      "job": "front_vehicle_severe",
+      "record": {
+        "path": "sampling_v1/gironde_original/groups/front_vehicle_severe.json",
+        "sha256": "c1681eb49998ce57be2407131bf70106363222e11359fc05593b89c04829f57c"
+      },
+      "solver_converged": true,
+      "nfev": 27,
+      "boundary_hits": []
+    },
+    {
+      "scene": "gironde_original",
+      "job": "front_strip_mild",
+      "record": {
+        "path": "sampling_v1/gironde_original/groups/front_strip_mild.json",
+        "sha256": "0faade371048132f6192e0530c5baf6459936d3520f44b74d9ba5c2b85217928"
+      },
+      "solver_converged": true,
+      "nfev": 26,
+      "boundary_hits": []
+    },
+    {
+      "scene": "gironde_original",
+      "job": "front_strip_severe",
+      "record": {
+        "path": "sampling_v1/gironde_original/groups/front_strip_severe.json",
+        "sha256": "9f49736791042a997c9615981c701e34feff66a39dd4b947fd9d2ca2d067dc8a"
+      },
+      "solver_converged": true,
+      "nfev": 29,
+      "boundary_hits": []
+    },
+    {
+      "scene": "gironde_original",
+      "job": "rear_disc_mild",
+      "record": {
+        "path": "sampling_v1/gironde_original/groups/rear_disc_mild.json",
+        "sha256": "14166c7743cbf0fb6fbd4767ba426694edb70af5ffffca098665add815c05654"
+      },
+      "solver_converged": true,
+      "nfev": 14,
+      "boundary_hits": []
+    },
+    {
+      "scene": "gironde_original",
+      "job": "rear_disc_severe",
+      "record": {
+        "path": "sampling_v1/gironde_original/groups/rear_disc_severe.json",
+        "sha256": "9ba5b3a482b7b6f551a3cb9f5908c274597700b61dbf49691c9d7dc8dc1848a5"
+      },
+      "solver_converged": true,
+      "nfev": 28,
+      "boundary_hits": []
+    },
+    {
+      "scene": "gironde_original",
+      "job": "rear_vehicle_mild",
+      "record": {
+        "path": "sampling_v1/gironde_original/groups/rear_vehicle_mild.json",
+        "sha256": "1530bdfb81027ec4ec2b725b6d411edebba85d38f8de740eb6654d17376ac5c5"
+      },
+      "solver_converged": true,
+      "nfev": 11,
+      "boundary_hits": []
+    },
+    {
+      "scene": "gironde_original",
+      "job": "rear_strip_mild",
+      "record": {
+        "path": "sampling_v1/gironde_original/groups/rear_strip_mild.json",
+        "sha256": "90f47bb78d102f9384d722df6cab297e4387ebb2fb17af620f25905b5c0acf52"
+      },
+      "solver_converged": true,
+      "nfev": 23,
+      "boundary_hits": []
+    },
+    {
+      "scene": "gironde_original",
+      "job": "rear_strip_severe",
+      "record": {
+        "path": "sampling_v1/gironde_original/groups/rear_strip_severe.json",
+        "sha256": "658f008c53c6ae384fc3591e4ceac027b9229cf7d2db5edad7e3c9983fcadc7f"
+      },
+      "solver_converged": true,
+      "nfev": 66,
+      "boundary_hits": []
+    },
+    {
+      "scene": "gironde_original",
+      "job": "footprint",
+      "record": {
+        "path": "sampling_v1/gironde_original/groups/footprint.json",
+        "sha256": "b4cb7b7b26aebbe2c7f98bfe122bf7a6d6ba3c68c0c59d569764ee356034cea7"
+      },
+      "solver_converged": true,
+      "nfev": 24,
+      "boundary_hits": []
+    },
+    {
+      "scene": "nantes_original",
+      "job": "front_disc_mild",
+      "record": {
+        "path": "sampling_v1/nantes_original/groups/front_disc_mild.json",
+        "sha256": "d6e61b54d88c7f5b917ca6315b8f5cb4fd860bbcb22393f6a61bce162a53396c"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "nantes_original",
+      "job": "front_disc_severe",
+      "record": {
+        "path": "sampling_v1/nantes_original/groups/front_disc_severe.json",
+        "sha256": "6bd450273bdf3f13b2efe5bf9e01f32db716fabde67bef939c9d11d3d344ff5f"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "nantes_original",
+      "job": "front_vehicle_mild",
+      "record": {
+        "path": "sampling_v1/nantes_original/groups/front_vehicle_mild.json",
+        "sha256": "3433f7133616ab093092c225c36c1fb6c3445733fc63456045ffbe810f621e8e"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "nantes_original",
+      "job": "front_vehicle_severe",
+      "record": {
+        "path": "sampling_v1/nantes_original/groups/front_vehicle_severe.json",
+        "sha256": "73c00ec3e96f70591423c0e679ddf81f01934832776895a5916d151115b4be08"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "nantes_original",
+      "job": "front_strip_mild",
+      "record": {
+        "path": "sampling_v1/nantes_original/groups/front_strip_mild.json",
+        "sha256": "62a402623e5f12ce635c3ea6127cd7a2d626d5a53a6580add714dedebbc6d07a"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "nantes_original",
+      "job": "front_strip_severe",
+      "record": {
+        "path": "sampling_v1/nantes_original/groups/front_strip_severe.json",
+        "sha256": "0c5ed0e2b18fc3b862005be1b9f2de7e08f8dbb30dd6beef93cf21ebd57811f7"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "nantes_original",
+      "job": "rear_disc_mild",
+      "record": {
+        "path": "sampling_v1/nantes_original/groups/rear_disc_mild.json",
+        "sha256": "a6396889067aed17a85f4655b100f25f06c8164bf98e2b74b5e7d65fde7bb6ee"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "nantes_original",
+      "job": "rear_disc_severe",
+      "record": {
+        "path": "sampling_v1/nantes_original/groups/rear_disc_severe.json",
+        "sha256": "df74155503b3ce7b493802107af5fc5db674dd2925a3d2917728b37ff39eb778"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "nantes_original",
+      "job": "rear_vehicle_mild",
+      "record": {
+        "path": "sampling_v1/nantes_original/groups/rear_vehicle_mild.json",
+        "sha256": "16a29c2d2001d98dae0ca2234b86f14a83f21bfb8731f8e7bb11fc3de27ebf25"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "nantes_original",
+      "job": "rear_vehicle_severe",
+      "record": {
+        "path": "sampling_v1/nantes_original/groups/rear_vehicle_severe.json",
+        "sha256": "2a846c845860e99b8dbf9a5f9faada2e775b3df25f8e23b12590ae851cccd8c1"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "nantes_original",
+      "job": "rear_strip_mild",
+      "record": {
+        "path": "sampling_v1/nantes_original/groups/rear_strip_mild.json",
+        "sha256": "189f2f87c71a79e2f9c40098b4570ec763d415c88a6ef92b59ca50ef14d45750"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "nantes_original",
+      "job": "rear_strip_severe",
+      "record": {
+        "path": "sampling_v1/nantes_original/groups/rear_strip_severe.json",
+        "sha256": "ac4daa0f0d100ae044466d3c75d04ff4d70957955051fc56036ce3362e431108"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "nantes_original",
+      "job": "footprint",
+      "record": {
+        "path": "sampling_v1/nantes_original/groups/footprint.json",
+        "sha256": "24ca050e78f5f5bc10183b24e3b5232979febd74b708bd0d426278f278dedfd0"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "bourges_original",
+      "job": "front_disc_mild",
+      "record": {
+        "path": "sampling_v1/bourges_original/groups/front_disc_mild.json",
+        "sha256": "e087d5c06170c8de3a5968cc44990a88c68a9eea1243483c51dfac2d2e871953"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "bourges_original",
+      "job": "front_disc_severe",
+      "record": {
+        "path": "sampling_v1/bourges_original/groups/front_disc_severe.json",
+        "sha256": "e7e91c1b16e81d00b99dea26f1bf5810796091759769424450ea4d6cd8c6b74d"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "bourges_original",
+      "job": "front_vehicle_mild",
+      "record": {
+        "path": "sampling_v1/bourges_original/groups/front_vehicle_mild.json",
+        "sha256": "bd5f2b0b1356281c15b6f76dc2f3f03505e9a8ab680345373c61486d03d29768"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "bourges_original",
+      "job": "front_vehicle_severe",
+      "record": {
+        "path": "sampling_v1/bourges_original/groups/front_vehicle_severe.json",
+        "sha256": "b51ef6a574c83bcf8082e150063c97e1720093e03e62737984ca42501ed0a7db"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "bourges_original",
+      "job": "front_strip_mild",
+      "record": {
+        "path": "sampling_v1/bourges_original/groups/front_strip_mild.json",
+        "sha256": "4c177a5090dd38be3aaf2084999a0a99dd8511f0be5ca859f2a1b57b62c4ec1a"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "bourges_original",
+      "job": "front_strip_severe",
+      "record": {
+        "path": "sampling_v1/bourges_original/groups/front_strip_severe.json",
+        "sha256": "d6136f9c883c24d507bf23535c361ff80b2731740676044c90b9058bd41b1061"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "bourges_original",
+      "job": "rear_disc_mild",
+      "record": {
+        "path": "sampling_v1/bourges_original/groups/rear_disc_mild.json",
+        "sha256": "7f47770be881d18bab6cf1933a4cf680d663735fe5eacbe510f3089367f63a7d"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "bourges_original",
+      "job": "rear_disc_severe",
+      "record": {
+        "path": "sampling_v1/bourges_original/groups/rear_disc_severe.json",
+        "sha256": "179dbd11ec4b978d48ea62af0a5cbc5692c1433b3152ddfdb558bc8f39ca001f"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "bourges_original",
+      "job": "rear_vehicle_mild",
+      "record": {
+        "path": "sampling_v1/bourges_original/groups/rear_vehicle_mild.json",
+        "sha256": "61706de48360cb27a3ffb1573f5cda73b2b9717c9eca499dd089e318d0f74132"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "bourges_original",
+      "job": "rear_vehicle_severe",
+      "record": {
+        "path": "sampling_v1/bourges_original/groups/rear_vehicle_severe.json",
+        "sha256": "ed993256c20c2c0f8efb1316eb0a2bd171e500022afc4849c4eda04c2f66b705"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "bourges_original",
+      "job": "rear_strip_mild",
+      "record": {
+        "path": "sampling_v1/bourges_original/groups/rear_strip_mild.json",
+        "sha256": "7d2c2878a13013b207650b1eaefc17e0b3923a7ac6ddfbade1a40fb38273379c"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "bourges_original",
+      "job": "rear_strip_severe",
+      "record": {
+        "path": "sampling_v1/bourges_original/groups/rear_strip_severe.json",
+        "sha256": "a025348bcc9816502a15ffaeb76132373eacafceb8b53ad36c6da6c990edb810"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "bourges_original",
+      "job": "footprint",
+      "record": {
+        "path": "sampling_v1/bourges_original/groups/footprint.json",
+        "sha256": "a2fd66cee854934d7b6541f863895756a014d2fa7154bf8baf800e9b3ae47e1f"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "gironde_hard",
+      "job": "hidden_front",
+      "record": {
+        "path": "sampling_v1/gironde_hard/groups/hidden_front.json",
+        "sha256": "17fcdcc454865a0f938a1dbd2eb3e9fc78fcfa02c5c263715c6cdde4749df8be"
+      },
+      "solver_converged": true,
+      "nfev": 32,
+      "boundary_hits": []
+    },
+    {
+      "scene": "gironde_hard",
+      "job": "local_front",
+      "record": {
+        "path": "sampling_v1/gironde_hard/groups/local_front.json",
+        "sha256": "6a64d4b3c516718f24e972cd509b68c204cfde2b2539dd1dfad88532c7623c80"
+      },
+      "solver_converged": true,
+      "nfev": 12,
+      "boundary_hits": []
+    },
+    {
+      "scene": "gironde_hard",
+      "job": "local_rear",
+      "record": {
+        "path": "sampling_v1/gironde_hard/groups/local_rear.json",
+        "sha256": "30db26dd5aa81ae13c1d1ae395dd4e43e493b2903223ec847315c1411922a10c"
+      },
+      "solver_converged": true,
+      "nfev": 25,
+      "boundary_hits": []
+    },
+    {
+      "scene": "alsace_hard",
+      "job": "footprint",
+      "record": {
+        "path": "sampling_v1/alsace_hard/groups/footprint.json",
+        "sha256": "17fd06fe608a466363b108f35b6c8ce5bb9944ddfc88b0a8bc98c411e5f3732a"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "alsace_hard",
+      "job": "hidden_front",
+      "record": {
+        "path": "sampling_v1/alsace_hard/groups/hidden_front.json",
+        "sha256": "eb958bd94fc10f682e676938b154e9c93cfc59f74f0f3ce74628229926e94eca"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "alsace_hard",
+      "job": "hidden_rear",
+      "record": {
+        "path": "sampling_v1/alsace_hard/groups/hidden_rear.json",
+        "sha256": "cff01e1ad4c77a732c98f625d1aed0d549a48f4c61ae696a3b2c4fefb0a964a1"
+      },
+      "solver_converged": true,
+      "nfev": 6,
+      "boundary_hits": []
+    },
+    {
+      "scene": "alsace_hard",
+      "job": "local_front",
+      "record": {
+        "path": "sampling_v1/alsace_hard/groups/local_front.json",
+        "sha256": "e234bfb8af7865b2b830904ba51a6b4e4c5bf7239b61b63fdfd3044bcfc412e1"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    },
+    {
+      "scene": "alsace_hard",
+      "job": "local_rear",
+      "record": {
+        "path": "sampling_v1/alsace_hard/groups/local_rear.json",
+        "sha256": "c7aa6824de4801a13057ed2325a8708d31e7ed2387cc55484f7bf00be3ce0f87"
+      },
+      "solver_converged": null,
+      "nfev": null,
+      "boundary_hits": null
+    }
+  ],
+  "learned_inference_needed": false,
+  "evaluation": "Reuse and hash-verify all unaffected results, including full urban failures and physical-bound failures. Compare affected regions with both640px and960px baselines, then reconstruct full216-condition and original hard-road comparisons. Require source/metric audit before any claim. No promotion from coverage alone."
+}

@@ -1,0 +1,142 @@
+{
+  "scene": "gironde_original",
+  "condition": {
+    "spec": {
+      "key": "front_blur_severe",
+      "location": "front",
+      "family": "blur",
+      "severity": "severe",
+      "mask_key": "front_disc_severe"
+    },
+    "job": "front_disc_severe",
+    "baseline": {
+      "path": "controlled_v1/gironde/scenarios/front_blur_severe.json",
+      "sha256": "67fb4e94e71719a8026748991c1430d39b3c914c67a74505a112fcb121fe40b1"
+    }
+  },
+  "signature": {
+    "plan_sha256": "42e3bd3edc0a7ec4228f917649315750379fea567ff3496502be02b675438bd1",
+    "certificate": {
+      "path": "sampling_v1/model_validation_001.json",
+      "sha256": "b2adde1b80a576bde3b072830d49790318185a9666c2d6153ba23425679de3da"
+    }
+  },
+  "geometry": {
+    "path": "sampling_v1/gironde_original/groups/front_disc_severe.json",
+    "sha256": "45a84b355bc3a8e3a553425624013578188b7b322a2229f955d5b5f945667394"
+  },
+  "same_pixel_controls": {
+    "loftr_homography": {
+      "candidate": {
+        "as_damaged": {
+          "pixels": 61344,
+          "source_mae_255": 3.7958344201008516,
+          "control_mae_255": 3.8635780733785428,
+          "source_better_pixels": 26098,
+          "source_worse_pixels": 31600,
+          "equal_pixels": 3646
+        },
+        "telea_r3": {
+          "pixels": 61344,
+          "source_mae_255": 3.7958344201008516,
+          "control_mae_255": 8.163346591897062,
+          "source_better_pixels": 43037,
+          "source_worse_pixels": 16705,
+          "equal_pixels": 1602
+        }
+      },
+      "corroborated": {
+        "as_damaged": {
+          "pixels": 4591,
+          "source_mae_255": 4.101648152181805,
+          "control_mae_255": 2.4315690118347493,
+          "source_better_pixels": 1315,
+          "source_worse_pixels": 2979,
+          "equal_pixels": 297
+        },
+        "telea_r3": {
+          "pixels": 4591,
+          "source_mae_255": 4.101648152181805,
+          "control_mae_255": 6.351920424018005,
+          "source_better_pixels": 3095,
+          "source_worse_pixels": 1411,
+          "equal_pixels": 85
+        }
+      },
+      "strict": {
+        "as_damaged": {
+          "pixels": 3622,
+          "source_mae_255": 3.4932817964292284,
+          "control_mae_255": 2.4806736609607953,
+          "source_better_pixels": 1175,
+          "source_worse_pixels": 2186,
+          "equal_pixels": 261
+        },
+        "telea_r3": {
+          "pixels": 3622,
+          "source_mae_255": 3.4932817964292284,
+          "control_mae_255": 6.238726302227131,
+          "source_better_pixels": 2603,
+          "source_worse_pixels": 942,
+          "equal_pixels": 77
+        }
+      }
+    },
+    "loftr_metric_free": {
+      "candidate": {
+        "as_damaged": {
+          "pixels": 65384,
+          "source_mae_255": 3.630011419715323,
+          "control_mae_255": 3.7500101961743955,
+          "source_better_pixels": 28342,
+          "source_worse_pixels": 32763,
+          "equal_pixels": 4279
+        },
+        "telea_r3": {
+          "pixels": 65384,
+          "source_mae_255": 3.630011419715323,
+          "control_mae_255": 7.855882173008688,
+          "source_better_pixels": 46161,
+          "source_worse_pixels": 17283,
+          "equal_pixels": 1940
+        }
+      },
+      "corroborated": {
+        "as_damaged": {
+          "pixels": 10340,
+          "source_mae_255": 3.8178272082527402,
+          "control_mae_255": 2.505705996131528,
+          "source_better_pixels": 3326,
+          "source_worse_pixels": 6413,
+          "equal_pixels": 601
+        },
+        "telea_r3": {
+          "pixels": 10340,
+          "source_mae_255": 3.8178272082527402,
+          "control_mae_255": 7.948742746615086,
+          "source_better_pixels": 8067,
+          "source_worse_pixels": 2066,
+          "equal_pixels": 207
+        }
+      },
+      "strict": {
+        "as_damaged": {
+          "pixels": 9267,
+          "source_mae_255": 3.37182115751232,
+          "control_mae_255": 2.4953418941764682,
+          "source_better_pixels": 3193,
+          "source_worse_pixels": 5491,
+          "equal_pixels": 583
+        },
+        "telea_r3": {
+          "pixels": 9267,
+          "source_mae_255": 3.37182115751232,
+          "control_mae_255": 8.094744793352758,
+          "source_better_pixels": 7689,
+          "source_worse_pixels": 1391,
+          "equal_pixels": 187
+        }
+      }
+    }
+  }
+}
