@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-31",
+  "tests": {
+    "passed": 14,
+    "failed": 0,
+    "learned_mask_exclusion_test": true,
+    "device": "mps",
+    "command": "RUN_LEARNED_TESTS=1 TORCH_HOME=<workspace>/work/model-cache python -m pytest tests -q"
+  },
+  "integrity": {
+    "region_method_runs": 90,
+    "unique_source_images": 45,
+    "checks": [
+      "Source SHA-256",
+      "Protocol and implementation SHA-256",
+      "No duplicated donor or target IDs per scene",
+      "Mask pixel counts",
+      "Policy acceptance counts",
+      "Donor index ranges",
+      "Single-view plus multi-view counts",
+      "Required output images"
+    ]
+  },
+  "browser_checks": [
+    "Report and all-scene table rendered",
+    "Scene, matcher, policy and region selectors updated",
+    "Support overlay rendered",
+    "Strict local-probe metrics and dark abstentions verified",
+    "WebGL new-scene panorama rendered",
+    "Original/partial panorama toggles worked",
+    "No browser warning or error logs observed",
+    "Deliverable tab retained"
+  ],
+  "limits": [
+    "No ground truth beneath actual vehicle",
+    "Manual conservative masks and planar model",
+    "Seven new French convenience-sampled scenes, including two small rigs",
+    "Supplemental local probes added after large-mask results",
+    "Agreement is not calibrated accuracy; adjacent observations are correlated"
+  ]
+}
