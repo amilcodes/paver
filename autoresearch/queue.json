@@ -1,0 +1,320 @@
+[
+  {
+    "id": "sampling_960_interior_solver_budget",
+    "status": "completed_audited_not_promoted",
+    "selection": "sampling_v1/solver_budget_followup_selection.json",
+    "selected_fits": 6,
+    "reuse_unchanged_groups": 120,
+    "hypothesis": "Six interior solutions reduce residuals but hit160evaluations; more solver budget may recover convergence without changing observations or acceptance.",
+    "intervention": {
+      "max_nfev": 640,
+      "initialization": "unchanged",
+      "bounds": "unchanged",
+      "tolerances": "unchanged"
+    },
+    "requirements": [
+      "Do not run new matching; verify exact cached points/train-holdout partitions and model/source hashes.",
+      "Select eligible jobs only by frozen optimizer diagnostics, never hidden RGB/error/coverage.",
+      "Keep all boundary failures, disconnected cases and nonconvergence as abstentions.",
+      "All126groups/216conditions andoriginalhard-road controls remain in comparison via explicit immutable reuse; no cherry-picked summary.",
+      "Compare common/gained/lost error/gradient/tails with both640px and960px baselines and same-pixel damaged/Telea controls.",
+      "Audit every changed result and all reuse references. No promotion from newly converged coverage alone."
+    ],
+    "execution_plan": "solver_budget_v1/execution_plan.json",
+    "log": "solver_budget_v1/run_002.log",
+    "results": "solver_budget_v1/summary.json",
+    "validation": "solver_budget_v1/audit_001.json",
+    "decision": "solver_budget_v1/recovery_decision.json",
+    "next_action": "No unchanged reruns or higher-budget sweep; move to observations."
+  },
+  {
+    "id": "controlled_v2_baseline_execution",
+    "status": "completed_independently_audited",
+    "selection": "controlled_v2/benchmark_protocol.json",
+    "requirements": [
+      "Use pinned MPS LoFTR; freeze exact runner/model/inputs before scoring.",
+      "Only allowed source ground and zeroed hidden target enter matching; scoring_only_strata is forbidden model input.",
+      "Retain all six anchors and prior three-area/Alsace controls for later ablation.",
+      "Report projected and angular coverage with errors/abstention; these patches do not cover the same angular cone as the ego vehicle.",
+      "Include Telea and as-damaged same-pixel controls and verify donor provenance."
+    ],
+    "limit": "Bounded/resumable one heavy job with explicit mask count; no new downloads needed.",
+    "execution_plan": "controlled_v2/baseline_v1/execution_plan.json",
+    "log": "controlled_v2/baseline_v1/run_001.log",
+    "results": "controlled_v2/baseline_v1/summary.json",
+    "validation": "controlled_v2/baseline_v1/audit_001.json",
+    "decision": "controlled_v2/baseline_v1/recovery_decision.json"
+  },
+  {
+    "id": "three_area_annotation_expansion_v2",
+    "status": "completed_frozen_and_audited",
+    "selection": "controlled_v2/annotation_selection.json",
+    "targets": 6,
+    "requirements": [
+      "Review five frames per new anchor and classify actual visibility before any reconstruction.",
+      "Keep route reuse classified as development/train.",
+      "Include texture strata and report projected and angular mask sizes."
+    ],
+    "next_action": "Preserve signed annotations; expanded baseline and960sampling comparisons completed.",
+    "validation": "controlled_v2/annotation_audit_001.json",
+    "results": "controlled_v2/benchmark_protocol.json",
+    "decision": "30 reviewed frames and144controlled conditions prepared. Angular footprint mismatch recorded; no recovery claims."
+  },
+  {
+    "id": "three_area_native_scale_matching_v2",
+    "status": "queued_next_native_perspective_crops",
+    "hypothesis": "Native-resolution ground crops may improve correspondences under source/target sampling differences that the640px nadir resize loses.",
+    "decision": "sampling_v1/recovery_decision.json",
+    "reference": "controlled_v1/recovery_decision.json",
+    "required_control_comparison": "controlled_v1/control_decision.json: donor transfer worsens blur vs unchanged pixels and loses to Telea on strip RGB. Use identical accepted pixels plus texture/gradient metrics; no universal replacement claim.",
+    "first_action": "Predeclare actual native/perspective ground-crop observation experiment; cache-budget follow-up complete, no default promoted. Keep all source/mask/policy controls.",
+    "expanded_controls": "controlled_v2/baseline_v1/execution_plan.json",
+    "original_controls": "controlled_v2/baseline_v1/retained_control_registry.json",
+    "requirements": [
+      "Create new versioned adapter/runner/plan; preserve every signed baseline and prior benchmark.",
+      "Predeclare crop sizes, pairing heuristic, overlap, deduplication and correspondence budget from allowed RGB/metadata only. Do not use clean target truth or scoring texture to choose crops, sources or confidence.",
+      "Prove crop-coordinate transforms on synthetic ground geometry; require actual MPS model translation and excluded-RGB invariance checks before road inference. No CPU fallback.",
+      "Deduplicate overlapping crop matches before held-out checks so repeated observations cannot inflate support; retain strict geometry/convergence/visibility and support gates.",
+      "Compare all72 new masks plus6 natural masks, the original36 controlled masks/3 natural anchors and all10 original Gironde/Alsace regions. Retained-control registry pins originals; no cherry-picked successes.",
+      "Report common/gained/lost pixels and all coverage/error/gradient/texture tails by area, family and severity, with unchanged-input and Telea same-pixel controls.",
+      "No promotion from coverage alone, donor agreement or low asphalt RGB error. All failures remain in denominators."
+    ],
+    "execution_plan": "sampling_v1/execution_plan.json",
+    "scope_note": "960 sampling improves pooled rural masks, regresses hard-road rear masks, and leaves allurban/Alsace atzero. Need different observations, not threshold relaxation.",
+    "model_validation": "sampling_v1/model_validation_001.json",
+    "results": "sampling_v1/summary.json",
+    "validation": "sampling_v1/audit_001.json",
+    "solver_control": "solver_budget_v1/registry.json"
+  },
+  {
+    "id": "photosphere_donor_graph_v1",
+    "status": "metadata_and_nine_anchor_query_evidence_complete",
+    "results": "network_v1/candidate_graph.json",
+    "nodes": 247,
+    "directed_candidates": 2843,
+    "next_action": "968query-specific decisions over36distinct reviewed target-donor pairs retained;24records updated after cached solver test. No calibrated correctness or promoted graph.",
+    "visual_results": [
+      "network_v1/visual_evidence_v1.json",
+      "network_v1/visual_evidence_v2.json"
+    ],
+    "latest_experimental_visual_results": "network_v1/visual_evidence_solver_budget.json"
+  },
+  {
+    "id": "contiguous_area_sets_v1",
+    "status": "completed_integrity_audited",
+    "priority": "current_user_direction",
+    "selection": "area_sets_v1/benchmark_protocol.json",
+    "first_action": "Check acquire_area_sets.py process/lock. Resume existing plans if incomplete; do not duplicate downloads. Then audit_area_sets.py and representative-frame screening. Preserve original five-frame windows.",
+    "areas": [
+      "gironde",
+      "nantes",
+      "bourges"
+    ],
+    "planned_frames": [
+      145,
+      51,
+      51
+    ],
+    "results": "area_sets_v1/audit_001.json",
+    "decision": "247/247 selected spheres verified; Gironde145 full collection; Nantes51 andBourges51 contiguous subsets. Extended images need individual annotations."
+  },
+  {
+    "id": "controlled_corruption_benchmark_v1",
+    "status": "completed_initial_battery_audited",
+    "priority": "before_further_tuning",
+    "protocol": "area_sets_v1/benchmark_protocol.json",
+    "first_action": "Do not rerun unchanged; read recovery_decision.json and expand frozen annotations.",
+    "requirements": [
+      "GPS positions are not ground-truth6DoF poses.",
+      "Natural occlusions and controlled corruption are separate evaluation tracks.",
+      "Do not convert any of these reused roads to independent test.",
+      "No source selection or confidence tuning from clean hidden target pixels.",
+      "Report masks, original/source hashes, corruption seeds, coverage/error/abstention and failures by area and corruption class."
+    ],
+    "execution_plan": "controlled_v1/execution_plan.json",
+    "results": "controlled_v1/summary.json",
+    "validation": "controlled_v1/audit_001.json",
+    "decision": "Three-anchor baseline complete; full spatial annotation expansion remains next. No model promoted."
+  },
+  {
+    "id": "sequence_graph_v1",
+    "status": "completed_experimental",
+    "decision": "Candidate and corroborated coverage improved; large-mask errors too high to promote.",
+    "results": "sequence_v1/results"
+  },
+  {
+    "id": "trajectory_seeded_flow_v2",
+    "status": "completed_rejected_as_default",
+    "decision": "Connected junction target but did not recover footprint; poorer coverage-error balance and two nonconverged runs.",
+    "results": "sequence_v2/results"
+  },
+  {
+    "id": "longer_rural_junction_sequences",
+    "status": "completed_negative_result",
+    "decision": "Eleven-frame windows did not recover either footprint. Rural target disconnected; junction support limited and several fits nonconverged.",
+    "results": "sequence_v3/results"
+  },
+  {
+    "id": "physical_pose_and_uncertainty_v4",
+    "status": "completed_rejected_as_default",
+    "hypothesis": "Shared camera/road constraints and spatial block uncertainty prevent plausible but wrong extrapolation; full-sphere context helps weak roads.",
+    "controls": [
+      "Existing immutable v1/v2/v3",
+      "Same correspondences without physical constraints"
+    ],
+    "first_action": "Hard rejection of nonconverged optimizer; compare constrained affine/similarity or calibrated road-plane poses before any support expansion.",
+    "results": "sequence_v4/summary.json",
+    "decision": "Affine and similarity reduce coverage; block-deletion sensitivity collapses large-mask recovery. Keep convergence rejection. Do not repeat unchanged settings."
+  },
+  {
+    "id": "metric_plane_pose_v5",
+    "status": "completed_promising_not_promoted",
+    "hypothesis": "Known nadir intrinsics and a shared road plane constrain projective cameras more appropriately than affine maps while retaining pitch/roll perspective. Full-sphere context may supply orientation on texture-poor roads.",
+    "requirements": [
+      "Derive and test camera/plane projection on known synthetic poses before real fitting",
+      "Keep strict convergence and original support limits; do not inflate coverage by extrapolation",
+      "Separate road-plane observations from non-planar contextual scene matches",
+      "Add geometric or gradient alignment metrics alongside RGB error to distinguish illumination effects",
+      "Use cached development evidence; leave new frozen test groups untouched"
+    ],
+    "controls": [
+      "converged homography",
+      "affine v4"
+    ],
+    "additional_analysis": "Measure source sampling density and grazing view angle; photometric stability alone cannot establish resolvable ground detail.",
+    "results": "sequence_v5/summary.json",
+    "decision": "Hidden-patch same-pixel error 12.63 -> 9.23, coverage 21.71% -> 23.66%; actual footprint candidate coverage 33.12% -> 29.79%. Hard roads still abstain. Weak metadata priors did not improve the free variant."
+  },
+  {
+    "id": "low_texture_matching_v6",
+    "status": "completed_rural_positive_junctions_unsolved",
+    "hypothesis": "Dense or panorama-domain correspondences avoid the near-zero sparse matches on unmarked roads; actual source evidence is currently the bottleneck.",
+    "first_action": "Completed; do not rerun unchanged v6. Read recovery_decision.json for bounded follow-ups.",
+    "requirements": [
+      "A changed hidden target must produce identical input features/matches outside excluded pixels",
+      "No non-planar scene matches may be fitted as road-plane points",
+      "If using full-sphere contextual points, estimate camera pose separately from ground geometry",
+      "Measure match connectivity, held-out correspondences, hidden RGB/gradient errors, coverage and abstention; no confidence-threshold loosening",
+      "Retain geometry and benchmark versions and keep test collections untouched"
+    ],
+    "alternatives_to_compare_later": [
+      "Dense learned matching in ground views",
+      "Native panorama/perspective-crop descriptors mapped into nadir coordinates",
+      "Independent contextual camera-pose constraints"
+    ],
+    "results": "sequence_v6/summary.json",
+    "decision": "Gironde now connects5/5 frames;21.75% single-view candidate footprint,41.05% large hidden-road coverage at4.30 RGB MAE. Both junctions still have zero accepted edges. All30 runs independently audited; not promoted.",
+    "execution_plan": "sequence_v6/execution_plan.json",
+    "post_run": "Use validate_dense_run_v2.py; original validator is retained with its documented float32 orientation discrepancy."
+  },
+  {
+    "id": "dense_sequence_v7",
+    "status": "completed_not_promoted",
+    "hypothesis": "Additional capture neighbors may give Gironde endpoint frames sufficient graph support and add independent views to footprint pixels.",
+    "first_action": "Create a NEW version using the existing frozen eleven-frame Gironde window and v6 LoFTR weights/preprocessing; preserve v6 and its five-frame controls. Validate per-frame masks and compare on identical five evaluation regions.",
+    "requirements": [
+      "No hidden target RGB in match/pose fitting or selection.",
+      "Preserve acceptance/support thresholds and source licenses/hashes.",
+      "Measure footprint single/multiple-view coverage and all hidden RGB/gradient errors jointly with abstention.",
+      "Do not confuse dense-match agreement with correctness or tune on frozen test data."
+    ],
+    "next_junction_direction": "Inspect metadata heading/view orientation and source sampling scale. Hundreds of wrong correspondences now exist; geometry-only refits or lowered gates are not justified.",
+    "execution_plan": "sequence_v7/execution_plan.json",
+    "results": "sequence_v7/summary.json",
+    "decision": "More supported footprint candidates, but large hidden-mask regression from solver nonconvergence and poorer local-rear donor selection. See recovery_decision.json; do not repeat unchanged."
+  },
+  {
+    "id": "junction_view_matching_v8",
+    "status": "superseded_by_three_area_native_scale_experiment",
+    "hypothesis": "Alsace and Bourges have many geometrically inconsistent matches; known orientation and native sampling may improve correspondence quality.",
+    "first_action": "See controlled_v1/recovery_decision.json: metadata yaw ranges are small, so investigate native sampling/scale before heading-only normalization.",
+    "requirements": [
+      "No whole-sphere nonplanar matches treated as ground-plane observations.",
+      "Use visible-only matching diagnostics; all five fixed regions remain controls.",
+      "Reject larger raw match count without held-out support and joint error/coverage improvement."
+    ]
+  },
+  {
+    "id": "long_graph_convergence_and_fusion",
+    "status": "queued",
+    "results_to_read": [
+      "sequence_v7/recovery_decision.json",
+      "sequence_v7/selection_diagnostic.json"
+    ],
+    "first_action": "Predeclare a geometry-only staged initialization/continuation or larger budget on cached accepted correspondences; central fallback may use optimizer/visible evidence only. Separately test sampling-aware source selection without target truth.",
+    "requirements": [
+      "Preserve v6/v7 outputs and central train/holdout partitions.",
+      "Nonconverged solutions must still abstain; no relaxed support.",
+      "Run all five Gironde masks and report common/gained/lost pixel error; do not cherry-pick improved footprint."
+    ]
+  },
+  {
+    "id": "independent_ground_truth_benchmark",
+    "status": "nine_dev_train_anchors_evaluated_independent_test_pending",
+    "spec": "autoresearch/benchmark_next.json",
+    "first_action": "All six additional frozen anchors now evaluated/audited; keep independent routes sealed. Design larger-angular-cone and geometric-truth controls before held-out scoring.",
+    "screening": "dataset_v1/annotations/screening_v1.json",
+    "results": "benchmark_v3/evaluation_status.json",
+    "cohort": "dataset_v1/cohorts/initial_100_v1.json",
+    "note": "216 controlled conditions on9 reused anchors are correlated development/train data, not216 independent tests. Investigate licensed small-rig spheres with visible near-nadir road for controlled large car-cone masks; current car routes cannot reveal naturally hidden truth.",
+    "latest_full_control_comparison": "solver_budget_v1/summary.json",
+    "scope_note": "Nine area anchors andAlsace are development/train;353catalogcollections/53testmetadata collections are notindependentbenchmarks untilcomplete route separation,annotations andtruth protocols are frozen. No held-out images scored."
+  },
+  {
+    "id": "dataset_catalog_v1",
+    "status": "resumable_progress",
+    "achieved": "315 assigned collections,349 cached images including247 contiguous area-set spheres; cohort100 still20 complete/1 incomplete/79 pending. Additional areas do not overwrite original window manifests.",
+    "next_commands": [
+      "dataset.py catalog --queries 20 --ring 1",
+      "dataset_admission.py --output <absolute new admission_audits/003>",
+      "audit_admission_next.py --proposal <new proposal> --output <new validation>",
+      "dataset_admission.py --output <same absolute directory> --commit",
+      "acquire_admitted.py --dry-run --split train --limit 5",
+      "acquire_admitted.py --split train --limit 5",
+      "audit_effective_dataset.py"
+    ],
+    "targets": {
+      "eligible_collections": 1000,
+      "complete_downloaded_windows": 100
+    },
+    "admission_rule": "Use dataset_admission.py effective_splits plus append-only ledgers. Do not overwrite splits_v1.json. New observations must pass audit_effective_dataset.py; quarantine conflicting whole components.",
+    "blocker": null,
+    "current_collections": 353,
+    "current_spatial_groups": 129,
+    "current_cached_images": 374,
+    "initial_cohort_complete": 25,
+    "initial_cohort_incomplete": 1,
+    "initial_cohort_pending": 74,
+    "latest_decision": "dataset_v1/admission_audits/003/decision.json",
+    "next_action": "Continue one rate-limited metadata batch and/or five pendingtrainwindows whenresourcespermit; retaininitial100cohort andalladmittedsplits. Use new004admission output ifnewcollections appear."
+  },
+  {
+    "id": "dataset_admission_001",
+    "status": "completed",
+    "results": "dataset_v1/admission_audits/001/validation_final.json",
+    "decision": "33 safe admissions, frozen100 cohort; retain all original assignments. Unsafe control has55 cross-split collection edges; actual assignments0. No pixels scored."
+  },
+  {
+    "id": "nantes_van_002_annotation",
+    "status": "completed_and_evaluated",
+    "results": "benchmark_v3/annotation_audits/nantes_van_002/validation.json",
+    "decision": "Annotation/input-isolation checks preserved; controlled and real-footprint LoFTR geometry fully abstains.",
+    "evaluation": "controlled_v1/summary.json"
+  },
+  {
+    "id": "dataset_admission_002",
+    "status": "completed",
+    "results": "dataset_v1/admission_audits/002/decision.json",
+    "decision": "13 safe append-only admissions;315 total.25 training images added,20 complete selected windows. Independent grid audit0 cross-split edges,unsafe control7. No held-out imagery or new recovery scores."
+  },
+  {
+    "id": "dataset_admission_003",
+    "status": "completed",
+    "decision": "dataset_v1/admission_audits/003/decision.json",
+    "validation": "dataset_v1/admission_audits/003/validation.json",
+    "effective_audit": "dataset_v1/admission_audits/003/effective_audit_snapshot.json",
+    "new_collections": 38,
+    "new_train_windows": 5,
+    "new_images": 25
+  }
+]

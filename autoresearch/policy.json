@@ -1,0 +1,53 @@
+{
+  "objective": "Increase empirically supported panorama footprint recovery through sequence geometry, stronger independent benchmarks, and scalable licensed datasets.",
+  "priorities": [
+    "Finish controlled benchmarks and expand annotations across Gironde, Nantes and Bourges",
+    "General photosphere donor graph: metadata retrieval followed by masked geometry/visibility/sampling verification",
+    "Measured recovery/error/abstention by obstruction type, all three areas and original hard-road controls",
+    "Independent route-separated tests and scalable licensed datasets"
+  ],
+  "reporting": "Maintain compact machine-readable state, experiment records and concise findings. No formatted visual-report work unless explicitly requested.",
+  "cadence": "hourly",
+  "resource_limits": {
+    "concurrent_heavy_jobs": 1,
+    "download_workers": 1,
+    "max_additional_image_cache_gib": 8,
+    "minimum_free_disk_gib": 8,
+    "metadata_target_sequences": 1000,
+    "initial_download_target_sequences": 100
+  },
+  "evaluation": {
+    "preserve_benchmark_v2": true,
+    "same_roads_are_development_after_iteration": true,
+    "new_route_test_split_frozen_before_tuning": true,
+    "record_abstentions_and_failures": true,
+    "measure_coverage_and_error_together": true,
+    "never_score_real_occlusion_as_ground_truth": true,
+    "donor_agreement_is_not_accuracy": true,
+    "no_hidden_target_pixels_in_any_registration_stage": true,
+    "reject_nonconverged_geometry": true,
+    "promotion_status": "Not promoted. Solver budget improves strip coverage73.77->76.29%,MAE5.01->4.98, but vehicle textured tail7.44->10.01%; hard rear common-pixel MAE4.12->5.90 vs640.",
+    "correlated_conditions_are_not_independent": true,
+    "candidate_graph_is_not_visibility_or_correctness": true,
+    "angular_and_projected_coverage_reported_separately": true
+  },
+  "dataset": {
+    "source": "Public Panoramax imagery with explicit reusable license and attribution",
+    "persist": [
+      "source IDs",
+      "capture collections",
+      "timestamps",
+      "license",
+      "producer",
+      "coordinates",
+      "checksums",
+      "sampling stratum",
+      "split",
+      "download and exclusion reasons"
+    ],
+    "split_unit": "collection plus geographic neighborhood",
+    "download": "resumable, rate limited, bounded cache; preserve provenance and never relabel missing data as success"
+  },
+  "start_each_iteration": "Run controlled_workflow.py, inspect active processes and shared locks, then read HANDOFF.txt/state/queue. Older research_status.py does not detect all new runners.",
+  "experiment_selection": "When the target has no accepted correspondence edges, prioritize new observation/matching evidence rather than repeating geometry-only fits."
+}
