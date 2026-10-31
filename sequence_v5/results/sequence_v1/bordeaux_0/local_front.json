@@ -1,0 +1,1216 @@
+{
+  "case": "bordeaux_0",
+  "region": "local_front",
+  "source_experiment": "sequence_v1",
+  "signature": {
+    "run_metric.py": "ff29696ed3d88d889544ccd55940b4c8dc9c79a38da5151fcee9e47a484190a6",
+    "metric_plane.py": "73f0320c82821b6b2ff93309ae6b58ea980195bb582ed7d466d8ad5238cccb75",
+    "trajectory_matching.py": "ba7def19017d7d9750cb4dab41946ae72d1f987da35da183b22ca02d040d26c3",
+    "constrained_sequence.py": "a3ba9e2460c00de146f9e1d077ad2c08c6783a7c87320b97bea83a8cab93e24d",
+    "sequence_geometry.py": "e7ecd253de1ca48076ea56c277533fbdf4438e889625cfb7a279266a87edb31c",
+    "matching_v2.py": "31c21cde51d791a78936145579a49998a1506698a2f78cad3f98574f0e08cf77",
+    "repair.py": "779e3679ae205637fe66cd25f5f7214bc9c6c153d4acfd6b8c9fa8915b8f4c88",
+    "benchmark.py": "18901c663f774dca04b40b9857718a30e3c73b87de888b47ca15d3870f20dd1e",
+    "protocol": "3cadfb1c10a294e709358d603829d5ce2b00d791b548f7132a04810a6ad382fe",
+    "baseline_protocol": "f4037b6e0f526654baa3afbf568cfbfa882aff7224ca115b163220770da447c6",
+    "upstream": "c057a3e13be3a144785e4fae7bed132662ceed00bca4c63b399e06816452f5d1",
+    "manifest": "75e8a2caa3fad31b920889c3a7a5031db246d24bfd1deef08459e4ead9995b5b",
+    "metadata_inputs": "36319bf710bc93196a5a0939800ef7ec3e56b4cbdb6ecbcedbed1d7156378803"
+  },
+  "mask_pixels": 23408,
+  "source_order": [
+    "prev2",
+    "prev1",
+    "next1",
+    "next2"
+  ],
+  "created_at_utc": "2026-10-31T09:14:18.722595+00:00",
+  "graphs": {
+    "homography_converged": {
+      "connected_frames": 5,
+      "edges": 7,
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "nfev": 6,
+      "initial_median_fit_px": 0.7464763762770872,
+      "final_median_fit_px": 0.687726150279957,
+      "poses": {
+        "2": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "0": [
+          [
+            0.8000691015732312,
+            -0.00345914975709243,
+            46.57209035817973
+          ],
+          [
+            -0.17385187115393902,
+            0.9107063619290426,
+            427.9519090106585
+          ],
+          [
+            -9.769145544019068e-05,
+            -4.4041326906951054e-05,
+            1.0
+          ]
+        ],
+        "1": [
+          [
+            0.9144062849315232,
+            -0.008949768003421343,
+            21.09617045209512
+          ],
+          [
+            -0.05907661068147326,
+            0.9710427099737244,
+            185.17206864145146
+          ],
+          [
+            -4.366976026781532e-05,
+            -2.1069532172115787e-05,
+            1.0
+          ]
+        ],
+        "3": [
+          [
+            0.9661050791261342,
+            0.036223269413440416,
+            26.720675091531156
+          ],
+          [
+            -0.016211893089193574,
+            0.9924075087988237,
+            -116.56575166031642
+          ],
+          [
+            -2.2297094255492158e-05,
+            4.0526048482394326e-05,
+            1.0
+          ]
+        ],
+        "4": [
+          [
+            0.968757448287893,
+            -0.07135452080570759,
+            105.78113793608341
+          ],
+          [
+            0.046444526399172056,
+            0.8246616227195663,
+            -186.8157147319367
+          ],
+          [
+            3.575139724939775e-05,
+            -5.3466607303123717e-05,
+            1.0
+          ]
+        ]
+      },
+      "model": "homography"
+    },
+    "metric_free": {
+      "model": "metric_free",
+      "connected_frames": 5,
+      "edges": 7,
+      "optimizer_success": true,
+      "solver_converged": true,
+      "boundary_hits": [],
+      "solver_message": "`ftol` termination condition is satisfied.",
+      "nfev": 21,
+      "parameters": 26,
+      "initial_plane_tilt": [
+        -0.03456124592021299,
+        0.003833362861872166
+      ],
+      "plane_tilt_rad": [
+        -0.03367150171682095,
+        0.0023863319941992344
+      ],
+      "initial_median_fit_px": 2.8475227249897395,
+      "median_training_residual_px": 1.3347597683341852,
+      "camera_parameters": {
+        "0": [
+          -0.02816152638592315,
+          -0.020367825996982752,
+          0.050908624376041454,
+          -0.06144142115904927,
+          2.1036365911940305,
+          -0.0008189802901000489
+        ],
+        "1": [
+          -0.031334874074171466,
+          -0.00781707439417037,
+          0.015777387519430384,
+          -0.0395051687283813,
+          1.0668064176157528,
+          -0.00035507222012225024
+        ],
+        "3": [
+          -0.03894859723743225,
+          -0.0009788875967528695,
+          -0.010092032111729432,
+          0.04098750193515817,
+          -1.0313567592234572,
+          0.001646140365330978
+        ],
+        "4": [
+          -0.023182976096420504,
+          0.007641863789807326,
+          -0.015855494839598347,
+          0.10189180874135217,
+          -2.089835150110666,
+          0.01270946380694734
+        ]
+      },
+      "target_height_m": null,
+      "reason": "converged physical plane model",
+      "poses": {
+        "2": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "0": [
+          [
+            0.7675112443601644,
+            -0.0047674687138511045,
+            66.30774458625046
+          ],
+          [
+            -0.2081292133575498,
+            0.8924213711932015,
+            461.33366172924786
+          ],
+          [
+            -0.00011181152102698109,
+            -4.4424769451300723e-05,
+            1.0
+          ]
+        ],
+        "1": [
+          [
+            0.8864922535757315,
+            -0.008951244884533981,
+            36.53588671671901
+          ],
+          [
+            -0.08551036962759298,
+            0.9571973377376655,
+            211.0953929736986
+          ],
+          [
+            -5.658871077584414e-05,
+            -2.0818144946152712e-05,
+            1.0
+          ]
+        ],
+        "3": [
+          [
+            0.9642116968056587,
+            0.03602042709896865,
+            29.450209977216797
+          ],
+          [
+            -0.013067345937681336,
+            0.9927575089995261,
+            -119.93176668326772
+          ],
+          [
+            -2.162723248774851e-05,
+            4.032965611955739e-05,
+            1.0
+          ]
+        ],
+        "4": [
+          [
+            0.9577982450569889,
+            -0.07042595713716228,
+            111.43700867244831
+          ],
+          [
+            0.03348437459026255,
+            0.8214901993541445,
+            -173.07910582572396
+          ],
+          [
+            3.058920539531784e-05,
+            -5.262915103873644e-05,
+            1.0
+          ]
+        ]
+      }
+    },
+    "metric_gps": {
+      "model": "metric_gps",
+      "connected_frames": 5,
+      "edges": 7,
+      "optimizer_success": true,
+      "solver_converged": true,
+      "boundary_hits": [],
+      "solver_message": "`ftol` termination condition is satisfied.",
+      "nfev": 19,
+      "parameters": 27,
+      "initial_plane_tilt": [
+        -0.03456124592021299,
+        0.003833362861872166
+      ],
+      "plane_tilt_rad": [
+        -0.03367972035154744,
+        0.0023946515614598797
+      ],
+      "initial_median_fit_px": 2.8475227249897395,
+      "median_training_residual_px": 1.334218210636359,
+      "camera_parameters": {
+        "0": [
+          -0.02817005729236301,
+          -0.020354386187367367,
+          0.050909790561527335,
+          -0.06144148766735698,
+          2.1036086695723846,
+          -0.0008560677265410838
+        ],
+        "1": [
+          -0.03134322267451978,
+          -0.007807448719543505,
+          0.01577813708558586,
+          -0.039507315065719965,
+          1.0668021281997293,
+          -0.00037340350336259224
+        ],
+        "3": [
+          -0.03895728064073207,
+          -0.0009707324714588618,
+          -0.010092583852486783,
+          0.040989846896261804,
+          -1.0313576268191889,
+          0.0016619746884172953
+        ],
+        "4": [
+          -0.02319186085150604,
+          0.007648559363044502,
+          -0.015856499984878997,
+          0.10189751429605454,
+          -2.0898625888025455,
+          0.012743766793272581
+        ]
+      },
+      "target_height_m": 2.4946303692330716,
+      "reason": "converged physical plane model",
+      "poses": {
+        "2": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "0": [
+          [
+            0.7675416256676948,
+            -0.004766293777344856,
+            66.29796233724103
+          ],
+          [
+            -0.20808373757900256,
+            0.8924474907556496,
+            461.2909355412203
+          ],
+          [
+            -0.00011179021527564075,
+            -4.442448496391835e-05,
+            1.0
+          ]
+        ],
+        "1": [
+          [
+            0.8864962165897867,
+            -0.008950486591512881,
+            36.53760278194255
+          ],
+          [
+            -0.08549508828482305,
+            0.9572045977852899,
+            211.0801571487102
+          ],
+          [
+            -5.658288313023979e-05,
+            -2.0817715149729838e-05,
+            1.0
+          ]
+        ],
+        "3": [
+          [
+            0.9642237951616365,
+            0.03602395462952057,
+            29.437692491196515
+          ],
+          [
+            -0.013074906138013728,
+            0.9927641575209601,
+            -119.92605014374662
+          ],
+          [
+            -2.16270825938349e-05,
+            4.0333031003527106e-05,
+            1.0
+          ]
+        ],
+        "4": [
+          [
+            0.9578025524534467,
+            -0.07042197703347275,
+            111.42366906015963
+          ],
+          [
+            0.03346391474023804,
+            0.8214904230780362,
+            -173.0596232250594
+          ],
+          [
+            3.058119182382668e-05,
+            -5.2625284689178216e-05,
+            1.0
+          ]
+        ]
+      }
+    }
+  },
+  "methods": {
+    "homography_converged": {
+      "registrations": [
+        {
+          "method": "homography",
+          "accepted": true,
+          "inliers": 187,
+          "median_reprojection_px": 1.4402482867087094,
+          "graph_degree": 2,
+          "heldout_matches": 115,
+          "heldout_inlier_fraction": 0.8695652173913043,
+          "heldout_inliers": 100,
+          "homography": [
+            [
+              0.8000691015732312,
+              -0.00345914975709243,
+              46.57209035817973
+            ],
+            [
+              -0.17385187115393902,
+              0.9107063619290426,
+              427.9519090106585
+            ],
+            [
+              -9.769145544019068e-05,
+              -4.4041326906951054e-05,
+              1.0
+            ]
+          ],
+          "audit_pixels": 84466,
+          "audit_median_rgb": 4.666666507720947,
+          "audit_p90_rgb": 12.666666984558105,
+          "reason": "converged geometry and visible-ground audit passed"
+        },
+        {
+          "method": "homography",
+          "accepted": true,
+          "inliers": 330,
+          "median_reprojection_px": 1.2553083667810427,
+          "graph_degree": 3,
+          "heldout_matches": 178,
+          "heldout_inlier_fraction": 0.8651685393258427,
+          "heldout_inliers": 154,
+          "homography": [
+            [
+              0.9144062849315232,
+              -0.008949768003421343,
+              21.09617045209512
+            ],
+            [
+              -0.05907661068147326,
+              0.9710427099737244,
+              185.17206864145146
+            ],
+            [
+              -4.366976026781532e-05,
+              -2.1069532172115787e-05,
+              1.0
+            ]
+          ],
+          "audit_pixels": 156260,
+          "audit_median_rgb": 3.0,
+          "audit_p90_rgb": 8.0,
+          "reason": "converged geometry and visible-ground audit passed"
+        },
+        {
+          "method": "homography",
+          "accepted": true,
+          "inliers": 333,
+          "median_reprojection_px": 1.3096009002874986,
+          "graph_degree": 3,
+          "heldout_matches": 203,
+          "heldout_inlier_fraction": 0.8029556650246306,
+          "heldout_inliers": 163,
+          "homography": [
+            [
+              0.9661050791261342,
+              0.036223269413440416,
+              26.720675091531156
+            ],
+            [
+              -0.016211893089193574,
+              0.9924075087988237,
+              -116.56575166031642
+            ],
+            [
+              -2.2297094255492158e-05,
+              4.0526048482394326e-05,
+              1.0
+            ]
+          ],
+          "audit_pixels": 122512,
+          "audit_median_rgb": 3.0,
+          "audit_p90_rgb": 8.666666984558105,
+          "reason": "converged geometry and visible-ground audit passed"
+        },
+        {
+          "method": "homography",
+          "accepted": true,
+          "inliers": 216,
+          "median_reprojection_px": 1.3610321093860278,
+          "graph_degree": 2,
+          "heldout_matches": 136,
+          "heldout_inlier_fraction": 0.7867647058823529,
+          "heldout_inliers": 107,
+          "homography": [
+            [
+              0.968757448287893,
+              -0.07135452080570759,
+              105.78113793608341
+            ],
+            [
+              0.046444526399172056,
+              0.8246616227195663,
+              -186.8157147319367
+            ],
+            [
+              3.575139724939775e-05,
+              -5.3466607303123717e-05,
+              1.0
+            ]
+          ],
+          "audit_pixels": 95752,
+          "audit_median_rgb": 4.666666507720947,
+          "audit_p90_rgb": 13.666666984558105,
+          "reason": "converged geometry and visible-ground audit passed"
+        }
+      ],
+      "policies": {
+        "candidate": {
+          "accepted_pixels": 17160,
+          "coverage": 0.7330827067669173,
+          "single_view_pixels": 4953,
+          "multi_view_pixels": 12207,
+          "error": {
+            "pixels": 17160,
+            "mae_255": 3.216045066045066,
+            "psnr_db": 35.34322319843701,
+            "p90_rgb": 6.333333492279053,
+            "over_20_fraction": 0.0011072261072261073
+          },
+          "telea_same_pixels": {
+            "pixels": 17160,
+            "mae_255": 7.16563714063714,
+            "psnr_db": 27.604932106317918,
+            "p90_rgb": 15.0,
+            "over_20_fraction": 0.04026806526806527
+          },
+          "gradient": {
+            "pixels": 15004,
+            "gradient_mae": 1.0578434467315674,
+            "edge_pixels": 1665,
+            "orientation_error": 0.06831371784210205
+          }
+        },
+        "corroborated": {
+          "accepted_pixels": 11933,
+          "coverage": 0.5097829801777171,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 11933,
+          "error": {
+            "pixels": 11933,
+            "mae_255": 2.8287661666527,
+            "psnr_db": 36.1484977389727,
+            "p90_rgb": 5.666666507720947,
+            "over_20_fraction": 0.001173217128970083
+          },
+          "telea_same_pixels": {
+            "pixels": 11933,
+            "mae_255": 6.876421129081818,
+            "psnr_db": 27.47469843938712,
+            "p90_rgb": 14.333333015441895,
+            "over_20_fraction": 0.044414648453867424
+          },
+          "gradient": {
+            "pixels": 8981,
+            "gradient_mae": 0.9416600465774536,
+            "edge_pixels": 806,
+            "orientation_error": 0.05883653834462166
+          }
+        },
+        "strict": {
+          "accepted_pixels": 11171,
+          "coverage": 0.47723000683527,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 11171,
+          "error": {
+            "pixels": 11171,
+            "mae_255": 2.6861814818130276,
+            "psnr_db": 36.654535234015555,
+            "p90_rgb": 5.333333492279053,
+            "over_20_fraction": 0.0009846925073851939
+          },
+          "telea_same_pixels": {
+            "pixels": 11171,
+            "mae_255": 6.455763435084893,
+            "psnr_db": 28.206091001748362,
+            "p90_rgb": 13.666666984558105,
+            "over_20_fraction": 0.03419568525646764
+          },
+          "gradient": {
+            "pixels": 6718,
+            "gradient_mae": 0.8908939957618713,
+            "edge_pixels": 374,
+            "orientation_error": 0.06410211324691772
+          }
+        }
+      }
+    },
+    "metric_free": {
+      "registrations": [
+        {
+          "method": "metric_free",
+          "accepted": true,
+          "inliers": 187,
+          "median_reprojection_px": 1.4374363747696526,
+          "graph_degree": 2,
+          "heldout_matches": 115,
+          "heldout_inlier_fraction": 0.8782608695652174,
+          "heldout_inliers": 101,
+          "homography": [
+            [
+              0.7675112443601644,
+              -0.0047674687138511045,
+              66.30774458625046
+            ],
+            [
+              -0.2081292133575498,
+              0.8924213711932015,
+              461.33366172924786
+            ],
+            [
+              -0.00011181152102698109,
+              -4.4424769451300723e-05,
+              1.0
+            ]
+          ],
+          "audit_pixels": 84126,
+          "audit_median_rgb": 4.666666507720947,
+          "audit_p90_rgb": 13.0,
+          "reason": "converged geometry and visible-ground audit passed"
+        },
+        {
+          "method": "metric_free",
+          "accepted": true,
+          "inliers": 330,
+          "median_reprojection_px": 1.2842757409424377,
+          "graph_degree": 3,
+          "heldout_matches": 178,
+          "heldout_inlier_fraction": 0.848314606741573,
+          "heldout_inliers": 151,
+          "homography": [
+            [
+              0.8864922535757315,
+              -0.008951244884533981,
+              36.53588671671901
+            ],
+            [
+              -0.08551036962759298,
+              0.9571973377376655,
+              211.0953929736986
+            ],
+            [
+              -5.658871077584414e-05,
+              -2.0818144946152712e-05,
+              1.0
+            ]
+          ],
+          "audit_pixels": 155755,
+          "audit_median_rgb": 3.0,
+          "audit_p90_rgb": 8.0,
+          "reason": "converged geometry and visible-ground audit passed"
+        },
+        {
+          "method": "metric_free",
+          "accepted": true,
+          "inliers": 333,
+          "median_reprojection_px": 1.346535318262539,
+          "graph_degree": 3,
+          "heldout_matches": 203,
+          "heldout_inlier_fraction": 0.7980295566502463,
+          "heldout_inliers": 162,
+          "homography": [
+            [
+              0.9642116968056587,
+              0.03602042709896865,
+              29.450209977216797
+            ],
+            [
+              -0.013067345937681336,
+              0.9927575089995261,
+              -119.93176668326772
+            ],
+            [
+              -2.162723248774851e-05,
+              4.032965611955739e-05,
+              1.0
+            ]
+          ],
+          "audit_pixels": 122535,
+          "audit_median_rgb": 3.0,
+          "audit_p90_rgb": 9.0,
+          "reason": "converged geometry and visible-ground audit passed"
+        },
+        {
+          "method": "metric_free",
+          "accepted": true,
+          "inliers": 216,
+          "median_reprojection_px": 1.3728789090165323,
+          "graph_degree": 2,
+          "heldout_matches": 136,
+          "heldout_inlier_fraction": 0.7794117647058824,
+          "heldout_inliers": 106,
+          "homography": [
+            [
+              0.9577982450569889,
+              -0.07042595713716228,
+              111.43700867244831
+            ],
+            [
+              0.03348437459026255,
+              0.8214901993541445,
+              -173.07910582572396
+            ],
+            [
+              3.058920539531784e-05,
+              -5.262915103873644e-05,
+              1.0
+            ]
+          ],
+          "audit_pixels": 95522,
+          "audit_median_rgb": 4.666666507720947,
+          "audit_p90_rgb": 13.666666984558105,
+          "reason": "converged geometry and visible-ground audit passed"
+        }
+      ],
+      "policies": {
+        "candidate": {
+          "accepted_pixels": 17158,
+          "coverage": 0.7329972658920028,
+          "single_view_pixels": 4930,
+          "multi_view_pixels": 12228,
+          "error": {
+            "pixels": 17158,
+            "mae_255": 3.24847495823134,
+            "psnr_db": 35.26089006168014,
+            "p90_rgb": 6.666666507720947,
+            "over_20_fraction": 0.0008742277654738314
+          },
+          "telea_same_pixels": {
+            "pixels": 17158,
+            "mae_255": 7.157963243579283,
+            "psnr_db": 27.622638048874606,
+            "p90_rgb": 15.0,
+            "over_20_fraction": 0.04009791350973307
+          },
+          "gradient": {
+            "pixels": 14943,
+            "gradient_mae": 1.0756020545959473,
+            "edge_pixels": 1665,
+            "orientation_error": 0.07681550085544586
+          }
+        },
+        "corroborated": {
+          "accepted_pixels": 11933,
+          "coverage": 0.5097829801777171,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 11933,
+          "error": {
+            "pixels": 11933,
+            "mae_255": 2.8166708567278413,
+            "psnr_db": 36.20292152211371,
+            "p90_rgb": 5.666666507720947,
+            "over_20_fraction": 0.001005614681974357
+          },
+          "telea_same_pixels": {
+            "pixels": 11933,
+            "mae_255": 6.882119612279673,
+            "psnr_db": 27.47249608760236,
+            "p90_rgb": 14.333333015441895,
+            "over_20_fraction": 0.04508505824185033
+          },
+          "gradient": {
+            "pixels": 8845,
+            "gradient_mae": 0.9424923658370972,
+            "edge_pixels": 778,
+            "orientation_error": 0.0696706622838974
+          }
+        },
+        "strict": {
+          "accepted_pixels": 11117,
+          "coverage": 0.4749231032125769,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 11117,
+          "error": {
+            "pixels": 11117,
+            "mae_255": 2.6715240922311176,
+            "psnr_db": 36.683479119319756,
+            "p90_rgb": 5.333333492279053,
+            "over_20_fraction": 0.00098947557794369
+          },
+          "telea_same_pixels": {
+            "pixels": 11117,
+            "mae_255": 6.4777667836046895,
+            "psnr_db": 28.128577428828606,
+            "p90_rgb": 13.800000190734863,
+            "over_20_fraction": 0.034901502203831966
+          },
+          "gradient": {
+            "pixels": 6737,
+            "gradient_mae": 0.8956629037857056,
+            "edge_pixels": 375,
+            "orientation_error": 0.0711648166179657
+          }
+        }
+      }
+    },
+    "metric_gps": {
+      "registrations": [
+        {
+          "method": "metric_gps",
+          "accepted": true,
+          "inliers": 187,
+          "median_reprojection_px": 1.4371329896013063,
+          "graph_degree": 2,
+          "heldout_matches": 115,
+          "heldout_inlier_fraction": 0.8782608695652174,
+          "heldout_inliers": 101,
+          "homography": [
+            [
+              0.7675416256676948,
+              -0.004766293777344856,
+              66.29796233724103
+            ],
+            [
+              -0.20808373757900256,
+              0.8924474907556496,
+              461.2909355412203
+            ],
+            [
+              -0.00011179021527564075,
+              -4.442448496391835e-05,
+              1.0
+            ]
+          ],
+          "audit_pixels": 84127,
+          "audit_median_rgb": 4.666666507720947,
+          "audit_p90_rgb": 13.0,
+          "reason": "converged geometry and visible-ground audit passed"
+        },
+        {
+          "method": "metric_gps",
+          "accepted": true,
+          "inliers": 330,
+          "median_reprojection_px": 1.2840439960431906,
+          "graph_degree": 3,
+          "heldout_matches": 178,
+          "heldout_inlier_fraction": 0.848314606741573,
+          "heldout_inliers": 151,
+          "homography": [
+            [
+              0.8864962165897867,
+              -0.008950486591512881,
+              36.53760278194255
+            ],
+            [
+              -0.08549508828482305,
+              0.9572045977852899,
+              211.0801571487102
+            ],
+            [
+              -5.658288313023979e-05,
+              -2.0817715149729838e-05,
+              1.0
+            ]
+          ],
+          "audit_pixels": 155755,
+          "audit_median_rgb": 3.0,
+          "audit_p90_rgb": 8.0,
+          "reason": "converged geometry and visible-ground audit passed"
+        },
+        {
+          "method": "metric_gps",
+          "accepted": true,
+          "inliers": 333,
+          "median_reprojection_px": 1.3462360638322333,
+          "graph_degree": 3,
+          "heldout_matches": 203,
+          "heldout_inlier_fraction": 0.7980295566502463,
+          "heldout_inliers": 162,
+          "homography": [
+            [
+              0.9642237951616365,
+              0.03602395462952057,
+              29.437692491196515
+            ],
+            [
+              -0.013074906138013728,
+              0.9927641575209601,
+              -119.92605014374662
+            ],
+            [
+              -2.16270825938349e-05,
+              4.0333031003527106e-05,
+              1.0
+            ]
+          ],
+          "audit_pixels": 122535,
+          "audit_median_rgb": 3.0,
+          "audit_p90_rgb": 9.0,
+          "reason": "converged geometry and visible-ground audit passed"
+        },
+        {
+          "method": "metric_gps",
+          "accepted": true,
+          "inliers": 216,
+          "median_reprojection_px": 1.372941166632954,
+          "graph_degree": 2,
+          "heldout_matches": 136,
+          "heldout_inlier_fraction": 0.7794117647058824,
+          "heldout_inliers": 106,
+          "homography": [
+            [
+              0.9578025524534467,
+              -0.07042197703347275,
+              111.42366906015963
+            ],
+            [
+              0.03346391474023804,
+              0.8214904230780362,
+              -173.0596232250594
+            ],
+            [
+              3.058119182382668e-05,
+              -5.2625284689178216e-05,
+              1.0
+            ]
+          ],
+          "audit_pixels": 95522,
+          "audit_median_rgb": 4.666666507720947,
+          "audit_p90_rgb": 13.666666984558105,
+          "reason": "converged geometry and visible-ground audit passed"
+        }
+      ],
+      "policies": {
+        "candidate": {
+          "accepted_pixels": 17159,
+          "coverage": 0.73303998632946,
+          "single_view_pixels": 4929,
+          "multi_view_pixels": 12230,
+          "error": {
+            "pixels": 17159,
+            "mae_255": 3.249237523554209,
+            "psnr_db": 35.259161106743775,
+            "p90_rgb": 6.666666507720947,
+            "over_20_fraction": 0.0008741768168308177
+          },
+          "telea_same_pixels": {
+            "pixels": 17159,
+            "mae_255": 7.158633953027565,
+            "psnr_db": 27.622100148323348,
+            "p90_rgb": 15.0,
+            "over_20_fraction": 0.04009557666530684
+          },
+          "gradient": {
+            "pixels": 14943,
+            "gradient_mae": 1.0756423473358154,
+            "edge_pixels": 1665,
+            "orientation_error": 0.07682843506336212
+          }
+        },
+        "corroborated": {
+          "accepted_pixels": 11934,
+          "coverage": 0.5098257006151743,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 11934,
+          "error": {
+            "pixels": 11934,
+            "mae_255": 2.8169376012513268,
+            "psnr_db": 36.20306754337169,
+            "p90_rgb": 5.666666507720947,
+            "over_20_fraction": 0.001005530417295123
+          },
+          "telea_same_pixels": {
+            "pixels": 11934,
+            "mae_255": 6.8827998435841575,
+            "psnr_db": 27.472129274317464,
+            "p90_rgb": 14.333333015441895,
+            "over_20_fraction": 0.04508128037539802
+          },
+          "gradient": {
+            "pixels": 8846,
+            "gradient_mae": 0.9427120089530945,
+            "edge_pixels": 778,
+            "orientation_error": 0.0696573480963707
+          }
+        },
+        "strict": {
+          "accepted_pixels": 11117,
+          "coverage": 0.4749231032125769,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 11117,
+          "error": {
+            "pixels": 11117,
+            "mae_255": 2.6719738538574553,
+            "psnr_db": 36.68328316605707,
+            "p90_rgb": 5.333333492279053,
+            "over_20_fraction": 0.00098947557794369
+          },
+          "telea_same_pixels": {
+            "pixels": 11117,
+            "mae_255": 6.478546370423675,
+            "psnr_db": 28.127835622391313,
+            "p90_rgb": 14.0,
+            "over_20_fraction": 0.034901502203831966
+          },
+          "gradient": {
+            "pixels": 6737,
+            "gradient_mae": 0.8958726525306702,
+            "edge_pixels": 375,
+            "orientation_error": 0.07121548801660538
+          }
+        }
+      }
+    }
+  },
+  "same_pixel_control": {
+    "metric_free": {
+      "candidate": {
+        "new": {
+          "pixels": 17150,
+          "mae_255": 3.2475218658892127,
+          "psnr_db": 35.26416186786848,
+          "p90_rgb": 6.666666507720947,
+          "over_20_fraction": 0.0008746355685131195
+        },
+        "control": {
+          "pixels": 17150,
+          "mae_255": 3.21156462585034,
+          "psnr_db": 35.360526128003485,
+          "p90_rgb": 6.333333492279053,
+          "over_20_fraction": 0.0010495626822157435
+        },
+        "new_gradient": {
+          "pixels": 14934,
+          "gradient_mae": 1.0752917528152466,
+          "edge_pixels": 1660,
+          "orientation_error": 0.07704490423202515
+        },
+        "control_gradient": {
+          "pixels": 14934,
+          "gradient_mae": 1.058119535446167,
+          "edge_pixels": 1660,
+          "orientation_error": 0.06850975751876831
+        }
+      },
+      "corroborated": {
+        "new": {
+          "pixels": 11870,
+          "mae_255": 2.8019095759618087,
+          "psnr_db": 36.245028965050416,
+          "p90_rgb": 5.666666507720947,
+          "over_20_fraction": 0.0010109519797809603
+        },
+        "control": {
+          "pixels": 11870,
+          "mae_255": 2.816147149677057,
+          "psnr_db": 36.191723384603016,
+          "p90_rgb": 5.666666507720947,
+          "over_20_fraction": 0.0010951979780960404
+        },
+        "new_gradient": {
+          "pixels": 8803,
+          "gradient_mae": 0.940430223941803,
+          "edge_pixels": 770,
+          "orientation_error": 0.06858110427856445
+        },
+        "control_gradient": {
+          "pixels": 8803,
+          "gradient_mae": 0.9348855018615723,
+          "edge_pixels": 770,
+          "orientation_error": 0.06024892255663872
+        }
+      },
+      "strict": {
+        "new": {
+          "pixels": 11012,
+          "mae_255": 2.6480506114541713,
+          "psnr_db": 36.778537226559465,
+          "p90_rgb": 5.0,
+          "over_20_fraction": 0.0009081002542680712
+        },
+        "control": {
+          "pixels": 11012,
+          "mae_255": 2.6669693667514225,
+          "psnr_db": 36.716235636164726,
+          "p90_rgb": 5.333333492279053,
+          "over_20_fraction": 0.0009989102796948784
+        },
+        "new_gradient": {
+          "pixels": 6577,
+          "gradient_mae": 0.8928155303001404,
+          "edge_pixels": 357,
+          "orientation_error": 0.0685986876487732
+        },
+        "control_gradient": {
+          "pixels": 6577,
+          "gradient_mae": 0.892643928527832,
+          "edge_pixels": 357,
+          "orientation_error": 0.065937340259552
+        }
+      }
+    },
+    "metric_gps": {
+      "candidate": {
+        "new": {
+          "pixels": 17151,
+          "mae_255": 3.248284842477601,
+          "psnr_db": 35.26243061250332,
+          "p90_rgb": 6.666666507720947,
+          "over_20_fraction": 0.0008745845723281442
+        },
+        "control": {
+          "pixels": 17151,
+          "mae_255": 3.212135346821371,
+          "psnr_db": 35.35845612070109,
+          "p90_rgb": 6.333333492279053,
+          "over_20_fraction": 0.001049501486793773
+        },
+        "new_gradient": {
+          "pixels": 14934,
+          "gradient_mae": 1.0753322839736938,
+          "edge_pixels": 1660,
+          "orientation_error": 0.07705789804458618
+        },
+        "control_gradient": {
+          "pixels": 14934,
+          "gradient_mae": 1.058119535446167,
+          "edge_pixels": 1660,
+          "orientation_error": 0.06850975751876831
+        }
+      },
+      "corroborated": {
+        "new": {
+          "pixels": 11871,
+          "mae_255": 2.802178979586106,
+          "psnr_db": 36.24517362703098,
+          "p90_rgb": 5.666666507720947,
+          "over_20_fraction": 0.0010108668182966893
+        },
+        "control": {
+          "pixels": 11871,
+          "mae_255": 2.8161064779715272,
+          "psnr_db": 36.19186294155621,
+          "p90_rgb": 5.666666507720947,
+          "over_20_fraction": 0.0010951057198214135
+        },
+        "new_gradient": {
+          "pixels": 8804,
+          "gradient_mae": 0.9406371116638184,
+          "edge_pixels": 770,
+          "orientation_error": 0.068567655980587
+        },
+        "control_gradient": {
+          "pixels": 8804,
+          "gradient_mae": 0.934831440448761,
+          "edge_pixels": 770,
+          "orientation_error": 0.06024892255663872
+        }
+      },
+      "strict": {
+        "new": {
+          "pixels": 11012,
+          "mae_255": 2.6485046615813053,
+          "psnr_db": 36.778335027374645,
+          "p90_rgb": 5.0,
+          "over_20_fraction": 0.0009081002542680712
+        },
+        "control": {
+          "pixels": 11012,
+          "mae_255": 2.6670601767768494,
+          "psnr_db": 36.71601733453522,
+          "p90_rgb": 5.333333492279053,
+          "over_20_fraction": 0.0009989102796948784
+        },
+        "new_gradient": {
+          "pixels": 6577,
+          "gradient_mae": 0.8930304050445557,
+          "edge_pixels": 357,
+          "orientation_error": 0.06865192204713821
+        },
+        "control_gradient": {
+          "pixels": 6577,
+          "gradient_mae": 0.892643928527832,
+          "edge_pixels": 357,
+          "orientation_error": 0.065937340259552
+        }
+      }
+    }
+  },
+  "runtime_seconds": 4.770257949829102
+}

@@ -1,0 +1,25 @@
+{
+  "timestamp": "2026-10-31T09:29:23.530303+00:00",
+  "status": "promising_development_candidate_not_promoted",
+  "promotion": false,
+  "preferred_experimental_variant": "metric_free",
+  "evaluated": "55 original fixed regions x 3 variants; 165 audited runs; plus one newly annotated training scene x 5 regions x 3 unchanged methods = 15 audited runs.",
+  "findings": {
+    "candidate_footprint_macro_control": 0.33122234297521314,
+    "candidate_footprint_macro_metric": 0.2979248576887449,
+    "hidden_large_coverage_control": 0.21707942412097347,
+    "hidden_large_coverage_metric": 0.23664326432056926,
+    "hidden_large_mae_control": 12.75346868823776,
+    "hidden_large_mae_metric": 9.49241079143402,
+    "same_pixel_mae_control": 12.625226443952892,
+    "same_pixel_mae_metric": 9.229856390354989,
+    "same_pixel_gradient_mae_control": 2.3332487028623845,
+    "same_pixel_gradient_mae_metric": 2.1700071133421,
+    "fraction_accepted_large_pixels_error_above_20": 0.08527135339484225
+  },
+  "interpretation": "Perspective camera constraints improve the hidden-road coverage/error tradeoff on these repeatedly used development roads. Footprint candidate coverage falls. Errors remain substantial and no under-car truth or independent test-group evaluation exists.",
+  "gps_ablation": "Weak GPS/yaw/height priors add no clear benefit over the free metric-plane fit. Do not tune these priors further before improving correspondence evidence.",
+  "hard_road_results": "Gironde and Alsace still abstain, including eleven-frame windows. The fresh Bourges unmarked-turn training case also fully abstains: every image pair has only 0-2 accepted learned matches, no graph edge.",
+  "next": "Prioritize low-texture matching and appropriate contextual pose observations. Another geometry-only optimization cannot connect a target with no observed correspondences. Keep all old outputs and the new failure.",
+  "new_annotation": "benchmark_v3/annotations_train_001.json; visually reviewed per-frame masks frozen before any scoring; proxy masks span 49.0% and 75.4% of ego area, not full-occlusion ground truth."
+}

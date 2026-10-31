@@ -1,0 +1,13 @@
+{
+ "experiment":"sequence_v5_metric",
+ "hypothesis":"Known nadir intrinsics and a shared perspective ground plane constrain cameras without the affine approximation that failed in v4.",
+ "sources":{"sequence_v1":"all nine five-frame scenes","sequence_v3":"both eleven-frame difficult scenes"},
+ "methods":["homography_converged","metric_free","metric_gps"],
+ "control":"Exact converged homography replay from the previous cached matches; original support and audit limits unchanged.",
+ "camera_model":{"K":"f=size/(2*tan(fov/2)), c=(size-1)/2","plane":"Points (X,Y,1), target height normalized to 1","M_i":"R_i * [[1,0,-Cx],[0,1,-Cy],[0,0,hi]]","H_i":"K * R_target * inverse(M_i) * inverse(K)","parameters":"Two shared target-plane tilt angles and six parameters per other connected camera","initialization":"Metric column orthogonality/equal-norm upgrade and SVD rotation projection from training-edge graph homographies"},
+ "fit":{"loss":"soft_l1","scale_px":2,"maximum_nfev":160,"tolerances":0.000001,"target_tilt_bound_rad":0.35,"relative_camera_height_bounds":[0.4,2.5],"convergence_required":true,"reject_near_parameter_bounds":true},
+ "gps_variant":{"role":"weak search/fit regularization, not ground truth","gps_sigma_m":2,"yaw_sigma_rad":0.14,"log_relative_height_sigma":0.15,"plane_tilt_sigma_rad":0.15,"target_height_bounds_m":[1,4.5],"prior_residual_units":"One residual unit per prior sigma; robust loss shared with pixel residuals","limitations":"Assumes horizontal GPS axes approximately coincide with ground-plane axes; source heading and height may be inaccurate"},
+ "evaluation":{"masks":"Identical frozen masks; all previous regions and policies retained","new_diagnostics":"Signed Sobel-gradient error and strong-edge orientation mismatch, after three-pixel accepted-mask erosion","interpretation":"Derivative diagnostics distinguish some illumination effects; they are not true geometric displacement or actual under-vehicle ground truth","strong_truth_gradient_threshold":4},
+ "source_reference":"https://docs.opencv.org/5.0/tutorials/features/homography/homography.html",
+ "limitations":["Single plane, not general 3D reconstruction","Synthesized panoramas may deviate from a single pinhole camera even after nadir reprojection","No support extrapolation or threshold relaxation","Current roads are development; independent test groups remain untouched"]
+}

@@ -1,0 +1,1127 @@
+{
+  "case": "alsace_fields_0",
+  "region": "hidden_rear",
+  "source_experiment": "sequence_v3",
+  "signature": {
+    "run_metric.py": "ff29696ed3d88d889544ccd55940b4c8dc9c79a38da5151fcee9e47a484190a6",
+    "metric_plane.py": "73f0320c82821b6b2ff93309ae6b58ea980195bb582ed7d466d8ad5238cccb75",
+    "trajectory_matching.py": "ba7def19017d7d9750cb4dab41946ae72d1f987da35da183b22ca02d040d26c3",
+    "constrained_sequence.py": "a3ba9e2460c00de146f9e1d077ad2c08c6783a7c87320b97bea83a8cab93e24d",
+    "sequence_geometry.py": "e7ecd253de1ca48076ea56c277533fbdf4438e889625cfb7a279266a87edb31c",
+    "matching_v2.py": "31c21cde51d791a78936145579a49998a1506698a2f78cad3f98574f0e08cf77",
+    "repair.py": "779e3679ae205637fe66cd25f5f7214bc9c6c153d4acfd6b8c9fa8915b8f4c88",
+    "benchmark.py": "18901c663f774dca04b40b9857718a30e3c73b87de888b47ca15d3870f20dd1e",
+    "protocol": "3cadfb1c10a294e709358d603829d5ce2b00d791b548f7132a04810a6ad382fe",
+    "baseline_protocol": "f4037b6e0f526654baa3afbf568cfbfa882aff7224ca115b163220770da447c6",
+    "upstream": "a9189a2783ef4e7469358dc9ee44c463d9efc16558a29e94c690e3d48f4cf5ba",
+    "manifest": "81bd1ae2549194c9fca41684f5e295203d94b0789998f184622b604a1fcdec17",
+    "metadata_inputs": "ec00fbf3ddfaf541361dd967e759d3d5ae67f17043bf4ab9a8ef42c3f56ee6f9"
+  },
+  "mask_pixels": 143863,
+  "source_order": [
+    "prev5",
+    "prev4",
+    "prev3",
+    "prev2",
+    "prev1",
+    "next1",
+    "next2",
+    "next3",
+    "next4",
+    "next5"
+  ],
+  "created_at_utc": "2026-10-31T09:15:30.662919+00:00",
+  "graphs": {
+    "homography_converged": {
+      "connected_frames": 6,
+      "edges": 5,
+      "optimizer_success": false,
+      "optimizer_message": "The maximum number of function evaluations is exceeded.",
+      "nfev": 120,
+      "initial_median_fit_px": 0.7827272319192957,
+      "final_median_fit_px": 0.3530051312573619,
+      "poses": {
+        "5": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "6": [
+          [
+            0.3534241359648335,
+            -0.09902010759154198,
+            456.79946297925056
+          ],
+          [
+            -0.08657773768095663,
+            0.44419785541369794,
+            -167.12589039630632
+          ],
+          [
+            -0.0002151997897029478,
+            -0.00010372107686803416,
+            1.0
+          ]
+        ],
+        "7": [
+          [
+            0.09975839499893875,
+            0.0033592779730596705,
+            581.3120333918113
+          ],
+          [
+            -0.035083087566426134,
+            0.2988526985683838,
+            -379.9449622130591
+          ],
+          [
+            -0.00033484342161707494,
+            -2.1127496759991967e-05,
+            1.0
+          ]
+        ],
+        "8": [
+          [
+            0.09762115937421971,
+            0.008922738808858802,
+            612.824933068826
+          ],
+          [
+            0.0064916699054714385,
+            0.24482513431768582,
+            -594.0221781066621
+          ],
+          [
+            -0.0003048448299565297,
+            -1.8709257121036993e-05,
+            1.0
+          ]
+        ],
+        "9": [
+          [
+            0.14658374787636042,
+            0.06393377818672029,
+            582.8287359276402
+          ],
+          [
+            -0.0003988580046958257,
+            0.185703819281597,
+            -753.4149411165004
+          ],
+          [
+            -0.000267704777686379,
+            1.9792822549786536e-05,
+            1.0
+          ]
+        ],
+        "10": [
+          [
+            0.5282847986100031,
+            0.21868161598929958,
+            369.69778862127197
+          ],
+          [
+            -0.29443615034522785,
+            0.11565100816096642,
+            -850.7711576609745
+          ],
+          [
+            -1.3328473889880377e-05,
+            0.00010908591145276633,
+            1.0
+          ]
+        ]
+      },
+      "model": "homography"
+    },
+    "metric_free": {
+      "model": "metric_free",
+      "connected_frames": 6,
+      "edges": 5,
+      "optimizer_success": false,
+      "solver_converged": false,
+      "boundary_hits": [],
+      "solver_message": "The maximum number of function evaluations is exceeded.",
+      "nfev": 160,
+      "parameters": 32,
+      "initial_plane_tilt": [
+        0.0027046198854294217,
+        -0.014689701692706591
+      ],
+      "plane_tilt_rad": [
+        -0.03705444238874877,
+        -0.0046706760161813535
+      ],
+      "initial_median_fit_px": 108.70241774004467,
+      "median_training_residual_px": 0.6812937285386154,
+      "camera_parameters": {
+        "6": [
+          -0.024249682762208447,
+          -0.034389810839836006,
+          0.014997939264391712,
+          0.2454691309348236,
+          -5.678345663254816,
+          0.12211556865312687
+        ],
+        "7": [
+          -0.02686769654683592,
+          -0.03261219656390264,
+          0.0502945417075958,
+          0.33368059299998293,
+          -11.395034805964354,
+          0.07904432615962084
+        ],
+        "8": [
+          -0.02160811027903785,
+          -0.03371082944264092,
+          0.06420990793676982,
+          0.28767064158871086,
+          -16.805758437104455,
+          0.07938393995327024
+        ],
+        "9": [
+          -0.03304791373435855,
+          -0.006481590499319078,
+          0.0853655466322556,
+          0.20153201560948106,
+          -22.045428829862818,
+          0.06743255503883011
+        ],
+        "10": [
+          -0.009392718940590489,
+          -0.015422527032311176,
+          0.21395601099011868,
+          -0.33197103518209586,
+          -27.30407985136291,
+          0.02795322441078729
+        ]
+      },
+      "target_height_m": null,
+      "reason": "optimizer nonconvergence or physical bound reached",
+      "poses": {
+        "5": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "6": [
+          [
+            0.5677936649360318,
+            -0.041074713596142946,
+            313.19943143818887
+          ],
+          [
+            -0.04309363720911191,
+            0.5878815064009402,
+            -328.1947246916751
+          ],
+          [
+            -0.00014442340681891666,
+            -5.1079566694587866e-05,
+            1.0
+          ]
+        ],
+        "7": [
+          [
+            0.46324676506291074,
+            0.026155110141273582,
+            407.7237581980408
+          ],
+          [
+            0.028749590866608523,
+            0.4462096373230078,
+            -680.0768238629452
+          ],
+          [
+            -0.00014544782206155714,
+            -9.865296768372217e-06,
+            1.0
+          ]
+        ],
+        "8": [
+          [
+            0.3718767687164787,
+            0.016090978985097988,
+            493.63327431377826
+          ],
+          [
+            0.08964296164803717,
+            0.34697988843602734,
+            -942.4840079141721
+          ],
+          [
+            -0.0001496527598437515,
+            -1.988268786894274e-05,
+            1.0
+          ]
+        ],
+        "9": [
+          [
+            0.5955371059341767,
+            0.13780752164680535,
+            374.95762140288207
+          ],
+          [
+            0.024300063934382096,
+            0.28153819986902734,
+            -1241.5972979513424
+          ],
+          [
+            -2.151598252973452e-05,
+            7.359797333344345e-05,
+            1.0
+          ]
+        ],
+        "10": [
+          [
+            0.3822244748780002,
+            0.032512427947721266,
+            487.13486744297717
+          ],
+          [
+            0.03942171386774573,
+            0.2857217565445796,
+            -1315.2902530871856
+          ],
+          [
+            -5.412660260358364e-05,
+            -5.628407020593222e-05,
+            1.0
+          ]
+        ]
+      }
+    },
+    "metric_gps": {
+      "model": "metric_gps",
+      "connected_frames": 6,
+      "edges": 5,
+      "optimizer_success": false,
+      "solver_converged": false,
+      "boundary_hits": [],
+      "solver_message": "The maximum number of function evaluations is exceeded.",
+      "nfev": 160,
+      "parameters": 33,
+      "initial_plane_tilt": [
+        0.0027046198854294217,
+        -0.014689701692706591
+      ],
+      "plane_tilt_rad": [
+        -0.036794727109430755,
+        -0.004073544231982773
+      ],
+      "initial_median_fit_px": 108.70241774004467,
+      "median_training_residual_px": 0.6590828476027165,
+      "camera_parameters": {
+        "6": [
+          -0.024738791973845552,
+          -0.03392177291501449,
+          0.013638831650996656,
+          0.24849700968823651,
+          -5.672649336452485,
+          0.1221009163790796
+        ],
+        "7": [
+          -0.02689668240286183,
+          -0.03270330938625002,
+          0.04799722676403359,
+          0.3476863224009847,
+          -11.40231899656284,
+          0.08232790696909939
+        ],
+        "8": [
+          -0.021552968805312055,
+          -0.03374121290371014,
+          0.061951470198664926,
+          0.3140439701959968,
+          -16.832048803742698,
+          0.08284787461248379
+        ],
+        "9": [
+          -0.03304933432861346,
+          -0.005962322746046436,
+          0.08208856434103685,
+          0.24252698850744833,
+          -22.08817975210663,
+          0.07006686434901348
+        ],
+        "10": [
+          -0.009775267951058647,
+          -0.015470098009786128,
+          0.21017363096395472,
+          -0.27415099312836955,
+          -27.366899502709252,
+          0.033113712974518754
+        ]
+      },
+      "target_height_m": 2.100471646475548,
+      "reason": "optimizer nonconvergence or physical bound reached",
+      "poses": {
+        "5": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "6": [
+          [
+            0.5699985145780285,
+            -0.03832839889975198,
+            310.87596649109213
+          ],
+          [
+            -0.04458721359639901,
+            0.5925671128323022,
+            -331.2550102681936
+          ],
+          [
+            -0.0001454522157672349,
+            -4.785623644572875e-05,
+            1.0
+          ]
+        ],
+        "7": [
+          [
+            0.46188289903607466,
+            0.0255059537216584,
+            408.8338414221439
+          ],
+          [
+            0.027757833299803303,
+            0.4479670175760422,
+            -683.3491749826095
+          ],
+          [
+            -0.00014795189037767904,
+            -9.417184433099857e-06,
+            1.0
+          ]
+        ],
+        "8": [
+          [
+            0.3710977900266439,
+            0.01520772879177089,
+            495.3778891085541
+          ],
+          [
+            0.0891017812354365,
+            0.34862258857992406,
+            -947.5722247298747
+          ],
+          [
+            -0.00015151179720924884,
+            -1.991219673114362e-05,
+            1.0
+          ]
+        ],
+        "9": [
+          [
+            0.6006457464651455,
+            0.1373109376385224,
+            375.5237569266202
+          ],
+          [
+            0.020320862559903792,
+            0.28320794224048,
+            -1249.11616463356
+          ],
+          [
+            -2.0502255498292365e-05,
+            7.396619524177545e-05,
+            1.0
+          ]
+        ],
+        "10": [
+          [
+            0.3826191339812158,
+            0.033551946348921946,
+            489.05539444732636
+          ],
+          [
+            0.03957843334319662,
+            0.2857457108354461,
+            -1323.5170882999964
+          ],
+          [
+            -5.640150363969674e-05,
+            -5.4527404715060843e-05,
+            1.0
+          ]
+        ]
+      }
+    }
+  },
+  "methods": {
+    "homography_converged": {
+      "registrations": [
+        {
+          "method": "homography",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "optimizer did not converge or target disconnected"
+        },
+        {
+          "method": "homography",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "optimizer did not converge or target disconnected"
+        },
+        {
+          "method": "homography",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "optimizer did not converge or target disconnected"
+        },
+        {
+          "method": "homography",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "optimizer did not converge or target disconnected"
+        },
+        {
+          "method": "homography",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "optimizer did not converge or target disconnected"
+        },
+        {
+          "method": "homography",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "optimizer did not converge or target disconnected"
+        },
+        {
+          "method": "homography",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "optimizer did not converge or target disconnected"
+        },
+        {
+          "method": "homography",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "optimizer did not converge or target disconnected"
+        },
+        {
+          "method": "homography",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "optimizer did not converge or target disconnected"
+        },
+        {
+          "method": "homography",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "optimizer did not converge or target disconnected"
+        }
+      ],
+      "policies": {
+        "candidate": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          }
+        },
+        "corroborated": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          }
+        },
+        "strict": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          }
+        }
+      }
+    },
+    "metric_free": {
+      "registrations": [
+        {
+          "method": "metric_free",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "optimizer did not converge or target disconnected"
+        },
+        {
+          "method": "metric_free",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "optimizer did not converge or target disconnected"
+        },
+        {
+          "method": "metric_free",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "optimizer did not converge or target disconnected"
+        },
+        {
+          "method": "metric_free",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "optimizer did not converge or target disconnected"
+        },
+        {
+          "method": "metric_free",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "optimizer did not converge or target disconnected"
+        },
+        {
+          "method": "metric_free",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "optimizer did not converge or target disconnected"
+        },
+        {
+          "method": "metric_free",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "optimizer did not converge or target disconnected"
+        },
+        {
+          "method": "metric_free",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "optimizer did not converge or target disconnected"
+        },
+        {
+          "method": "metric_free",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "optimizer did not converge or target disconnected"
+        },
+        {
+          "method": "metric_free",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "optimizer did not converge or target disconnected"
+        }
+      ],
+      "policies": {
+        "candidate": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          }
+        },
+        "corroborated": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          }
+        },
+        "strict": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          }
+        }
+      }
+    },
+    "metric_gps": {
+      "registrations": [
+        {
+          "method": "metric_gps",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "optimizer did not converge or target disconnected"
+        },
+        {
+          "method": "metric_gps",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "optimizer did not converge or target disconnected"
+        },
+        {
+          "method": "metric_gps",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "optimizer did not converge or target disconnected"
+        },
+        {
+          "method": "metric_gps",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "optimizer did not converge or target disconnected"
+        },
+        {
+          "method": "metric_gps",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "optimizer did not converge or target disconnected"
+        },
+        {
+          "method": "metric_gps",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "optimizer did not converge or target disconnected"
+        },
+        {
+          "method": "metric_gps",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "optimizer did not converge or target disconnected"
+        },
+        {
+          "method": "metric_gps",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "optimizer did not converge or target disconnected"
+        },
+        {
+          "method": "metric_gps",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "optimizer did not converge or target disconnected"
+        },
+        {
+          "method": "metric_gps",
+          "accepted": false,
+          "inliers": 0,
+          "median_reprojection_px": 0.0,
+          "reason": "optimizer did not converge or target disconnected"
+        }
+      ],
+      "policies": {
+        "candidate": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          }
+        },
+        "corroborated": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          }
+        },
+        "strict": {
+          "accepted_pixels": 0,
+          "coverage": 0.0,
+          "single_view_pixels": 0,
+          "multi_view_pixels": 0,
+          "error": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "telea_same_pixels": {
+            "pixels": 0,
+            "mae_255": null,
+            "psnr_db": null,
+            "p90_rgb": null,
+            "over_20_fraction": null
+          },
+          "gradient": {
+            "pixels": 0,
+            "gradient_mae": null,
+            "edge_pixels": 0,
+            "orientation_error": null
+          }
+        }
+      }
+    }
+  },
+  "same_pixel_control": {
+    "metric_free": {
+      "candidate": {
+        "new": {
+          "pixels": 0,
+          "mae_255": null,
+          "psnr_db": null,
+          "p90_rgb": null,
+          "over_20_fraction": null
+        },
+        "control": {
+          "pixels": 0,
+          "mae_255": null,
+          "psnr_db": null,
+          "p90_rgb": null,
+          "over_20_fraction": null
+        },
+        "new_gradient": {
+          "pixels": 0,
+          "gradient_mae": null,
+          "edge_pixels": 0,
+          "orientation_error": null
+        },
+        "control_gradient": {
+          "pixels": 0,
+          "gradient_mae": null,
+          "edge_pixels": 0,
+          "orientation_error": null
+        }
+      },
+      "corroborated": {
+        "new": {
+          "pixels": 0,
+          "mae_255": null,
+          "psnr_db": null,
+          "p90_rgb": null,
+          "over_20_fraction": null
+        },
+        "control": {
+          "pixels": 0,
+          "mae_255": null,
+          "psnr_db": null,
+          "p90_rgb": null,
+          "over_20_fraction": null
+        },
+        "new_gradient": {
+          "pixels": 0,
+          "gradient_mae": null,
+          "edge_pixels": 0,
+          "orientation_error": null
+        },
+        "control_gradient": {
+          "pixels": 0,
+          "gradient_mae": null,
+          "edge_pixels": 0,
+          "orientation_error": null
+        }
+      },
+      "strict": {
+        "new": {
+          "pixels": 0,
+          "mae_255": null,
+          "psnr_db": null,
+          "p90_rgb": null,
+          "over_20_fraction": null
+        },
+        "control": {
+          "pixels": 0,
+          "mae_255": null,
+          "psnr_db": null,
+          "p90_rgb": null,
+          "over_20_fraction": null
+        },
+        "new_gradient": {
+          "pixels": 0,
+          "gradient_mae": null,
+          "edge_pixels": 0,
+          "orientation_error": null
+        },
+        "control_gradient": {
+          "pixels": 0,
+          "gradient_mae": null,
+          "edge_pixels": 0,
+          "orientation_error": null
+        }
+      }
+    },
+    "metric_gps": {
+      "candidate": {
+        "new": {
+          "pixels": 0,
+          "mae_255": null,
+          "psnr_db": null,
+          "p90_rgb": null,
+          "over_20_fraction": null
+        },
+        "control": {
+          "pixels": 0,
+          "mae_255": null,
+          "psnr_db": null,
+          "p90_rgb": null,
+          "over_20_fraction": null
+        },
+        "new_gradient": {
+          "pixels": 0,
+          "gradient_mae": null,
+          "edge_pixels": 0,
+          "orientation_error": null
+        },
+        "control_gradient": {
+          "pixels": 0,
+          "gradient_mae": null,
+          "edge_pixels": 0,
+          "orientation_error": null
+        }
+      },
+      "corroborated": {
+        "new": {
+          "pixels": 0,
+          "mae_255": null,
+          "psnr_db": null,
+          "p90_rgb": null,
+          "over_20_fraction": null
+        },
+        "control": {
+          "pixels": 0,
+          "mae_255": null,
+          "psnr_db": null,
+          "p90_rgb": null,
+          "over_20_fraction": null
+        },
+        "new_gradient": {
+          "pixels": 0,
+          "gradient_mae": null,
+          "edge_pixels": 0,
+          "orientation_error": null
+        },
+        "control_gradient": {
+          "pixels": 0,
+          "gradient_mae": null,
+          "edge_pixels": 0,
+          "orientation_error": null
+        }
+      },
+      "strict": {
+        "new": {
+          "pixels": 0,
+          "mae_255": null,
+          "psnr_db": null,
+          "p90_rgb": null,
+          "over_20_fraction": null
+        },
+        "control": {
+          "pixels": 0,
+          "mae_255": null,
+          "psnr_db": null,
+          "p90_rgb": null,
+          "over_20_fraction": null
+        },
+        "new_gradient": {
+          "pixels": 0,
+          "gradient_mae": null,
+          "edge_pixels": 0,
+          "orientation_error": null
+        },
+        "control_gradient": {
+          "pixels": 0,
+          "gradient_mae": null,
+          "edge_pixels": 0,
+          "orientation_error": null
+        }
+      }
+    }
+  },
+  "runtime_seconds": 8.610310077667236
+}
